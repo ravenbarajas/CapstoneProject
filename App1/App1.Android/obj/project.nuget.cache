@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8tjPK/22EzqHX89WWYPkm04bp6VLz6iJX3i340D7/VRy2XMJPMRFN3T6Ktd1fwcaxsfsG/qKtZH0PJgM++Xj8Q==",
+  "dgSpecHash": "SuYr3JB7VPty9n+ezZ67XZoUCmnQ/5navakYcYkSqvTH850m8/WunmQXJA4fX2C2p+sTRZk++NxQds3jxeGwkQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Raven Barajas\\Source\\Repos\\ravenbarajas057\\CapstoneProject\\App1\\App1.Android\\App1.Android.csproj",
+  "projectFilePath": "C:\\Users\\Raven Barajas\\source\\repos\\ravenbarajas057\\CapstoneProject\\App1\\App1.Android\\App1.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\syncfusion.licensing\\20.2.0.46\\syncfusion.licensing.20.2.0.46.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\syncfusion.xamarin.core\\20.2.0.46\\syncfusion.xamarin.core.20.2.0.46.nupkg.sha512",
@@ -62,6 +62,7 @@
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.androidx.versionedparcelable\\1.1.1.8\\xamarin.androidx.versionedparcelable.1.1.1.8.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.androidx.viewpager\\1.0.0.8\\xamarin.androidx.viewpager.1.0.0.8.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.androidx.viewpager2\\1.0.0.10\\xamarin.androidx.viewpager2.1.0.0.10.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.communitytoolkit\\2.0.5\\xamarin.communitytoolkit.2.0.5.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.essentials\\1.7.3\\xamarin.essentials.1.7.3.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms\\5.0.0.2515\\xamarin.forms.5.0.0.2515.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms.inputkit\\4.0.0\\xamarin.forms.inputkit.4.0.0.nupkg.sha512",

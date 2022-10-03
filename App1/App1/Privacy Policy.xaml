@@ -1,90 +1,162 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-             xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Expander;assembly=Syncfusion.Expander.XForms"
-             x:Class="App1.Privacy_Policy">
+             x:Class="App1.Privacy_Policy"
+             NavigationPage.HasNavigationBar="False">
 
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout>
-                <Label Text="Privacy Policies" FontSize="35" TextColor="White"/>
-                <syncfusion:SfExpander>
-                    <syncfusion:SfExpander.Header>
-                        <Grid>
-                            <Label Text="Privacy Policy" FontSize="Large" TextColor="Black"/>
+        <StackLayout Background="white">
+                <Label Text="Privacy Policies" FontSize="35" TextColor="#1e4072"/>
+                <xct:Expander>
+                    <xct:Expander.Header>
+                        <Grid Padding="5,0,5,0">
+                            <Label Text="Privacy Policy"
+                                    FontSize="Large"
+                                    TextColor="White" 
+                                    BackgroundColor="#1e4072"
+                                    Padding="5,0,5,0"/>
                         </Grid>
-                    </syncfusion:SfExpander.Header>
-                    <syncfusion:SfExpander.Content>
-                        <Label Text="This Privacy Policy describes our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You. We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy."/>
-                    </syncfusion:SfExpander.Content>
-                </syncfusion:SfExpander>
-                <syncfusion:SfExpander>
-                    <syncfusion:SfExpander.Header>
-                        <Grid>
-                            <Label Text="Interpretation and Definitions" FontSize="Large" TextColor="Black"/>
+                    </xct:Expander.Header>
+                    <Grid Padding="5,0,5,0">
+                        <Label Text="This Privacy Policy describes our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You. We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy."
+                               FontSize="14" 
+                               TextColor="Black"
+                               BackgroundColor="#e6e6e6"/>
+                    </Grid>
+                </xct:Expander>
+            
+                <xct:Expander>
+                    <xct:Expander.Header>
+                        <Grid Padding="5,0,5,0">
+                            <Label Text="Interpretation and Definitions"
+                                   FontSize="Large" 
+                                   TextColor="White" 
+                                   BackgroundColor="#1e4072"
+                                   Padding="5,0,5,0"/>
                         </Grid>
-                    </syncfusion:SfExpander.Header>
-                    <syncfusion:SfExpander.Content>
-                        <Label Text="The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural."/>
-                    </syncfusion:SfExpander.Content>
-                </syncfusion:SfExpander>
-                <syncfusion:SfExpander>
-                    <syncfusion:SfExpander.Header>
-                        <Grid>
-                            <Label Text="Collecting and Using your Personal Data 
-                                   Types of Data Collected" FontSize="Large" TextColor="Black"/>
-                        </Grid>
-                    </syncfusion:SfExpander.Header>
-                    <syncfusion:SfExpander.Content>
-                        <Label Text="While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:"/>
-                    </syncfusion:SfExpander.Content>
-                </syncfusion:SfExpander>
-                <syncfusion:SfExpander>
-                    <syncfusion:SfExpander.Header>
-                        <Grid>
-                            <Label Text="Retention of Your Personal Data" FontSize="Large" TextColor="Black"/>
-                        </Grid>
-                    </syncfusion:SfExpander.Header>
-                    <syncfusion:SfExpander.Content>
-                        <Label Text="The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies."/>
-                    </syncfusion:SfExpander.Content>
-                </syncfusion:SfExpander>
-                <syncfusion:SfExpander>
-                    <syncfusion:SfExpander.Header>
-                        <Grid>
-                            <Label Text="Transfer of Your Personal Data" FontSize="Large" TextColor="Black"/>
-                        </Grid>
-                    </syncfusion:SfExpander.Header>
-                    <syncfusion:SfExpander.Content>
-                        <Label Text="Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction."/>
-                    </syncfusion:SfExpander.Content>
-                </syncfusion:SfExpander>
-                <syncfusion:SfExpander>
-                    <syncfusion:SfExpander.Header>
-                        <Grid>
-                            <Label Text="Security of Your Personal Data" FontSize="Large" TextColor="Black"/>
-                        </Grid>
-                    </syncfusion:SfExpander.Header>
-                    <syncfusion:SfExpander.Content>
-                        <Label Text="The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security."/>
-                    </syncfusion:SfExpander.Content>
-                </syncfusion:SfExpander>
-                <syncfusion:SfExpander>
-                    <syncfusion:SfExpander.Header>
-                        <Grid>
-                            <Label Text="Changes to this Privacy Policy" FontSize="Large" TextColor="Black"/>
-                        </Grid>
-                    </syncfusion:SfExpander.Header>
-                    <syncfusion:SfExpander.Content>
-                        <Label Text="We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.
-We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the 'Last update' date at the top of this Privacy Policy."/>
-                    </syncfusion:SfExpander.Content>
-                </syncfusion:SfExpander>
+                    </xct:Expander.Header>
+                    <Grid Padding="5,0,5,0">
+                        <Label Text="The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural."
+                               FontSize="14" 
+                               TextColor="Black"
+                               BackgroundColor="#e6e6e6"/>
+                    </Grid>
+                </xct:Expander>
 
-                <CheckBox x:Name="CheckBoxAgree"></CheckBox>
-                <Label Text="I Agree With Shrimp's Chef Privacy Policy"/>
-                <Button Text="Create Personal Profile" Clicked="Button_Clicked" IsEnabled="False">
+                <xct:Expander>
+                    <xct:Expander.Header>
+                        <Grid Padding="5,0,5,0">
+                            <Label Text="Collecting and Using your Personal Data Types of Data Collected" 
+                                   FontSize="Large" 
+                                   TextColor="White" 
+                                   BackgroundColor="#1e4072"
+                                   Padding="5,0,5,0"/>
+                        </Grid>
+                    </xct:Expander.Header>
+                    <Grid Padding="5,0,5,0">
+                        <Label Text="While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:"
+                               FontSize="14" 
+                               TextColor="Black"
+                               BackgroundColor="#e6e6e6"/>
+                    </Grid>
+                </xct:Expander>
+
+                <xct:Expander>
+                    <xct:Expander.Header>
+                        <Grid Padding="5,0,5,0">
+                            <Label Text="Retention of Your Personal Data" 
+                                   FontSize="Large" 
+                                   TextColor="White" 
+                                   BackgroundColor="#1e4072"
+                                   Padding="5,0,5,0"/>
+                        </Grid>
+                    </xct:Expander.Header>
+                    <Grid Padding="5,0,5,0">
+                        <Label Text="The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies."
+                               FontSize="14" 
+                               TextColor="Black"
+                               BackgroundColor="#e6e6e6"/>
+                    </Grid>
+                </xct:Expander>
+
+                <xct:Expander>
+                    <xct:Expander.Header>
+                        <Grid Padding="5,0,5,0">
+                            <Label Text="Transfer of Your Personal Data"
+                                   FontSize="Large" 
+                                   TextColor="White" 
+                                   BackgroundColor="#1e4072"
+                                   Padding="5,0,5,0"/>
+                        </Grid>
+                    </xct:Expander.Header>
+                    <Grid Padding="5,0,5,0">
+                        <Label Text="Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction."
+                               FontSize="14" 
+                               TextColor="Black"
+                               BackgroundColor="#e6e6e6"/>
+                    </Grid>
+                </xct:Expander>
+
+                <xct:Expander>
+                    <xct:Expander.Header>
+                        <Grid Padding="5,0,5,0">
+                            <Label Text="Security of Your Personal Data" 
+                                   FontSize="Large" 
+                                   TextColor="White"
+                                   BackgroundColor="#1e4072"
+                                   Padding="5,0,5,0"/>
+                        </Grid>
+                    </xct:Expander.Header>
+                    <Grid Padding="5,0,5,0">
+                        <Label Text="The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security."
+                               FontSize="14" 
+                               TextColor="Black"
+                               BackgroundColor="#e6e6e6"/>
+                    </Grid>
+                </xct:Expander>
+
+                <xct:Expander>
+                    <xct:Expander.Header>
+                        <Grid Padding="5,0,5,0">
+                            <Label Text="Changes to this Privacy Policy" 
+                                   FontSize="Large" 
+                                   TextColor="White" 
+                                   BackgroundColor="#1e4072"
+                                   Padding="5,0,5,0"/>
+                        </Grid>
+                    </xct:Expander.Header>
+                    <Grid Padding="5,0,5,0">
+                        <Label Text="We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page. We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the 'Last update' date at the top of this Privacy Policy."
+                               FontSize="14" 
+                               TextColor="Black"
+                               BackgroundColor="#e6e6e6"/>
+                    </Grid>
+                </xct:Expander>
+
+                <Grid Padding="5,10,5,0">
+                    <Label Text="By using our service, you agree to the collection  and use of information  in accordance  with this privacy policy."
+                       FontSize="14"
+                       HorizontalOptions="Fill"
+                       TextColor="Black" 
+                       HorizontalTextAlignment="Center" />
+                </Grid>
+
+                <Grid Padding="25,10,25,0">
+                    <Label Text="I Agree With Shrimp's Chef Privacy Policy"
+                           FontSize="14"
+                           TextColor="Black" 
+                           Padding="35,6,0,0"
+                           BackgroundColor="#e6e6e6" HorizontalTextAlignment="Center"/>
+                    <CheckBox x:Name="CheckBoxAgree"                        
+                              Margin="25,0,0,0"/>
+                </Grid>
+                <Button Text="Create Personal Profile" 
+                        Clicked="Button_Clicked" 
+                        IsEnabled="False"
+                        Margin="0,10,0,0">
                     <Button.Triggers>
                         <DataTrigger TargetType="Button"
                                      Binding="{Binding Source={x:Reference CheckBoxAgree},
@@ -93,9 +165,6 @@ We will let You know via email and/or a prominent notice on Our Service, prior t
                         </DataTrigger>
                     </Button.Triggers>
                 </Button>
-
-
-
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
