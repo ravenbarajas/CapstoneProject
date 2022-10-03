@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "RRXcKl3W1qAKVdibwgoaS4elZ9uIwaRTlZd4Tro5mr0PFpbEpmQM6lV23KZixCROKY8XdqZ9zESzenu2mCkbHg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Raven Barajas\\source\\repos\\CapstoneProject\\App1\\App1\\App1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\syncfusion.licensing\\20.2.0.46\\syncfusion.licensing.20.2.0.46.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\syncfusion.xamarin.core\\20.2.0.46\\syncfusion.xamarin.core.20.2.0.46.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\syncfusion.xamarin.expander\\20.2.0.46\\syncfusion.xamarin.expander.20.2.0.46.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.essentials\\1.7.3\\xamarin.essentials.1.7.3.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms\\5.0.0.2515\\xamarin.forms.5.0.0.2515.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms.inputkit\\4.0.0\\xamarin.forms.inputkit.4.0.0.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
+  ],
+  "logs": []
+}

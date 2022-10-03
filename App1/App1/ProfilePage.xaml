@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.ProfilePage">
+    <ContentPage Title="CookBook">
+        <Grid HeightRequest="400" WidthRequest="250">
+            <StackLayout Padding="30">
+                <ScrollView HeightRequest="540">
+                    <Frame CornerRadius="20">
+                        <StackLayout>
+                        <ImageButton Clicked="ImageButton_Clicked" Source="ga.jpg" Aspect="AspectFill"/>
+                        <ImageButton Clicked="ImageButton_Clicked_1" Source="ha.jpg" Aspect="AspectFill"/>
+                        <ImageButton Clicked="ImageButton_Clicked_2" Source="he.jpg" Aspect="AspectFill"/>
+                        <ImageButton Clicked="ImageButton_Clicked_3" Source="hi.jpg" Aspect="AspectFill"/>
+                        <ImageButton Clicked="ImageButton_Clicked_4" Source="ra.jpg" Aspect="AspectFill"/>
+                        <ImageButton Clicked="ImageButton_Clicked_5" Source="re.jpg" Aspect="AspectFill"/>
+                        <ImageButton Clicked="ImageButton_Clicked_6" Source="ri.jpg" Aspect="AspectFill"/>
+                        <ImageButton Clicked="ImageButton_Clicked_7" Source="go.jpg" Aspect="AspectFill"/>
+                        <ImageButton Clicked="ImageButton_Clicked_8" Source="gu.jpg" Aspect="AspectFill"/>
+                        <ImageButton Clicked="ImageButton_Clicked_9" Source="ge.jpg" Aspect="AspectFill"/>
+                        </StackLayout>
+                    </Frame>
+                </ScrollView>
+            </StackLayout>
+        </Grid>
+    </ContentPage>
+    <ContentPage Title="Meal Planner">
+        
+    </ContentPage>
+        
+        
+   
+</TabbedPage>

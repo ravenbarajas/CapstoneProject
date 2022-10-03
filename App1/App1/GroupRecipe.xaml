@@ -1,0 +1,10 @@
+﻿
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.GroupRecipe">
+    <StackLayout>
+        <Label Text="Recipe" FontSize="Large"/>
+        <Button Text="Create Group Room" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="Button_Clicked"></Button>
+        <Button Text="Join Group Room" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="Button_Clicked_1"></Button>
+    </StackLayout>
+</ContentPage>

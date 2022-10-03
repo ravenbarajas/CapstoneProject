@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Favorites">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout Padding="20" WidthRequest="130">
+                <CarouselView x:Name="Carousel3" HeightRequest="150">
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="20"
+                                   Margin="7.5"
+                                   HeightRequest="150"
+                                   WidthRequest="150">
+                                <ImageButton Clicked="ImageButton_Clicked" Source="{Binding .}"
+                               Aspect="AspectFill"/>
+                            </Frame>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                <ScrollView HeightRequest="390">
+                    <Frame CornerRadius="20">
+                        <Grid>
+                            <StackLayout>
+
+                                <Image Source="ga.jpg" Aspect="AspectFill"/>
+                                <Image Source="ha.jpg" Aspect="AspectFill"/>
+                                <Image Source="ra.jpg" Aspect="AspectFill"/>
+                                <Image Source="re.jpg" Aspect="AspectFill"/>
+                                <Image Source="ri.jpg" Aspect="AspectFill"/>
+                                <Image Source="he.jpg" Aspect="AspectFill"/>
+                                <Image Source="hi.jpg" Aspect="AspectFill"/>
+                                <Image Source="go.jpg" Aspect="AspectFill"/>
+                                <Image Source="gu.jpg" Aspect="AspectFill"/>
+
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+                </ScrollView>
+            </StackLayout>
+            <Button Text="Home" VerticalOptions="EndAndExpand" HorizontalOptions="Start" Clicked="BClicked"></Button>
+            <Button Text="Generate" VerticalOptions="EndAndExpand" HorizontalOptions="End" Clicked="BClicked1"></Button>
+            <Button Text="Profile" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Clicked="BClicked2"></Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+   

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.CookingSkillPage">
+    <ContentPage.Content>
+        <StackLayout Padding="50">
+
+            <Label Text="Cooking Skill" FontSize="Title"/>
+            <Label Text="Rate your cooking skill from 1-10"/>
+            <Label Text="Please select your answer"/>
+            <Button Text="1-3 (Learner)"/>
+            <Button Text="3-5 (Basic)"/>
+            <Button Text="5-8 (Home Cook)"/>
+            <Button Text="8-10 (Expert)"/>
+            <Button Text="Next" x:Name="Page6to7" Clicked="Page6to7_Clicked" HorizontalOptions="End" BackgroundColor="White"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

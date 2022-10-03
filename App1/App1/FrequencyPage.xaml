@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.FrequencyPage">
+    <ContentPage.Content>
+        <StackLayout Padding="50">
+
+            <Label Text="Frequency" FontSize="Title"/>
+            <Label Text="How often do you or your family cook at home in a week?" />
+            <Label Text="Select your answer" />
+            <Button Text="Everyday" />
+            <Button Text="1x-3x a week" />
+            <Button Text="4x-6x a week" />
+            <Button Text="Next" x:Name="Page3to4" Clicked="Page3to4_Clicked" HorizontalOptions="End" BackgroundColor="White"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

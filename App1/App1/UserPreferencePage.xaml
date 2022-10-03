@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.UserPreferencePage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackLayout Grid.Row="0" >
+
+            <Frame BackgroundColor="#3873F6">
+                <Label Text="Shrimp Chef" FontSize="30" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="White"/>
+            </Frame>
+
+            <Label Text="Let's start with your preferences" FontSize="28" HorizontalTextAlignment="Center" TextColor="#3873F6"/>
+            <Label Text="Please select your preferred options" FontSize="15" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+
+        </StackLayout>
+
+
+        <StackLayout Grid.Row="1">
+
+            <Label Text="Meal Type (max of 1)" FontSize="18" FontAttributes="Bold" TextColor="#113FA4" HorizontalTextAlignment="Center"/>
+
+        </StackLayout>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Text="Breakfast" x:Name="Type1" Clicked="Type1_Clicked"/>
+            <Button Grid.Column="1" Text="Lunch" x:Name="Type2" Clicked="Type2_Clicked"/>
+            <Button Grid.Column="2" Text="Dinner" x:Name="Type3" Clicked="Type3_Clicked" />
+
+        </Grid>
+
+        <StackLayout Grid.Row="3">
+
+            <Label Text="Meal Course (max of 4)" FontSize="18" FontAttributes="Bold" TextColor="#113FA4" HorizontalTextAlignment="Center"/>
+
+        </StackLayout>
+
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Text="Appetizer" x:Name="Course1" Clicked="Course1_Clicked"/>
+            <Button Grid.Column="1" Text="Soup" x:Name="Course2" Clicked="Course2_Clicked"/>
+            <Button Grid.Column="2" Text="Main Course" x:Name="Course3" Clicked="Course3_Clicked" />
+            <Button Grid.Column="3" Text="Dessert" x:Name="Course4" Clicked="Course4_Clicked"/>
+
+        </Grid>
+
+        <StackLayout Grid.Row="5">
+
+            <Label Text="Recipe Difficulty (max of 1)" FontSize="18" FontAttributes="Bold" TextColor="#113FA4" HorizontalTextAlignment="Center"/>
+
+        </StackLayout>
+
+
+        <Grid Grid.Row="6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Text="Simple
+                    (1-3)" x:Name="Difficulty1" Clicked="Difficulty1_Clicked"/>
+            <Button Grid.Column="1" Text="Easy
+                    (3-5)" x:Name="Difficulty2" Clicked="Difficulty2_Clicked"/>
+            <Button Grid.Column="2" Text="Average
+                    (5-8)" x:Name="Difficulty3" Clicked="Difficulty3_Clicked"/>
+            <Button Grid.Column="3" Text="Advance
+                    (8-10)" x:Name="Difficulty4" Clicked="Difficulty4_Clicked"/>
+
+        </Grid>
+
+        <StackLayout Grid.Row="7">
+
+            <Label Text="Servings (max of 1)" FontSize="18" FontAttributes="Bold" TextColor="#113FA4" HorizontalTextAlignment="Center"/>
+
+        </StackLayout>
+
+        <Grid Grid.Row="8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="93"/>
+                <ColumnDefinition Width="93"/>
+                <ColumnDefinition Width="93"/>
+                <ColumnDefinition Width="93"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Text="1-2 persons" x:Name="Servings1" Clicked="Servings1_Clicked" />
+            <Button Grid.Column="1" Text="2-3 persons" x:Name="Servings2" Clicked="Servings2_Clicked"/>
+            <Button Grid.Column="2" Text="3-4 persons" x:Name="Servings3" Clicked="Servings3_Clicked"/>
+            <Button Grid.Column="3" Text="4-5 persons" x:Name="Servings4" Clicked="Servings4_Clicked"/>
+
+        </Grid>
+
+        <Button  Grid.Row="9" Text="Next" FontSize="20" FontAttributes="Bold" HorizontalOptions="End"
+                 x:Name="Confirm1" Clicked="Confirm1_Clicked"/>
+
+    </Grid>
+</ContentPage>

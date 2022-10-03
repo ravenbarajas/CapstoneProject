@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.DietTypePage">
+    <ContentPage.Content>
+        <StackLayout Padding="50">
+
+            <Label Text="Diet Type" FontSize="Title"/>
+            <Label Text="What is your diet type?"/>
+            <Label Text="Please select your answer"/>
+            <Button Text="General Diet"/>
+            <Button Text="Vegan"/>
+            <Button Text="No sugar (Diabetic)"/>
+            <Button Text="No dairy (Lactose Intolerant)"/>
+            <Button Text="Halal (Permissible)"/>
+            <Button Text="Next" x:Name="Page7to8" Clicked="Page7to8_Clicked" HorizontalOptions="End" BackgroundColor="White"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

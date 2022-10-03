@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.TimePage">
+    <ContentPage.Content>
+        <StackLayout Padding="50">
+
+            <Label Text="Time" FontSize="Title"/>
+            <Label Text="How much cooking time do you or your family usually have?" />
+            <Label Text="Please select your answer" />
+            <Button Text="0 - 30 mins"/>
+            <Button Text="30 - 60 mins"/>
+            <Button Text="60 - 120 mins"/>
+            <Button Text="Next" x:Name="Page5to6" Clicked="Page5to6_Clicked" HorizontalOptions="End" BackgroundColor="White"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

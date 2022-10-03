@@ -1,0 +1,113 @@
+C:\Users\BEMS\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.deps.json
+C:\Users\BEMS\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll
+C:\Users\BEMS\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\ref\App1.dll
+C:\Users\BEMS\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.pdb
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.cache
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.csproj.CoreCompileInputs.cache
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.dll
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\ref\App1.dll
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\SignUp.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\Login.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\Privacy Policy.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\TabbedPage1.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\Discover.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\Favorites.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\Popular.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\GeneratePage.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\CreateGroupRoom.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\GroupRecipe.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\JoinGroupRoom.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\ProfilePage.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\UserPreferencePage.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\RecipePage1.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.csproj.AssemblyReference.cache
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\AgeGroupPage.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\CookingSkillPage.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\DietTypePage.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\DonePage.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\FavoriteDishPage.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\FoodAllergyPage.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\FrequencyPage.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\HomeCookPage.xaml.g.cs
+C:\Users\BEMS\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\TimePage.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\bin\Debug\netstandard2.0\App1.deps.json
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\bin\Debug\netstandard2.0\ref\App1.dll
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\bin\Debug\netstandard2.0\App1.pdb
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\App1.csproj.AssemblyReference.cache
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\App1.GeneratedMSBuildEditorConfig.editorconfig
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\AgeGroupPage.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\CookingSkillPage.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\CreateGroupRoom.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\DietTypePage.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\Discover.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\DonePage.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\FavoriteDishPage.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\Favorites.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\FoodAllergyPage.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\FrequencyPage.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\GeneratePage.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\GroupRecipe.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\HomeCookPage.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\JoinGroupRoom.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\Login.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\Popular.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\Privacy Policy.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\ProfilePage.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\RecipePage1.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\SignUp.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\TabbedPage1.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\TimePage.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\UserPreferencePage.xaml.g.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.cache
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\App1.csproj.CoreCompileInputs.cache
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\App1.dll
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\ref\App1.dll
+E:\Users\Raven Barajas\Desktop\App1\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\bin\Debug\netstandard2.0\App1.deps.json
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\bin\Debug\netstandard2.0\App1.dll
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\bin\Debug\netstandard2.0\ref\App1.dll
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\bin\Debug\netstandard2.0\App1.pdb
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\AgeGroupPage.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\CookingSkillPage.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\CreateGroupRoom.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\DietTypePage.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Discover.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\DonePage.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\FavoriteDishPage.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Favorites.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\FoodAllergyPage.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\FrequencyPage.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\GeneratePage.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\GroupRecipe.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\HomeCookPage.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\JoinGroupRoom.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Login.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Popular.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Privacy Policy.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\ProfilePage.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\RecipePage1.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\SignUp.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\TabbedPage1.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\TimePage.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\UserPreferencePage.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.cache
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App1.csproj.CoreCompileInputs.cache
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App1.dll
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\ref\App1.dll
+C:\Users\Raven Barajas\source\repos\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App1.pdb
