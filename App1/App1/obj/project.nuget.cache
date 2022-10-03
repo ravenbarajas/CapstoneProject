@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RRXcKl3W1qAKVdibwgoaS4elZ9uIwaRTlZd4Tro5mr0PFpbEpmQM6lV23KZixCROKY8XdqZ9zESzenu2mCkbHg==",
+  "dgSpecHash": "OAxIasPwHIIPqA5nr5DLYO/7wyA4tKeVkAEKP61cN4li6UqjNS2GFOMAPor8dHvcImMotvtKyuU/PAHzi5xQnw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Raven Barajas\\source\\repos\\CapstoneProject\\App1\\App1\\App1.csproj",
+  "projectFilePath": "C:\\Users\\Raven Barajas\\Source\\Repos\\ravenbarajas057\\CapstoneProject\\App1\\App1\\App1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

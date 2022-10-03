@@ -8,7 +8,7 @@
             <Image Source="applogo.png"
                    Margin="0,240,0,0"/>
             <StackLayout>
-                <Label Text="Get Food Recipes Quick" 
+                <Label Text="Get Food Recipes QuickKKKK" 
                        FontSize="Large" 
                        TextColor="White" 
                        HorizontalTextAlignment="Center"

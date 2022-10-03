@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K42kyKUhvKWl/JTt7IbYKtnkBS4sQ185AGSxo740UvfUIjZrt5b5H0dnSsAuvOYeDuh04GTGENoDafyv089K7Q==",
+  "dgSpecHash": "8tjPK/22EzqHX89WWYPkm04bp6VLz6iJX3i340D7/VRy2XMJPMRFN3T6Ktd1fwcaxsfsG/qKtZH0PJgM++Xj8Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Raven Barajas\\source\\repos\\CapstoneProject\\App1\\App1.Android\\App1.Android.csproj",
+  "projectFilePath": "C:\\Users\\Raven Barajas\\Source\\Repos\\ravenbarajas057\\CapstoneProject\\App1\\App1.Android\\App1.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\syncfusion.licensing\\20.2.0.46\\syncfusion.licensing.20.2.0.46.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\syncfusion.xamarin.core\\20.2.0.46\\syncfusion.xamarin.core.20.2.0.46.nupkg.sha512",
