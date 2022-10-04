@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App1.AgeGroupPage">
+             x:Class="App1.AgeGroupPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="Intro1" AnchorY="0" AnchorX="0">
+
     <StackLayout Padding="50">
 
         <Label Text="Age Group" FontSize="Title"/>
@@ -12,6 +15,5 @@
         <Button Text="30-59" />
         <Button Text="60+" />
         <Button Text="Next" x:Name="Page1to2" Clicked="Page1to2_Clicked" HorizontalOptions="End" BackgroundColor="White"/>
-
     </StackLayout>
 </ContentPage>

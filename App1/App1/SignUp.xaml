@@ -5,12 +5,9 @@
              NavigationPage.HasNavigationBar="False">
 
     <ContentPage.Content>
-        <StackLayout>
+        <Grid>
             <RelativeLayout>
-                <Image Source="Signup.jpg" 
-                           Aspect="AspectFill"
-                           RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"
-                           RelativeLayout.HeightConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+                <Image Source="TopSignup.Jpg"/>
                 <StackLayout HorizontalOptions="Center">
                     <Entry Text=""
                             Placeholder="Username"
@@ -40,6 +37,7 @@
                     </Button>
                 </StackLayout>
             </RelativeLayout>
-        </StackLayout>
+            <Image Source="Bottom.Jpg" Margin="0,593,0,0"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

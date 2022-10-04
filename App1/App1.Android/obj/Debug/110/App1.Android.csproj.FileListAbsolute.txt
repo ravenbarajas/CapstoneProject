@@ -1502,7 +1502,6 @@ C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.An
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\intro3.jpg
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\intro1.jpg
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\applogo.png
-C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\signup.jpg
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\login.jpg
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\uploadflags.txt
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\resolvedassemblies.hash
@@ -2165,3 +2164,8 @@ C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.An
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\src\crc64515ee83f00766c60\SemanticEffectRouter_SemanticAccessibilityDelegate.java
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\src\crc64515ee83f00766c60\VisualFeedbackEffectRouter_FastRendererOnLayoutChangeListener.java
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\src\crc645b8ccbad6ecd7dce\SideMenuViewRenderer.java
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\universalbg.jpg
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\bottom.jpg
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\toplogin.jpg
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\topsignup.jpg
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\topprivacypolicy.jpg
