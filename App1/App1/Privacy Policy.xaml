@@ -125,7 +125,8 @@
                             TextColor="White"
                             FontAttributes="Bold"
                             HeightRequest="45"
-                            Margin="25,5,25,0">
+                            Margin="25,5,25,0"
+                            CornerRadius="25">
                         <Button.Triggers>
                             <DataTrigger TargetType="Button"
                                      Binding="{Binding Source={x:Reference CheckBoxAgree},

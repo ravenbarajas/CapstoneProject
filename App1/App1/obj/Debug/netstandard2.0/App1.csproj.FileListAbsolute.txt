@@ -148,4 +148,5 @@ C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1\ob
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App1.dll
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\ref\App1.dll
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Lifestyle.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App1.csproj.AssemblyReference.cache

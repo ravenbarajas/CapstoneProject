@@ -37,7 +37,8 @@
                         HorizontalOptions="Center"
                         WidthRequest="300"
                         HeightRequest="45"
-                        Margin="0,10,0,0"/>
+                        Margin="0,10,0,0"
+                        CornerRadius="25"/>
                 <Button Text="Log In" 
                         BackgroundColor="White" 
                         TextColor="#467fd7"
@@ -45,7 +46,8 @@
                         Clicked="Clicked"
                         HorizontalOptions="Center"
                         WidthRequest="300"
-                        HeightRequest="45"/>
+                        HeightRequest="45"
+                        CornerRadius="25"/>
             </StackLayout>
         </StackLayout>
     </ContentPage>
@@ -82,7 +84,8 @@
                         HorizontalOptions="Center"
                         WidthRequest="300"
                         HeightRequest="45"
-                        Margin="0,10,0,0"/>
+                        Margin="0,10,0,0"
+                        CornerRadius="25"/>
                     <Button Text="Log In" 
                         BackgroundColor="White" 
                         TextColor="#467fd7"
@@ -90,7 +93,8 @@
                         Clicked="Clicked"
                         HorizontalOptions="Center"
                         WidthRequest="300"
-                        HeightRequest="45"/>
+                        HeightRequest="45"
+                        CornerRadius="25"/>
                 </StackLayout>
             </StackLayout>
         </StackLayout>
@@ -128,7 +132,8 @@
                         HorizontalOptions="Center"
                         WidthRequest="300"
                         HeightRequest="45"
-                        Margin="0,10,0,0"/>
+                        Margin="0,10,0,0"
+                        CornerRadius="25"/>
                     <Button Text="Log In" 
                         BackgroundColor="White" 
                         TextColor="#467fd7"
@@ -136,7 +141,8 @@
                         Clicked="Clicked"
                         HorizontalOptions="Center"
                         WidthRequest="300"
-                        HeightRequest="45"/>
+                        HeightRequest="45"
+                        CornerRadius="25"/>
                 </StackLayout>
             </StackLayout>
         </StackLayout>

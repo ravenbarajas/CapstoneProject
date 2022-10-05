@@ -1,19 +1,61 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App1.CookingSkillPage">
-    <ContentPage.Content>
-        <StackLayout Padding="50">
-
-            <Label Text="Cooking Skill" FontSize="Title"/>
-            <Label Text="Rate your cooking skill from 1-10"/>
-            <Label Text="Please select your answer"/>
-            <Button Text="1-3 (Learner)"/>
-            <Button Text="3-5 (Basic)"/>
-            <Button Text="5-8 (Home Cook)"/>
-            <Button Text="8-10 (Expert)"/>
-            <Button Text="Next" x:Name="Page6to7" Clicked="Page6to7_Clicked" HorizontalOptions="End" BackgroundColor="White"/>
-
+             x:Class="App1.CookingSkillPage"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <StackLayout Background="White">
+            <Image Source="TopCS.Jpg"/>
+            <Label Text="Please select your answer"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   Background="#1e4072"
+                   TextColor="White"
+                   FontSize="16" 
+                   Margin="30,20,30,-11"
+                   Padding="0,5,0,5"/>
+            <Button x:Name="Option1" Text="1 - 3 (Learning)" 
+                            Margin="30,5,30,-5"
+                            Clicked="Selection_Clicked" 
+                            FontAttributes="Bold" 
+                            BorderWidth="1" 
+                            BorderColor="White"
+                            FontSize="18"
+                            TextTransform="None"/>
+            <Button x:Name="Option2" Text="4 - 5 (Basic)"
+                            Margin="30,0,30,-5"
+                            Clicked="Selection_Clicked"
+                            FontAttributes="Bold"
+                            BorderWidth="1"
+                            BorderColor="White"
+                            FontSize="18"
+                            TextTransform="None"/>
+            <Button x:Name="Option3" Text="6 - 8 (Home Cook)"
+                            Margin="30,0,30,-5"
+                            Clicked="Selection_Clicked"
+                            FontAttributes="Bold"
+                            BorderWidth="1"
+                            BorderColor="White"
+                            FontSize="18"
+                            TextTransform="None"/>
+            <Button x:Name="Option4" Text="8- 10 (Experienced)"
+                            Margin="30,0,30,10"
+                            Clicked="Selection_Clicked"
+                            FontAttributes="Bold"
+                            BorderWidth="1"
+                            BorderColor="White"
+                            FontSize="18"
+                            TextTransform="None"/>
         </StackLayout>
-    </ContentPage.Content>
+        <ImageButton x:Name="Next" 
+                     Source="next.png"
+                     Clicked="Page7to8_Clicked" 
+                     BackgroundColor="White"
+                     WidthRequest="150"
+                     Margin="0,540,30,150"
+                     Padding="35,3,0,3"
+                     HorizontalOptions="End"
+                     VerticalOptions="EndAndExpand"/>
+        <Image Source="Bottom.Jpg" Margin="0,593,0,0"/>
+    </Grid>
 </ContentPage>
