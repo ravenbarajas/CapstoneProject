@@ -138,7 +138,7 @@ namespace App1
             bool Answer = await DisplayAlert("Confirm Selection?", "You will not be able to edit after", "Yes", "No");
             if (Answer == true)
             {
-                /*DITO YUNG STATEMENT NUNG NEXT PAGE */
+                await Navigation.PushAsync(new CondimentsPage());
             }
         }
     }

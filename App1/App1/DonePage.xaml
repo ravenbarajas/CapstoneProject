@@ -7,7 +7,7 @@
     <ContentPage.Content>
         <Grid>
             <StackLayout Background="White">
-                <Image Source="TopWC.Jpg"/>
+                <Image Source="TopWCC.Jpg"/>
                 <Label Text="You're all set!"                       
                        HorizontalTextAlignment="Center"
                        FontSize="34"

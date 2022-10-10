@@ -15,17 +15,6 @@ namespace App1
         public Discover()
         {
             InitializeComponent();
-            var Image2 = new List<string>
-            {
-                "ge.jpg",
-                "ga.jpg",
-                "hi.jpg",
-                "he.jpg",
-                "ha.jpg",
-                "ri.jpg",
-                "re.jpg",
-                "ra.jpg"
-            };
             var Image = new List<string>
             {
                 "ha.jpg",
@@ -56,6 +45,16 @@ namespace App1
         private async void ImageButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new RecipePage1());
+        }
+
+        private void Clickedd(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
     }

@@ -1996,7 +1996,8 @@ int drawable topprivacypolicy 0x7f0700d0
 int drawable topsignup 0x7f0700d1
 int drawable toptm 0x7f0700d2
 int drawable topwc 0x7f0700d3
-int drawable universalbg 0x7f0700d4
+int drawable topwcc 0x7f0700d4
+int drawable universalbg 0x7f0700d5
 int id ALT 0x7f080000
 int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002

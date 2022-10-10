@@ -149,4 +149,6 @@ C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1\ob
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\ref\App1.dll
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App1.pdb
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Lifestyle.xaml.g.cs
-C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App1.csproj.AssemblyReference.cache
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\CondimentsPage.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Cookbook.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\MealPlanner.xaml.g.cs

@@ -2,46 +2,272 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Favorites">
+
     <ContentPage.Content>
-        <Grid>
-            <StackLayout Padding="20" WidthRequest="130">
-                <CarouselView x:Name="Carousel3" HeightRequest="150">
+        <Grid BackgroundColor="White" HorizontalOptions="Center">
+            <StackLayout>
+                <CarouselView x:Name="Carousel3" 
+                              HeightRequest="180">
                     <CarouselView.ItemTemplate>
                         <DataTemplate>
-                            <Frame CornerRadius="20"
-                                   Margin="7.5"
-                                   HeightRequest="150"
-                                   WidthRequest="150">
-                                <ImageButton Clicked="ImageButton_Clicked" Source="{Binding .}"
-                               Aspect="AspectFill"/>
-                            </Frame>
+                            <RelativeLayout>
+                                <ImageButton Clicked="ImageButton_Clicked"  
+                                             CornerRadius="15"
+                                             Source="{Binding .}"
+                                             Margin="60,10,20,5"
+                                             WidthRequest="280"
+                                             Aspect="AspectFill"/>
+                            </RelativeLayout>
                         </DataTemplate>
                     </CarouselView.ItemTemplate>
                 </CarouselView>
-                <ScrollView HeightRequest="390">
-                    <Frame CornerRadius="20">
-                        <Grid>
-                            <StackLayout>
-
-                                <Image Source="ga.jpg" Aspect="AspectFill"/>
-                                <Image Source="ha.jpg" Aspect="AspectFill"/>
-                                <Image Source="ra.jpg" Aspect="AspectFill"/>
-                                <Image Source="re.jpg" Aspect="AspectFill"/>
-                                <Image Source="ri.jpg" Aspect="AspectFill"/>
-                                <Image Source="he.jpg" Aspect="AspectFill"/>
-                                <Image Source="hi.jpg" Aspect="AspectFill"/>
-                                <Image Source="go.jpg" Aspect="AspectFill"/>
-                                <Image Source="gu.jpg" Aspect="AspectFill"/>
-
+                <ScrollView HeightRequest="451">
+                    <Grid BackgroundColor="#d9d9d9">
+                        <StackLayout>
+                            <StackLayout BackgroundColor="White" Margin="0,5,0,0">
+                                <ImageButton Source="ga.jpg" 
+                                             Clicked="ImageButton_Clicked" 
+                                             Aspect="AspectFill"
+                                             Margin="5,5,5,-6"/>
+                                <Grid BackgroundColor="White" Margin="0,0,0,5">
+                                    <Label Text="Like" 
+                                            VerticalOptions="EndAndExpand" 
+                                            HorizontalOptions="Start"
+                                            HorizontalTextAlignment="Center"
+                                            VerticalTextAlignment="Center"
+                                            FontSize="17"
+                                            TextColor="#5a5a5a"
+                                            HeightRequest="40"
+                                            WidthRequest="127"
+                                            BackgroundColor="#d9d9d9"
+                                            Margin="5,0,5,0"/>
+                                    <Label Text="Time" 
+                                            VerticalOptions="EndAndExpand"
+                                            HorizontalOptions="Center"
+                                            HorizontalTextAlignment="Center"
+                                            VerticalTextAlignment="Center"
+                                            FontSize="17"
+                                            TextColor="#5a5a5a"
+                                            HeightRequest="40"
+                                            WidthRequest="128"
+                                            BackgroundColor="#d9d9d9"/>
+                                    <Button Text="Add" 
+                                            VerticalOptions="EndAndExpand"
+                                            HorizontalOptions="End"
+                                            TextTransform="None"
+                                            FontSize="17"
+                                            TextColor="#5a5a5a"
+                                            HeightRequest="40"
+                                            WidthRequest="127"
+                                            BackgroundColor="#d9d9d9"
+                                            Clicked="BClicked2"
+                                            Margin="5,-6,5,0"/>
+                                </Grid>
                             </StackLayout>
-                        </Grid>
-                    </Frame>
+                            <StackLayout BackgroundColor="White" Margin="0,0,0,0">
+                                <ImageButton Source="ge.jpg" 
+                                             Clicked="ImageButton_Clicked" 
+                                             Aspect="AspectFill"
+                                             Margin="5,5,5,-6"/>
+                                <Grid BackgroundColor="White" Margin="0,0,0,5">
+                                    <Label Text="Like" 
+                                            VerticalOptions="EndAndExpand" 
+                                            HorizontalOptions="Start"
+                                            HorizontalTextAlignment="Center"
+                                            VerticalTextAlignment="Center"
+                                            FontSize="17"
+                                            TextColor="#5a5a5a"
+                                            HeightRequest="40"
+                                            WidthRequest="127"
+                                            BackgroundColor="#d9d9d9"
+                                            Margin="5,0,5,0"/>
+                                    <Label Text="Time" 
+                                            VerticalOptions="EndAndExpand"
+                                            HorizontalOptions="Center"
+                                            HorizontalTextAlignment="Center"
+                                            VerticalTextAlignment="Center"
+                                            FontSize="17"
+                                            TextColor="#5a5a5a"
+                                            HeightRequest="40"
+                                            WidthRequest="128"
+                                            BackgroundColor="#d9d9d9"/>
+                                    <Button Text="Add" 
+                                            VerticalOptions="EndAndExpand"
+                                            HorizontalOptions="End"
+                                            TextTransform="None"
+                                            FontSize="17"
+                                            TextColor="#5a5a5a"
+                                            HeightRequest="40"
+                                            WidthRequest="127"
+                                            BackgroundColor="#d9d9d9"
+                                            Clicked="BClicked2"
+                                            Margin="5,-6,5,0"/>
+                                </Grid>
+                            </StackLayout>
+                            <StackLayout BackgroundColor="White" Margin="0,0,0,0">
+                                <ImageButton Source="gi.jpg" 
+                                             Clicked="ImageButton_Clicked" 
+                                             Aspect="AspectFill"
+                                             Margin="5,5,5,-6"/>
+                                <Grid BackgroundColor="White" Margin="0,0,0,5">
+                                    <Label Text="Like" 
+                                            VerticalOptions="EndAndExpand" 
+                                            HorizontalOptions="Start"
+                                            HorizontalTextAlignment="Center"
+                                            VerticalTextAlignment="Center"
+                                            FontSize="17"
+                                            TextColor="#5a5a5a"
+                                            HeightRequest="40"
+                                            WidthRequest="127"
+                                            BackgroundColor="#d9d9d9"
+                                            Margin="5,0,5,0"/>
+                                    <Label Text="Time" 
+                                            VerticalOptions="EndAndExpand"
+                                            HorizontalOptions="Center"
+                                            HorizontalTextAlignment="Center"
+                                            VerticalTextAlignment="Center"
+                                            FontSize="17"
+                                            TextColor="#5a5a5a"
+                                            HeightRequest="40"
+                                            WidthRequest="128"
+                                            BackgroundColor="#d9d9d9"/>
+                                    <Button Text="Add" 
+                                            VerticalOptions="EndAndExpand"
+                                            HorizontalOptions="End"
+                                            TextTransform="None"
+                                            FontSize="17"
+                                            TextColor="#5a5a5a"
+                                            HeightRequest="40"
+                                            WidthRequest="127"
+                                            BackgroundColor="#d9d9d9"
+                                            Clicked="BClicked2"
+                                            Margin="5,-6,5,0"/>
+                                </Grid>
+                            </StackLayout>
+                            <StackLayout BackgroundColor="White" Margin="0,0,0,0">
+                                <ImageButton Source="go.jpg" 
+                                             Clicked="ImageButton_Clicked" 
+                                             Aspect="AspectFill"
+                                             Margin="5,5,5,-6"/>
+                                <Grid BackgroundColor="White" Margin="0,0,0,5">
+                                    <Label Text="Like" 
+                                            VerticalOptions="EndAndExpand" 
+                                            HorizontalOptions="Start"
+                                            HorizontalTextAlignment="Center"
+                                            VerticalTextAlignment="Center"
+                                            FontSize="17"
+                                            TextColor="#5a5a5a"
+                                            HeightRequest="40"
+                                            WidthRequest="127"
+                                            BackgroundColor="#d9d9d9"
+                                            Margin="5,0,5,0"/>
+                                    <Label Text="Time" 
+                                            VerticalOptions="EndAndExpand"
+                                            HorizontalOptions="Center"
+                                            HorizontalTextAlignment="Center"
+                                            VerticalTextAlignment="Center"
+                                            FontSize="17"
+                                            TextColor="#5a5a5a"
+                                            HeightRequest="40"
+                                            WidthRequest="128"
+                                            BackgroundColor="#d9d9d9"/>
+                                    <Button Text="Add" 
+                                            VerticalOptions="EndAndExpand"
+                                            HorizontalOptions="End"
+                                            TextTransform="None"
+                                            FontSize="17"
+                                            TextColor="#5a5a5a"
+                                            HeightRequest="40"
+                                            WidthRequest="127"
+                                            BackgroundColor="#d9d9d9"
+                                            Clicked="BClicked2"
+                                            Margin="5,-6,5,0"/>
+                                </Grid>
+                            </StackLayout>
+                            <StackLayout BackgroundColor="White" Margin="0,0,0,5">
+                                <ImageButton Source="gu.jpg" 
+                                             Clicked="ImageButton_Clicked" 
+                                             Aspect="AspectFill"
+                                             Margin="5,5,5,-6"/>
+                                <Grid BackgroundColor="White" Margin="0,0,0,5">
+                                    <Label Text="Like" 
+                                            VerticalOptions="EndAndExpand" 
+                                            HorizontalOptions="Start"
+                                            HorizontalTextAlignment="Center"
+                                            VerticalTextAlignment="Center"
+                                            FontSize="17"
+                                            TextColor="#5a5a5a"
+                                            HeightRequest="40"
+                                            WidthRequest="127"
+                                            BackgroundColor="#d9d9d9"
+                                            Margin="5,0,5,0"/>
+                                    <Label Text="Time" 
+                                            VerticalOptions="EndAndExpand"
+                                            HorizontalOptions="Center"
+                                            HorizontalTextAlignment="Center"
+                                            VerticalTextAlignment="Center"
+                                            FontSize="17"
+                                            TextColor="#5a5a5a"
+                                            HeightRequest="40"
+                                            WidthRequest="128"
+                                            BackgroundColor="#d9d9d9"/>
+                                    <Button Text="Add" 
+                                            VerticalOptions="EndAndExpand"
+                                            HorizontalOptions="End"
+                                            TextTransform="None"
+                                            FontSize="17"
+                                            TextColor="#5a5a5a"
+                                            HeightRequest="40"
+                                            WidthRequest="127"
+                                            BackgroundColor="#d9d9d9"
+                                            Clicked="BClicked2"
+                                            Margin="5,-6,5,0"/>
+                                </Grid>
+                            </StackLayout>
+
+                        </StackLayout>
+                    </Grid>
                 </ScrollView>
             </StackLayout>
-            <Button Text="Home" VerticalOptions="EndAndExpand" HorizontalOptions="Start" Clicked="BClicked"></Button>
-            <Button Text="Generate" VerticalOptions="EndAndExpand" HorizontalOptions="End" Clicked="BClicked1"></Button>
-            <Button Text="Profile" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Clicked="BClicked2"></Button>
+            <Button Text="Home" 
+                    Clicked="BClicked"
+                    VerticalOptions="EndAndExpand" 
+                    HorizontalOptions="Start"
+                    BackgroundColor="#467fd7"
+                    CornerRadius="0"
+                    TextColor="White"
+                    TextTransform="None"
+                    FontSize="17"
+                    HeightRequest="50"
+                    WidthRequest="132"
+                    Margin="0,-6,0,0"/>
+            <Button Text="Profile" 
+                    Clicked="BClicked2"
+                    VerticalOptions="EndAndExpand" 
+                    HorizontalOptions="Center"
+                    BackgroundColor="#467fd7"
+                    CornerRadius="0"
+                    TextColor="White"
+                    TextTransform="None"
+                    FontSize="17"
+                    HeightRequest="50"
+                    WidthRequest="132"/>
+            <Button Text="Generate" 
+                    VerticalOptions="EndAndExpand" 
+                    HorizontalOptions="End" 
+                    Clicked="BClicked1"
+                    BackgroundColor="#467fd7"
+                    CornerRadius="0"
+                    TextColor="White"
+                    TextTransform="None"
+                    FontSize="17"
+                    HeightRequest="50"
+                    WidthRequest="132"
+                    Margin="0,-6,-2,0"/>
         </Grid>
+
     </ContentPage.Content>
+
 </ContentPage>
-   
+
+    

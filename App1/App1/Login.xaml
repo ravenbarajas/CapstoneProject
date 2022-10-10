@@ -28,7 +28,8 @@
                                 WidthRequest="300"
                                 HeightRequest="45"
                                 Margin="50,30,0,0"
-                                CornerRadius="25"/>
+                                CornerRadius="25"
+                                Clicked="Button_Clicked"/>
                 </StackLayout>
             </RelativeLayout>
             <Image Source="Bottom.Jpg" Margin="0,593,0,0"/>

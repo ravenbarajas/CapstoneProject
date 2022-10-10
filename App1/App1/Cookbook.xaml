@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="App1.Cookbook">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="This is you mealplanner"
+                   Padding="0,20,0,20"
+                   TextColor="Black"
+                   FontSize="20"
+                   HorizontalTextAlignment="Center"/>
+
+            <CarouselView x:Name="Carousel1" HeightRequest="200">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageButton Clicked="ImageButton_Clicked"  
+                                     CornerRadius="15"
+                                     Source="{Binding .}"
+                                     WidthRequest="320"
+                                     HeightRequest="180"
+                                     Aspect="AspectFill"/>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            
+            <CarouselView x:Name="Carousel2" HeightRequest="200">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <RelativeLayout>
+                            <ImageButton Clicked="ImageButton_Clicked"  
+                                     CornerRadius="15"
+                                     Source="{Binding .}"
+                                     WidthRequest="320"
+                                     HeightRequest="180"
+                                     Aspect="AspectFill"/>
+                        </RelativeLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+            <CarouselView x:Name="Carousel3" HeightRequest="180">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <RelativeLayout>
+                            <ImageButton Clicked="ImageButton_Clicked"  
+                                     CornerRadius="15"
+                                     Source="{Binding .}"
+                                     Margin="45,10,20,5"
+                                     WidthRequest="300"
+                                     HeightRequest="180"
+                                     Aspect="AspectFill"/>
+                        </RelativeLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+            <CarouselView x:Name="Carousel4" HeightRequest="180">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <RelativeLayout>
+                            <ImageButton Clicked="ImageButton_Clicked"  
+                                     CornerRadius="15"
+                                     Source="{Binding .}"
+                                     Margin="45,10,20,5"
+                                     WidthRequest="300"
+                                     HeightRequest="180"
+                                     Aspect="AspectFill"/>
+                        </RelativeLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

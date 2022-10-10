@@ -9,19 +9,22 @@
             <RelativeLayout>
                 <Image Source="TopSignup.Jpg"/>
                 <StackLayout HorizontalOptions="Center">
-                    <Entry Text=""
+                    <Entry  x:Name="Username"
+                            Text=""
                             Placeholder="Username"
                             TextColor="#1e4072"
                             BackgroundColor="#FFFFFF"
                             HorizontalTextAlignment="Center"
                             Margin="50,360,0,0"/>
-                    <Entry Text=""
+                    <Entry  x:Name="PhoneNum"
+                            Text=""
                             Placeholder="Phone Number"
                             TextColor="#1e4072"
                             BackgroundColor="#FFFFFF"
                             HorizontalTextAlignment="Center"
                             Margin="50,0,0,0"/>
-                    <Entry Text=""
+                    <Entry  x:Name="Password"
+                            Text=""
                             Placeholder="Password"
                             TextColor="#1e4072"
                             BackgroundColor="#FFFFFF"

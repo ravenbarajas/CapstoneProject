@@ -27722,7 +27722,10 @@ namespace App1.Droid
 			public const int TopWC = 2131165395;
 			
 			// aapt resource value: 0x7F0700D4
-			public const int UniversalBG = 2131165396;
+			public const int TopWCC = 2131165396;
+			
+			// aapt resource value: 0x7F0700D5
+			public const int UniversalBG = 2131165397;
 			
 			static Drawable()
 			{
