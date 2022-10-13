@@ -245,7 +245,7 @@
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                             </Grid.ColumnDefinitions>
-                            <Label Text="See more"
+                            <Label Text="See moreeee"
                                     FontSize="18"
                                     TextColor="#5a5a5a"
                                     BackgroundColor="White"
