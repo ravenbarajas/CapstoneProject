@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="App1.RecipePreference"
+             NavigationPage.HasNavigationBar="False">
+
+<StackLayout Background="#d9d9d9">
+                <Frame BackgroundColor="#3873F6">
+                    <Label Text="Shrimp Chef" 
+                            FontSize="30" 
+                            FontAttributes="Bold" 
+                            HorizontalTextAlignment="Center" 
+                            TextColor="White"/>
+                </Frame>
+
+            <Frame Margin="0,-6,0,0" Padding="40,10,40,10">
+                <Grid ColumnSpacing="0" RowSpacing="0">
+                    <Image Grid.Row="0" Grid.Column="0" 
+                           Source="choice.png"
+                           HorizontalOptions="Start"
+                           Aspect="AspectFit"
+                           BackgroundColor="White"
+                           WidthRequest="100"/>
+                <Label Grid.Row="0" Grid.Column="1"
+                           Text="Let's start with your preferences" 
+                           FontSize="26" 
+                           HorizontalTextAlignment="Start"
+                           VerticalTextAlignment="Center"
+                           TextColor="#3873F6"
+                           FontAttributes="Bold" 
+                           BackgroundColor="White"/>
+                </Grid>
+                </Frame>
+                <Frame Margin="0,-6,0,0" Padding="0,0,0,10">
+                    <Label Text="Please select your preferred recipe options" 
+                           TextColor="Black"
+                           FontSize="18" 
+                           FontAttributes="Bold" 
+                           BackgroundColor="White"
+                           HorizontalTextAlignment="Center"
+                           HorizontalOptions="Center"/>
+                </Frame>
+        <ScrollView>
+            <!--Filipino Household Essentials-->
+            <StackLayout Margin="0,0,0,5">
+                <Label Text="Filipino Household Essentials"
+                            FontSize="24"
+                            TextColor="White"
+                            FontAttributes="Bold" 
+                            BackgroundColor="#1e4072"
+                            HorizontalTextAlignment="Center"
+                            Padding="0,5,0,5"
+                            Margin="5,0,5,0"/>
+                <Grid Margin="5,0,5,0">
+                    <xct:Expander>
+                        <xct:Expander.Header>
+                            <Label Text="See more"
+                                   FontSize="20"
+                                   TextColor="#5a5a5a"
+                                   BackgroundColor="White"
+                                   Padding="5,5,5,5"
+                                   Margin="0,-5,0,0"/>
+                        </xct:Expander.Header>
+                        
+                        <Grid ColumnSpacing="0" RowSpacing="0" Padding="5,0,5,0" BackgroundColor="White">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="55" />
+                                <RowDefinition Height="55" />
+                                <RowDefinition Height="55" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="See more"
+                                    FontSize="18"
+                                    TextColor="#5a5a5a"
+                                    BackgroundColor="White"
+                                    Padding="5,5,5,5"/>
+
+                            <Button Grid.Row="0" Grid.Column="0"
+                                    x:Name="Water" 
+                                    Text="Water" 
+                                    Padding="5,0,5,0"
+                                    TextColor="White"
+                                    BackgroundColor="#3F9D2F"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+                            <Button Grid.Row="0" Grid.Column="1"
+                                    x:Name="Salt" 
+                                    Text="Salt" 
+                                    Padding="5,0,5,0"
+                                    TextColor="White"
+                                    BackgroundColor="#3F9D2F"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+                            <Button Grid.Row="0" Grid.Column="2"
+                                    x:Name="SoySauce" 
+                                    Text="Soy Sauce" 
+                                    Padding="5,0,5,0"
+                                    TextColor="White"
+                                    BackgroundColor="#3F9D2F"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+                            <Button Grid.Row="0" Grid.Column="3"
+                                    x:Name="Garlic" 
+                                    Text="Garlic" 
+                                    Padding="5,0,5,0"
+                                    TextColor="White"
+                                    BackgroundColor="#3F9D2F"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+
+                            <Button Grid.Row="1" Grid.Column="0"
+                                    x:Name="Onion" 
+                                    Text="Onion" 
+                                    Padding="5,0,5,0"
+                                    TextColor="White"
+                                    BackgroundColor="#3F9D2F"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+                            <Button Grid.Row="1" Grid.Column="1"
+                                    x:Name="BlackPepper" 
+                                    Text="Black Pepper" 
+                                    Padding="5,0,5,0"
+                                    TextColor="White"
+                                    BackgroundColor="#3F9D2F"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+                            <Button Grid.Row="1" Grid.Column="2"
+                                    x:Name="CookingOil" 
+                                    Text="Cooking Oil"
+                                    Padding="5,0,5,0"
+                                    TextColor="White"
+                                    BackgroundColor="#3F9D2F"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+                            <Button Grid.Row="1" Grid.Column="3"
+                                    x:Name="Sugar" 
+                                    Text="Sugar" 
+                                    Padding="5,0,5,0"
+                                    TextColor="White"
+                                    BackgroundColor="#3F9D2F"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+
+                            <Button Grid.Row="2" Grid.Column="0"
+                                    x:Name="Vinegar" 
+                                    Text="Vinegar" 
+                                    Padding="5,0,5,0"
+                                    TextColor="White"
+                                    BackgroundColor="#3F9D2F"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+                            <Button Grid.Row="2" Grid.Column="1"
+                                    x:Name="Tomato" 
+                                    Text="Tomato"
+                                    Padding="5,0,5,0"
+                                    TextColor="White"
+                                    BackgroundColor="#3F9D2F"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+                            <Button Grid.Row="2" Grid.Column="2"
+                                    x:Name="Calamansi" 
+                                    Text="Calamansi"
+                                    Padding="5,0,5,0"
+                                    TextColor="White"
+                                    BackgroundColor="#3F9D2F"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+                            <Button Grid.Row="2" Grid.Column="3"
+                                    x:Name="FishSauce" 
+                                    Text="Fish Sauce" 
+                                    Padding="5,0,5,0"
+                                    TextColor="White"
+                                    BackgroundColor="#3F9D2F"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+
+                        </Grid>
+                    </xct:Expander>
+                </Grid>
+                
+                <!--Condiments-->
+                <Label Text="Condiments"
+                            FontSize="24"
+                            TextColor="White"
+                            FontAttributes="Bold" 
+                            BackgroundColor="#1e4072"
+                            HorizontalTextAlignment="Center"
+                            Padding="0,5,0,5"
+                            Margin="5,0,5,0"/>
+                <Grid Margin="5,0,5,0">
+                    <xct:Expander>
+                        <xct:Expander.Header>
+                            <Label Text="See more"
+                                   FontSize="20"
+                                   TextColor="#5a5a5a"
+                                   BackgroundColor="White"
+                                   Padding="5,5,5,5"
+                                   Margin="0,-5,0,0"/>
+                        </xct:Expander.Header>
+
+                        <Grid ColumnSpacing="0" RowSpacing="0" Padding="5,0,5,0" BackgroundColor="White">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="55" />
+                                <RowDefinition Height="55" />
+                                <RowDefinition Height="55" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="See more"
+                                    FontSize="18"
+                                    TextColor="#5a5a5a"
+                                    BackgroundColor="White"
+                                    Padding="5,5,5,5"/>
+
+                            <Button Grid.Row="0" Grid.Column="0"
+                                    Text="Soy Sauce" 
+                                    Padding="5,0,5,0"
+                                    TextColor="Black"
+                                    BackgroundColor="White"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="2" 
+                                    BorderColor="#1e4072"/>
+                            <Button Grid.Row="0" Grid.Column="1"
+                                    Text="Vinegar" 
+                                    Padding="5,0,5,0"
+                                    TextColor="Black"
+                                    BackgroundColor="White"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+                            <Button Grid.Row="0" Grid.Column="2"
+                                    x:Name="BananaKetchup" 
+                                    Text="Banana Ketchup"
+                                    Padding="5,0,5,0"
+                                    TextColor="Black"
+                                    BackgroundColor="White"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+                            <Button Grid.Row="0" Grid.Column="3"
+                                    x:Name="TomatoKetchup" 
+                                    Text="Tomato Ketchup" 
+                                    Padding="5,0,5,0"
+                                    TextColor="Black"
+                                    BackgroundColor="White"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+
+                            <Button Grid.Row="1" Grid.Column="0"
+                                    x:Name="SrirachaSauce" 
+                                    Text="Sriracha Sauce" 
+                                    Padding="5,0,5,0"
+                                    TextColor="Black"
+                                    BackgroundColor="White"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+                            <Button Grid.Row="1" Grid.Column="1"
+                                    x:Name="Gravy" 
+                                    Text="Gravy" 
+                                    Padding="5,0,5,0"
+                                    TextColor="Black"
+                                    BackgroundColor="White"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+                            <Button Grid.Row="1" Grid.Column="2"
+                                    x:Name="Mustard" 
+                                    Text="Mustard" 
+                                    Padding="5,0,5,0"
+                                    TextColor="Black"
+                                    BackgroundColor="White"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+                            <Button Grid.Row="1" Grid.Column="3"
+                                    x:Name="HotSauce" 
+                                    Text="Hot Sauce" 
+                                    Padding="5,0,5,0"
+                                    TextColor="Black"
+                                    BackgroundColor="White"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+
+                            <Button Grid.Row="2" Grid.Column="0"
+                                    x:Name="BBQSauce" 
+                                    Text="BBQ Sauce" 
+                                    Padding="5,0,5,0"
+                                    TextColor="Black"
+                                    BackgroundColor="White"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+                            <Button Grid.Row="2" Grid.Column="1"
+                                    x:Name="TeriyakiSauce" 
+                                    Text="Teriyaki Sauce"
+                                    Padding="5,0,5,0"
+                                    TextColor="Black"
+                                    BackgroundColor="White"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+                            <Button Grid.Row="2" Grid.Column="2"
+                                    x:Name="ChiliPaste" 
+                                    Text="Chili Paste"
+                                    Padding="5,0,5,0"
+                                    TextColor="Black"
+                                    BackgroundColor="White"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+                            <Button Grid.Row="2" Grid.Column="3"
+                                    x:Name="RanchDressing" 
+                                    Text="Ranch Dressing"
+                                    Padding="5,0,5,0"
+                                    TextColor="Black"
+                                    BackgroundColor="White"
+                                    FontSize="18"
+                                    TextTransform="None"
+                                    FontAttributes="Bold"
+                                    BorderWidth="1" 
+                                    BorderColor="White"/>
+
+                        </Grid>
+                    </xct:Expander>
+                </Grid>
+
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

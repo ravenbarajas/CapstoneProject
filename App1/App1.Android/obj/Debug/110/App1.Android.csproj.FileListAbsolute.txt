@@ -2187,3 +2187,4 @@ C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.An
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\assets\System.Runtime.InteropServices.WindowsRuntime.dll
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\src\com\shrimp\chef\R.java
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\topwcc.jpg
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\choice.png

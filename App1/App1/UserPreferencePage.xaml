@@ -30,9 +30,7 @@
 
 
         <StackLayout Grid.Row="1">
-
             <Label Text="Meal Type (max of 1)" FontSize="18" FontAttributes="Bold" TextColor="#113FA4" HorizontalTextAlignment="Center"/>
-
         </StackLayout>
 
         <Grid Grid.Row="2">
@@ -49,9 +47,7 @@
         </Grid>
 
         <StackLayout Grid.Row="3">
-
             <Label Text="Meal Course (max of 4)" FontSize="18" FontAttributes="Bold" TextColor="#113FA4" HorizontalTextAlignment="Center"/>
-
         </StackLayout>
 
         <Grid Grid.Row="4">
@@ -70,9 +66,7 @@
         </Grid>
 
         <StackLayout Grid.Row="5">
-
             <Label Text="Recipe Difficulty (max of 1)" FontSize="18" FontAttributes="Bold" TextColor="#113FA4" HorizontalTextAlignment="Center"/>
-
         </StackLayout>
 
 
@@ -92,13 +86,10 @@
                     (5-8)" x:Name="Difficulty3" Clicked="Difficulty3_Clicked"/>
             <Button Grid.Column="3" Text="Advance
                     (8-10)" x:Name="Difficulty4" Clicked="Difficulty4_Clicked"/>
-
         </Grid>
 
         <StackLayout Grid.Row="7">
-
             <Label Text="Servings (max of 1)" FontSize="18" FontAttributes="Bold" TextColor="#113FA4" HorizontalTextAlignment="Center"/>
-
         </StackLayout>
 
         <Grid Grid.Row="8">
