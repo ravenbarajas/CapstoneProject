@@ -124,12 +124,10 @@ C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1\ob
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\GroupRecipe.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\JoinGroupRoom.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Login.xaml.g.cs
-C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Popular.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Privacy Policy.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\ProfilePage.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\RecipePage1.xaml.g.cs
-C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\SignUp.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\TabbedPage1.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\UserPreferencePage.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.cache
@@ -145,4 +143,6 @@ C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\ob
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\UserProperties.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\WelcomePage.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\RecipePreference.xaml.g.cs
-C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App1.csproj.AssemblyReference.cache
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\SignupPage.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\IntroPage.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Ingredient_Selection\AI_VegetablesFruit.xaml.g.cs

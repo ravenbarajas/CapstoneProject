@@ -8,13 +8,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App1.SignUp.xaml", "SignUp.xaml", typeof(global::App1.SignUp))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App1.Views.SignupPage.xaml", "Views/SignupPage.xaml", typeof(global::App1.Views.SignupPage))]
 
-namespace App1 {
+namespace App1.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("SignUp.xaml")]
-    public partial class SignUp : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\SignupPage.xaml")]
+    public partial class SignupPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Entry Username;
@@ -27,7 +27,7 @@ namespace App1 {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SignUp));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SignupPage));
             Username = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "Username");
             PhoneNum = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "PhoneNum");
             Password = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "Password");

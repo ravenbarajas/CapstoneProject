@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App1.MainPage.xaml", "MainPage.xaml", typeof(global::App1.MainPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App1.AI_Condiments.xaml", "AI_Condiments.xaml", typeof(global::App1.AI_Condiments))]
 
 namespace App1 {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("MainPage.xaml")]
-    public partial class MainPage : global::Xamarin.Forms.CarouselPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("AI_Condiments.xaml")]
+    public partial class AI_Condiments : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AI_Condiments));
         }
     }
 }

@@ -11,6 +11,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\Brands-Regular-400.otf" />
+    <None Remove="Fonts\Free-Regular-400.otf" />
+    <None Remove="Fonts\Free-Solid-900.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Fonts\Brands-Regular-400.otf" />
+    <EmbeddedResource Include="Fonts\Free-Regular-400.otf" />
+    <EmbeddedResource Include="Fonts\Free-Solid-900.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FirebaseAuthentication.net" Version="3.7.2" />
     <PackageReference Include="FirebaseDatabase.net" Version="4.1.0" />
     <PackageReference Include="Syncfusion.Xamarin.Expander" Version="20.2.0.46" />
     <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.5" />
@@ -18,12 +31,6 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
     <PackageReference Include="Xamarin.Forms.InputKit" Version="4.0.0" />
     <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="SignUp.xaml.cs">
-      <DependentUpon>SignUp.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -46,6 +53,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="GroupRecipe.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Ingredient_Selection\AI_VegetablesFruit.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="JoinGroupRoom.xaml">
@@ -72,9 +82,6 @@
     <EmbeddedResource Update="RecipePreference.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="SignUp.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Update="TabbedPage1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -82,6 +89,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="UserProperties.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\IntroPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SignupPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="WelcomePage.xaml">

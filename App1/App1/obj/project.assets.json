@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "FirebaseAuthentication.net/3.7.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Auth.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Auth.dll": {}
+        }
+      },
       "FirebaseDatabase.net/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -343,6 +356,18 @@
     }
   },
   "libraries": {
+    "FirebaseAuthentication.net/3.7.2": {
+      "sha512": "d0Zc0tiE7NutI/jMX/T81LU/rX3HVBH8vtvKTbIeN6BCIQ+wipstz7tm5MnIgAeh4ehqCHTiVuMOHztqfCVCBQ==",
+      "type": "package",
+      "path": "firebaseauthentication.net/3.7.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "firebaseauthentication.net.3.7.2.nupkg.sha512",
+        "firebaseauthentication.net.nuspec",
+        "lib/netstandard1.1/Firebase.Auth.dll"
+      ]
+    },
     "FirebaseDatabase.net/4.1.0": {
       "sha512": "tK+kihepwbd2fY8MZtNjApnUWW1B260E5z3lK9f2BPf1QCP4powhJml+pBhJ91KmtsKDlEoe94j5C5YWlSJISw==",
       "type": "package",
@@ -1898,6 +1923,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "FirebaseAuthentication.net >= 3.7.2",
       "FirebaseDatabase.net >= 4.1.0",
       "NETStandard.Library >= 2.0.3",
       "Syncfusion.Xamarin.Expander >= 20.2.0.46",
@@ -1955,6 +1981,10 @@
       "netstandard2.0": {
         "targetAlias": "netstandard2.0",
         "dependencies": {
+          "FirebaseAuthentication.net": {
+            "target": "Package",
+            "version": "[3.7.2, )"
+          },
           "FirebaseDatabase.net": {
             "target": "Package",
             "version": "[4.1.0, )"

@@ -21,5 +21,10 @@ namespace App1
         {
             await Navigation.PushAsync(new TabbedPage1());
         }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Views.SignupPage());
+        }
     }
     }
