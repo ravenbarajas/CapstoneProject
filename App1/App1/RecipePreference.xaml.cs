@@ -18,7 +18,7 @@ namespace App1
         }
         private async void VegetablesFruit_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Ingredient_Selection.AI_VegetablesFruit());
+            await Navigation.PushAsync(new IngredientSelectionPage());
         }
 
     }

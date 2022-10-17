@@ -12,11 +12,12 @@
           "FirebaseAuthentication.net": "3.7.2",
           "FirebaseDatabase.net": "4.1.0",
           "NETStandard.Library": "2.0.3",
+          "Plugin.FormsStackPanel": "1.0.3",
           "Syncfusion.Xamarin.Expander": "20.2.0.46",
           "Xamarin.CommunityToolkit": "2.0.5",
           "Xamarin.Essentials": "1.7.3",
           "Xamarin.Forms": "5.0.0.2515",
-          "Xamarin.Forms.InputKit": "4.0.0",
+          "Xamarin.Forms.InputKit": "4.1.5",
           "Xamarin.Forms.PancakeView": "2.3.0.759"
         },
         "runtime": {
@@ -75,6 +76,7 @@
           }
         }
       },
+      "Plugin.FormsStackPanel/1.0.3": {},
       "Syncfusion.Licensing/20.2.0.46": {
         "runtime": {
           "lib/netstandard2.0/Syncfusion.Licensing.dll": {
@@ -283,11 +285,11 @@
           }
         }
       },
-      "Xamarin.Forms.InputKit/4.0.0": {
+      "Xamarin.Forms.InputKit/4.1.5": {
         "runtime": {
           "lib/netstandard2.0/Plugin.InputKit.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.0.0"
+            "assemblyVersion": "4.1.5.0",
+            "fileVersion": "4.1.5.0"
           }
         }
       },
@@ -359,6 +361,13 @@
       "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "path": "newtonsoft.json/13.0.1",
       "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "Plugin.FormsStackPanel/1.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Kkn9GE/NKhY2YeLpjBBW7W25dDSQ/BXF2V16HaqJYSCIPUv4UwfhiNdMmb8kDnpgMED/URC4LWAxOPPZx1tzMg==",
+      "path": "plugin.formsstackpanel/1.0.3",
+      "hashPath": "plugin.formsstackpanel.1.0.3.nupkg.sha512"
     },
     "Syncfusion.Licensing/20.2.0.46": {
       "type": "package",
@@ -507,12 +516,12 @@
       "path": "xamarin.forms/5.0.0.2515",
       "hashPath": "xamarin.forms.5.0.0.2515.nupkg.sha512"
     },
-    "Xamarin.Forms.InputKit/4.0.0": {
+    "Xamarin.Forms.InputKit/4.1.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-YW/doZCkCB103B+zwIKfyBuRyGiMLgCPeIH/Ze+aFLSllYGfscYybgTbaSfqhiW2xYRd0T1ene3nU/8VwhT2wg==",
-      "path": "xamarin.forms.inputkit/4.0.0",
-      "hashPath": "xamarin.forms.inputkit.4.0.0.nupkg.sha512"
+      "sha512": "sha512-UD8sFOE2bUjsFveDBdTVvm1rjB8vs76s+2Ia64qAvZ8RZfWKv4pJfK1KmhTcEyy4OazPKFgDpj/HAm4lDq363w==",
+      "path": "xamarin.forms.inputkit/4.1.5",
+      "hashPath": "xamarin.forms.inputkit.4.1.5.nupkg.sha512"
     },
     "Xamarin.Forms.PancakeView/2.3.0.759": {
       "type": "package",

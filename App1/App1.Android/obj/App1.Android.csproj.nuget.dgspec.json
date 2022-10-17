@@ -124,6 +124,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Plugin.FormsStackPanel": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
             "Syncfusion.Xamarin.Expander": {
               "target": "Package",
               "version": "[20.2.0.46, )"
@@ -142,7 +146,7 @@
             },
             "Xamarin.Forms.InputKit": {
               "target": "Package",
-              "version": "[4.0.0, )"
+              "version": "[4.1.5, )"
             },
             "Xamarin.Forms.PancakeView": {
               "target": "Package",
@@ -159,7 +163,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
         }
       }
     }

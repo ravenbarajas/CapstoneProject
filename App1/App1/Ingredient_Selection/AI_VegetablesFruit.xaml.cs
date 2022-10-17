@@ -17,7 +17,7 @@ namespace App1.Ingredient_Selection
             InitializeComponent();
         }
 
-        private void VG_Clicked(object sender, EventArgs e)
+        private void highlightVGBTN()
         {
             VG00.BackgroundColor = Color.White;
             VG00.TextColor = Color.Black;
@@ -168,29 +168,8 @@ namespace App1.Ingredient_Selection
             VG92.TextColor = Color.Black;
             VG92.BorderWidth = 2;
             VG92.BorderColor = Color.FromRgb(30, 64, 114);
-
-            VG100.BackgroundColor = Color.White;
-            VG100.TextColor = Color.Black;
-            VG100.BorderWidth = 2;
-            VG100.BorderColor = Color.FromRgb(30, 64, 114);
-
-            VG101.BackgroundColor = Color.White;
-            VG101.TextColor = Color.Black;
-            VG101.BorderWidth = 2;
-            VG101.BorderColor = Color.FromRgb(30, 64, 114);
-
-            VG102.BackgroundColor = Color.White;
-            VG102.TextColor = Color.Black;
-            VG102.BorderWidth = 2;
-            VG102.BorderColor = Color.FromRgb(30, 64, 114);
-
-            var btn = (Button)sender;
-            btn.BackgroundColor = Color.FromRgb(63, 157, 47);
-            btn.TextColor = Color.White;
-            btn.BorderWidth = 0;
         }
-
-        private void FR_Clicked(object sender, EventArgs e)
+        private void highlightFRBTN()
         {
             FR00.BackgroundColor = Color.White;
             FR00.TextColor = Color.Black;
@@ -251,6 +230,20 @@ namespace App1.Ingredient_Selection
             VG32.TextColor = Color.Black;
             VG32.BorderWidth = 2;
             VG32.BorderColor = Color.FromRgb(30, 64, 114);
+        }
+        private void VG_Clicked(object sender, EventArgs e)
+        {
+           
+
+            var btn = (Button)sender;
+            btn.BackgroundColor = Color.FromRgb(63, 157, 47);
+            btn.TextColor = Color.White;
+            btn.BorderWidth = 0;
+        }
+
+        private void FR_Clicked(object sender, EventArgs e)
+        {
+            highlightFRBTN();
 
             var btn = (Button)sender;
             btn.BackgroundColor = Color.FromRgb(63, 157, 47);

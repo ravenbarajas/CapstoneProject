@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pq3f38eRaDAbRlB2/ln4CWtZ23woWIsAAmc2tlyWd6qW8ocwdFXjjLg2CFyhuPXUSOn3gd8jQcXsJ+ASqRozKA==",
+  "dgSpecHash": "TcROb69zQM4BocWJLqrj5bWooWN6dceskxbRCVxzDvlMygTTV4J0QQl+Y5Nv/YXam838SSCdziSOkgMYO2e+/Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Raven Barajas\\source\\repos\\ravenbarajas057\\CapstoneProject\\App1\\App1.Android\\App1.Android.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\plugin.formsstackpanel\\1.0.3\\plugin.formsstackpanel.1.0.3.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\syncfusion.licensing\\20.2.0.46\\syncfusion.licensing.20.2.0.46.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\syncfusion.xamarin.core\\20.2.0.46\\syncfusion.xamarin.core.20.2.0.46.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\syncfusion.xamarin.expander\\20.2.0.46\\syncfusion.xamarin.expander.20.2.0.46.nupkg.sha512",
@@ -117,7 +118,7 @@
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.communitytoolkit\\2.0.5\\xamarin.communitytoolkit.2.0.5.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.essentials\\1.7.3\\xamarin.essentials.1.7.3.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms\\5.0.0.2515\\xamarin.forms.5.0.0.2515.nupkg.sha512",
-    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms.inputkit\\4.0.0\\xamarin.forms.inputkit.4.0.0.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms.inputkit\\4.1.5\\xamarin.forms.inputkit.4.1.5.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.2\\xamarin.google.android.material.1.4.0.2.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"

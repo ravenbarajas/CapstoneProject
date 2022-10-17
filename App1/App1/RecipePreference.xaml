@@ -23,7 +23,7 @@
                            BackgroundColor="White"
                            WidthRequest="100"/>
                 <Label Grid.Row="0" Grid.Column="1"
-                           Text="Let's start with your preferences" 
+                           Text="What food recipe do you prefer?" 
                            FontSize="26" 
                            HorizontalTextAlignment="Start"
                            VerticalTextAlignment="Center"
@@ -32,7 +32,7 @@
                            BackgroundColor="White"/>
             </Grid>
         </Frame>
-        <Frame Margin="0,-6,0,0" Padding="0,0,0,10">
+        <Frame Margin="0,-6,0,0" Padding="0,5,0,5">
             <Label Text="Please select your preferred recipe options" 
                            TextColor="Black"
                            FontSize="18" 
