@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.HomePage"
+             NavigationPage.HasNavigationBar="False">
+    
+    <ContentPage.Content>
+        <Grid BackgroundColor="Black">
+            <StackLayout BackgroundColor="White" Margin="0,0,0,0">
+                <Frame BackgroundColor="#3873F6" Margin="0,0,0,-6">
+                    <Label Text="Shrimp Chef" 
+                           FontSize="30" 
+                           FontAttributes="Bold" 
+                           HorizontalTextAlignment="Center" 
+                           TextColor="White"/>
+                </Frame>
+                <StackLayout Padding="10,10,10,10" Margin="0,0,0,-6" BackgroundColor="White">
+                    <SearchBar Placeholder="Search food recipes"
+                           TextColor="#7F8487"
+                           BackgroundColor="#e6e6e6"/>
+                </StackLayout>
+                <ScrollView>
+                    <StackLayout>
+                        <Label Text="Popular" 
+                               FontSize="30" 
+                               FontAttributes="Bold" 
+                               HorizontalTextAlignment="Start" 
+                               TextColor="Black"
+                               BackgroundColor="white"
+                               Padding="10,5,0,5"
+                               Margin="0,0,0,0"/>
+                        <Button Text="See all" 
+                                FontSize="18" 
+                                FontAttributes="Bold"
+                                HorizontalOptions="End"
+                                TextTransform="None"
+                                TextColor="#3873F6"
+                                BackgroundColor="White"
+                                Margin="0,-52,0,0"
+                                Padding="0,0,0,0"
+                                HeightRequest="41"
+                                Clicked="PopularPage_Clicked"/>
+                        <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never" Margin="0,-1,0,5">
+                            <Grid BackgroundColor="white" Padding="10,5,5,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="300" />
+                                    <ColumnDefinition Width="300" />
+                                    <ColumnDefinition Width="300" />
+                                    <ColumnDefinition Width="300" />
+                                    <ColumnDefinition Width="300" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="200" />
+                                </Grid.RowDefinitions>
+
+                                <ImageButton Grid.Row="0" Grid.Column="0"
+                                 Source="ga.jpg"
+                                 Aspect="AspectFill"
+                                 BackgroundColor="#7F8487"
+                                 CornerRadius="10"/>
+                                <ImageButton Grid.Row="0" Grid.Column="1"
+                                         Source="ge.jpg"
+                                         Aspect="AspectFill"
+                                         BackgroundColor="#7F8487"
+                                         CornerRadius="10"/>
+                                <ImageButton Grid.Row="0" Grid.Column="2"
+                                         Source="gi.jpg"
+                                         Aspect="AspectFill"
+                                         BackgroundColor="#7F8487"
+                                         CornerRadius="10"/>
+                                <ImageButton Grid.Row="0" Grid.Column="3"
+                                         Source="go.jpg"
+                                         Aspect="AspectFill"
+                                         BackgroundColor="#7F8487"
+                                         CornerRadius="10"/>
+                                <ImageButton Grid.Row="0" Grid.Column="4"
+                                     Source="gu.jpg"
+                                     Aspect="AspectFill"
+                                     BackgroundColor="#7F8487"
+                                     CornerRadius="10"/>
+
+                            </Grid>
+                        </ScrollView>
+
+                        <Label Text="Favorites" 
+                               FontSize="30" 
+                               FontAttributes="Bold" 
+                               HorizontalTextAlignment="Start" 
+                               TextColor="Black"
+                               BackgroundColor="white"
+                               Padding="10,5,0,5"
+                               Margin="0,-6,0,0"/>
+                        <Button Text="See all" 
+                                FontSize="18" 
+                                FontAttributes="Bold"
+                                HorizontalOptions="End"
+                                TextTransform="None"
+                                TextColor="#3873F6"
+                                BackgroundColor="White"
+                                Margin="0,-52,0,0"
+                                Padding="0,0,0,0"
+                                HeightRequest="41"
+                                Clicked="FavoritePage_Clicked"/>
+                        <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never" Margin="0,-1,0,-6">
+                            <Grid BackgroundColor="white" Padding="10,5,5,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="250" />
+                                    <ColumnDefinition Width="250" />
+                                    <ColumnDefinition Width="250" />
+                                    <ColumnDefinition Width="250" />
+                                    <ColumnDefinition Width="250" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="150" />
+                                </Grid.RowDefinitions>
+
+                                <ImageButton Grid.Row="0" Grid.Column="0"
+                                 Source="ha.jpg"
+                                 Aspect="AspectFill"
+                                 BackgroundColor="#7F8487"
+                                 CornerRadius="10"/>
+                                <ImageButton Grid.Row="0" Grid.Column="1"
+                                         Source="he.jpg"
+                                         Aspect="AspectFill"
+                                         BackgroundColor="#7F8487"
+                                         CornerRadius="10"/>
+                                <ImageButton Grid.Row="0" Grid.Column="2"
+                                         Source="hi.jpg"
+                                         Aspect="AspectFill"
+                                         BackgroundColor="#7F8487"
+                                         CornerRadius="10"/>
+                                <ImageButton Grid.Row="0" Grid.Column="3"
+                                         Source="ho.jpg"
+                                         Aspect="AspectFill"
+                                         BackgroundColor="#7F8487"
+                                         CornerRadius="10"/>
+                                <ImageButton Grid.Row="0" Grid.Column="4"
+                                     Source="hu.jpg"
+                                     Aspect="AspectFill"
+                                     BackgroundColor="#7F8487"
+                                     CornerRadius="10"/>
+
+                            </Grid>
+                        </ScrollView>
+
+                        <Label Text="Discover" 
+                               FontSize="30" 
+                               FontAttributes="Bold" 
+                               HorizontalTextAlignment="Start" 
+                               TextColor="Black"
+                               BackgroundColor="white"
+                               Padding="10,5,0,5"
+                               Margin="0,0,0,0"/>
+                        <Button Text="See all" 
+                                FontSize="18" 
+                                FontAttributes="Bold"
+                                HorizontalOptions="End"
+                                TextTransform="None"
+                                TextColor="#3873F6"
+                                BackgroundColor="White"
+                                Margin="0,-52,0,0"
+                                Padding="0,0,0,0"
+                                HeightRequest="41"
+                                Clicked="DiscoverPage_Clicked"/>
+                        <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never" Margin="0,-1,0,0">
+                            <Grid BackgroundColor="white" Padding="10,5,5,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="250" />
+                                    <ColumnDefinition Width="250" />
+                                    <ColumnDefinition Width="250" />
+                                    <ColumnDefinition Width="250" />
+                                    <ColumnDefinition Width="250" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="150" />
+                                </Grid.RowDefinitions>
+
+                                <ImageButton Grid.Row="0" Grid.Column="0"
+                                             Source="gi.jpg"
+                                             Aspect="AspectFill"
+                                             BackgroundColor="#7F8487"
+                                             CornerRadius="10"/>
+                                <ImageButton Grid.Row="0" Grid.Column="1"
+                                             Source="go.jpg"
+                                             Aspect="AspectFill"
+                                             BackgroundColor="#7F8487"
+                                             CornerRadius="10"/>
+                                <ImageButton Grid.Row="0" Grid.Column="2"
+                                             Source="gu.jpg"
+                                             Aspect="AspectFill"
+                                             BackgroundColor="#7F8487"
+                                             CornerRadius="10"/>
+                                <ImageButton Grid.Row="0" Grid.Column="3"
+                                             Source="ha.jpg"
+                                             Aspect="AspectFill"
+                                             BackgroundColor="#7F8487"
+                                             CornerRadius="10"/>
+                                <ImageButton Grid.Row="0" Grid.Column="4"
+                                             Source="he.jpg"
+                                             Aspect="AspectFill"
+                                             BackgroundColor="#7F8487"
+                                             CornerRadius="10"/>
+                            </Grid>
+                        </ScrollView>
+
+                    </StackLayout>
+            </ScrollView>
+
+                <ImageButton Source="Home.jpg"
+                             HorizontalOptions="Start"
+                             VerticalOptions="End"
+                             BackgroundColor="#3873F6"
+                             HeightRequest="55"
+                             WidthRequest="131"
+                             Padding="0,10,0,10"
+                             Margin="0,-6,-1,-55"
+                             CornerRadius="0"
+                             Clicked="Home_Clicked"/>
+                <ImageButton Source="User.jpg"
+                             HorizontalOptions="Center"
+                             VerticalOptions="End"
+                             BackgroundColor="#3873F6"
+                             HeightRequest="55"
+                             WidthRequest="132"
+                             Padding="0,10,0,11"
+                             Margin="0,-6,-1,-55"
+                             CornerRadius="0"
+                             Clicked="UserProfile_Clicked"/>
+                <ImageButton Source="Search.jpg"
+                             HorizontalOptions="End"
+                             VerticalOptions="End"
+                             BackgroundColor="#3873F6"
+                             HeightRequest="55"
+                             WidthRequest="131"
+                             Padding="0,10,0,11"
+                             Margin="0,-6,-1,0"
+                             CornerRadius="0"
+                             Clicked="GenerateRecipe_Clicked"/>
+                
+            </StackLayout>
+ 
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

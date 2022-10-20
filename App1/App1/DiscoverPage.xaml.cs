@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace App1
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TabbedPage1 : TabbedPage
+    public partial class DiscoverPage : ContentPage
     {
-        public TabbedPage1()
+        public DiscoverPage()
         {
             InitializeComponent();
         }

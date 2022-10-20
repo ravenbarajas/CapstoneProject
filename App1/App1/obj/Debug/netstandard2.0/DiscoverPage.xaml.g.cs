@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App1.TabbedPage1.xaml", "TabbedPage1.xaml", typeof(global::App1.TabbedPage1))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App1.DiscoverPage.xaml", "DiscoverPage.xaml", typeof(global::App1.DiscoverPage))]
 
 namespace App1 {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("TabbedPage1.xaml")]
-    public partial class TabbedPage1 : global::Xamarin.Forms.TabbedPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("DiscoverPage.xaml")]
+    public partial class DiscoverPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(TabbedPage1));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(DiscoverPage));
         }
     }
 }

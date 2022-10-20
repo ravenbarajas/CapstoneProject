@@ -2193,3 +2193,9 @@ C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.An
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\assets\System.Runtime.Serialization.Primitives.dll
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\assets\System.Threading.dll
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\assets\System.Threading.Tasks.dll
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\search.png
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\user.png
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\home.png
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\view.jpg
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\heart.jpg
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\time.jpg
