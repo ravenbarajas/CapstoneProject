@@ -11,18 +11,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Fonts\Brands-Regular-400.otf" />
-    <None Remove="Fonts\Free-Regular-400.otf" />
-    <None Remove="Fonts\Free-Solid-900.otf" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Fonts\Brands-Regular-400.otf" />
-    <EmbeddedResource Include="Fonts\Free-Regular-400.otf" />
-    <EmbeddedResource Include="Fonts\Free-Solid-900.otf" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="FirebaseAuthentication.net" Version="3.7.2" />
     <PackageReference Include="FirebaseDatabase.net" Version="4.1.0" />
     <PackageReference Include="Plugin.FormsStackPanel" Version="1.0.3" />
@@ -62,12 +50,6 @@
     <EmbeddedResource Update="IngredientSelectionPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Ingredient_Selection\AI_DairyProducts.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Ingredient_Selection\AI_VegetablesFruit.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Update="JoinGroupRoom.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -80,10 +62,10 @@
     <EmbeddedResource Update="PopularPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Privacy Policy.xaml">
+    <EmbeddedResource Update="PreferenceSelectionPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="ProfilePage.xaml">
+    <EmbeddedResource Update="Privacy Policy.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="RecipePage1.xaml">
@@ -93,6 +75,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="UserPreferencePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserProfilePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="UserProperties.xaml">

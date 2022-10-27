@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-             xmlns:fontAwesome="clr-namespace:FontAwesome" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:local="clr-namespace:App1"
              x:Class="App1.IngredientSelectionPage"
              NavigationPage.HasNavigationBar="False">
 
@@ -3823,6 +3822,9 @@
                         </Grid>
                     </xct:Expander>
                 </Grid>
+
+                <Button Text="Next"
+                        BackgroundColor="White"/>
 
             </StackLayout>
         </ScrollView>

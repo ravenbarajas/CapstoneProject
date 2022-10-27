@@ -7,14 +7,18 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App1.Ingredient_Selection
+namespace App1
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AI_DairyProducts : ContentPage
+    public partial class PreferenceSelectionPage : ContentPage
     {
-        public AI_DairyProducts()
+        public PreferenceSelectionPage()
         {
             InitializeComponent();
+        }
+        private async void Next_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new IngredientSelectionPage());
         }
     }
 }

@@ -16,7 +16,7 @@ namespace App1
         {
             InitializeComponent();
         }
-        private async void VegetablesFruit_Clicked(object sender, EventArgs e)
+        private async void IngredientSelection_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new IngredientSelectionPage());
         }

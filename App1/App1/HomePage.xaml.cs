@@ -23,7 +23,7 @@ namespace App1
         }
         private async void UserProfile_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ProfilePage());
+            await Navigation.PushAsync(new UserProfilePage());
         }
         private async void GenerateRecipe_Clicked(object sender, EventArgs e)
         {

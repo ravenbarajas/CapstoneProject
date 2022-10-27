@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App1.Ingredient_Selection.AI_DairyProducts.xaml", "Ingredient_Selection/AI_DairyProducts.xaml", typeof(global::App1.Ingredient_Selection.AI_DairyProducts))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App1.UserProfilePage.xaml", "UserProfilePage.xaml", typeof(global::App1.UserProfilePage))]
 
-namespace App1.Ingredient_Selection {
+namespace App1 {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Ingredient_Selection\\AI_DairyProducts.xaml")]
-    public partial class AI_DairyProducts : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("UserProfilePage.xaml")]
+    public partial class UserProfilePage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AI_DairyProducts));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(UserProfilePage));
         }
     }
 }

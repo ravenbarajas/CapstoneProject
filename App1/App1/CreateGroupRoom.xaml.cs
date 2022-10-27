@@ -19,7 +19,11 @@ namespace App1
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new UserPreferencePage());
+            await Navigation.PushAsync(new RecipePreference());
+        }
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new JoinGroupRoom());
         }
     }
 }
