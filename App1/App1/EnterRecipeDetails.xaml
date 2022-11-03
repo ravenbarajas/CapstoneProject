@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="App1.EnterRecipeDetails"
+             NavigationPage.HasNavigationBar="False">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="White" Padding="5,10,5,10">
+                <Label Text="Enter recipe details" 
+                       FontSize="26" 
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       TextColor="#3873F6"
+                       FontAttributes="Bold" 
+                       BackgroundColor="White"
+                       Padding="5,0,5,0"/>
+            </Frame>
+            
+            <ScrollView>
+                <Grid Padding="5,0,5,0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="45"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="45"/>
+                        <RowDefinition Height="50"/>
+                        
+                        <RowDefinition Height="45"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="45"/>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                    </Grid.ColumnDefinitions>
+
+                    <!--Recipe Name-->
+                    <Label Grid.Row="0"
+                           Text="Name"
+                           TextColor="Black"
+                           Padding="5,0,5,0"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center"
+                           Margin="0,-10,0,0"/>
+                    <Entry Grid.Row="1"
+                           Placeholder="Name your recipe"
+                           Margin="0,-10,0,0"/>
+                    <!--Recipe Description-->
+                    <Label Grid.Row="2"
+                           Text="Description"
+                           TextColor="Black"
+                           Padding="5,0,5,0"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center"
+                           Margin="0,-10,0,0"/>
+                    <Editor Grid.Row="3"
+                            Placeholder="Describe your recipe"
+                            Margin="0,-10,0,0"/>
+                    
+                    <!--Ingredient Header-->
+                    <Label Grid.Row="4" 
+                           Text="Add Ingredient"
+                           TextColor="White"
+                           BackgroundColor="#3873F6"
+                           HorizontalTextAlignment="Center"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="Center"
+                           Padding="0,5,0,5"
+                           Margin="-5,0,-5,0"
+                           FontSize="Large"
+                           FontAttributes="Bold"/>
+                    <!--Ingredient Name-->
+                    <Label Grid.Row="5"
+                           Text="Name"
+                           TextColor="Black"
+                           Padding="5,0,5,0"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center"
+                           Margin="0,0,0,0"/>
+                    <Entry Grid.Row="6"
+                           Placeholder="Enter Ingredient Name"
+                           HorizontalOptions="FillAndExpand"/>
+                    <!--Ingredient Name-->
+                    <Label Grid.Row="7"
+                           Text="Quantity"
+                           TextColor="Black"
+                           Padding="5,0,5,0"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center"/>
+                    <Entry Grid.Row="8"
+                           Placeholder="Enter Quantity"
+                           HorizontalOptions="FillAndExpand"/>
+                    <Button Grid.Row="9"
+                            Text="Add Ingredient"
+                            TextColor="White"
+                            FontSize="Medium"
+                            FontAttributes="Bold"
+                            BackgroundColor="#ce93d8"
+                            Margin="55,0,55,5"
+                            CornerRadius="30"/>
+
+                </Grid>
+
+            </ScrollView>
+            
+            <Button Text="Next"
+                    TextColor="White"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    BackgroundColor="#3873F6"
+                    Margin="15,0,15,5"
+                    CornerRadius="30"
+                    Clicked="Next_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

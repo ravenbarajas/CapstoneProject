@@ -25,5 +25,9 @@ namespace App1
         {
             await Navigation.PushAsync(new MealPlanner());
         }
+        private async void CreateRecipe_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CreateRecipePage());
+        }
     }
 }

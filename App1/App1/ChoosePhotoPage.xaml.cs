@@ -10,16 +10,22 @@ using Xamarin.Forms.Xaml;
 namespace App1
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class RecipePreference : ContentPage
+    public partial class ChoosePhotoPage : ContentView
     {
-        public RecipePreference()
+        public ChoosePhotoPage()
         {
             InitializeComponent();
         }
-        private async void IngredientSelection_Clicked(object sender, EventArgs e)
+        public string Text
         {
-            await Navigation.PushAsync(new IngredientSelectionPage());
+            get
+            {
+                return lblText.Text;
+            }
+            set
+            {
+                lblText.Text = value;
+            }
         }
-
     }
 }

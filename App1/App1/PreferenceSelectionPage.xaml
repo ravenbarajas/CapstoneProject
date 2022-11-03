@@ -386,8 +386,14 @@
                 </Grid>
 
                 <Button Text="Next"
-                        BackgroundColor="White"
-                        Clicked="Next_Clicked"/>
+                    TextColor="White"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    BackgroundColor="#3873F6"
+                    Margin="15,0,15,5"
+                    CornerRadius="30"
+                    Clicked="Next_Clicked"/>
+                
             </StackLayout>
         </ScrollView>
 

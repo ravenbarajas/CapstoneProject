@@ -27689,49 +27689,64 @@ namespace App1.Droid
 			public const int re = 2131165384;
 			
 			// aapt resource value: 0x7F0700C9
-			public const int ri = 2131165385;
+			public const int Recipe1 = 2131165385;
 			
 			// aapt resource value: 0x7F0700CA
-			public const int Search = 2131165386;
+			public const int Recipe2 = 2131165386;
 			
 			// aapt resource value: 0x7F0700CB
-			public const int test_custom_background = 2131165387;
+			public const int Recipe3 = 2131165387;
 			
 			// aapt resource value: 0x7F0700CC
-			public const int time = 2131165388;
+			public const int Recipe4 = 2131165388;
 			
 			// aapt resource value: 0x7F0700CD
-			public const int tooltip_frame_dark = 2131165389;
+			public const int Recipe5 = 2131165389;
 			
 			// aapt resource value: 0x7F0700CE
-			public const int tooltip_frame_light = 2131165390;
+			public const int ri = 2131165390;
 			
 			// aapt resource value: 0x7F0700CF
-			public const int TopLogin = 2131165391;
+			public const int Search = 2131165391;
 			
 			// aapt resource value: 0x7F0700D0
-			public const int TopPrivacyPolicy = 2131165392;
+			public const int test_custom_background = 2131165392;
 			
 			// aapt resource value: 0x7F0700D1
-			public const int TopSignup = 2131165393;
+			public const int time = 2131165393;
 			
 			// aapt resource value: 0x7F0700D2
-			public const int TopTM = 2131165394;
+			public const int tooltip_frame_dark = 2131165394;
 			
 			// aapt resource value: 0x7F0700D3
-			public const int TopWC = 2131165395;
+			public const int tooltip_frame_light = 2131165395;
 			
 			// aapt resource value: 0x7F0700D4
-			public const int TopWCC = 2131165396;
+			public const int TopLogin = 2131165396;
 			
 			// aapt resource value: 0x7F0700D5
-			public const int UniversalBG = 2131165397;
+			public const int TopPrivacyPolicy = 2131165397;
 			
 			// aapt resource value: 0x7F0700D6
-			public const int User = 2131165398;
+			public const int TopSignup = 2131165398;
 			
 			// aapt resource value: 0x7F0700D7
-			public const int view = 2131165399;
+			public const int TopTM = 2131165399;
+			
+			// aapt resource value: 0x7F0700D8
+			public const int TopWC = 2131165400;
+			
+			// aapt resource value: 0x7F0700D9
+			public const int TopWCC = 2131165401;
+			
+			// aapt resource value: 0x7F0700DA
+			public const int UniversalBG = 2131165402;
+			
+			// aapt resource value: 0x7F0700DB
+			public const int User = 2131165403;
+			
+			// aapt resource value: 0x7F0700DC
+			public const int view = 2131165404;
 			
 			static Drawable()
 			{

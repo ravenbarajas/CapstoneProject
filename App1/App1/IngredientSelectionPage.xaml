@@ -3824,7 +3824,12 @@
                 </Grid>
 
                 <Button Text="Next"
-                        BackgroundColor="White"/>
+                    TextColor="White"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    BackgroundColor="#3873F6"
+                    Margin="15,0,15,5"
+                    CornerRadius="30"/>
 
             </StackLayout>
         </ScrollView>

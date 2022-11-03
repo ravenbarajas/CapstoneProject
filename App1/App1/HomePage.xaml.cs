@@ -41,5 +41,9 @@ namespace App1
         {
             await Navigation.PushAsync(new FavoritePage());
         }
+        private async void Recipe_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RecipePage1());
+        }
     }
 }
