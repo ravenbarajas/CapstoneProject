@@ -1,4 +1,7 @@
-﻿using System;
+﻿using App1.Views.RecipeGeneration;
+using App1.Views.RecipePresentation;
+using App1.Views.UserManagement;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

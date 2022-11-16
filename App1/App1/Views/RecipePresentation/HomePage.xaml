@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.RecipePresentation.HomePage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <StackLayout Padding="15,5,15,5" Margin="0,0,0,-6" BackgroundColor="White" VerticalOptions="Start">
+            <Label Text="What do you want cook for today?"
+                           FontSize="Large"
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           Padding="0,5,0,0"/>
+
+            <SearchBar Placeholder="Search food recipes"
+                               TextColor="#7F8487"
+                               BackgroundColor="#e6e6e6"
+                               HeightRequest="40"/>
+        </StackLayout>
+
+        <Grid BackgroundColor="Green" Padding="5,5,5,5">
+            <ImageButton Source="rcp1.jpg" 
+                         Aspect="AspectFit"/>
+            <StackLayout HorizontalOptions="FillAndExpand" 
+                         BackgroundColor="red" 
+                         Opacity=".6" 
+                         HeightRequest="20"
+                         Padding="10,5,10,5">
+            </StackLayout>
+            <Label XAlign="Center" 
+                       TextColor="Black" 
+                       VerticalTextAlignment="Center" 
+                       VerticalOptions="Start"
+                       HorizontalOptions="StartAndExpand" 
+                       Text="Sample Txt"/>
+        </Grid>
+
+        <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never" Margin="0,-6,0,0" MinimumHeightRequest="55">
+            <Grid BackgroundColor="#E6E6E6" Padding="15,5,15,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="45" />
+                </Grid.RowDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0"
+                                        x:Name="All"
+                                        Text="All"
+                                        FontSize="16"
+                                        TextColor="White"
+                                        TextTransform="None"
+                                        BackgroundColor="#7F8487"
+                                        CornerRadius="10"
+                                        Padding="15,0,15,0"/>
+                <Button Grid.Row="0" Grid.Column="1"
+                                        Text="Popular"
+                                        x:Name="Popular"
+                                        FontSize="16"
+                                        TextColor="White"
+                                        TextTransform="None"
+                                        BackgroundColor="#7F8487"
+                                        CornerRadius="10"
+                                        Padding="15,0,15,0"/>
+                <Button Grid.Row="0" Grid.Column="2"
+                                        Text="Favorites"
+                                        x:Name="Favorites"
+                                        FontSize="16"
+                                        TextColor="White"
+                                        TextTransform="None"
+                                        BackgroundColor="#7F8487"
+                                        CornerRadius="10"
+                                        Padding="15,0,15,0"/>
+
+            </Grid>
+        </ScrollView>
+
+        <Grid VerticalOptions="EndAndExpand">
+            <ImageButton Source="Home.jpg"
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="End"
+                                    BackgroundColor="#3873F6"
+                                    HeightRequest="55"
+                                    WidthRequest="131"
+                                    Padding="0,12,0,10"
+                                    Margin="0,-6,-1,-0"
+                                    CornerRadius="0"
+                                    Clicked="Home_Clicked"/>
+            <ImageButton Source="User.jpg"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="End"
+                                    BackgroundColor="#3873F6"
+                                    HeightRequest="55"
+                                    WidthRequest="132"
+                                    Padding="0,12,0,10"
+                                    Margin="0,-6,-1,0"
+                                    CornerRadius="0"
+                                    Clicked="UserProfile_Clicked"/>
+            <ImageButton Source="Search.jpg"
+                                HorizontalOptions="End"
+                                VerticalOptions="End"
+                                BackgroundColor="#3873F6"
+                                HeightRequest="55"
+                                WidthRequest="131"
+                                Padding="0,12,0,10"
+                                Margin="0,-6,-1,0"
+                                CornerRadius="0"
+                                Clicked="GenerateRecipe_Clicked"/>
+        </Grid>
+
+    </StackLayout>
+</ContentPage>

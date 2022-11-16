@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.RecipeManagement.ChoosePhotoPage">
+
+    <ContentView.Content>
+        <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="Auto">
+            <Label x:Name="lblText" 
+                   TextColor="Black"
+                   Grid.Row="1"  
+                   HorizontalOptions="Center"  
+                   FontSize="14"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>
