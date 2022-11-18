@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            mc:Ignorable="d"
+            Title="Homemade Italian Pasta"
+            x:Class="App1.Views.RecipePresentation.rcp5">
+    
+    <ContentPage Title="Ingredients">
+        <StackLayout BackgroundColor="White">
+            <Image Source="rcp5.jpg"/>
+            <Frame BackgroundColor="White">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" TextColor="Black">Ingredient</Label>
+                    <Label Grid.Row="0" Grid.Column="1" TextColor="Black">Quantity</Label>
+                </Grid>
+            </Frame>
+
+            <Frame BackgroundColor="White">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Text="Kimchi" TextColor="Black"></Label>
+                    <Label Grid.Row="0" Grid.Column="1" Text="100 Grams" TextColor="Black"></Label>
+                    <Label Grid.Row="1" Grid.Column="0" Text="Scallions" TextColor="Black"></Label>
+                    <Label Grid.Row="1" Grid.Column="1" Text="50 Grams" TextColor="Black"></Label>
+                    <Label Grid.Row="2" Grid.Column="0" Text="Noodle" TextColor="Black"></Label>
+                    <Label Grid.Row="2" Grid.Column="1" Text="300 Grams" TextColor="Black"></Label>
+                    <Label Grid.Row="3" Grid.Column="0" Text="Prawns" TextColor="Black"></Label>
+                    <Label Grid.Row="3" Grid.Column="1" Text="400 Grams" TextColor="Black"></Label>
+                    <Label Grid.Row="4" Grid.Column="0" Text="Spinach" TextColor="Black"></Label>
+                    <Label Grid.Row="4" Grid.Column="1" Text="80" TextColor="Black"></Label>
+
+                </Grid>
+            </Frame>
+
+        </StackLayout>
+
+    </ContentPage>
+    <ContentPage Title="Step-by-Step">
+
+    </ContentPage>
+</TabbedPage>

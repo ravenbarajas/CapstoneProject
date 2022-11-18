@@ -8,41 +8,138 @@
         <StackLayout BackgroundColor="White">
             <Image Source="ProfileTop.jpg"
                    VerticalOptions="Start"
-                   Margin="0,0,0,5"/>
-            <Grid ColumnSpacing="0" Margin="0,0,0,-10">
-                <Grid.ColumnDefinitions>
-                </Grid.ColumnDefinitions>
+                   Margin="0,0,0,0"/>
+            <Label Text="Raven Barajas"
+                   TextColor="Black"
+                   FontSize="38"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,-40,0,40"/>
+            <Label Text="Joined 2 days ago"
+                   TextColor="Black"
+                   FontSize="14"
+                   FontAttributes="None"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,-45,0,40"/>
+            <Grid Padding="10,-30,10,0">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="55" />
+                    <RowDefinition Height="130"/>
+                    
+                    <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120"/>
+
+                    <ColumnDefinition Width="120"/>
+
+                    <ColumnDefinition Width="120"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0"
+                        Text="2"
+                        TextColor="White"
+                        FontSize="54"
+                        FontAttributes="Bold"
+                        BackgroundColor="#0E293C"
+                        CornerRadius="15"
+                        Padding="0,0,0,0"/>
+                <Label Grid.Row="1" Grid.Column="0"
+                       Text="Recipes Contributed"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       VerticalOptions="Center"
+                       TextColor="#0E293C"
+                       FontAttributes="Bold"
+                       FontSize="16"
+                       Padding="0,0,0,5"/>
+
+                <Button Grid.Row="0" Grid.Column="1"
+                        Text="5.0"
+                        TextColor="White"
+                        FontSize="54"
+                        FontAttributes="Bold"
+                        BackgroundColor="#0E293C"
+                        CornerRadius="15"
+                        Padding="0,0,0,0"/>
+                <Label Grid.Row="1" Grid.Column="1"
+                       Text="Trusthworty Rating"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       VerticalOptions="Center"
+                       TextColor="#0E293C"
+                       FontAttributes="Bold"
+                       FontSize="16"
+                       Margin="0,0,0,5"/>
+
+                <Button Grid.Row="0" Grid.Column="2"
+                        Text="3"
+                        TextColor="White"
+                        FontSize="54"
+                        FontAttributes="Bold"
+                        BackgroundColor="#0E293C"
+                        CornerRadius="15"
+                        Padding="0,0,0,0"/>
+                <Label Grid.Row="1" Grid.Column="2"
+                       Text="Saved Recipes"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       VerticalOptions="Center"
+                       TextColor="#0E293C"
+                       FontAttributes="Bold"
+                       FontSize="16"
+                       Margin="0,0,0,5"/>
+                <Label Grid.Row="2" Grid.ColumnSpan="3"
+                       Text=""
+                       HeightRequest="2"
+                       BackgroundColor="Gray"/>
+            </Grid>
+            
+            <Grid ColumnSpacing="0" Margin="0,20,0,-10">
+                    <Grid.ColumnDefinitions>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="55" />
+                    </Grid.RowDefinitions>
 
                 <Button Grid.Row="0" Grid.Column="0"
-                            Text="Cookbook" 
-                            TextTransform="None"
-                            FontSize="Medium"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center"
-                            HeightRequest="55"
-                            WidthRequest="300"
+                        Text="Cookbook" 
+                        TextColor="White"
+                        TextTransform="None"
+                        FontSize="Medium"
+                        FontAttributes="None"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        HeightRequest="55"
+                        WidthRequest="300"
+                        BackgroundColor="#FF804C"
+                        CornerRadius="30"
                             Clicked="Cookbook_Clicked"/>
                 <Button Grid.Row="1" Grid.Column="0"
-                            Text="Meal Planner" 
-                            TextTransform="None"
-                            FontSize="Medium"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center"
-                            HeightRequest="55"
-                            WidthRequest="300"
+                        Text="Meal Planner" 
+                        TextColor="White"
+                        TextTransform="None"
+                        FontSize="Medium"
+                        FontAttributes="None"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        HeightRequest="55"
+                        WidthRequest="300"
+                        BackgroundColor="#467fd7"
+                        CornerRadius="30"
                             Clicked="Mealplanner_Clicked"/>
                 <Button Grid.Row="2" Grid.Column="0"
-                            Text="Create your own recipe" 
-                            TextTransform="None"
-                            FontSize="Medium"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center"
-                            HeightRequest="55"
-                            WidthRequest="300"
+                        Text="Create your own recipe" 
+                        TextColor="White"
+                        TextTransform="None"
+                        FontSize="Medium"
+                        FontAttributes="None"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        HeightRequest="55"
+                        WidthRequest="300"
+                        BackgroundColor="#ce93d8"
+                        CornerRadius="30"
                             Clicked="CreateRecipe_Clicked"/>
+
             </Grid>
         </StackLayout>
     </ContentPage.Content>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xri1G4O/GTZ8urLq2K5wFP3TH4ygSJLcn37pUMBontQFrLTCHggD0OxX81CDf1IZohyzMh6qa84oOdB+OoGkJQ==",
+  "dgSpecHash": "qjahc8SOCvDk2pJRvR1CNioyUvUoTewWfYRR2EmewOnh/sZF4y9omfCTCL6Y9CkboySNX4UXjdkwmnUbuSFFBQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Raven Barajas\\source\\repos\\ravenbarajas057\\CapstoneProject\\App1\\App1\\App1.csproj",
   "expectedPackageFiles": [
@@ -34,7 +34,8 @@
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.essentials\\1.7.3\\xamarin.essentials.1.7.3.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms\\5.0.0.2515\\xamarin.forms.5.0.0.2515.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms.inputkit\\4.1.5\\xamarin.forms.inputkit.4.1.5.nupkg.sha512",
-    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xcalendar.core\\4.1.0\\xcalendar.core.4.1.0.nupkg.sha512"
   ],
   "logs": []
 }

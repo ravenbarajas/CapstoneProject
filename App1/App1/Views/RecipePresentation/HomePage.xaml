@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              x:Class="App1.Views.RecipePresentation.HomePage"
              NavigationPage.HasNavigationBar="False">
 
     <StackLayout>
-        <StackLayout Padding="15,5,15,5" Margin="0,0,0,-6" BackgroundColor="White" VerticalOptions="Start">
+        <StackLayout Padding="15,5,15,10" Margin="0,0,0,0" BackgroundColor="White" VerticalOptions="Start">
             <Label Text="What do you want cook for today?"
                            FontSize="Large"
                            TextColor="Black"
@@ -17,26 +18,9 @@
                                BackgroundColor="#e6e6e6"
                                HeightRequest="40"/>
         </StackLayout>
-
-        <Grid BackgroundColor="Green" Padding="5,5,5,5">
-            <ImageButton Source="rcp1.jpg" 
-                         Aspect="AspectFit"/>
-            <StackLayout HorizontalOptions="FillAndExpand" 
-                         BackgroundColor="red" 
-                         Opacity=".6" 
-                         HeightRequest="20"
-                         Padding="10,5,10,5">
-            </StackLayout>
-            <Label XAlign="Center" 
-                       TextColor="Black" 
-                       VerticalTextAlignment="Center" 
-                       VerticalOptions="Start"
-                       HorizontalOptions="StartAndExpand" 
-                       Text="Sample Txt"/>
-        </Grid>
-
+        
         <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never" Margin="0,-6,0,0" MinimumHeightRequest="55">
-            <Grid BackgroundColor="#E6E6E6" Padding="15,5,15,5">
+            <Grid BackgroundColor="#E6E6E6" Padding="5,5,15,5">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="Auto" />
@@ -47,37 +31,415 @@
                 </Grid.RowDefinitions>
 
                 <Button Grid.Row="0" Grid.Column="0"
-                                        x:Name="All"
-                                        Text="All"
-                                        FontSize="16"
-                                        TextColor="White"
-                                        TextTransform="None"
-                                        BackgroundColor="#7F8487"
-                                        CornerRadius="10"
-                                        Padding="15,0,15,0"/>
+                        x:Name="MT1"
+                        Text="All"
+                        FontSize="16"
+                        TextColor="White"
+                        TextTransform="None"
+                        BackgroundColor="#7F8487"
+                        CornerRadius="10"
+                        Padding="15,0,15,0"
+                        Clicked="MT_Clicked"/>
                 <Button Grid.Row="0" Grid.Column="1"
-                                        Text="Popular"
-                                        x:Name="Popular"
-                                        FontSize="16"
-                                        TextColor="White"
-                                        TextTransform="None"
-                                        BackgroundColor="#7F8487"
-                                        CornerRadius="10"
-                                        Padding="15,0,15,0"/>
+                        Text="Popular"
+                        x:Name="MT2"
+                        FontSize="16"
+                        TextColor="White"
+                        TextTransform="None"
+                        BackgroundColor="#7F8487"
+                        CornerRadius="10"
+                        Padding="15,0,15,0"
+                        Clicked="MT_Clicked"/>
                 <Button Grid.Row="0" Grid.Column="2"
-                                        Text="Favorites"
-                                        x:Name="Favorites"
-                                        FontSize="16"
-                                        TextColor="White"
-                                        TextTransform="None"
-                                        BackgroundColor="#7F8487"
-                                        CornerRadius="10"
-                                        Padding="15,0,15,0"/>
-
+                        Text="Favorites"
+                        x:Name="MT3"
+                        FontSize="16"
+                        TextColor="White"
+                        TextTransform="None"
+                        BackgroundColor="#7F8487"
+                        CornerRadius="10"
+                        Padding="15,0,15,0"
+                        Clicked="MT_Clicked"/>
+                <Button Grid.Row="0" Grid.Column="3"
+                        Text="Breakfast"
+                        x:Name="MT4"
+                        FontSize="16"
+                        TextColor="White"
+                        TextTransform="None"
+                        BackgroundColor="#7F8487"
+                        CornerRadius="10"
+                        Padding="15,0,15,0"
+                        Clicked="MT_Clicked"/>
+                <Button Grid.Row="0" Grid.Column="4"
+                        Text="Brunch"
+                        x:Name="MT5"
+                        FontSize="16"
+                        TextColor="White"
+                        TextTransform="None"
+                        BackgroundColor="#7F8487"
+                        CornerRadius="10"
+                        Padding="15,0,15,0"
+                        Clicked="MT_Clicked"/>
+                <Button Grid.Row="0" Grid.Column="5"
+                        Text="Lunch"
+                        x:Name="MT6"
+                        FontSize="16"
+                        TextColor="White"
+                        TextTransform="None"
+                        BackgroundColor="#7F8487"
+                        CornerRadius="10"
+                        Padding="15,0,15,0"
+                        Clicked="MT_Clicked"/>
+                <Button Grid.Row="0" Grid.Column="6"
+                        Text="Snack"
+                        x:Name="MT7"
+                        FontSize="16"
+                        TextColor="White"
+                        TextTransform="None"
+                        BackgroundColor="#7F8487"
+                        CornerRadius="10"
+                        Padding="15,0,15,0"
+                        Clicked="MT_Clicked"/>
+                <Button Grid.Row="0" Grid.Column="7"
+                        Text="Dinner"
+                        x:Name="MT8"
+                        FontSize="16"
+                        TextColor="White"
+                        TextTransform="None"
+                        BackgroundColor="#7F8487"
+                        CornerRadius="10"
+                        Padding="15,0,15,0"
+                        Clicked="MT_Clicked"/>
             </Grid>
         </ScrollView>
+        <ScrollView HeightRequest="525">
+            <Grid Padding="5,0,5,0">
+                <StackLayout>
+                    <Grid HorizontalOptions="CenterAndExpand" Padding="5,0,5,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="373"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
 
-        <Grid VerticalOptions="EndAndExpand">
+                        <ImageButton Grid.Column="0" 
+                                 Source="rcp1.jpg" 
+                                 Aspect="AspectFit"
+                                 CornerRadius="25"
+                                 Clicked="rcp1_Clicked"/>
+                        <yummy:PancakeView Grid.Column="0"
+                                           BackgroundColor="#343434" 
+                                           Opacity=".6"
+                                           CornerRadius="0,0,25,25" 
+                                           HorizontalOptions="FillAndExpand" 
+                                           Margin="0,180,0,0"/>
+                        <Label Grid.Column="0"
+                               Text="Special Udon Noodles"
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               FontSize="24"
+                               Padding="20,0,0,30"
+                               VerticalOptions="EndAndExpand"/>
+                        <Label Grid.Column="0"
+                               Text="By: jasonwhite2"
+                               TextColor="White"
+                               FontSize="Subtitle"
+                               FontAttributes="None"
+                               Padding="20,0,0,10"
+                               VerticalOptions="EndAndExpand"/>
+                    </Grid>
+                    <Grid HorizontalOptions="CenterAndExpand" Padding="5,5,5,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="373"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ImageButton Grid.Column="0" 
+                                 Source="rcp2.jpg" 
+                                 Aspect="AspectFit"
+                                 CornerRadius="25"
+                                 Clicked="rcp2_Clicked"/>
+                        <yummy:PancakeView Grid.Column="0"
+                                           BackgroundColor="#343434" 
+                                           Opacity=".6"
+                                           CornerRadius="0,0,25,25" 
+                                           HorizontalOptions="FillAndExpand" 
+                                           Margin="0,180,0,0"/>
+                        <Label Grid.Column="0"
+                               Text="Spicy Buttered Shrimp"
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               FontSize="24"
+                               Padding="20,0,0,30"
+                               VerticalOptions="EndAndExpand"/>
+                        <Label Grid.Column="0"
+                               Text="By: malou23"
+                               TextColor="White"
+                               FontSize="Subtitle"
+                               FontAttributes="None"
+                               Padding="20,0,0,10"
+                               VerticalOptions="EndAndExpand"/>
+                    </Grid>
+                    <Grid HorizontalOptions="CenterAndExpand" Padding="5,5,5,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="373"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ImageButton Grid.Column="0" 
+                                 Source="rcp3.jpg" 
+                                 Aspect="AspectFit"
+                                 CornerRadius="25"
+                                 Clicked="rcp3_Clicked"/>
+                        <yummy:PancakeView Grid.Column="0"
+                                           BackgroundColor="#343434" 
+                                           Opacity=".6"
+                                           CornerRadius="0,0,25,25" 
+                                           HorizontalOptions="FillAndExpand" 
+                                           Margin="0,180,0,0"/>
+                        <Label Grid.Column="0"
+                               Text="Vegetarian Homemade Fries"
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               FontSize="24"
+                               Padding="20,0,0,30"
+                               VerticalOptions="EndAndExpand"/>
+                        <Label Grid.Column="0"
+                               Text="By: 12stacy12"
+                               TextColor="White"
+                               FontSize="Subtitle"
+                               FontAttributes="None"
+                               Padding="20,0,0,10"
+                               VerticalOptions="EndAndExpand"/>
+                    </Grid>
+                    <Grid HorizontalOptions="CenterAndExpand" Padding="5,5,5,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="373"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ImageButton Grid.Column="0" 
+                                 Source="rcp4.jpg" 
+                                 Aspect="AspectFit"
+                                 CornerRadius="25"
+                                 Clicked="rcp4_Clicked"/>
+                        <yummy:PancakeView Grid.Column="0"
+                                           BackgroundColor="#343434" 
+                                           Opacity=".6"
+                                           CornerRadius="0,0,25,25" 
+                                           HorizontalOptions="FillAndExpand" 
+                                           Margin="0,180,0,0"/>
+                        <Label Grid.Column="0"
+                               Text="Mushroom Broth Soup"
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               FontSize="24"
+                               Padding="20,0,0,30"
+                               VerticalOptions="EndAndExpand"/>
+                        <Label Grid.Column="0"
+                               Text="By: LaylaxD"
+                               TextColor="White"
+                               FontSize="Subtitle"
+                               FontAttributes="None"
+                               Padding="20,0,0,10"
+                               VerticalOptions="EndAndExpand"/>
+                    </Grid>
+                    <Grid HorizontalOptions="CenterAndExpand" Padding="5,5,5,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="373"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ImageButton Grid.Column="0" 
+                                 Source="rcp5.jpg" 
+                                 Aspect="AspectFit"
+                                 CornerRadius="25"
+                                 Clicked="rcp5_Clicked"/>
+                        <yummy:PancakeView Grid.Column="0"
+                                           BackgroundColor="#343434" 
+                                           Opacity=".6"
+                                           CornerRadius="0,0,25,25" 
+                                           HorizontalOptions="FillAndExpand" 
+                                           Margin="0,180,0,0"/>
+                        <Label Grid.Column="0"
+                               Text="Homemade Italian Pasta"
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               FontSize="24"
+                               Padding="20,0,0,30"
+                               VerticalOptions="EndAndExpand"/>
+                        <Label Grid.Column="0"
+                               Text="By: elBueno34"
+                               TextColor="White"
+                               FontSize="Subtitle"
+                               FontAttributes="None"
+                               Padding="20,0,0,10"
+                               VerticalOptions="EndAndExpand"/>
+                    </Grid>
+                    <Grid HorizontalOptions="CenterAndExpand" Padding="5,5,5,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="373"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ImageButton Grid.Column="0" 
+                                 Source="rcp6.jpg" 
+                                 Aspect="AspectFit"
+                                 CornerRadius="25"
+                                 Clicked="Recipe_Clicked"/>
+                        <yummy:PancakeView Grid.Column="0"
+                                           BackgroundColor="#343434" 
+                                           Opacity=".6"
+                                           CornerRadius="0,0,25,25" 
+                                           HorizontalOptions="FillAndExpand" 
+                                           Margin="0,180,0,0"/>
+                        <Label Grid.Column="0"
+                               Text="Vegetarian Pasta"
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               FontSize="24"
+                               Padding="20,0,0,30"
+                               VerticalOptions="EndAndExpand"/>
+                        <Label Grid.Column="0"
+                               Text="By: Mico0"
+                               TextColor="White"
+                               FontSize="Subtitle"
+                               FontAttributes="None"
+                               Padding="20,0,0,10"
+                               VerticalOptions="EndAndExpand"/>
+                    </Grid>
+                    <Grid HorizontalOptions="CenterAndExpand" Padding="5,5,5,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="373"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ImageButton Grid.Column="0" 
+                                 Source="rcp7.jpg" 
+                                 Aspect="AspectFit"
+                                 CornerRadius="25"
+                                 Clicked="Recipe_Clicked"/>
+                        <yummy:PancakeView Grid.Column="0"
+                                           BackgroundColor="#343434" 
+                                           Opacity=".6"
+                                           CornerRadius="0,0,25,25" 
+                                           HorizontalOptions="FillAndExpand" 
+                                           Margin="0,180,0,0"/>
+                        <Label Grid.Column="0"
+                               Text="Sampgyupsal Combo"
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               FontSize="24"
+                               Padding="20,0,0,30"
+                               VerticalOptions="EndAndExpand"/>
+                        <Label Grid.Column="0"
+                               Text="By: EJ99"
+                               TextColor="White"
+                               FontSize="Subtitle"
+                               FontAttributes="None"
+                               Padding="20,0,0,10"
+                               VerticalOptions="EndAndExpand"/>
+                    </Grid>
+                    <Grid HorizontalOptions="CenterAndExpand" Padding="5,5,5,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="373"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ImageButton Grid.Column="0" 
+                                 Source="rcp8.jpg" 
+                                 Aspect="AspectFit"
+                                 CornerRadius="25"
+                                 Clicked="Recipe_Clicked"/>
+                        <yummy:PancakeView Grid.Column="0"
+                                           BackgroundColor="#343434" 
+                                           Opacity=".6"
+                                           CornerRadius="0,0,25,25" 
+                                           HorizontalOptions="FillAndExpand" 
+                                           Margin="0,180,0,0"/>
+                        <Label Grid.Column="0"
+                               Text="Chicken Miso Soup"
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               FontSize="24"
+                               Padding="20,0,0,30"
+                               VerticalOptions="EndAndExpand"/>
+                        <Label Grid.Column="0"
+                               Text="By: Anne24"
+                               TextColor="White"
+                               FontSize="Subtitle"
+                               FontAttributes="None"
+                               Padding="20,0,0,10"
+                               VerticalOptions="EndAndExpand"/>
+                    </Grid>
+                    <Grid HorizontalOptions="CenterAndExpand" Padding="5,5,5,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="373"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ImageButton Grid.Column="0" 
+                                 Source="rcp9.jpg" 
+                                 Aspect="AspectFit"
+                                 CornerRadius="25"
+                                 Clicked="Recipe_Clicked"/>
+                        <yummy:PancakeView Grid.Column="0"
+                                           BackgroundColor="#343434" 
+                                           Opacity=".6"
+                                           CornerRadius="0,0,25,25" 
+                                           HorizontalOptions="FillAndExpand" 
+                                           Margin="0,180,0,0"/>
+                        <Label Grid.Column="0"
+                               Text="Shrimp Salad"
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               FontSize="24"
+                               Padding="20,0,0,30"
+                               VerticalOptions="EndAndExpand"/>
+                        <Label Grid.Column="0"
+                               Text="By: Enjael67"
+                               TextColor="White"
+                               FontSize="Subtitle"
+                               FontAttributes="None"
+                               Padding="20,0,0,10"
+                               VerticalOptions="EndAndExpand"/>
+                    </Grid>
+                    <Grid HorizontalOptions="CenterAndExpand" Padding="5,5,5,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="373"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ImageButton Grid.Column="0" 
+                                 Source="rcp10.jpg" 
+                                 Aspect="AspectFit"
+                                 CornerRadius="25"
+                                 Clicked="Recipe_Clicked"/>
+                        <yummy:PancakeView Grid.Column="0"
+                                           BackgroundColor="#343434" 
+                                           Opacity=".6"
+                                           CornerRadius="0,0,25,25" 
+                                           HorizontalOptions="FillAndExpand" 
+                                           Margin="0,180,0,0"/>
+                        <Label Grid.Column="0"
+                               Text="Roasted Pork Chop"
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               FontSize="24"
+                               Padding="20,0,0,30"
+                               VerticalOptions="EndAndExpand"/>
+                        <Label Grid.Column="0"
+                               Text="By: ravRaf55"
+                               TextColor="White"
+                               FontSize="Subtitle"
+                               FontAttributes="None"
+                               Padding="20,0,0,10"
+                               VerticalOptions="EndAndExpand"/>
+                    </Grid>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+        
+        <Grid Margin="0,0,0,0">
             <ImageButton Source="Home.jpg"
                                     HorizontalOptions="Start"
                                     VerticalOptions="End"
@@ -109,6 +471,5 @@
                                 CornerRadius="0"
                                 Clicked="GenerateRecipe_Clicked"/>
         </Grid>
-
     </StackLayout>
 </ContentPage>

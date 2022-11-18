@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.UserManagement.LogoPage"
+             NavigationPage.HasNavigationBar="False">
+    
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#FF3F37">
+            <Image Source="LogoRounded.png"
+                   WidthRequest="230"
+                   HeightRequest="230"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="Center"/>
+            <Label Text="Shrimp Chef"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   FontSize="42"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"
+                   Margin="0,-220,0,0"/>
+            <Label Text="For all your recipe needs"
+                   TextColor="White"
+                   FontAttributes="None"
+                   FontSize="Subtitle"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"
+                   Margin="0,-220,0,0"/>
+
+            <Button Text="Begin your journey..."
+                    TextColor="#3873F6"
+                    TextTransform="None"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    BackgroundColor="White"
+                    Margin="15,0,15,150"
+                    CornerRadius="30"
+                    Clicked="Next_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

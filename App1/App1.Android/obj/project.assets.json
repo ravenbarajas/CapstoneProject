@@ -2229,6 +2229,15 @@
           "buildTransitive/monoandroid50/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
+      "XCalendar.Core/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
       "App1/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -2237,6 +2246,7 @@
           "FirebaseDatabase.net": "4.1.0",
           "Plugin.FormsStackPanel": "1.0.3",
           "Syncfusion.Xamarin.Expander": "20.2.0.46",
+          "XCalendar.Core": "4.1.0",
           "Xamarin.CommunityToolkit": "2.0.5",
           "Xamarin.Essentials": "1.7.3",
           "Xamarin.Forms": "5.0.0.2515",
@@ -7017,6 +7027,19 @@
         "xamarin.google.guava.listenablefuture.nuspec"
       ]
     },
+    "XCalendar.Core/4.1.0": {
+      "sha512": "bmdQWPxsc1J9jvijnpPKDy5Y59WrpeYI/dySPSxFh7YtdTYB7XVimv8ikKGJuavVn5xyxrxbNqBR2Tihq8aYTQ==",
+      "type": "package",
+      "path": "xcalendar.core/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "XCalendar Nuget Icon.png",
+        "lib/netstandard2.0/XCalendar.Core.dll",
+        "xcalendar.core.4.1.0.nupkg.sha512",
+        "xcalendar.core.nuspec"
+      ]
+    },
     "App1/1.0.0": {
       "type": "project",
       "path": "../App1/App1.csproj",
@@ -7028,6 +7051,7 @@
       "App1 >= 1.0.0",
       "FirebaseAuthentication.net >= 3.7.2",
       "FirebaseDatabase.net >= 4.1.0",
+      "XCalendar.Core >= 4.1.0",
       "Xamarin.CommunityToolkit >= 2.0.5",
       "Xamarin.Essentials >= 1.7.3",
       "Xamarin.Forms >= 5.0.0.2515"
@@ -7083,6 +7107,10 @@
             "version": "[3.7.2, )"
           },
           "FirebaseDatabase.net": {
+            "target": "Package",
+            "version": "[4.1.0, )"
+          },
+          "XCalendar.Core": {
             "target": "Package",
             "version": "[4.1.0, )"
           },

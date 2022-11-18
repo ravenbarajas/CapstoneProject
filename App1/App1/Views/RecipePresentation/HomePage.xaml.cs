@@ -46,5 +46,69 @@ namespace App1.Views.RecipePresentation
         {
             await Navigation.PushAsync(new RecipePage());
         }
+        private void highlightMT()
+        {
+            MT1.BackgroundColor = Color.FromRgb(127, 132, 135);
+            MT1.TextColor = Color.White;
+            MT1.FontAttributes = FontAttributes.None;
+
+            MT2.BackgroundColor = Color.FromRgb(127, 132, 135);
+            MT2.TextColor = Color.White;
+            MT2.FontAttributes = FontAttributes.None;
+
+            MT3.BackgroundColor = Color.FromRgb(127, 132, 135);
+            MT3.TextColor = Color.White;
+            MT3.FontAttributes = FontAttributes.None;
+
+            MT4.BackgroundColor = Color.FromRgb(127, 132, 135);
+            MT4.TextColor = Color.White;
+            MT4.FontAttributes = FontAttributes.None;
+
+            MT5.BackgroundColor = Color.FromRgb(127, 132, 135);
+            MT5.TextColor = Color.White;
+            MT5.FontAttributes = FontAttributes.None;
+
+            MT6.BackgroundColor = Color.FromRgb(127, 132, 135);
+            MT6.TextColor = Color.White;
+            MT6.FontAttributes = FontAttributes.None;
+
+            MT7.BackgroundColor = Color.FromRgb(127, 132, 135);
+            MT7.TextColor = Color.White;
+            MT7.FontAttributes = FontAttributes.None;
+
+            MT8.BackgroundColor = Color.FromRgb(127, 132, 135);
+            MT8.TextColor = Color.White;
+            MT8.FontAttributes = FontAttributes.None;
+        }
+        private void MT_Clicked(object sender, EventArgs e)
+        {
+            highlightMT();
+
+            var btn = (Button)sender;
+            btn.BackgroundColor = Color.FromRgb(63, 157, 47);
+            btn.TextColor = Color.White;
+            btn.FontAttributes = FontAttributes.Bold;
+            btn.BorderWidth = 0;
+        }
+        private async void rcp1_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new rcp1());
+        }
+        private async void rcp2_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new rcp2());
+        }
+        private async void rcp3_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new rcp3());
+        }
+        private async void rcp4_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new rcp4());
+        }
+        private async void rcp5_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new rcp5());
+        }
     }
 }

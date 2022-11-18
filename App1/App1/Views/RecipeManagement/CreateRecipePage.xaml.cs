@@ -82,7 +82,7 @@ namespace App1.Views.RecipeManagement
         }
         private async void Next_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new EnterRecipeDetailsPagept1());
+            await Navigation.PushAsync(new EnterRecipeDetailspt1());
         }
     }
 }

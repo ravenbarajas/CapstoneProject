@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.UserManagement.UserInfoPage"
+             NavigationPage.HasNavigationBar="False">
+    
+        <StackLayout>
+            <Image Source="TopUserInfo.jpg"
+                   VerticalOptions="Start"
+                   Margin="0,0,0,0"/>
+            <Image Source="step1.png"
+                   VerticalOptions="Start"
+                   Margin="10,0,10,5"/>
+
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Grid Padding="5,0,5,0" RowSpacing="0" ColumnSpacing="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
+
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="30"/>
+
+                    <RowDefinition Height="10"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0"
+                            Text="I."
+                                TextColor="Black"
+                                Padding="5,0,5,0"
+                                FontSize="20"
+                                FontAttributes="Bold"
+                                VerticalOptions="Center" 
+                                Margin="0,0,0,0"/>
+                <Label Grid.Row="1"
+                            Text="Create your desired name"
+                                TextColor="Black"
+                                Padding="5,0,5,0"
+                                FontSize="Large"
+                                FontAttributes="Bold"
+                                VerticalOptions="Center" 
+                                Margin="0,-10,0,0"/>
+                <Label Grid.Row="2"
+                                    Text="*Required"
+                                    TextColor="Red"
+                                    Padding="5,0,5,0"
+                                    FontSize="Small"
+                                    FontAttributes="None"
+                                    VerticalOptions="Center"
+                                   Margin="0,-25,0,0"/>
+                <Entry Grid.Row="3" Grid.Column="0"
+                            Placeholder="Username"
+                            Margin="0,-10,0,0"/>
+            </Grid>
+
+            <Grid Padding="5,0,5,0" RowSpacing="0" ColumnSpacing="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
+
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="30"/>
+
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="30"/>
+
+                    <RowDefinition Height="10"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0"
+                            Text="II."
+                                TextColor="Black"
+                                Padding="5,0,5,0"
+                                FontSize="Large"
+                                FontAttributes="Bold"
+                                VerticalOptions="Center" 
+                                Margin="0,0,0,0"/>
+                <!--First Name & Last Name-->
+                <Label Grid.Row="1"
+                                    Text="Last Name"
+                                    TextColor="Black"
+                                    Padding="5,0,5,0"
+                                    FontSize="20"
+                                    FontAttributes="Bold"
+                                    VerticalOptions="Center"
+                                    Margin="0,-10,0,0"/>
+                <Label Grid.Row="2"
+                                    Text="*Required"
+                                    TextColor="Red"
+                                    Padding="5,0,5,0"
+                                    FontSize="Small"
+                                    FontAttributes="None"
+                                    VerticalOptions="Center"
+                                   Margin="0,-25,0,0"/>
+                <Entry Grid.Row="3" Grid.Column="0"
+                                    Placeholder="Last Name"
+                                    Margin="0,-10,0,0"/>
+
+                <Label Grid.Row="1" Grid.Column="1"
+                                    Text="First Name"
+                                    TextColor="Black"
+                                    Padding="5,0,5,0"
+                                    FontSize="20"
+                                    FontAttributes="Bold"
+                                    VerticalOptions="Center"
+                                    Margin="0,-10,0,0"/>
+                <Label Grid.Row="2" Grid.Column="1"
+                                        Text="*Required"
+                                        TextColor="Red"
+                                        Padding="5,0,5,0"
+                                        FontSize="Small"
+                                        FontAttributes="None"
+                                        VerticalOptions="Center"
+                                       Margin="0,-25,0,0"/>
+                <Entry Grid.Row="3" Grid.Column="1"
+                                        Placeholder="Minutes"
+                                        Margin="0,-10,0,0"/>
+
+                <Label Grid.Row="4" Grid.Column="0"
+                                        Text="Birthdate"
+                                        TextColor="Black"
+                                        Padding="5,0,5,0"
+                                        FontSize="20"
+                                        FontAttributes="Bold"
+                                        VerticalOptions="Center"
+                                        Margin="0,-10,0,0"/>
+                <Label Grid.Row="5" Grid.Column="0"
+                                        Text="*Required"
+                                        TextColor="Red"
+                                        Padding="5,0,5,0"
+                                        FontSize="Small"
+                                        FontAttributes="None"
+                                        VerticalOptions="Center"
+                                       Margin="0,-25,0,0"/>
+                <DatePicker Grid.Row="6" Grid.Column="0"
+                                        TextColor="Black"
+                                        VerticalOptions="Center"
+                                        Margin="0,-10,0,0"/>
+
+                <Label Grid.Row="4" Grid.Column="1"
+                                        Text="Age"
+                                        TextColor="Black"
+                                        Padding="5,0,5,0"
+                                        FontSize="20"
+                                        FontAttributes="Bold"
+                                        VerticalOptions="Center" 
+                                        Margin="0,-10,0,0"/>
+                <Label Grid.Row="5" Grid.Column="1"
+                                        Text="*Required"
+                                        TextColor="Red"
+                                        Padding="5,0,5,0"
+                                        FontSize="Small"
+                                        FontAttributes="None"
+                                        VerticalOptions="Center"
+                                       Margin="0,-25,0,0"/>
+                <Entry Grid.Row="6" Grid.Column="1"
+                                    Placeholder="Age"
+                                    Margin="0,-10,0,0"/>
+            </Grid>
+        </StackLayout>
+            <Button Text="Next"
+                    TextColor="White"
+                    TextTransform="None"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    BackgroundColor="#3F9D2F"
+                    Margin="35,0,35,5"
+                    VerticalOptions="EndAndExpand"
+                    CornerRadius="30"
+                    Clicked="Next_Clicked"/>
+        </StackLayout>
+</ContentPage>

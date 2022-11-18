@@ -6,45 +6,37 @@ using System.Threading.Tasks;
 
 namespace App1
 {
-    class userAuth
+    public class userAuth
     {
-        string ApiKey = "AIzaSyA2brPesFxaFvnSOiusWO9u5ewas-zDnok";
+        static string WebAPIKey = "AIzaSyA2brPesFxaFvnSOiusWO9u5ewas-zDnok";
         FirebaseAuthProvider authProvider;
+
         public userAuth()
         {
-            authProvider = new FirebaseAuthProvider(new FirebaseConfig(ApiKey));
+            authProvider = new FirebaseAuthProvider(new FirebaseConfig(WebAPIKey));
         }
-        public async Task<bool> Register(string email, string lastName, string password)
+        public async Task<bool> Register(string email, string pass)
         {
-            var token = await authProvider.CreateUserWithEmailAndPasswordAsync(email, lastName, password);
+        var token = await authProvider.CreateUserWithEmailAndPasswordAsync(email, pass);
+
+            if (!string.IsNullOrEmpty(token.FirebaseToken))
+        {
+            return true;
+        }
+        return false;
+        //for testing
+        }
+        public async Task<string>SignIn(string email, string pass)
+        { 
+            var token = await authProvider.SignInWithEmailAndPasswordAsync(email, pass);
 
             if (!string.IsNullOrEmpty(token.FirebaseToken))
             {
-                return true;
+                return token.FirebaseToken;
             }
-            return false;
-            //for testing
-        }
-        public async Task<string> UserLogin(string email, string password)
-        {
-            try
-            {
-                var token = await authProvider.SignInWithEmailAndPasswordAsync(email, password);
-
-
-
-                if (!string.IsNullOrEmpty(token.FirebaseToken))
-                {
-                    return token.FirebaseToken;
-                }
-                return "";
-
-            }
-            catch (FirebaseAuthException ex)
-            {
-
-                return ex.Message;
-            }
+            return "";
         }
     }
+    
+
 }

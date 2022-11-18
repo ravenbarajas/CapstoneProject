@@ -6,17 +6,9 @@
              NavigationPage.HasNavigationBar="False">
 
     <StackLayout>
-        <Frame BackgroundColor="White" Padding="5,10,5,10">
-
-            <Label Text="Select recipe preference" 
-               FontSize="26" 
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center"
-               TextColor="#3873F6"
-               FontAttributes="Bold" 
-               BackgroundColor="White"
-               Padding="5,0,5,0"/>
-        </Frame>
+        <Image Source="TopPreference.jpg"
+                   VerticalOptions="Start"
+                   Margin="0,0,0,0"/>
 
         <ScrollView>
             <StackLayout Background="#d9d9d9">
@@ -386,11 +378,11 @@
                 </Grid>
 
                 <Button Text="Next"
-                    TextColor="White"
+                    TextColor="white"
                     FontSize="Medium"
                     FontAttributes="Bold"
                     BackgroundColor="#3873F6"
-                    Margin="15,0,15,5"
+                    Margin="35,0,35,5"
                     CornerRadius="30"
                     Clicked="Next_Clicked"/>
 

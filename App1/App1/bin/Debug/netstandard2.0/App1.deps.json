@@ -14,6 +14,7 @@
           "NETStandard.Library": "2.0.3",
           "Plugin.FormsStackPanel": "1.0.3",
           "Syncfusion.Xamarin.Expander": "20.2.0.46",
+          "XCalendar.Core": "4.1.0",
           "Xamarin.CommunityToolkit": "2.0.5",
           "Xamarin.Essentials": "1.7.3",
           "Xamarin.Forms": "5.0.0.2515",
@@ -304,6 +305,14 @@
             "fileVersion": "2.0.1.0"
           }
         }
+      },
+      "XCalendar.Core/4.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "4.1.0.0"
+          }
+        }
       }
     }
   },
@@ -529,6 +538,13 @@
       "sha512": "sha512-TGVsLJuGd/PKlyhmcBxZnHhHqyhYppzyrdb2q/sy+S6dQYkeGM8A+HmIIHVhbi7r8Sjasa/HRBkOmTSYQOZzhQ==",
       "path": "xamarin.forms.pancakeview/2.3.0.759",
       "hashPath": "xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
+    },
+    "XCalendar.Core/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bmdQWPxsc1J9jvijnpPKDy5Y59WrpeYI/dySPSxFh7YtdTYB7XVimv8ikKGJuavVn5xyxrxbNqBR2Tihq8aYTQ==",
+      "path": "xcalendar.core/4.1.0",
+      "hashPath": "xcalendar.core.4.1.0.nupkg.sha512"
     }
   }
 }

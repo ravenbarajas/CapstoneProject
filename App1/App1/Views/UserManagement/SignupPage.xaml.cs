@@ -15,7 +15,8 @@ namespace App1.Views.UserManagement
     {
         firebaseConnection connection = new firebaseConnection();
         userInfo authenticateAcc = new userInfo();
-        userAuth authenticateAcc1 = new userAuth();
+
+        userAuth _userAuth = new userAuth();
         public SignupPage()
         {
             InitializeComponent();
@@ -25,38 +26,63 @@ namespace App1.Views.UserManagement
         {
             try
             {
-                string username = Username.Text;
-                string phone = PhoneNum.Text;
+                string email = Email.Text;
                 string pass = Password.Text;
 
-                userInfo user = new userInfo();
-                user.Username = username;
-                user.PhoneNum = phone;
-                user.Pass = pass;
-
-                var isSaved = await connection.Save(user);
-
-                if (isSaved)
+                if (String.IsNullOrEmpty(email))
                 {
-                    await DisplayAlert("Information", "Signup Success!", "Ok");
-                    await Navigation.PushAsync(new PrivacyPolicyPage());
+                    await DisplayAlert("Warning", "Email is required", "Ok");
+                    return;
+                }
+                if (pass.Length <= 6)
+                {
+                    await DisplayAlert("Warning", "Strong Password is required", "Ok");
+                    return;
+                }
+                if (String.IsNullOrEmpty(pass))
+                {
+                    await DisplayAlert("Warning", "Password is required", "Ok");
+                    return;
+                }
+
+                bool isSave = await _userAuth.Register(email, pass);
+                if (isSave)
+                {
+                    await DisplayAlert("Register User", "Registration Completed", "Ok");
+                    await Navigation.PushAsync(new Views.UserManagement.PrivacyPolicyPage());
                 }
                 else
                 {
-                    await DisplayAlert("Error", "Error! Signup Failed!", "Ok");
+                    await DisplayAlert("Register User", "Registration Failed", "Ok");
                 }
             }
             catch (Exception exception)
             {
                 if (exception.Message.Contains("EMAIL_EXISTS"))
                 {
-
-                    await DisplayAlert("Sign In", "Field Empty! Please try again", "OK");
+                    await DisplayAlert("Warning", "Email already exist!", "Ok");
+                    Email.Text = "";
+                    Password.Text = "";
                 }
-                else exception.Message.Contains("INVALID_EMAIL");
+                else
                 {
-                    await DisplayAlert("Invalid Email", "Email is Invalid. Please try again!", "OK");
+                    await DisplayAlert("Error", exception.Message, "Ok");
                 }
+            }
+          
+        }
+        private void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            var imageButton = sender as ImageButton;
+            if (Password.IsPassword)
+            {
+                imageButton.Source = ImageSource.FromFile("show.png");
+                Password.IsPassword = false;
+            }
+            else
+            {
+                imageButton.Source = ImageSource.FromFile("hide.png");
+                Password.IsPassword = true;
             }
         }
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)

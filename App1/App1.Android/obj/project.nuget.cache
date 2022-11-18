@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TcROb69zQM4BocWJLqrj5bWooWN6dceskxbRCVxzDvlMygTTV4J0QQl+Y5Nv/YXam838SSCdziSOkgMYO2e+/Q==",
+  "dgSpecHash": "zm9wHhy6tlUb5Z3lEhUhhLKvcCNc2P+S4to1tkH1rpFdR6p6fsuWMPN50grqde7bPE+HieYdRM6XAjTrPQXxrA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Raven Barajas\\source\\repos\\ravenbarajas057\\CapstoneProject\\App1\\App1.Android\\App1.Android.csproj",
   "expectedPackageFiles": [
@@ -121,7 +121,8 @@
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms.inputkit\\4.1.5\\xamarin.forms.inputkit.4.1.5.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.2\\xamarin.google.android.material.1.4.0.2.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xcalendar.core\\4.1.0\\xcalendar.core.4.1.0.nupkg.sha512"
   ],
   "logs": []
 }
