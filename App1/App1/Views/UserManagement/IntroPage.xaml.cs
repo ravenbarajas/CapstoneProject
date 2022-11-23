@@ -18,7 +18,7 @@ namespace App1.Views.UserManagement
         }
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Views.UserManagement.SignupPage());
+            await Navigation.PushAsync(new Views.UserManagement.PrivacyPolicyPage());
         }
 
         private async void Clicked(object sender, EventArgs e)

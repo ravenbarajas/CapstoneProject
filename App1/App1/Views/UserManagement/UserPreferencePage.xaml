@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.UserManagement.UserPreferencePage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <Image Source="TopUserInfo.jpg"
+                   VerticalOptions="Start"
+                   Margin="0,0,0,0"/>
+        <Image Source="step3.png"
+                VerticalOptions="Start"
+                Margin="10,0,10,0"/>
+      
+        <ScrollView VerticalOptions="CenterAndExpand" Margin="10,0,15,5" HorizontalOptions="Start">
+            <StackLayout>
+                <Grid VerticalOptions="CenterAndExpand" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="75"/>
+                        <ColumnDefinition Width="250"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Grid.Row="0"
+                       Text="Hi, "
+                       TextColor="Black"
+                       TextTransform="None"
+                       HorizontalTextAlignment="Center"
+                       FontSize="28"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"/>
+                    <Label Grid.Column="1" Grid.Row="0"
+                       x:Name="txt_name"
+                       Text=""
+                       TextColor="#467fd7" 
+                       TextTransform="None"
+                       HorizontalTextAlignment="Start"
+                       FontSize="26"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"/>
+                </Grid>
+                <Label Text="Which type of these activities interest you the most?"
+                       Padding="15,0,15,0"
+                       TextColor="Black"
+                       FontSize="Large"
+                       FontAttributes="Bold"/>
+                <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                    <Grid Padding="5,0,5,0" RowSpacing="0" ColumnSpacing="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="130"/>
+                            <RowDefinition Height="35"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="135"/>
+                            <ColumnDefinition Width="135"/>
+                            <ColumnDefinition Width="135"/>
+                            <ColumnDefinition Width="135"/>
+                            <ColumnDefinition Width="135"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ImageButton Grid.Row="0" Grid.Column="0"
+                                     x:Name="AC00"
+                                     Source="reading.png"
+                                     Padding="15"
+                                BackgroundColor="#467fd7"
+                                CornerRadius="30"
+                                     Clicked="activities1_Clicked"/>
+                        <ImageButton Grid.Row="0" Grid.Column="1"
+                                     x:Name="AC01"
+                                     Source="cycling.png"
+                                     Padding="15"
+                                BackgroundColor="#467fd7"
+                                CornerRadius="30"
+                                     Clicked="activities2_Clicked"/>
+                        <ImageButton Grid.Row="0" Grid.Column="2"
+                                     x:Name="AC02"
+                                     Source="gym.png"
+                                     Padding="15"
+                                BackgroundColor="#467fd7"
+                                CornerRadius="30"
+                                     Clicked="activities3_Clicked"/>
+                        <ImageButton Grid.Row="0" Grid.Column="3"
+                                     x:Name="AC03"
+                                     Source="yoga.png"
+                                     Padding="15"
+                                BackgroundColor="#467fd7"
+                                CornerRadius="30"
+                                     Clicked="activities4_Clicked"/>
+                        <ImageButton Grid.Row="0" Grid.Column="4"
+                                     x:Name="AC04"
+                                     Source="gaming.png"
+                                     Padding="15"
+                                BackgroundColor="#467fd7"
+                                CornerRadius="30"
+                                     Clicked="activities5_Clicked"/>
+
+                        <Label Grid.Row="1" Grid.Column="0"
+                               Text="Reading"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               Padding="5"
+                               HorizontalOptions="Center"/>
+                        <Label Grid.Row="1" Grid.Column="1"
+                               Text="Cycling"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               Padding="5"
+                               HorizontalOptions="Center"/>
+                        <Label Grid.Row="1" Grid.Column="2"
+                               Text="Going to Gym"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               Padding="5"
+                               HorizontalOptions="Center"/>
+                        <Label Grid.Row="1" Grid.Column="3"
+                               Text="Yoga"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               Padding="5"
+                               HorizontalOptions="Center"/>
+                        <Label Grid.Row="1" Grid.Column="4"
+                               Text="Gaming"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               Padding="5"
+                               HorizontalOptions="Center"/>
+                    </Grid>
+                </ScrollView>
+                <Label Text="Which type of food do you like the most?"
+                       Padding="15,10,15,0"
+                       TextColor="Black"
+                       FontSize="Large"
+                       FontAttributes="Bold"/>
+                <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                    <Grid Padding="5,0,5,0" RowSpacing="0" ColumnSpacing="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="130"/>
+                            <RowDefinition Height="35"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="135"/>
+                            <ColumnDefinition Width="135"/>
+                            <ColumnDefinition Width="135"/>
+                            <ColumnDefinition Width="135"/>
+                            <ColumnDefinition Width="135"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ImageButton Grid.Row="0" Grid.Column="0"
+                                     x:Name="FT00"
+                                     Source="breakfast.png"
+                                     Padding="15"
+                                BackgroundColor="#467fd7"
+                                CornerRadius="30"
+                                     Clicked="foodtype1_Clicked"/>
+                        <ImageButton Grid.Row="0" Grid.Column="1"
+                                     x:Name="FT01"
+                                     Source="maincourse.png"
+                                     Padding="15"
+                                BackgroundColor="#467fd7"
+                                CornerRadius="30"
+                                     Clicked="foodtype2_Clicked"/>
+                        <ImageButton Grid.Row="0" Grid.Column="2"
+                                     x:Name="FT02"
+                                     Source="dessert.png"
+                                     Padding="15"
+                                BackgroundColor="#467fd7"
+                                CornerRadius="30"
+                                     Clicked="foodtype3_Clicked"/>
+                        <ImageButton Grid.Row="0" Grid.Column="3"
+                                     x:Name="FT03"
+                                     Source="snack.png"
+                                     Padding="15"
+                                BackgroundColor="#467fd7"
+                                CornerRadius="30"
+                                     Clicked="foodtype4_Clicked"/>
+                        <ImageButton Grid.Row="0" Grid.Column="4"
+                                     x:Name="FT04"
+                                     Source="soup.png"
+                                     Padding="15"
+                                BackgroundColor="#467fd7"
+                                CornerRadius="30"
+                                     Clicked="foodtype5_Clicked"/>
+
+                        <Label Grid.Row="1" Grid.Column="0"
+                               Text="Breakfast"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               Padding="5"
+                               HorizontalOptions="Center"/>
+                        <Label Grid.Row="1" Grid.Column="1"
+                               Text="Main Course"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               Padding="5"
+                               HorizontalOptions="Center"/>
+                        <Label Grid.Row="1" Grid.Column="2"
+                               Text="Dessert"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               Padding="5"
+                               HorizontalOptions="Center"/>
+                        <Label Grid.Row="1" Grid.Column="3"
+                               Text="Snack"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               Padding="5"
+                               HorizontalOptions="Center"/>
+                        <Label Grid.Row="1" Grid.Column="4"
+                               Text="Soup"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               Padding="5"
+                               HorizontalOptions="Center"/>
+                    </Grid>
+                </ScrollView>
+
+                <Label Text="Which type of food preparation you do most?"
+                       Padding="15,10,15,0"
+                       TextColor="Black"
+                       FontSize="Large"
+                       FontAttributes="Bold"/>
+                <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                    <Grid Padding="5,0,5,0" RowSpacing="0" ColumnSpacing="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="130"/>
+                            <RowDefinition Height="35"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="135"/>
+                            <ColumnDefinition Width="135"/>
+                            <ColumnDefinition Width="135"/>
+                            <ColumnDefinition Width="135"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ImageButton Grid.Row="0" Grid.Column="0"
+                                     x:Name="FP00"
+                                     Source="cooking.png"
+                                     Padding="15"
+                                BackgroundColor="#467fd7"
+                                CornerRadius="30"
+                                     Clicked="foodprep1_Clicked"/>
+                        <ImageButton Grid.Row="0" Grid.Column="1"
+                                     x:Name="FP01"
+                                     Source="baking.png"
+                                     Padding="15"
+                                BackgroundColor="#467fd7"
+                                CornerRadius="30"
+                                     Clicked="foodprep2_Clicked"/>
+                        <ImageButton Grid.Row="0" Grid.Column="2"
+                                     x:Name="FP02"
+                                     Source="grilling.png"
+                                     Padding="15"
+                                BackgroundColor="#467fd7"
+                                CornerRadius="30"
+                                     Clicked="foodprep3_Clicked"/>
+                        <ImageButton Grid.Row="0" Grid.Column="3"
+                                     x:Name="FP03"
+                                     Source="steamed.png"
+                                     Padding="15"
+                                BackgroundColor="#467fd7"
+                                CornerRadius="30"
+                                     Clicked="foodprep4_Clicked"/>
+
+                        <Label Grid.Row="1" Grid.Column="0"
+                               Text="Fried"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               Padding="5"
+                               HorizontalOptions="Center"/>
+                        <Label Grid.Row="1" Grid.Column="1"
+                               Text="Baking"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               Padding="5"
+                               HorizontalOptions="Center"/>
+                        <Label Grid.Row="1" Grid.Column="2"
+                               Text="Grilling"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               Padding="5"
+                               HorizontalOptions="Center"/>
+                        <Label Grid.Row="1" Grid.Column="3"
+                               Text="Steamed"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               Padding="5"
+                               HorizontalOptions="Center"/>
+                    </Grid>
+                </ScrollView>
+
+            </StackLayout>
+        </ScrollView>
+            <Button Text="Finish"
+                TextColor="White"
+                TextTransform="None"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                BackgroundColor="#3F9D2F"
+                Margin="35,0,35,5"
+                VerticalOptions="EndAndExpand"
+                CornerRadius="30"
+                Clicked="Finish_Clicked"/>
+    </StackLayout>
+</ContentPage>

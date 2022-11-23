@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using App1;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Firebase.Auth;
@@ -48,8 +48,9 @@ namespace App1.Views.UserManagement
                 bool isSave = await _userAuth.Register(email, pass);
                 if (isSave)
                 {
+                    Application.Current.Properties["userEmail"] = Email.Text;
                     await DisplayAlert("Register User", "Registration Completed", "Ok");
-                    await Navigation.PushAsync(new Views.UserManagement.PrivacyPolicyPage());
+                    await Navigation.PushAsync(new UserInfoPage());
                 }
                 else
                 {

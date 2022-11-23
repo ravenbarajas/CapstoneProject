@@ -113,7 +113,7 @@
             </Grid>
         </ScrollView>
         <ScrollView HeightRequest="525">
-            <Grid Padding="5,0,5,0">
+            <Grid Padding="5,10,5,10">
                 <StackLayout>
                     <Grid HorizontalOptions="CenterAndExpand" Padding="5,0,5,0">
                         <Grid.ColumnDefinitions>

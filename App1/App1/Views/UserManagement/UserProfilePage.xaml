@@ -9,7 +9,7 @@
             <Image Source="ProfileTop.jpg"
                    VerticalOptions="Start"
                    Margin="0,0,0,0"/>
-            <Label Text="Raven Barajas"
+            <Label Text="Shrimp Chef Admin"
                    TextColor="Black"
                    FontSize="38"
                    FontAttributes="Bold"

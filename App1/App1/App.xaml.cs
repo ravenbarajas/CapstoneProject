@@ -13,7 +13,7 @@ namespace App1
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new UserInfoPage());
+            MainPage = new NavigationPage(new IntroPage());
         }
 
         protected override void OnStart()

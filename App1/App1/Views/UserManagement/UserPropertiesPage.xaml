@@ -14,37 +14,156 @@
 
         <ScrollView>
             <StackLayout>
+                <Grid VerticalOptions="CenterAndExpand" Margin="0,0,0,0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0"
+                       Text="You are signed in as"
+                       TextColor="Black"
+                       TextTransform="None"
+                       HorizontalTextAlignment="Center"
+                       FontSize="0"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"/>
+                    <Label Grid.Column="0"
+                       x:Name="txt_username"
+                       Text="You are signed in as"
+                       TextColor="Red"
+                       TextTransform="None"
+                       HorizontalTextAlignment="Center"
+                       FontSize="0"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"/>
+                </Grid>
+                <Grid Padding="15,5,5,5" ColumnSpacing="5"  Margin="10,-6,10,-6" BackgroundColor="#e6e6e6">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Row="0" Grid.Column="0"
+                            x:Name="lbl_allergies"
+                            Text="{Binding Source={x:Reference pk_allergies}, Path=SelectedItem}" 
+                            TextColor="White"
+                            TextTransform="None"
+                            FontSize="16"
+                            Padding="10,0,10,0"
+                            FontAttributes="Bold"
+                            BackgroundColor="#3F9D2F"
+                            VerticalOptions="Center"
+                            CornerRadius="30"/>
+                    <Button Grid.Row="0" Grid.Column="1"
+                            x:Name="lbl_diettype"
+                            Text="{Binding Source={x:Reference pk_diettype}, Path=SelectedItem}" 
+                            TextColor="White"
+                            TextTransform="None"
+                            FontSize="16"
+                            Padding="10,0,10,0"
+                            FontAttributes="Bold"
+                            BackgroundColor="#3F9D2F"
+                            VerticalOptions="Center"
+                            CornerRadius="30"/>
+                </Grid>
+                <Grid Padding="15,5,5,5" ColumnSpacing="5" Margin="10,-6,10,-6" BackgroundColor="#e6e6e6">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Row="0" Grid.Column="0"
+                            x:Name="lbl_lifestyle"
+                            Text="{Binding Source={x:Reference pk_lifestyle}, Path=SelectedItem}" 
+                            TextColor="White"
+                            TextTransform="None"
+                            FontSize="16"
+                            Padding="10,0,10,0"
+                            FontAttributes="Bold"
+                            BackgroundColor="#3F9D2F"
+                            VerticalOptions="Center"
+                            CornerRadius="30"/>
+
+                </Grid>
+                <Grid Padding="15,5,5,5" ColumnSpacing="5" Margin="10,-6,10,-6" BackgroundColor="#e6e6e6">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Row="0" Grid.Column="0"
+                            x:Name="lbl_homecook"
+                            Text="{Binding Source={x:Reference pk_homecook}, Path=SelectedItem}" 
+                            TextColor="White"
+                            TextTransform="None"
+                            FontSize="16"
+                            Padding="10,0,10,0"
+                            FontAttributes="Bold"
+                            BackgroundColor="#3F9D2F"
+                            VerticalOptions="Center"
+                            CornerRadius="30"/>
+                    <Button Grid.Row="0" Grid.Column="1"
+                            x:Name="lbl_frequency"
+                            Text="{Binding Source={x:Reference pk_frequency}, Path=SelectedItem}" 
+                            TextColor="White"
+                            TextTransform="None"
+                            FontSize="16"
+                            Padding="10,0,10,0"
+                            FontAttributes="Bold"
+                            BackgroundColor="#3F9D2F"
+                            VerticalOptions="Center"
+                            CornerRadius="30"/>
+                </Grid>
+                <Grid Padding="15,5,5,5" ColumnSpacing="5" Margin="10,-6,10,-6" BackgroundColor="#e6e6e6">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Row="0" Grid.Column="0"
+                            x:Name="lbl_cooktime"
+                            Text="{Binding Source={x:Reference pk_cooktime}, Path=SelectedItem}" 
+                            TextColor="White"
+                            TextTransform="None"
+                            FontSize="16"
+                            Padding="10,0,10,0"
+                            FontAttributes="Bold"
+                            BackgroundColor="#3F9D2F"
+                            VerticalOptions="Center"
+                            CornerRadius="30"/>
+                    <Button Grid.Row="0" Grid.Column="1"
+                            x:Name="lbl_cookskill"
+                            Text="{Binding Source={x:Reference pk_cookskill}, Path=SelectedItem}" 
+                            TextColor="White"
+                            TextTransform="None"
+                            FontSize="16"
+                            Padding="10,0,10,0"
+                            FontAttributes="Bold"
+                            BackgroundColor="#3F9D2F"
+                            VerticalOptions="Center"
+                            CornerRadius="30"/>
+                </Grid>
+                
                 <Grid Padding="5,0,5,0" RowSpacing="0" ColumnSpacing="3">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="35"/>
 
-                        <RowDefinition Height="45"/>
+                        <RowDefinition Height="55"/>
                         <RowDefinition Height="25"/>
                         <RowDefinition Height="30"/>
-
-                        <RowDefinition Height="45"/>
-                        <RowDefinition Height="25"/>
-                        <RowDefinition Height="30"/>
-
-                        <RowDefinition Height="45"/>
-                        <RowDefinition Height="25"/>
-                        <RowDefinition Height="30"/>
-
-                        <RowDefinition Height="45"/>
-                        <RowDefinition Height="25"/>
-                        <RowDefinition Height="30"/>
-
-                        <RowDefinition Height="50"/>
-                        <RowDefinition Height="25"/>
-                        <RowDefinition Height="40"/>
-
-                        <RowDefinition Height="50"/>
-                        <RowDefinition Height="25"/>
-                        <RowDefinition Height="40"/>
-
-                        <RowDefinition Height="50"/>
-                        <RowDefinition Height="25"/>
-                        <RowDefinition Height="40"/>
 
                         <RowDefinition Height="10"/>
                     </Grid.RowDefinitions>
@@ -61,6 +180,7 @@
                                 Margin="0,0,0,0"/>
 
                     <Label Grid.Row="1"
+                           x:Name="lbl00"
                             Text="1.    Do you have any known allergies?"
                                 TextColor="Black"
                                 Padding="5,0,5,0"
@@ -69,6 +189,7 @@
                                 VerticalOptions="Center" 
                                 Margin="0,-10,0,0"/>
                     <Label Grid.Row="2"
+                           x:Name="lbl01"
                                     Text="*Required"
                                     TextColor="Red"
                                     Padding="5,0,5,0"
@@ -77,18 +198,13 @@
                                     VerticalOptions="Center"
                                    Margin="0,-25,0,0"/>
                     <Picker Grid.Row="3" Grid.Column="0"
-                            Title="Allergies"
-                            Margin="0,-10,0,0">
-                        <Picker.Items>
-                            <x:String>None</x:String>
-                            <x:String>Nuts</x:String>
-                            <x:String>Seafood</x:String>
-                            <x:String>Dairy</x:String>
-                            <x:String>Poultry</x:String>
-                        </Picker.Items>
-                    </Picker>
+                            x:Name="pk_allergies"
+                            Title="Known allergy"
+                            Focused="btnshow1"
+                            Margin="0,-10,0,0"/>
 
-                    <Label Grid.Row="4"
+                    <Label Grid.Row="1"
+                           x:Name="lbl10"
                             Text="2.    What is your general diet type?"
                                 TextColor="Black"
                                 Padding="5,0,5,0"
@@ -96,7 +212,8 @@
                                 FontAttributes="Bold"
                                 VerticalOptions="Center" 
                                 Margin="0,-10,0,0"/>
-                    <Label Grid.Row="5"
+                    <Label Grid.Row="2"
+                           x:Name="lbl11"
                                     Text="*Required"
                                     TextColor="Red"
                                     Padding="5,0,5,0"
@@ -104,19 +221,14 @@
                                     FontAttributes="None"
                                     VerticalOptions="Center"
                                    Margin="0,-25,0,0"/>
-                    <Picker Grid.Row="6" Grid.Column="0"
+                    <Picker Grid.Row="3" Grid.Column="0"
+                            x:Name="pk_diettype"
                             Title="Diet Type"
-                            Margin="0,-10,0,0">
-                        <Picker.Items>
-                            <x:String>Normal Diet</x:String>
-                            <x:String>High Calorie</x:String>
-                            <x:String>Low Sugar</x:String>
-                            <x:String>Low Sodium</x:String>
-                            <x:String>Low Fat</x:String>
-                        </Picker.Items>
-                    </Picker>
+                            Focused="btnshow2"
+                            Margin="0,-10,0,0"/>
 
-                    <Label Grid.Row="7"
+                    <Label Grid.Row="1"
+                           x:Name="lbl20"
                             Text="3.    How often do you exercise?"
                                 TextColor="Black"
                                 Padding="5,0,5,0"
@@ -124,7 +236,8 @@
                                 FontAttributes="Bold"
                                 VerticalOptions="Center" 
                                 Margin="0,-10,0,0"/>
-                    <Label Grid.Row="8"
+                    <Label Grid.Row="2"
+                           x:Name="lbl21"
                                     Text="*Required"
                                     TextColor="Red"
                                     Padding="5,0,5,0"
@@ -132,17 +245,14 @@
                                     FontAttributes="None"
                                     VerticalOptions="Center"
                                    Margin="0,-25,0,0"/>
-                    <Picker Grid.Row="9" Grid.Column="0"
+                    <Picker Grid.Row="3" Grid.Column="0"
+                            x:Name="pk_lifestyle"
                             Title="Lifestyle"
-                            Margin="0,-10,0,0">
-                        <Picker.Items>
-                            <x:String>Active (4-5 days a week)</x:String>
-                            <x:String>Average (2-3 days a week)</x:String>
-                            <x:String>Sedentary (0-1 day a week)</x:String>
-                        </Picker.Items>
-                    </Picker>
+                            Focused="btnshow3"
+                            Margin="0,-10,0,0"/>
 
-                    <Label Grid.Row="10"
+                    <Label Grid.Row="1"
+                           x:Name="lbl30"
                             Text="4.    Who often cooks in your home?"
                                 TextColor="Black"
                                 Padding="5,0,5,0"
@@ -150,7 +260,8 @@
                                 FontAttributes="Bold"
                                 VerticalOptions="Center" 
                                 Margin="0,-10,0,0"/>
-                    <Label Grid.Row="11"
+                    <Label Grid.Row="2"
+                           x:Name="lbl31"
                                     Text="*Required"
                                     TextColor="Red"
                                     Padding="5,0,5,0"
@@ -158,94 +269,154 @@
                                     FontAttributes="None"
                                     VerticalOptions="Center"
                                    Margin="0,-25,0,0"/>
-                    <Picker Grid.Row="12" Grid.Column="0"
+                    <Picker Grid.Row="3" Grid.Column="0"
+                            x:Name="pk_homecook"
                             Title="Home Cook"
-                            Margin="0,-10,0,0">
-                        <Picker.Items>
-                            <x:String>Myself</x:String>
-                            <x:String>Older Brother/Sister</x:String>
-                            <x:String>Older Parent/Guardian</x:String>
-                        </Picker.Items>
-                    </Picker>
+                            Focused="btnshow4"
+                            Margin="0,-10,0,0"/>
 
-                    <Label Grid.Row="13"
+                    <Label Grid.Row="1"
+                           x:Name="lbl40"
                             Text="5.    How often your family cooks at home in a week?"
                                 TextColor="Black"
                                 Padding="5,0,5,0"
                                 FontSize="20"
                                 FontAttributes="Bold"
                                 VerticalOptions="Center" 
-                                Margin="0,5,0,0"/>
-                    <Label Grid.Row="14"
+                                Margin="0,-10,0,0"/>
+                    <Label Grid.Row="2"
+                           x:Name="lbl41"
                                     Text="*Required"
                                     TextColor="Red"
                                     Padding="5,0,5,0"
                                     FontSize="Small"
                                     FontAttributes="None"
                                     VerticalOptions="Center"
-                                   Margin="0,5,0,0"/>
-                    <Picker Grid.Row="15" Grid.Column="0"
-                            Title="Lifestyle"
-                            Margin="0,-10,0,0">
-                        <Picker.Items>
-                            <x:String>Everyday</x:String>
-                            <x:String>1x - 3x a week</x:String>
-                            <x:String>4x - 6x a week</x:String>
-                        </Picker.Items>
-                    </Picker>
+                                   Margin="0,-25,0,0"/>
+                    <Picker Grid.Row="3" Grid.Column="0"
+                            x:Name="pk_frequency"
+                            Title="Cooking Frequency"
+                            Focused="btnshow5"
+                            Margin="0,-10,0,0"/>
 
-                    <Label Grid.Row="16"
+                    <Label Grid.Row="1"
+                           x:Name="lbl50"
                             Text="6.    How much time does your family allot for cooking? (each meal)"
                                 TextColor="Black"
                                 Padding="5,0,5,0"
                                 FontSize="20"
                                 FontAttributes="Bold"
                                 VerticalOptions="Center" 
-                                Margin="0,5,0,0"/>
-                    <Label Grid.Row="17"
+                                Margin="0,-10,0,0"/>
+                    <Label Grid.Row="2"
+                           x:Name="lbl51"
                                     Text="*Required"
                                     TextColor="Red"
                                     Padding="5,0,5,0"
                                     FontSize="Small"
                                     FontAttributes="None"
                                     VerticalOptions="Center"
-                                   Margin="0,5,0,0"/>
-                    <Picker Grid.Row="18" Grid.Column="0"
+                                   Margin="0,-25,0,0"/>
+                    <Picker Grid.Row="3" Grid.Column="0"
+                            x:Name="pk_cooktime"
                             Title="Cook Time"
-                            Margin="0,-10,0,0">
-                        <Picker.Items>
-                            <x:String>0 - 30 mins</x:String>
-                            <x:String>30 - 60 mins</x:String>
-                            <x:String>60 - 120 mins</x:String>
-                        </Picker.Items>
-                    </Picker>
+                            Focused="btnshow6"
+                            Margin="0,-10,0,0"/>
 
-                    <Label Grid.Row="19"
+                    <Label Grid.Row="1"
+                           x:Name="lbl60"
                             Text="7.    With honesty, rate your cooking skill 1-10."
                                 TextColor="Black"
                                 Padding="5,0,5,0"
                                 FontSize="20"
                                 FontAttributes="Bold"
                                 VerticalOptions="Center" 
-                                Margin="0,5,0,0"/>
-                    <Label Grid.Row="20"
+                                Margin="0,-10,0,0"/>
+                    <Label Grid.Row="2"
+                           x:Name="lbl61"
                                     Text="*Required"
                                     TextColor="Red"
                                     Padding="5,0,5,0"
                                     FontSize="Small"
                                     FontAttributes="None"
                                     VerticalOptions="Center"
-                                   Margin="0,5,0,0"/>
-                    <Picker Grid.Row="21" Grid.Column="0"
-                            Title="Cook Time"
-                            Margin="0,-10,0,0">
-                        <Picker.Items>
-                            <x:String>1 - 3 (Beginner)</x:String>
-                            <x:String>4 - 5 (Average)</x:String>
-                            <x:String>6 - 8 (Home Cook)</x:String>
-                            <x:String>8- 10 (Experienced)</x:String>
-                        </Picker.Items>
-                    </Picker>
+                                   Margin="0,-25,0,0"/>
+                    <Picker Grid.Row="3" Grid.Column="0"
+                            x:Name="pk_cookskill"
+                            Title="Cooking Skill"
+                            Focused="btnshow7"
+                            Margin="0,-10,0,0"/>
+                </Grid>
+                <Grid Padding="5,0,5,0" RowSpacing="0" ColumnSpacing="5" HorizontalOptions="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45"/>
+                        <ColumnDefinition Width="45"/>
+                        <ColumnDefinition Width="45"/>
+                        <ColumnDefinition Width="45"/>
+                        <ColumnDefinition Width="45"/>
+                        <ColumnDefinition Width="45"/>
+                        <ColumnDefinition Width="45"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <Button Grid.Column="0"
+                            x:Name="hide1"
+                            Text="1"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            CornerRadius="20"
+                            Padding="-5,-5,-5,-5"
+                            Clicked="pickerhide1_Clicked"/>
+                    <Button Grid.Column="1"
+                            x:Name="hide2"
+                            Text="2"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            CornerRadius="20"
+                            Padding="-5,-5,-5,-5"
+                            Clicked="pickerhide2_Clicked"/>
+                    <Button Grid.Column="2"
+                            x:Name="hide3"
+                            Text="3"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            CornerRadius="20"
+                            Padding="-5,-5,-5,-5"
+                            Clicked="pickerhide3_Clicked"/>
+                    <Button Grid.Column="3"
+                            x:Name="hide4"
+                            Text="4"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            CornerRadius="20"
+                            Padding="-5,-5,-5,-5"
+                            Clicked="pickerhide4_Clicked"/>
+                    <Button Grid.Column="4"
+                            x:Name="hide5"
+                            Text="5"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            CornerRadius="20"
+                            Padding="-5,-5,-5,-5"
+                            Clicked="pickerhide5_Clicked"/>
+                    <Button Grid.Column="5"
+                            x:Name="hide6"
+                            Text="6"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            CornerRadius="20"
+                            Padding="-5,-5,-5,-5"
+                            Clicked="pickerhide6_Clicked"/>
+                    <Button Grid.Column="6"
+                            x:Name="hide7"
+                            Text="7"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            CornerRadius="20"
+                            Padding="-5,-5,-5,-5"
+                            Clicked="pickerhide7_Clicked"/>
                 </Grid>
             </StackLayout>
         </ScrollView>

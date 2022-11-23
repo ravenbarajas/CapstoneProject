@@ -16,14 +16,15 @@
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                     </Grid.ColumnDefinitions>
-                    <Entry  Grid.Row="0" Grid.Column="0"
-                            x:Name="Email"
-                            Text=""
-                            Placeholder="Email"
-                            TextColor="#1e4072"
-                            BackgroundColor="#FFFFFF"
-                            HorizontalTextAlignment="Start"/>
+
+                    <Entry Grid.Row="0" Grid.Column="0"
+                               x:Name="Email"
+                               Placeholder="Email"
+                               Text=""
+                               TextColor="#1e4072"
+                               HorizontalTextAlignment="Start"/>
                 </Grid>
+
                 <Grid Padding="15,0,15,0" RowSpacing="0" ColumnSpacing="3">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="45"/>
