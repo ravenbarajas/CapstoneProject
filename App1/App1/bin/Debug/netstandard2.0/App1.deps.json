@@ -13,7 +13,6 @@
           "FirebaseDatabase.net": "4.1.0",
           "NETStandard.Library": "2.0.3",
           "Plugin.FormsStackPanel": "1.0.3",
-          "Syncfusion.Xamarin.Expander": "20.2.0.46",
           "XCalendar.Core": "4.1.0",
           "Xamarin.CommunityToolkit": "2.0.5",
           "Xamarin.Essentials": "1.7.3",
@@ -78,38 +77,6 @@
         }
       },
       "Plugin.FormsStackPanel/1.0.3": {},
-      "Syncfusion.Licensing/20.2.0.46": {
-        "runtime": {
-          "lib/netstandard2.0/Syncfusion.Licensing.dll": {
-            "assemblyVersion": "20.2.0.46",
-            "fileVersion": "20.2.0.46"
-          }
-        }
-      },
-      "Syncfusion.Xamarin.Core/20.2.0.46": {
-        "dependencies": {
-          "Syncfusion.Licensing": "20.2.0.46",
-          "Xamarin.Forms": "5.0.0.2515"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Syncfusion.Core.XForms.dll": {
-            "assemblyVersion": "20.2451.0.46",
-            "fileVersion": "20.2451.0.46"
-          }
-        }
-      },
-      "Syncfusion.Xamarin.Expander/20.2.0.46": {
-        "dependencies": {
-          "Syncfusion.Xamarin.Core": "20.2.0.46",
-          "Xamarin.Forms": "5.0.0.2515"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Syncfusion.Expander.XForms.dll": {
-            "assemblyVersion": "20.2451.0.46",
-            "fileVersion": "20.2451.0.46"
-          }
-        }
-      },
       "System.ComponentModel/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -377,27 +344,6 @@
       "sha512": "sha512-Kkn9GE/NKhY2YeLpjBBW7W25dDSQ/BXF2V16HaqJYSCIPUv4UwfhiNdMmb8kDnpgMED/URC4LWAxOPPZx1tzMg==",
       "path": "plugin.formsstackpanel/1.0.3",
       "hashPath": "plugin.formsstackpanel.1.0.3.nupkg.sha512"
-    },
-    "Syncfusion.Licensing/20.2.0.46": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-XOrh1ED3SqxTmNlCT4v0VS01a0kwKpMdnaNAUIV42TBaKZ137ISsXpvKNIYempXHPHdJdXGPhEKUFAgK/in+Rw==",
-      "path": "syncfusion.licensing/20.2.0.46",
-      "hashPath": "syncfusion.licensing.20.2.0.46.nupkg.sha512"
-    },
-    "Syncfusion.Xamarin.Core/20.2.0.46": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ZceOrdM0UItjNV1PahVFRpzKGiokJ0FrnzEx2VDUaPjULk6kLIhIyPQmkI87lfuRspTMXeDLVvH8YQLiYW9h4g==",
-      "path": "syncfusion.xamarin.core/20.2.0.46",
-      "hashPath": "syncfusion.xamarin.core.20.2.0.46.nupkg.sha512"
-    },
-    "Syncfusion.Xamarin.Expander/20.2.0.46": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-OnNL/QgFkNWuvURturNM5rn1mdyILmDKD4L1sveESa60WyhNXZr9ueVdKx+xSJ7GPZBuWe9Vv6vEnmoHPOuaVA==",
-      "path": "syncfusion.xamarin.expander/20.2.0.46",
-      "hashPath": "syncfusion.xamarin.expander.20.2.0.46.nupkg.sha512"
     },
     "System.ComponentModel/4.3.0": {
       "type": "package",

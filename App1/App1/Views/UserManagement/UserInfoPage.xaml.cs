@@ -12,6 +12,15 @@ namespace App1.Views.UserManagement
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UserInfoPage : ContentPage
     {
+        userInfo repository = new userInfo();
+
+        public static string email;
+        public static string username;
+        public static string lastname;
+        public static string firstname;
+        public static string birthdate;
+        public static string age;
+
         public UserInfoPage()
         {
             InitializeComponent();
@@ -21,10 +30,12 @@ namespace App1.Views.UserManagement
         {
             try
             {
-                string username = txt_username.Text;
-                string lastname = txt_lastname.Text;
-                string firstname = txt_firstname.Text;
-                string age = txt_age.Text;
+                email = txt_userEmail.Text;
+                username = txt_username.Text;
+                lastname = txt_lastname.Text;
+                firstname = txt_firstname.Text;
+                birthdate = dp_birthdate.Date.ToString("MM/dd/yyyy");
+                age = txt_age.Text;
 
                 if (String.IsNullOrEmpty(username))
                 {
@@ -48,12 +59,23 @@ namespace App1.Views.UserManagement
                 }
 
                 await Navigation.PushAsync(new UserPropertiesPage());
-                Application.Current.Properties["username"] = txt_username.Text;
             }
             catch 
             { 
 
             }
+        }
+        public void clear()
+        {
+            txt_userEmail.Text = string.Empty;
+            txt_username.Text = string.Empty;
+            txt_lastname.Text = string.Empty;
+            txt_firstname.Text = string.Empty;
+            txt_age.Text = string.Empty;
+        }
+        public string generateUserID()
+        {
+            return Guid.NewGuid().ToString("N").Substring(0, 8).ToUpper();
         }
     }
 }

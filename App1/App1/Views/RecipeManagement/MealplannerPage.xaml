@@ -14,7 +14,6 @@
                    VerticalTextAlignment="Center"
                    TextColor="White"
                    FontAttributes="Bold" 
-                   BackgroundColor="#467fd7"
                    Padding="5,0,5,0"/>
                 </Frame>
 

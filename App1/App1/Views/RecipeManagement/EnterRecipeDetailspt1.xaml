@@ -6,100 +6,370 @@
              NavigationPage.HasNavigationBar="False">
 
     <ContentPage.Content>
-        <StackLayout>
-            <Frame BackgroundColor="White" Padding="5,10,5,10">
+        <StackLayout BackgroundColor="white">
+            <Frame BackgroundColor="#3873F6" Padding="5,10,5,10">
                 <Label Text="Enter recipe details" 
                        FontSize="26" 
                        HorizontalTextAlignment="Center"
                        VerticalTextAlignment="Center"
-                       TextColor="#3873F6"
+                       TextColor="White"
                        FontAttributes="Bold" 
-                       BackgroundColor="White"
+                       BackgroundColor="#3873F6"
                        Padding="5,0,5,0"/>
             </Frame>
-
+            <Image Source="step2x4.png"
+                   Margin="10,0,10,5"/>
+            
             <ScrollView>
                 <StackLayout>
                     <Grid Padding="5,0,5,0" RowSpacing="0">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="45"/>
-                            <RowDefinition Height="45"/>
-
-                            <RowDefinition Height="45"/>
-                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="30"/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                         </Grid.ColumnDefinitions>
 
-                        <!--Recipe Name-->
+                        <!--Preparation Process-->
                         <Label Grid.Row="0"
-                           Text="Name"
+                           Text="Preparation Process"
                            TextColor="Black"
                            Padding="5,0,5,0"
                            FontSize="Large"
                            FontAttributes="Bold"
                            VerticalOptions="Center"
-                           Margin="0,-10,0,0"/>
-                        <Entry Grid.Row="1"
-                           Placeholder="Name your recipe"
-                           Margin="0,-10,0,0"/>
-                        <!--Recipe Description-->
-                        <Label Grid.Row="2"
-                           Text="Description"
+                               Margin="0,-15,0,0"/>
+                        <Picker Grid.Row="1"
+                           Title="How the recipe is prepared?"
+                               Margin="0,-15,0,0"/>
+                    </Grid>
+                    <Grid Padding="5,0,5,0" RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                        </Grid.ColumnDefinitions>
+
+                        <!--Recipe Category-->
+                        <Label Grid.Row="0"
+                           Text="Recipe Category"
                            TextColor="Black"
                            Padding="5,0,5,0"
                            FontSize="Large"
                            FontAttributes="Bold"
                            VerticalOptions="Center"
-                           Margin="0,-10,0,0"/>
-                        <Editor Grid.Row="3"
-                            Placeholder="Describe your recipe"
-                            Margin="0,-10,0,0"/>
+                               Margin="0,-15,0,0"/>
+                        <Picker Grid.Row="1"
+                           Title="What category does the recipe belong?"
+                               Margin="0,-15,0,0"/>
                     </Grid>
 
-                    <Grid Padding="5,0,5,0" RowSpacing="0" ColumnSpacing="3">
+                    <Grid Padding="5,0,5,0" RowSpacing="0" x:Name="lblkeyword1of8">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="45"/>
-                            <RowDefinition Height="45"/>
-                            <RowDefinition Height="45"/>
-
-                            <RowDefinition Height="45"/>
-                            <RowDefinition Height="45"/>
-                            <RowDefinition Height="45"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-                        <!--Cook Time-->
-                        <Label Grid.Row="0"
-                               Text="Cook Time"
-                               TextColor="Black"
-                               Padding="5,0,5,0"
-                               FontSize="Large"
-                               FontAttributes="Bold"
-                               VerticalOptions="Center"
-                               Margin="0,-10,0,0"/>
-                        <Entry Grid.Row="1" Grid.Column="0"
-                               Placeholder="Hours"
-                               Margin="0,-10,0,0"/>
-                        <Entry Grid.Row="1" Grid.Column="1"
-                               Placeholder="Minutes"
-                               Margin="0,-10,0,0"/>
 
-                        <!--Cooking Time-->
-                        <Label Grid.Row="2"
-                               Text="Prep Time"
+                        <!--Recipe Keywords 1 of 6-->
+                        <Label Grid.Row="0"
+                               x:Name="RK00"
+                               Text="Recipe Keywords"
                                TextColor="Black"
                                Padding="5,0,5,0"
                                FontSize="Large"
                                FontAttributes="Bold"
                                VerticalOptions="Center"
-                               Margin="0,-10,0,0"/>
-                        <Entry Grid.Row="3" Grid.Column="0"
-                               Placeholder="Hours"
-                               Margin="0,-10,0,0"/>
-                        <Entry Grid.Row="3" Grid.Column="1"
-                               Placeholder="Minutes"
-                               Margin="0,-10,0,0"/>
+                               Margin="0,-20,0,0"/>
+                        <Label Grid.Row="0" Grid.Column="1"
+                               x:Name="RK01"
+                               Text="1 of 6"
+                               TextColor="Black"
+                               Padding="5,0,5,0"
+                               FontSize="Medium"
+                               FontAttributes="None"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               Margin="0,-20,0,0"/>
+                        <Picker Grid.Row="1" Grid.ColumnSpan="2"
+                                x:Name="RK02"
+                                Title="Select Related Keywords"
+                                Margin="0,-15,0,0"/>
+                        
+                        <!--Recipe Keywords 2 of 6-->
+                        <Label Grid.Row="0"
+                               x:Name="RK100"
+                           Text="Recipe Keywords"
+                           TextColor="Black"
+                           Padding="5,0,5,0"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center"
+                               Margin="0,-20,0,0"/>
+                        <Label Grid.Row="0" Grid.Column="1"
+                               x:Name="RK101"
+                           Text="2 of 6"
+                           TextColor="Black"
+                           Padding="5,0,5,0"
+                           FontSize="Medium"
+                           FontAttributes="None"
+                           VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               Margin="0,-20,0,0"/>
+                        <Picker Grid.Row="1" Grid.ColumnSpan="2"
+                                x:Name="RK102"
+                           Title="Select Related Keywords"
+                               Margin="0,-15,0,0"/>
+
+                        <!--Recipe Keywords 3 of 6-->
+                        <Label Grid.Row="0"
+                               x:Name="RK200"
+                           Text="Recipe Keywords"
+                           TextColor="Black"
+                           Padding="5,0,5,0"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center"
+                               Margin="0,-20,0,0"/>
+                        <Label Grid.Row="0" Grid.Column="1"
+                               x:Name="RK201"
+                           Text="3 of 6"
+                           TextColor="Black"
+                           Padding="5,0,5,0"
+                           FontSize="Medium"
+                           FontAttributes="None"
+                           VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               Margin="0,-20,0,0"/>
+                        <Picker Grid.Row="1" Grid.ColumnSpan="2"
+                                x:Name="RK202"
+                           Title="Select Related Keywords"
+                               Margin="0,-15,0,0"/>
+
+                        <!--Recipe Keywords 4 of 6-->
+                        <Label Grid.Row="0"
+                               x:Name="RK300"
+                           Text="Recipe Keywords"
+                           TextColor="Black"
+                           Padding="5,0,5,0"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center"
+                               Margin="0,-20,0,0"/>
+                        <Label Grid.Row="0" Grid.Column="1"
+                               x:Name="RK301"
+                           Text="4 of 6"
+                           TextColor="Black"
+                           Padding="5,0,5,0"
+                           FontSize="Medium"
+                           FontAttributes="None"
+                           VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               Margin="0,-20,0,0"/>
+                        <Picker Grid.Row="1" Grid.ColumnSpan="2"
+                                x:Name="RK302"
+                           Title="Select Related Keywords"
+                               Margin="0,-15,0,0"/>
+
+                        <!--Recipe Keywords 5 of 6-->
+                        <Label Grid.Row="0"
+                               x:Name="RK400"
+                           Text="Recipe Keywords"
+                           TextColor="Black"
+                           Padding="5,0,5,0"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center"
+                               Margin="0,-20,0,0"/>
+                        <Label Grid.Row="0" Grid.Column="1"
+                               x:Name="RK401"
+                           Text="5 of 6"
+                           TextColor="Black"
+                           Padding="5,0,5,0"
+                           FontSize="Medium"
+                           FontAttributes="None"
+                           VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               Margin="0,-20,0,0"/>
+                        <Picker Grid.Row="1" Grid.ColumnSpan="2"
+                                x:Name="RK402"
+                           Title="Select Related Keywords"
+                               Margin="0,-15,0,0"/>
+
+                        <!--Recipe Keywords 6 of 6-->
+                        <Label Grid.Row="0"
+                               x:Name="RK500"
+                           Text="Recipe Keywords"
+                           TextColor="Black"
+                           Padding="5,0,5,0"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center"
+                               Margin="0,-20,0,0"/>
+                        <Label Grid.Row="0" Grid.Column="1"
+                               x:Name="RK501"
+                           Text="6 of 6"
+                           TextColor="Black"
+                           Padding="5,0,5,0"
+                           FontSize="Medium"
+                           FontAttributes="None"
+                           VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               Margin="0,-20,0,0"/>
+                        <Picker Grid.Row="1" Grid.ColumnSpan="2"
+                                x:Name="RK502"
+                           Title="Select Related Keywords"
+                               Margin="0,-15,0,0"/>
+                    </Grid>
+                    <Grid Padding="5,0,5,0" RowSpacing="0" ColumnSpacing="5" HorizontalOptions="Center">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="35"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="35"/>
+                            <ColumnDefinition Width="35"/>
+                            <ColumnDefinition Width="35"/>
+                            <ColumnDefinition Width="35"/>
+                            <ColumnDefinition Width="35"/>
+                            <ColumnDefinition Width="35"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Grid.Column="0"
+                            x:Name="hide1"
+                            Text="1"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            CornerRadius="20"
+                            Padding="-5,-5,-5,-5"/>
+                        <Button Grid.Column="1"
+                            x:Name="hide2"
+                            Text="2"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            CornerRadius="20"
+                            Padding="-5,-5,-5,-5"/>
+                        <Button Grid.Column="2"
+                            x:Name="hide3"
+                            Text="3"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            CornerRadius="20"
+                            Padding="-5,-5,-5,-5"/>
+                        <Button Grid.Column="3"
+                            x:Name="hide4"
+                            Text="4"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            CornerRadius="20"
+                            Padding="-5,-5,-5,-5"/>
+                        <Button Grid.Column="4"
+                            x:Name="hide5"
+                            Text="5"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            CornerRadius="20"
+                            Padding="-5,-5,-5,-5"/>
+                        <Button Grid.Column="5"
+                            x:Name="hide6"
+                            Text="6"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            CornerRadius="20"
+                            Padding="-5,-5,-5,-5"/>
+                    </Grid>
+                    <Grid Padding="5,5,5,5" ColumnSpacing="3"  Margin="10,0,10,0" BackgroundColor="#e6e6e6" x:Name="selectiongrid1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="35"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Grid.Row="0" Grid.Column="0"
+
+                            TextColor="White"
+                            TextTransform="None"
+                            FontSize="16"
+                            Padding="10,0,10,0"
+                            FontAttributes="Bold"
+                            BackgroundColor="#3F9D2F"
+                            VerticalOptions="Center"
+                            CornerRadius="30"/>
+                        <Button Grid.Row="0" Grid.Column="1"
+                                
+                            TextColor="White"
+                            TextTransform="None"
+                            FontSize="16"
+                            Padding="10,0,10,0"
+                            FontAttributes="Bold"
+                            BackgroundColor="#3F9D2F"
+                            VerticalOptions="Center"
+                            CornerRadius="30"/>
+                    </Grid>
+                    <Grid Padding="5,5,5,5" ColumnSpacing="3"  Margin="10,-10,10,0" BackgroundColor="#e6e6e6" x:Name="selectiongrid2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="35"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Grid.Row="0" Grid.Column="0"
+
+                            TextColor="White"
+                            TextTransform="None"
+                            FontSize="16"
+                            Padding="10,0,10,0"
+                            FontAttributes="Bold"
+                            BackgroundColor="#3F9D2F"
+                            VerticalOptions="Center"
+                            CornerRadius="30"/>
+                        <Button Grid.Row="0" Grid.Column="1"
+                                
+                            TextColor="White"
+                            TextTransform="None"
+                            FontSize="16"
+                            Padding="10,0,10,0"
+                            FontAttributes="Bold"
+                            BackgroundColor="#3F9D2F"
+                            VerticalOptions="Center"
+                            CornerRadius="30"/>
+                    </Grid>
+                    <Grid Padding="5,5,5,5" ColumnSpacing="3"  Margin="10,-10,10,0" BackgroundColor="#e6e6e6" x:Name="selectiongrid3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="35"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Grid.Row="0" Grid.Column="0"
+
+                            TextColor="White"
+                            TextTransform="None"
+                            FontSize="16"
+                            Padding="10,0,10,0"
+                            FontAttributes="Bold"
+                            BackgroundColor="#3F9D2F"
+                            VerticalOptions="Center"
+                            CornerRadius="30"/>
+                        <Button Grid.Row="0" Grid.Column="1"
+                                
+                            TextColor="White"
+                            TextTransform="None"
+                            FontSize="16"
+                            Padding="10,0,10,0"
+                            FontAttributes="Bold"
+                            BackgroundColor="#3F9D2F"
+                            VerticalOptions="Center"
+                            CornerRadius="30"/>
                     </Grid>
                 </StackLayout>
             </ScrollView>
@@ -111,6 +381,7 @@
                     BackgroundColor="#3873F6"
                     Margin="15,0,15,5"
                     CornerRadius="30"
+                    VerticalOptions="EndAndExpand"
                     Clicked="Next_Clicked"/>
         </StackLayout>
     </ContentPage.Content>

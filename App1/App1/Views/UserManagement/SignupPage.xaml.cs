@@ -16,6 +16,8 @@ namespace App1.Views.UserManagement
         firebaseConnection connection = new firebaseConnection();
         userInfo authenticateAcc = new userInfo();
 
+        public string email;
+
         userAuth _userAuth = new userAuth();
         public SignupPage()
         {
@@ -49,12 +51,12 @@ namespace App1.Views.UserManagement
                 if (isSave)
                 {
                     Application.Current.Properties["userEmail"] = Email.Text;
-                    await DisplayAlert("Register User", "Registration Completed", "Ok");
+                    await DisplayAlert("Signup", "Registration Completed", "Ok");
                     await Navigation.PushAsync(new UserInfoPage());
                 }
                 else
                 {
-                    await DisplayAlert("Register User", "Registration Failed", "Ok");
+                    await DisplayAlert("Registration", "Registration Failed", "Ok");
                 }
             }
             catch (Exception exception)
@@ -67,10 +69,9 @@ namespace App1.Views.UserManagement
                 }
                 else
                 {
-                    await DisplayAlert("Error", exception.Message, "Ok");
+                    await DisplayAlert("Error", "Invalid Email. Please enter a valid email!", "Ok");
                 }
             }
-          
         }
         private void ImageButton_Clicked(object sender, EventArgs e)
         {

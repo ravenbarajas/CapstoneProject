@@ -90,25 +90,10 @@ namespace App1.Views.RecipePresentation
             btn.FontAttributes = FontAttributes.Bold;
             btn.BorderWidth = 0;
         }
-        private async void rcp1_Clicked(object sender, EventArgs e)
+
+        private async void RecipeImg_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new rcp1());
-        }
-        private async void rcp2_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new rcp2());
-        }
-        private async void rcp3_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new rcp3());
-        }
-        private async void rcp4_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new rcp4());
-        }
-        private async void rcp5_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new rcp5());
+            await Navigation.PushAsync(new RecipeOutputPage());
         }
     }
 }

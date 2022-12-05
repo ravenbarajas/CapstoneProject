@@ -13,10 +13,11 @@ namespace App1.Views.UserManagement
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class WelcomePage : ContentPage
     {
+        public static string username;
         public WelcomePage()
         {
             InitializeComponent();
-            lbl_welcomeUser.Text = $"Welcome, {Application.Current.Properties["username"].ToString()}!";
+            lbl_welcomeUser.Text = UserInfoPage.username;
         }
         private async void Next_Clicked(object sender, EventArgs e)
         {

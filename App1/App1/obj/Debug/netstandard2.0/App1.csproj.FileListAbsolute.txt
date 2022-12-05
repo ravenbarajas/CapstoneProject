@@ -133,11 +133,6 @@ C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\ob
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipeManagement\EnterRecipeDetailspt2.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipeManagement\MealplannerPage.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipePresentation\HomePage.xaml.g.cs
-C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipePresentation\rcp1.xaml.g.cs
-C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipePresentation\rcp2.xaml.g.cs
-C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipePresentation\rcp3.xaml.g.cs
-C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipePresentation\rcp4.xaml.g.cs
-C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipePresentation\rcp5.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipePresentation\RecipePage.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\UserManagement\IntroPage.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\UserManagement\LoginPage.xaml.g.cs
@@ -155,4 +150,5 @@ C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\ob
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App1.dll
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\ref\App1.dll
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipePresentation\RecipeOutputPage.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App1.csproj.AssemblyReference.cache

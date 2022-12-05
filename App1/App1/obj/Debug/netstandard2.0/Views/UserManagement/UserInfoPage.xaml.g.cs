@@ -29,7 +29,7 @@ namespace App1.Views.UserManagement {
         private global::Xamarin.Forms.Entry txt_firstname;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.DatePicker dp_lastname;
+        private global::Xamarin.Forms.DatePicker dp_birthdate;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Entry txt_age;
@@ -41,7 +41,7 @@ namespace App1.Views.UserManagement {
             txt_username = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txt_username");
             txt_lastname = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txt_lastname");
             txt_firstname = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txt_firstname");
-            dp_lastname = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.DatePicker>(this, "dp_lastname");
+            dp_birthdate = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.DatePicker>(this, "dp_birthdate");
             txt_age = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txt_age");
         }
     }

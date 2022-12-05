@@ -35,7 +35,7 @@
                     <Entry  Grid.Row="0" Grid.Column="0"
                             x:Name="Password"
                             Text=""
-                            Placeholder="Password"
+                            Placeholder="Password (6 characters min.)"
                             TextColor="#1e4072"
                             BackgroundColor="#FFFFFF"
                             IsPassword="True"

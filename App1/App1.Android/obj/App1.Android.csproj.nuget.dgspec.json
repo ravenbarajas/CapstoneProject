@@ -132,10 +132,6 @@
               "target": "Package",
               "version": "[1.0.3, )"
             },
-            "Syncfusion.Xamarin.Expander": {
-              "target": "Package",
-              "version": "[20.2.0.46, )"
-            },
             "XCalendar.Core": {
               "target": "Package",
               "version": "[4.1.0, )"

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zm9wHhy6tlUb5Z3lEhUhhLKvcCNc2P+S4to1tkH1rpFdR6p6fsuWMPN50grqde7bPE+HieYdRM6XAjTrPQXxrA==",
+  "dgSpecHash": "47qSwQvZ3eCwyiVZq/X/2/5FRDSYa2YQFFZ3v0vC8RE6Qc01m9x2WjFvIvtvFq1srx6M/UteLi223AEJ/MlE+A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Raven Barajas\\source\\repos\\ravenbarajas057\\CapstoneProject\\App1\\App1.Android\\App1.Android.csproj",
   "expectedPackageFiles": [
@@ -12,9 +12,6 @@
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\plugin.formsstackpanel\\1.0.3\\plugin.formsstackpanel.1.0.3.nupkg.sha512",
-    "C:\\Users\\Raven Barajas\\.nuget\\packages\\syncfusion.licensing\\20.2.0.46\\syncfusion.licensing.20.2.0.46.nupkg.sha512",
-    "C:\\Users\\Raven Barajas\\.nuget\\packages\\syncfusion.xamarin.core\\20.2.0.46\\syncfusion.xamarin.core.20.2.0.46.nupkg.sha512",
-    "C:\\Users\\Raven Barajas\\.nuget\\packages\\syncfusion.xamarin.expander\\20.2.0.46\\syncfusion.xamarin.expander.20.2.0.46.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",

@@ -12,6 +12,16 @@ namespace App1.Views.UserManagement
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UserPropertiesPage : ContentPage
     {
+        userInfo repository = new userInfo();
+
+        public static string allergies;
+        public static string diettype;
+        public static string cookingfrequency;
+        public static string lifestyle;
+        public static string cooktime;
+        public static string homecook;
+        public static string cookingskill;
+
         public UserPropertiesPage()
         {
             InitializeComponent();
@@ -36,22 +46,6 @@ namespace App1.Views.UserManagement
             pk_diettype.ItemsSource = diettype;
             lbl_diettype.SetBinding(Label.TextProperty, new Binding("SeletedItem", source: pk_diettype));
 
-            var lifestyle = new List<string>();
-            lifestyle.Add("Active(4 - 5 days a week)");
-            lifestyle.Add("Average(2 - 3 days a week)");
-            lifestyle.Add("Sedentary(0 - 1 day a week)");
-
-            pk_lifestyle.ItemsSource = lifestyle;
-            lbl_lifestyle.SetBinding(Label.TextProperty, new Binding("SeletedItem", source: pk_lifestyle));
-
-            var homecook = new List<string>();
-            homecook.Add("Myself");
-            homecook.Add("Older Brother / Sister");
-            homecook.Add("Older Parent / Guardian");
-
-            pk_homecook.ItemsSource = homecook;
-            lbl_homecook.SetBinding(Label.TextProperty, new Binding("SeletedItem", source: pk_homecook));
-
             var frequency = new List<string>();
             frequency.Add("Everyday");
             frequency.Add("1x - 3x a week");
@@ -59,6 +53,14 @@ namespace App1.Views.UserManagement
 
             pk_frequency.ItemsSource = frequency;
             lbl_frequency.SetBinding(Label.TextProperty, new Binding("SeletedItem", source: pk_frequency));
+
+            var lifestyle = new List<string>();
+            lifestyle.Add("Active (4 - 5 days a week)");
+            lifestyle.Add("Average (2 - 3 days a week)");
+            lifestyle.Add("Sedentary (0 - 1 day a week)");
+
+            pk_lifestyle.ItemsSource = lifestyle;
+            lbl_lifestyle.SetBinding(Label.TextProperty, new Binding("SeletedItem", source: pk_lifestyle));
 
             var cooktime = new List<string>();
             cooktime.Add("0 - 30 mins");
@@ -68,11 +70,19 @@ namespace App1.Views.UserManagement
             pk_cooktime.ItemsSource = cooktime;
             lbl_cooktime.SetBinding(Label.TextProperty, new Binding("SeletedItem", source: pk_cooktime));
 
+            var homecook = new List<string>();
+            homecook.Add("Myself");
+            homecook.Add("Older Brother / Sister");
+            homecook.Add("Older Parent / Guardian");
+
+            pk_homecook.ItemsSource = homecook;
+            lbl_homecook.SetBinding(Label.TextProperty, new Binding("SeletedItem", source: pk_homecook));
+
             var cookskill = new List<string>();
-            cookskill.Add("1 - 3(Beginner)");
-            cookskill.Add("4 - 5(Average)");
-            cookskill.Add("6 - 8(Home Cook)");
-            cookskill.Add("8 - 10(Experienced)");
+            cookskill.Add("1 - 3 (Beginner)");
+            cookskill.Add("4 - 5 (Average)");
+            cookskill.Add("6 - 8 (Home Cook)");
+            cookskill.Add("9 - 10 (Experienced)");
 
             pk_cookskill.ItemsSource = cookskill;
             lbl_cookskill.SetBinding(Label.TextProperty, new Binding("SeletedItem", source: pk_cookskill));
@@ -112,8 +122,63 @@ namespace App1.Views.UserManagement
         }
         private async void UserPropertiesDone_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new UserPreferencePage());
-            Application.Current.Properties["username"] = txt_username.Text;
+            try
+            {
+                allergies = pk_allergies.SelectedItem.ToString();
+                diettype = pk_diettype.SelectedItem.ToString();
+                lifestyle = pk_lifestyle.SelectedItem.ToString();
+                homecook = pk_homecook.SelectedItem.ToString();
+                cookingfrequency = pk_frequency.SelectedItem.ToString();
+                cooktime = pk_cooktime.SelectedItem.ToString();
+                cookingskill = pk_cookskill.SelectedItem.ToString();
+
+                if (String.IsNullOrEmpty(allergies))
+                {
+                    await DisplayAlert("Warning", "Information is required", "Ok");
+                    return;
+                }
+                if (String.IsNullOrEmpty(diettype))
+                {
+                    await DisplayAlert("Warning", "Information is required", "Ok");
+                    return;
+                }
+                if (String.IsNullOrEmpty(lifestyle))
+                {
+                    await DisplayAlert("Warning", "Information is required", "Ok");
+                    return;
+                }
+                if (String.IsNullOrEmpty(homecook))
+                {
+                    await DisplayAlert("Warning", "Information is required", "Ok");
+                    return;
+                }
+                if (String.IsNullOrEmpty(cookingfrequency))
+                {
+                    await DisplayAlert("Warning", "Information is required", "Ok");
+                    return;
+                }
+                if (String.IsNullOrEmpty(cooktime))
+                {
+                    await DisplayAlert("Warning", "Information is required", "Ok");
+                    return;
+                }
+                if (String.IsNullOrEmpty(cookingskill))
+                {
+                    await DisplayAlert("Warning", "Information is required", "Ok");
+                    return;
+                }
+
+                await Navigation.PushAsync(new UserPreferencePage());
+            }
+            catch
+            { 
+            
+            }
+            
+        }
+        public string generateUserID()
+        {
+            return Guid.NewGuid().ToString("N").Substring(0, 8).ToUpper();
         }
         private async void PreviousButton_Clicked(object sender, EventArgs e)
         {
@@ -135,25 +200,25 @@ namespace App1.Views.UserManagement
         {
             lbl20.IsVisible = true;
             lbl21.IsVisible = true;
-            pk_lifestyle.IsVisible = true;
+            pk_frequency.IsVisible = true;
         }
         private void picker4show()
         {
             lbl30.IsVisible = true;
             lbl31.IsVisible = true;
-            pk_homecook.IsVisible = true;
+            pk_lifestyle.IsVisible = true;
         }
         private void picker5show()
         {
             lbl40.IsVisible = true;
             lbl41.IsVisible = true;
-            pk_frequency.IsVisible = true;
+            pk_cooktime.IsVisible = true;
         }
         private void picker6show()
         {
             lbl50.IsVisible = true;
             lbl51.IsVisible = true;
-            pk_cooktime.IsVisible = true;
+            pk_homecook.IsVisible = true;
         }
         private void picker7show()
         {
@@ -167,10 +232,10 @@ namespace App1.Views.UserManagement
             picker1show();
             var btn = (Button)sender;
             pk_diettype.IsVisible = false;
-            pk_lifestyle.IsVisible = false;
-            pk_homecook.IsVisible = false;
             pk_frequency.IsVisible = false;
+            pk_lifestyle.IsVisible = false;
             pk_cooktime.IsVisible = false;
+            pk_homecook.IsVisible = false;
             pk_cookskill.IsVisible = false;
 
             lbl10.IsVisible = false;
@@ -217,10 +282,10 @@ namespace App1.Views.UserManagement
             picker2show();
             var btn = (Button)sender;
             pk_allergies.IsVisible = false;
-            pk_lifestyle.IsVisible = false;
-            pk_homecook.IsVisible = false;
             pk_frequency.IsVisible = false;
+            pk_lifestyle.IsVisible = false;
             pk_cooktime.IsVisible = false;
+            pk_homecook.IsVisible = false;
             pk_cookskill.IsVisible = false;
 
             lbl00.IsVisible = false;
@@ -268,10 +333,11 @@ namespace App1.Views.UserManagement
             var btn = (Button)sender;
             pk_allergies.IsVisible = false;
             pk_diettype.IsVisible = false;
-            pk_homecook.IsVisible = false;
-            pk_frequency.IsVisible = false;
+            pk_lifestyle.IsVisible = false;
             pk_cooktime.IsVisible = false;
+            pk_homecook.IsVisible = false;
             pk_cookskill.IsVisible = false;
+
 
             lbl00.IsVisible = false;
             lbl01.IsVisible = false;
@@ -318,10 +384,11 @@ namespace App1.Views.UserManagement
             var btn = (Button)sender;
             pk_allergies.IsVisible = false;
             pk_diettype.IsVisible = false;
-            pk_lifestyle.IsVisible = false;
             pk_frequency.IsVisible = false;
             pk_cooktime.IsVisible = false;
+            pk_homecook.IsVisible = false;
             pk_cookskill.IsVisible = false;
+
 
             lbl00.IsVisible = false;
             lbl01.IsVisible = false;
@@ -368,9 +435,9 @@ namespace App1.Views.UserManagement
             var btn = (Button)sender;
             pk_allergies.IsVisible = false;
             pk_diettype.IsVisible = false;
+            pk_frequency.IsVisible = false;
             pk_lifestyle.IsVisible = false;
             pk_homecook.IsVisible = false;
-            pk_cooktime.IsVisible = false;
             pk_cookskill.IsVisible = false;
 
             lbl00.IsVisible = false;
@@ -418,8 +485,9 @@ namespace App1.Views.UserManagement
             var btn = (Button)sender;
             pk_allergies.IsVisible = false;
             pk_diettype.IsVisible = false;
-            pk_lifestyle.IsVisible = false;
             pk_frequency.IsVisible = false;
+            pk_lifestyle.IsVisible = false;
+            pk_cooktime.IsVisible = false;
             pk_cookskill.IsVisible = false;
 
             lbl00.IsVisible = false;
@@ -467,9 +535,10 @@ namespace App1.Views.UserManagement
             var btn = (Button)sender;
             pk_allergies.IsVisible = false;
             pk_diettype.IsVisible = false;
-            pk_lifestyle.IsVisible = false;
             pk_frequency.IsVisible = false;
+            pk_lifestyle.IsVisible = false;
             pk_cooktime.IsVisible = false;
+            pk_homecook.IsVisible = false;
 
             lbl00.IsVisible = false;
             lbl01.IsVisible = false;
@@ -521,19 +590,19 @@ namespace App1.Views.UserManagement
         }
         private void btnshow3(object sender, EventArgs e)
         {
-            lbl_lifestyle.IsVisible = true;
+            lbl_frequency.IsVisible = true;
         }
         private void btnshow4(object sender, EventArgs e)
         {
-            lbl_homecook.IsVisible = true;
+            lbl_lifestyle.IsVisible = true;
         }
         private void btnshow5(object sender, EventArgs e)
         {
-            lbl_frequency.IsVisible = true;
+            lbl_cooktime.IsVisible = true;
         }
         private void btnshow6(object sender, EventArgs e)
         {
-            lbl_cooktime.IsVisible = true;
+            lbl_homecook.IsVisible = true;
         }
         private void btnshow7(object sender, EventArgs e)
         {

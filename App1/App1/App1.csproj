@@ -14,7 +14,6 @@
     <PackageReference Include="FirebaseAuthentication.net" Version="3.7.2" />
     <PackageReference Include="FirebaseDatabase.net" Version="4.1.0" />
     <PackageReference Include="Plugin.FormsStackPanel" Version="1.0.3" />
-    <PackageReference Include="Syncfusion.Xamarin.Expander" Version="20.2.0.46" />
     <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.5" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
@@ -72,19 +71,7 @@
     <EmbeddedResource Update="Views\RecipePresentation\HomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\RecipePresentation\rcp1.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\RecipePresentation\rcp2.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\RecipePresentation\rcp3.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\RecipePresentation\rcp4.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\RecipePresentation\rcp5.xaml">
+    <EmbeddedResource Update="Views\RecipePresentation\RecipeOutputPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\RecipePresentation\RecipePage.xaml">
