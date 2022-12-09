@@ -182,7 +182,7 @@
             </Grid>
         </ScrollView>
         
-        <Grid Margin="0,0,0,0">
+        <Grid Margin="0,0,0,0" VerticalOptions="EndAndExpand">
             <ImageButton Source="Home.jpg"
                                     HorizontalOptions="Start"
                                     VerticalOptions="End"

@@ -145,6 +145,7 @@
                                 VerticalOptions="Center" 
                                 Margin="0,0,0,0"/>
 
+                    <!--Activities-->
                     <Label Grid.Row="1"
                            x:Name="lbl00"
                             Text="a.    What activity interest you the most?"
@@ -166,9 +167,9 @@
                     <Picker Grid.Row="3" Grid.Column="0"
                             x:Name="pk_activities"
                             Title="Select activities"
-                            Focused="btnshow1"
+                            Unfocused="btnshow1"
                             Margin="0,-10,0,0"/>
-
+                    <!--Food category 1-->
                     <Label Grid.Row="1"
                            x:Name="lbl10"
                             Text="b.    What food category do you like?"
@@ -190,9 +191,9 @@
                     <Picker Grid.Row="3" Grid.Column="0"
                             x:Name="pk_foodcategory1"
                             Title="Select food category"
-                            Focused="btnshow2"
+                            Unfocused="btnshow2"
                             Margin="0,-10,0,0"/>
-
+                    <!--Food category 2-->
                     <Label Grid.Row="1"
                            x:Name="lbl20"
                             Text="c.    What food category do you like?"
@@ -214,9 +215,9 @@
                     <Picker Grid.Row="3" Grid.Column="0"
                             x:Name="pk_foodcategory2"
                             Title="Select food category"
-                            Focused="btnshow3"
+                            Unfocused="btnshow3"
                             Margin="0,-10,0,0"/>
-
+                    <!--Food category 3-->
                     <Label Grid.Row="1"
                            x:Name="lbl30"
                             Text="d.    What food category do you like?"
@@ -238,9 +239,9 @@
                     <Picker Grid.Row="3" Grid.Column="0"
                             x:Name="pk_foodcategory3"
                             Title="Select food category"
-                            Focused="btnshow4"
+                            Unfocused="btnshow4"
                             Margin="0,-10,0,0"/>
-
+                    <!--Food category 4-->
                     <Label Grid.Row="1"
                            x:Name="lbl40"
                             Text="e.    What food category do you like?"
@@ -262,9 +263,9 @@
                     <Picker Grid.Row="3" Grid.Column="0"
                             x:Name="pk_foodcategory4"
                             Title="Select food category"
-                            Focused="btnshow5"
+                            Unfocused="btnshow5"
                             Margin="0,-10,0,0"/>
-
+                    <!--Food Prep-->
                     <Label Grid.Row="1"
                            x:Name="lbl50"
                             Text="f.    What type of food prep you do most?"
@@ -286,7 +287,7 @@
                     <Picker Grid.Row="3" Grid.Column="0"
                             x:Name="pk_foodprep"
                             Title="Cook Time"
-                            Focused="btnshow6"
+                            Unfocused="btnshow6"
                             Margin="0,-10,0,0"/>
                 </Grid>
                 <Grid Padding="5,0,5,0" RowSpacing="0" ColumnSpacing="5" HorizontalOptions="Center">

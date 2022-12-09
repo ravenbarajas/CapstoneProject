@@ -170,7 +170,7 @@
                     <Picker Grid.Row="3" Grid.Column="0"
                             x:Name="pk_allergies"
                             Title="Select known allergy"
-                            Focused="btnshow1"
+                            Unfocused="btnshow1"
                             Margin="0,-10,0,0"/>
 
                     <!--Diet Type-->
@@ -195,7 +195,7 @@
                     <Picker Grid.Row="3" Grid.Column="0"
                             x:Name="pk_diettype"
                             Title="Select diet type"
-                            Focused="btnshow2"
+                            Unfocused="btnshow2"
                             Margin="0,-10,0,0"/>
 
                     <!--Frequency-->
@@ -220,7 +220,7 @@
                     <Picker Grid.Row="3" Grid.Column="0"
                             x:Name="pk_frequency"
                             Title="Select cooking frequency"
-                            Focused="btnshow3"
+                            Unfocused="btnshow3"
                             Margin="0,-10,0,0"/>
 
                     <!--Lifestyle-->
@@ -245,7 +245,7 @@
                     <Picker Grid.Row="3" Grid.Column="0"
                             x:Name="pk_lifestyle"
                             Title="Select lifestyle"
-                            Focused="btnshow4"
+                            Unfocused="btnshow4"
                             Margin="0,-10,0,0"/>
 
                     <!--Cooktime-->
@@ -270,7 +270,7 @@
                     <Picker Grid.Row="3" Grid.Column="0"
                             x:Name="pk_cooktime"
                             Title="Select cooking time"
-                            Focused="btnshow5"
+                            Unfocused="btnshow5"
                             Margin="0,-10,0,0"/>
 
                     <!--Homecook-->
@@ -295,7 +295,7 @@
                     <Picker Grid.Row="3" Grid.Column="0"
                             x:Name="pk_homecook"
                             Title="Select home cook"
-                            Focused="btnshow6"
+                            Unfocused="btnshow6"
                             Margin="0,-10,0,0"/>
 
                     <!--Cookskill-->
@@ -320,7 +320,7 @@
                     <Picker Grid.Row="3" Grid.Column="0"
                             x:Name="pk_cookskill"
                             Title="Select cooking skill"
-                            Focused="btnshow7"
+                            Unfocused="btnshow7"
                             Margin="0,-10,0,0"/>
                 </Grid>
                 

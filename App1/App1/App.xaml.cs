@@ -1,5 +1,6 @@
 ﻿using App1.Views.RecipeGeneration;
 using App1.Views.RecipePresentation;
+using App1.Views.RecipeManagement;
 using App1.Views.UserManagement;
 using System;
 using Xamarin.Forms;
@@ -13,7 +14,7 @@ namespace App1
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new SignupPage());
+            MainPage = new NavigationPage(new EnterRecipeDetailspt2());
         }
 
         protected override void OnStart()

@@ -13,6 +13,11 @@ namespace App1.Views.RecipeManagement
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CreateRecipePage : ContentPage
     {
+
+        recipeInfo repository = new recipeInfo();
+
+        public static string recipeName;
+        public static string recipeDesc;
         public CreateRecipePage()
         {
             InitializeComponent();
@@ -82,7 +87,32 @@ namespace App1.Views.RecipeManagement
         }
         private async void Next_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new EnterRecipeDetailspt1());
+            try
+            {
+                recipeName = txt_recipename.Text;
+                recipeDesc = txt_recipedesc.Text;
+
+                if (String.IsNullOrEmpty(recipeName))
+                {
+                    await DisplayAlert("Warning", "Recipe Name is required", "Ok");
+                    return;
+                }
+                if (String.IsNullOrEmpty(recipeDesc))
+                {
+                    await DisplayAlert("Warning", "Recipe Description is required", "Ok");
+                    return;
+                }
+
+                await Navigation.PushAsync(new EnterRecipeDetailspt1());
+            }
+            catch
+            { 
+            
+            }
+        }
+        public string generateRecipeID()
+        {
+            return Guid.NewGuid().ToString("N").Substring(0, 8).ToUpper();
         }
     }
 }

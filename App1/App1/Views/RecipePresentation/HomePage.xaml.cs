@@ -30,18 +30,6 @@ namespace App1.Views.RecipePresentation
         {
             await Navigation.PushAsync(new RecipeTypePage());
         }
-        private async void DiscoverPage_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new DiscoverPage());
-        }
-        private async void PopularPage_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new PopularPage());
-        }
-        private async void FavoritePage_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new FavoritePage());
-        }
         private async void Recipe_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new RecipePage());
@@ -90,7 +78,6 @@ namespace App1.Views.RecipePresentation
             btn.FontAttributes = FontAttributes.Bold;
             btn.BorderWidth = 0;
         }
-
         private async void RecipeImg_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new RecipeOutputPage());
