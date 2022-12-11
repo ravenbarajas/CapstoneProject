@@ -1514,9 +1514,6 @@ C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.An
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\logorounded.png
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\toplogin.png
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\topsignup.png
-C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\topingredient.jpg
-C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\toppreference.jpg
-C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\topuserinfo.jpg
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\step1.png
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\step2.png
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\step3.png
@@ -2186,3 +2183,6 @@ C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.An
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\lp\90\jl\files.cache
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\lp\98\jl\files.cache
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\lp\106\jl\files.cache
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\toppersonalnfo.png
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\toppreference.png
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\tophealth.png

@@ -20,7 +20,7 @@ namespace App1
             try
             {
                 await firebaseClient.Child(nameof(recipeInfoModel))
-                                .Child(EnterRecipeDetailspt3.recipeID)
+                                .Child(EnterRecipeDetailspt2.recipeID)
                                 .PutAsync(JsonConvert.SerializeObject(recipe));
                 return true;
             }

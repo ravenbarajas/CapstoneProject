@@ -15,10 +15,10 @@ namespace App1.Views.UserManagement
     {
         firebaseConnection connection = new firebaseConnection();
         userInfo authenticateAcc = new userInfo();
-
-        public string email;
-
         userAuth _userAuth = new userAuth();
+
+        public string username;
+        public string email;
         public SignupPage()
         {
             InitializeComponent();
@@ -28,9 +28,15 @@ namespace App1.Views.UserManagement
         {
             try
             {
+                string username = Username.Text;
                 string email = Email.Text;
                 string pass = Password.Text;
 
+                if (String.IsNullOrEmpty(username))
+                {
+                    await DisplayAlert("Warning", "Username is required", "Ok");
+                    return;
+                }
                 if (String.IsNullOrEmpty(email))
                 {
                     await DisplayAlert("Warning", "Email is required", "Ok");
@@ -47,9 +53,10 @@ namespace App1.Views.UserManagement
                     return;
                 }
 
-                bool isSave = await _userAuth.Register(email, pass);
+                bool isSave = await _userAuth.Register(email, username, pass);
                 if (isSave)
                 {
+                    Application.Current.Properties["username"] = Username.Text;
                     Application.Current.Properties["userEmail"] = Email.Text;
                     await DisplayAlert("Signup", "Registration Completed", "Ok");
                     await Navigation.PushAsync(new UserInfoPage());
@@ -64,6 +71,7 @@ namespace App1.Views.UserManagement
                 if (exception.Message.Contains("EMAIL_EXISTS"))
                 {
                     await DisplayAlert("Warning", "Email already exist!", "Ok");
+                    Username.Text = "";
                     Email.Text = "";
                     Password.Text = "";
                 }

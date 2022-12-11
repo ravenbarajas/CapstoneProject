@@ -1,10 +1,12 @@
 ﻿using App1.Views.RecipePresentation;
+using Firebase.Auth;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,10 +15,20 @@ namespace App1.Views.UserManagement
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
+
         userAuth _userAuth = new userAuth();
         public LoginPage()
         {
             InitializeComponent();
+            bool hasKey = Preferences.ContainsKey("token");
+            if (hasKey)
+            {
+                string token = Preferences.Get("token", "");
+                if (!string.IsNullOrEmpty(token))
+                {
+                    Navigation.PushAsync(new HomePage());
+                }
+            }
         }
         private async void Button_Clicked(object sender, EventArgs e)
         {
@@ -38,6 +50,8 @@ namespace App1.Views.UserManagement
                 }
                 if (!string.IsNullOrEmpty(token))
                 {
+                    Preferences.Set("token", token);
+                    Preferences.Set("userEmail", email);
                     await Navigation.PushAsync(new HomePage());
                 }
                 else
@@ -82,6 +96,11 @@ namespace App1.Views.UserManagement
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Views.UserManagement.SignupPage());
+        }
+
+        private async void ForgotPassword(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new ResetPassPage());
         }
     }
 }

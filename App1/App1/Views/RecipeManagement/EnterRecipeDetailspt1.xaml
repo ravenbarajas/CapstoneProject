@@ -63,22 +63,26 @@
                         <Entry Grid.Row="0" Grid.Column="0"
                                x:Name="txt_cooktimehr"
                                Placeholder="Hours"
-                               Margin="0,-20,0,0"/>
+                               Margin="0,-20,0,0"
+                               MaxLength="2"/>
                         <Entry Grid.Row="0" Grid.Column="1"
                                x:Name="txt_cooktimemin"
                                Placeholder="Minutes"
-                               Margin="0,-20,0,0"/>
+                               Margin="0,-20,0,0"
+                               MaxLength="2"/>
 
                         <!--Prep Time-->
                         <Entry Grid.Row="0" Grid.Column="2"
                                x:Name="txt_preptimehr"
                                Placeholder="Hours"
-                               Margin="0,-20,0,0"/>
+                               Margin="0,-20,0,0"
+                               MaxLength="2"/>
                         <Entry Grid.Row="0" Grid.Column="3"
                                x:Name="txt_preptimemin"
                                Unfocused="txt_preptimemin_Unfocused"
                                Placeholder="Minutes"
-                               Margin="0,-20,0,0"/>
+                               Margin="0,-20,0,0"
+                               MaxLength="2"/>
                     </Grid>
                     
                     <Grid RowSpacing="0">
@@ -98,7 +102,7 @@
                                Margin="0,-15,0,0"/>
                     </Grid>
 
-                    <Grid RowSpacing="0" ColumnSpacing="3" HorizontalOptions="CenterAndExpand">
+                    <Grid RowSpacing="0" ColumnSpacing="3" HorizontalOptions="CenterAndExpand" Margin="0,0,0,-10">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="25"/>
                         </Grid.RowDefinitions>
@@ -168,7 +172,7 @@
                            Title="How the recipe is prepared?"
                                Margin="0,-15,0,0"/>
                     </Grid>
-                    <Grid Padding="5,0,5,0" RowSpacing="0">
+                    <Grid Padding="5,0,5,0" RowSpacing="0" Margin="0,0,0,15">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="40"/>
                             <RowDefinition Height="30"/>

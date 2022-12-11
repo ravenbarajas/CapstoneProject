@@ -14,8 +14,8 @@ namespace App1.Views.UserManagement
     {
         userInfo repository = new userInfo();
 
-        public static string email;
         public static string username;
+        public static string email;
         public static string lastname;
         public static string firstname;
         public static string birthdate;
@@ -24,14 +24,15 @@ namespace App1.Views.UserManagement
         public UserInfoPage()
         {
             InitializeComponent();
+            txt_username.Text = $"{Application.Current.Properties["username"].ToString()}";
             txt_userEmail.Text = $"{Application.Current.Properties["userEmail"].ToString()}";
         }
         private async void Next_Clicked(object sender, EventArgs e)
         {
             try
             {
-                email = txt_userEmail.Text;
                 username = txt_username.Text;
+                email = txt_userEmail.Text;
                 lastname = txt_lastname.Text;
                 firstname = txt_firstname.Text;
                 birthdate = dp_birthdate.Date.ToString("MM/dd/yyyy");

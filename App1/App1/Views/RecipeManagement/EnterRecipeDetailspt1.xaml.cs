@@ -17,6 +17,7 @@ namespace App1.Views.RecipeManagement
         public static string recipeTotalTime;
         public static string prepprocess;
         public static string recipeCategory;
+        public static string recipeKeywords;
         public static string recipeKeyword1;
         public static string recipeKeyword2;
         public static string recipeKeyword3;
@@ -239,6 +240,61 @@ namespace App1.Views.RecipeManagement
                 recipeCookTime = txt_cooktimehr.Text + "Hrs " + txt_cooktimemin.Text + "Mins";
                 recipePrepTime = txt_preptimehr.Text + "Hrs " + txt_preptimemin.Text + "Mins";
                 recipeTotalTime = lbl_totaltimehr.Text + "Hrs " + lbl_totaltimemin.Text + "Mins";
+                recipeCategory = pk_recipecategory.SelectedItem.ToString();
+                recipeKeyword1 = "'" + pk_RK002.SelectedItem.ToString() + "'";
+                recipeKeyword2 = "'" + pk_RK102.SelectedItem.ToString() + "'";
+                recipeKeyword3 = "'" + pk_RK202.SelectedItem.ToString() + "'";
+                recipeKeyword4 = "'" + pk_RK302.SelectedItem.ToString() + "'";
+                recipeKeyword5 = "'" + pk_RK402.SelectedItem.ToString() + "'";
+                recipeKeyword6 = "'" + pk_RK502.SelectedItem.ToString() + "'";
+                recipeKeywords = "[" + recipeKeyword1 + ","+ recipeKeyword2 + "," + recipeKeyword3 + "," + recipeKeyword4 + "," + recipeKeyword5 + "," + recipeKeyword6 + "]";
+
+                if (String.IsNullOrEmpty(recipeCookTime))
+                {
+                    await DisplayAlert("Warning", "Cook time is required", "Ok");
+                    return;
+                }
+                if (String.IsNullOrEmpty(recipePrepTime))
+                {
+                    await DisplayAlert("Warning", "Prep time is required", "Ok");
+                    return;
+                }
+                if (String.IsNullOrEmpty(recipeCategory))
+                {
+                    await DisplayAlert("Warning", "Recipe category is required", "Ok");
+                    return;
+                }
+
+                if (String.IsNullOrEmpty(recipeKeyword1))
+                {
+                    await DisplayAlert("Warning", "6 Keywords is required", "Ok");
+                    return;
+                }
+                if (String.IsNullOrEmpty(recipeKeyword2))
+                {
+                    await DisplayAlert("Warning", "6 Keywords is required", "Ok");
+                    return;
+                }
+                if (String.IsNullOrEmpty(recipeKeyword3))
+                {
+                    await DisplayAlert("Warning", "6 Keywords is required", "Ok");
+                    return;
+                }
+                if (String.IsNullOrEmpty(recipeKeyword4))
+                {
+                    await DisplayAlert("Warning", "6 Keywords is required", "Ok");
+                    return;
+                }
+                if (String.IsNullOrEmpty(recipeKeyword5))
+                {
+                    await DisplayAlert("Warning", "6 Keywords is required", "Ok");
+                    return;
+                }
+                if (String.IsNullOrEmpty(recipeKeyword6))
+                {
+                    await DisplayAlert("Warning", "6 Keywords is required", "Ok");
+                    return;
+                }
 
                 await Navigation.PushAsync(new EnterRecipeDetailspt2());
             }

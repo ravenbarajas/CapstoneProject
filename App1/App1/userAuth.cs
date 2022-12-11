@@ -15,14 +15,14 @@ namespace App1
         {
             authProvider = new FirebaseAuthProvider(new FirebaseConfig(WebAPIKey));
         }
-        public async Task<bool> Register(string email, string pass)
+        public async Task<bool> Register(string email, string username, string pass)
         {
-        var token = await authProvider.CreateUserWithEmailAndPasswordAsync(email, pass);
+        var token = await authProvider.CreateUserWithEmailAndPasswordAsync(email, pass, username);
 
             if (!string.IsNullOrEmpty(token.FirebaseToken))
-        {
+            {
             return true;
-        }
+            }
         return false;
         //for testing
         }
@@ -36,7 +36,11 @@ namespace App1
             }
             return "";
         }
-    }
-    
+        public async Task<bool> ResetPassword(string email)
+        {
+            await authProvider.SendPasswordResetEmailAsync(email);
+            return true;
+        }
 
+    }
 }

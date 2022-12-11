@@ -6,10 +6,10 @@
              NavigationPage.HasNavigationBar="False">
 
     <StackLayout>
-        <StackLayout Padding="15,5,15,10" Margin="0,0,0,0" BackgroundColor="White" VerticalOptions="Start">
+        <StackLayout Padding="15,5,15,10" Margin="0,0,0,0" BackgroundColor="#3873F6" VerticalOptions="Start">
             <Label Text="What do you want cook for today?"
                            FontSize="Large"
-                           TextColor="Black"
+                           TextColor="White"
                            FontAttributes="Bold"
                            Padding="0,5,0,0"/>
 
@@ -113,106 +113,86 @@
             </Grid>
         </ScrollView>
         <ScrollView HeightRequest="525">
-            <Grid Padding="5,10,5,10">
-                <StackLayout>
-                    <Grid HorizontalOptions="CenterAndExpand" Padding="5,0,5,0">
+            <Grid Padding="5,5,5,10" HorizontalOptions="FillAndExpand">
+                
+                <StackLayout Padding="5,0,5,0">
+                    <Grid RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="373"/>
-                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="340"/>
                         </Grid.ColumnDefinitions>
-
-                        <ImageButton Grid.Column="0" 
-                                 Source="rcp1.jpg" 
-                                 Aspect="AspectFit"
-                                 CornerRadius="25"
-                                 Clicked="RecipeImg_Clicked"/>
-                        <yummy:PancakeView Grid.Column="0"
-                                           BackgroundColor="#343434" 
-                                           Opacity=".6"
-                                           CornerRadius="0,0,25,25" 
-                                           HorizontalOptions="FillAndExpand" 
-                                           Margin="0,180,0,0"/>
-                        <Label Grid.Column="0"
-                               Text="Special Udon Noodles"
-                               TextColor="White"
-                               FontAttributes="Bold"
-                               FontSize="24"
-                               Padding="20,0,0,30"
-                               VerticalOptions="EndAndExpand"/>
-                        <Label Grid.Column="0"
-                               Text="By: jasonwhite2"
-                               TextColor="White"
-                               FontSize="Subtitle"
-                               FontAttributes="None"
-                               Padding="20,0,0,10"
-                               VerticalOptions="EndAndExpand"/>
+                        <!--Image Button-->
+                        <yummy:PancakeView CornerRadius="15,15,0,0" >
+                            <ImageButton Grid.Column="0" 
+                                     Source="rcp1.jpg" 
+                                     Aspect="AspectFit"
+                                     Clicked="RecipeImg_Clicked"/>
+                        </yummy:PancakeView>
                     </Grid>
-                    <Grid HorizontalOptions="CenterAndExpand" Padding="5,5,5,0">
+                    <Grid RowSpacing="0" Margin="0,-6,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="373"/>
-                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="340"/>
                         </Grid.ColumnDefinitions>
-
-                        <ImageButton Grid.Column="0" 
-                                 Source="rcp2.jpg" 
-                                 Aspect="AspectFit"
-                                 CornerRadius="25"/>
-                        <yummy:PancakeView Grid.Column="0"
-                                           BackgroundColor="#343434" 
-                                           Opacity=".6"
-                                           CornerRadius="0,0,25,25" 
-                                           HorizontalOptions="FillAndExpand" 
-                                           Margin="0,180,0,0"/>
-                        <Label Grid.Column="0"
-                               Text="Spicy Buttered Shrimp"
-                               TextColor="White"
-                               FontAttributes="Bold"
-                               FontSize="24"
-                               Padding="20,0,0,30"
-                               VerticalOptions="EndAndExpand"/>
-                        <Label Grid.Column="0"
-                               Text="By: malou23"
-                               TextColor="White"
-                               FontSize="Subtitle"
-                               FontAttributes="None"
-                               Padding="20,0,0,10"
-                               VerticalOptions="EndAndExpand"/>
+                        <!--Recipe Name + Author-->
+                        <yummy:PancakeView Grid.Column="0" Grid.RowSpan="2"
+                                               BackgroundColor="#343434" 
+                                               Opacity=".6"
+                                               CornerRadius="0,0,15,15" 
+                                               HorizontalOptions="FillAndExpand" />
+                        <Label Grid.Column="0" Grid.Row="0"
+                                   Text="Special Udon Noodles"
+                                   TextColor="White"
+                                   FontAttributes="Bold"
+                                   FontSize="24"
+                                   Padding="20,0,0,0"/>
+                        <Label Grid.Column="0" Grid.Row="1"
+                                   Text="By: jasonwhite2"
+                                   TextColor="White"
+                                   FontSize="Subtitle"
+                                   FontAttributes="None"
+                                   Padding="20,0,0,0"/>
                     </Grid>
                 </StackLayout>
+            
             </Grid>
         </ScrollView>
-        
-        <Grid Margin="0,0,0,0" VerticalOptions="EndAndExpand">
-            <ImageButton Source="Home.jpg"
-                                    HorizontalOptions="Start"
-                                    VerticalOptions="End"
-                                    BackgroundColor="#3873F6"
-                                    HeightRequest="55"
-                                    WidthRequest="131"
-                                    Padding="0,12,0,10"
-                                    Margin="0,-6,-1,-0"
-                                    CornerRadius="0"
-                                    Clicked="Home_Clicked"/>
-            <ImageButton Source="User.jpg"
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="End"
-                                    BackgroundColor="#3873F6"
-                                    HeightRequest="55"
-                                    WidthRequest="132"
-                                    Padding="0,12,0,10"
-                                    Margin="0,-6,-1,0"
-                                    CornerRadius="0"
-                                    Clicked="UserProfile_Clicked"/>
-            <ImageButton Source="Search.jpg"
-                                HorizontalOptions="End"
-                                VerticalOptions="End"
-                                BackgroundColor="#3873F6"
-                                HeightRequest="55"
-                                WidthRequest="131"
-                                Padding="0,12,0,10"
-                                Margin="0,-6,-1,0"
-                                CornerRadius="0"
-                                Clicked="GenerateRecipe_Clicked"/>
+
+        <Grid VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" BackgroundColor="#3873F6">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="55"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ImageButton Grid.Row="0" Grid.Column="0"
+                        Source="Home.jpg"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="End"
+                        BackgroundColor="#3873F6"
+                         Padding="10"
+                        Clicked="Home_Clicked"/>
+            <ImageButton Grid.Row="0" Grid.Column="1"
+                        Source="User.jpg"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="End"
+                        BackgroundColor="#3873F6"
+                         Padding="10"
+                        Clicked="UserProfile_Clicked"/>
+            <ImageButton Grid.Row="0" Grid.Column="2"
+                        Source="Search.jpg"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="End"
+                        BackgroundColor="#3873F6"
+                        Padding="10"
+                        Clicked="GenerateRecipe_Clicked"/>
         </Grid>
     </StackLayout>
 </ContentPage>

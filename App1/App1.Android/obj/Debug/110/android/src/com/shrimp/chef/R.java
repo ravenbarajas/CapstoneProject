@@ -9967,12 +9967,12 @@ public final class R {
     public static final int time=0x7f0700c1;
     public static final int tooltip_frame_dark=0x7f0700c2;
     public static final int tooltip_frame_light=0x7f0700c3;
-    public static final int topingredient=0x7f0700c4;
+    public static final int tophealth=0x7f0700c4;
     public static final int toplogin=0x7f0700c5;
-    public static final int toppreference=0x7f0700c6;
-    public static final int topprivacypolicy=0x7f0700c7;
-    public static final int topsignup=0x7f0700c8;
-    public static final int topuserinfo=0x7f0700c9;
+    public static final int toppersonalnfo=0x7f0700c6;
+    public static final int toppreference=0x7f0700c7;
+    public static final int topprivacypolicy=0x7f0700c8;
+    public static final int topsignup=0x7f0700c9;
     public static final int universalbg=0x7f0700ca;
     public static final int user=0x7f0700cb;
     public static final int view=0x7f0700cc;

@@ -27640,22 +27640,22 @@ namespace App1.Droid
 			public const int tooltip_frame_light = 2131165379;
 			
 			// aapt resource value: 0x7F0700C4
-			public const int TopIngredient = 2131165380;
+			public const int TopHealth = 2131165380;
 			
 			// aapt resource value: 0x7F0700C5
 			public const int TopLogin = 2131165381;
 			
 			// aapt resource value: 0x7F0700C6
-			public const int TopPreference = 2131165382;
+			public const int TopPersonalnfo = 2131165382;
 			
 			// aapt resource value: 0x7F0700C7
-			public const int TopPrivacyPolicy = 2131165383;
+			public const int TopPreference = 2131165383;
 			
 			// aapt resource value: 0x7F0700C8
-			public const int TopSignup = 2131165384;
+			public const int TopPrivacyPolicy = 2131165384;
 			
 			// aapt resource value: 0x7F0700C9
-			public const int TopUserInfo = 2131165385;
+			public const int TopSignup = 2131165385;
 			
 			// aapt resource value: 0x7F0700CA
 			public const int UniversalBG = 2131165386;

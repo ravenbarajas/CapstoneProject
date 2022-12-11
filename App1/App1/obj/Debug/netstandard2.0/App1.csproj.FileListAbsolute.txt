@@ -149,4 +149,5 @@ C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\ob
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App1.pdb
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipePresentation\RecipeOutputPage.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipeManagement\EnterRecipeDetailspt3.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\UserManagement\ResetPassPage.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App1.csproj.AssemblyReference.cache

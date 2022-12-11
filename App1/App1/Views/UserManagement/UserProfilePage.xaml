@@ -5,11 +5,12 @@
              NavigationPage.HasNavigationBar="False">
 
     <ContentPage.Content>
-        <StackLayout BackgroundColor="White">
+        <StackLayout BackgroundColor="White" HorizontalOptions="CenterAndExpand">
             <Image Source="ProfileTop.jpg"
                    VerticalOptions="Start"
                    Margin="0,0,0,0"/>
-            <Label Text="Shrimp Chef Admin"
+            <Label x:Name="txt_userprofilename"
+                    Text="Sample"
                    TextColor="Black"
                    FontSize="38"
                    FontAttributes="Bold"
@@ -21,8 +22,8 @@
                    FontAttributes="None"
                    HorizontalTextAlignment="Center"
                    Margin="0,-45,0,50"/>
-            
-            <Grid Padding="10,-30,10,10" RowSpacing="3">
+
+            <Grid Padding="10,-30,10,10" RowSpacing="3" HorizontalOptions="CenterAndExpand" ColumnSpacing="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="40"/>
                     <RowDefinition Height="30"/>
@@ -30,24 +31,25 @@
                     <RowDefinition Height="3"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="120"/>
-                    <ColumnDefinition Width="120"/>
-                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 
                 <Label Grid.Row="1" Grid.Column="0"
-                       Text="Contribution "
+                       Text="Contribution"
                        HorizontalTextAlignment="Center"
                        VerticalTextAlignment="Center"
-                       VerticalOptions="Center"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"
                        TextColor="Black"
                        FontAttributes="None"
                        FontSize="16"/>
                 <Label Grid.Row="0" Grid.Column="0"
                        Text="2"
                        HorizontalTextAlignment="Center"
-                       VerticalTextAlignment="Center"
-                       VerticalOptions="Center"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"
                        TextColor="Black"
                        FontAttributes="Bold"
                        FontSize="20"/>
@@ -56,15 +58,16 @@
                        Text="Rating"
                        HorizontalTextAlignment="Center"
                        VerticalTextAlignment="Center"
-                       VerticalOptions="Center"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"
                        TextColor="Black"
                        FontAttributes="None"
                        FontSize="16"/>
                 <Label Grid.Row="0" Grid.Column="1"
                        Text="4.5"
                        HorizontalTextAlignment="Center"
-                       VerticalTextAlignment="Center"
-                       VerticalOptions="Center"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"
                        TextColor="Black"
                        FontAttributes="Bold"
                        FontSize="20"/>
@@ -73,7 +76,8 @@
                        Text="Saved"
                        HorizontalTextAlignment="Center"
                        VerticalTextAlignment="Center"
-                       VerticalOptions="Center"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"
                        TextColor="Black"
                        FontAttributes="None"
                        FontSize="16"/>
@@ -81,7 +85,8 @@
                        Text="2"
                        HorizontalTextAlignment="Center"
                        VerticalTextAlignment="Center"
-                       VerticalOptions="Center"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"
                        TextColor="Black"
                        FontAttributes="Bold"
                        FontSize="20"/>
@@ -99,18 +104,18 @@
                     <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="*"/>
 
-                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="*"/>
 
-                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Label />
                 <ImageButton Grid.Row="1" Grid.Column="0"
                              Source="cookbook.png"
                         BackgroundColor="#FF804C"
                         CornerRadius="15"
-                             Padding="15"
+                             Padding="20"
                             Clicked="Cookbook_Clicked"/>
                 <Label Grid.Row="2" Grid.Column="0"
                        Text="Cookbook"
@@ -126,7 +131,7 @@
                              Source="mealplanner.png"
                         BackgroundColor="#467fd7"
                         CornerRadius="15"
-                             Padding="15"
+                             Padding="20"
                             Clicked="Mealplanner_Clicked"/>
                 <Label Grid.Row="2" Grid.Column="1"
                        Text="Meal Planner"
@@ -142,7 +147,7 @@
                         Source="createrecipe.png"
                         BackgroundColor="#ce93d8"
                         CornerRadius="15"
-                             Padding="15"
+                             Padding="20"
                             Clicked="CreateRecipe_Clicked"/>
                 <Label Grid.Row="2" Grid.Column="2"
                        Text="Create your own recipe"

@@ -107,6 +107,7 @@
                     Margin="35,0,35,5"
                     CornerRadius="30"
                     Clicked="Next_Clicked"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

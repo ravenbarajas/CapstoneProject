@@ -9,7 +9,7 @@
             <StackLayout>
                 <Image Source="TopSignup.Jpg"/>
             </StackLayout>
-            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="0,100,0,0">
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="0,100,0,0">
                 <Grid Padding="15,-5,15,0" RowSpacing="0" ColumnSpacing="3">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="45"/>
@@ -17,6 +17,13 @@
                     <Grid.ColumnDefinitions>
                     </Grid.ColumnDefinitions>
                     <Entry  Grid.Row="0" Grid.Column="0"
+                            x:Name="Username"
+                            Text=""
+                            Placeholder="Username"
+                            TextColor="#1e4072"
+                            BackgroundColor="#FFFFFF"
+                            HorizontalTextAlignment="Start"/>
+                    <Entry  Grid.Row="1" Grid.Column="0"
                             x:Name="Email"
                             Text=""
                             Placeholder="Email"
@@ -29,7 +36,7 @@
                         <RowDefinition Height="45"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="315"/>
+                        <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="50"/>
                     </Grid.ColumnDefinitions>
                     <Entry  Grid.Row="0" Grid.Column="0"

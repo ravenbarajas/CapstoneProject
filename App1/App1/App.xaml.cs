@@ -14,7 +14,7 @@ namespace App1
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new EnterRecipeDetailspt2());
+            MainPage = new NavigationPage(new UserProfilePage());
         }
 
         protected override void OnStart()

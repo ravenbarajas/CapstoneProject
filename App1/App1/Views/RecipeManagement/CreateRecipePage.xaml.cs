@@ -52,7 +52,7 @@ namespace App1.Views.RecipeManagement
                 if (result != null)
                 {
                     var stream = await result.OpenReadAsync();
-
+                    
                     img.Source = ImageSource.FromStream(() => stream);
                 }
                 CloseDialog();
