@@ -5,31 +5,53 @@
              NavigationPage.HasNavigationBar="False">
 
     <StackLayout>
-        <Label Text="Recipe Type" 
-               FontSize="Large"
-               HorizontalTextAlignment="Center"
-               Margin="30,230,30,0"/>
-        <Label Text="What type of recommendation do you want?" 
+        <StackLayout Padding="5,0,5,0" VerticalOptions="EndAndExpand">
+            <Label Text="Recipe Type"
+                TextColor="Black"
+                FontSize="Large"
+                FontAttributes="Bold"
+                VerticalOptions="Center"
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="What type of recommendation do you want?" 
                FontSize="Medium"
                HorizontalTextAlignment="Center"/>
-        <Button Text="Personalized"
-                BackgroundColor="#467fd7" 
-                TextColor="White"
-                WidthRequest="300"
-                HeightRequest="45"
-                Margin="30,10,30,5"
-                Clicked="Button_Clicked_1"
-                CornerRadius="25"/>
-        <Button Text="Group"
-                BackgroundColor="#ce93d8"
-                TextColor="White" 
-                WidthRequest="300"
-                HeightRequest="45"
-                Margin="30,0,30,0"
-                Clicked="Button_Clicked"
-                CornerRadius="25"/>
+
+            <Grid Padding="10,0,10,0" VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <!--Personalized-->
+                <Button Grid.Row="1" Grid.Column="0"
+                        Text="Personalized"
+                        TextColor="White"
+                        FontSize="Medium"
+                        FontAttributes="Bold"
+                        TextTransform="None"
+                        BackgroundColor="#FF804C"
+                        CornerRadius="25"
+                        Padding="15,0,15,0"
+                        VerticalOptions="CenterAndExpand"
+                        Clicked="Button_Clicked_1"/>
+                <!--Group-->
+                <Button Grid.Row="1" Grid.Column="1"
+                        Text="Group"
+                        TextColor="White"
+                        FontSize="Medium"
+                        FontAttributes="Bold"
+                        TextTransform="None"
+                        CornerRadius="25"
+                        Padding="15,0,15,0"
+                        VerticalOptions="CenterAndExpand"
+                        BackgroundColor="#467fd7"
+                        Clicked="Button_Clicked"/>
+            </Grid>
+        </StackLayout>
         <Image Source="Bottom.jpg"
-               VerticalOptions="Fill"
-               Margin="0,180,0,0"/>
+               VerticalOptions="EndAndExpand"/>
     </StackLayout>
 </ContentPage>

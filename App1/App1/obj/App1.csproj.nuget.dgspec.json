@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[4.1.0, )"
             },
+            "FirebaseStorage.net": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -67,6 +71,10 @@
             "XCalendar.Core": {
               "target": "Package",
               "version": "[4.1.0, )"
+            },
+            "Xam.Plugin.Media": {
+              "target": "Package",
+              "version": "[5.0.1, )"
             },
             "Xamarin.CommunityToolkit": {
               "target": "Package",

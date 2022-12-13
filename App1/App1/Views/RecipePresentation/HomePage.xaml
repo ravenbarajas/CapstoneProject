@@ -13,9 +13,11 @@
                            FontAttributes="Bold"
                            Padding="0,5,0,0"/>
 
-            <SearchBar Placeholder="Search food recipes"
+            <SearchBar x:Name="txt_searchrecipes"
+                       Placeholder="Search food recipes"
                                TextColor="#7F8487"
                                BackgroundColor="#e6e6e6"
+                       SearchButtonPressed="txt_searchrecipesSearchButtonPressed"
                                HeightRequest="40"/>
         </StackLayout>
         
@@ -113,54 +115,56 @@
             </Grid>
         </ScrollView>
         <ScrollView HeightRequest="525">
-            <Grid Padding="5,5,5,10" HorizontalOptions="FillAndExpand">
-                
-                <StackLayout Padding="5,0,5,0">
-                    <Grid RowSpacing="0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="340"/>
-                        </Grid.ColumnDefinitions>
-                        <!--Image Button-->
-                        <yummy:PancakeView CornerRadius="15,15,0,0" >
-                            <ImageButton Grid.Column="0" 
-                                     Source="rcp1.jpg" 
-                                     Aspect="AspectFit"
-                                     Clicked="RecipeImg_Clicked"/>
-                        </yummy:PancakeView>
-                    </Grid>
-                    <Grid RowSpacing="0" Margin="0,-6,0,0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="30"/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="340"/>
-                        </Grid.ColumnDefinitions>
-                        <!--Recipe Name + Author-->
-                        <yummy:PancakeView Grid.Column="0" Grid.RowSpan="2"
-                                               BackgroundColor="#343434" 
-                                               Opacity=".6"
-                                               CornerRadius="0,0,15,15" 
-                                               HorizontalOptions="FillAndExpand" />
-                        <Label Grid.Column="0" Grid.Row="0"
-                                   Text="Special Udon Noodles"
-                                   TextColor="White"
-                                   FontAttributes="Bold"
-                                   FontSize="24"
-                                   Padding="20,0,0,0"/>
-                        <Label Grid.Column="0" Grid.Row="1"
-                                   Text="By: jasonwhite2"
-                                   TextColor="White"
-                                   FontSize="Subtitle"
-                                   FontAttributes="None"
-                                   Padding="20,0,0,0"/>
-                    </Grid>
-                </StackLayout>
             
-            </Grid>
+            <ListView x:Name="RecipeListView" 
+                  ItemsSource="{Binding recipes}"
+                  HasUnevenRows="True"
+                  ItemTapped="RecipeListView_ItemTapped"                  
+                  IsRefreshing="True"
+                  IsPullToRefreshEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <!--<ViewCell.ContextActions>
+                                <MenuItem Text="Edit"
+                                          x:Name="EditMenuItem"
+                                          CommandParameter="{Binding Id}"
+                                          Clicked="EditMenuItem_Clicked"></MenuItem>
+                                <MenuItem Text="Delete"
+                                          x:Name="DeleteMenuItem"
+                                          CommandParameter="{Binding Id}"
+                                          Clicked="DeleteMenuItem_Clicked"></MenuItem>
+                            </ViewCell.ContextActions>-->
+                            <StackLayout Orientation="Horizontal" Padding="5">
+                                <Frame Padding="0"
+                                           HeightRequest="60"
+                                           WidthRequest="60"
+                                           BackgroundColor="White"
+                                           CornerRadius="100"
+                                           BorderColor="Teal"
+                                           IsClippedToBounds="True">
+                                    <Frame.Content>
+                                        <Image Source="{Binding RecipeIMG}" Aspect="Fill"/>
+                                    </Frame.Content>
+                                </Frame>
+
+                                <StackLayout HorizontalOptions="StartAndExpand">
+                                    <Label Text="{Binding RecipeName}" 
+                                           FontSize="18" 
+                                           FontAttributes="Bold"
+                                           TextColor="Black"/>
+                                    <Label Text="{Binding AuthorName}"
+                                           FontSize="16" 
+                                           FontAttributes="None"
+                                           TextColor="Black"/>
+                                </StackLayout>
+                            </StackLayout>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
         </ScrollView>
 
         <Grid VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" BackgroundColor="#3873F6">

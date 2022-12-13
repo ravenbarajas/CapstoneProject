@@ -15,7 +15,7 @@ namespace App1.Views.RecipeManagement
         public static string recipeCookTime;
         public static string recipePrepTime;
         public static string recipeTotalTime;
-        public static string prepprocess;
+        public static string recipePrepProcess;
         public static string recipeCategory;
         public static string recipeKeywords;
         public static string recipeKeyword1;
@@ -73,6 +73,7 @@ namespace App1.Views.RecipeManagement
             //lbl_recipekeyword1.SetBinding(Label.TextProperty, new Binding("SeletedItem", source: pk_recipecategory));
 
             var recipekeyword = new List<string>();
+            recipekeyword.Sort((s1, s2) => string.Compare(s1, s2, StringComparison.OrdinalIgnoreCase));
             recipekeyword.Add("Easy");
             recipekeyword.Add("Meat");
             recipekeyword.Add("Vegetable");
@@ -239,15 +240,16 @@ namespace App1.Views.RecipeManagement
             {
                 recipeCookTime = txt_cooktimehr.Text + "Hrs " + txt_cooktimemin.Text + "Mins";
                 recipePrepTime = txt_preptimehr.Text + "Hrs " + txt_preptimemin.Text + "Mins";
+                recipePrepProcess = pk_prepprocess.SelectedItem.ToString();
                 recipeTotalTime = lbl_totaltimehr.Text + "Hrs " + lbl_totaltimemin.Text + "Mins";
                 recipeCategory = pk_recipecategory.SelectedItem.ToString();
-                recipeKeyword1 = "'" + pk_RK002.SelectedItem.ToString() + "'";
-                recipeKeyword2 = "'" + pk_RK102.SelectedItem.ToString() + "'";
-                recipeKeyword3 = "'" + pk_RK202.SelectedItem.ToString() + "'";
-                recipeKeyword4 = "'" + pk_RK302.SelectedItem.ToString() + "'";
-                recipeKeyword5 = "'" + pk_RK402.SelectedItem.ToString() + "'";
-                recipeKeyword6 = "'" + pk_RK502.SelectedItem.ToString() + "'";
-                recipeKeywords = "[" + recipeKeyword1 + ","+ recipeKeyword2 + "," + recipeKeyword3 + "," + recipeKeyword4 + "," + recipeKeyword5 + "," + recipeKeyword6 + "]";
+                recipeKeyword1 = "#" + pk_RK002.SelectedItem.ToString();
+                recipeKeyword2 = "#" + pk_RK102.SelectedItem.ToString();
+                recipeKeyword3 = "#" + pk_RK202.SelectedItem.ToString();
+                recipeKeyword4 = "#" + pk_RK302.SelectedItem.ToString();
+                recipeKeyword5 = "#" + pk_RK402.SelectedItem.ToString();
+                recipeKeyword6 = "#" + pk_RK502.SelectedItem.ToString();
+                recipeKeywords = recipeKeyword1 + ", "+ recipeKeyword2 + ", " + "\n" + recipeKeyword3 + ", " + recipeKeyword4 + ", " + "\n" + recipeKeyword5 + ", " + recipeKeyword6;
 
                 if (String.IsNullOrEmpty(recipeCookTime))
                 {

@@ -1,5 +1,6 @@
 ﻿using App1.Views.RecipeGeneration;
 using App1.Views.UserManagement;
+using App1.Views.RecipeManagement;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,9 +15,15 @@ namespace App1.Views.RecipePresentation
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class HomePage : ContentPage
     {
+        recipeInfo repository = new recipeInfo();
         public HomePage()
         {
             InitializeComponent();
+            RecipeListView.RefreshCommand = new Command(() =>
+            {
+                OnAppearing();
+            });
+
         }
         private async void Home_Clicked(object sender, EventArgs e)
         {
@@ -28,7 +35,7 @@ namespace App1.Views.RecipePresentation
         }
         private async void GenerateRecipe_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new RecipeTypePage());
+            await Navigation.PushAsync(new PreferenceSelectionPage());
         }
         private async void Recipe_Clicked(object sender, EventArgs e)
         {
@@ -82,5 +89,41 @@ namespace App1.Views.RecipePresentation
         {
             await Navigation.PushAsync(new RecipeOutputPage());
         }
+
+        protected override async void OnAppearing()
+        {
+            var recipes = await repository.GetAll();
+            RecipeListView.ItemsSource = null;
+            RecipeListView.ItemsSource = recipes;
+            RecipeListView.IsRefreshing = false;
+
+        }
+        private void RecipeListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            if (e.Item == null)
+            {
+                return;
+            }
+            var recipes = e.Item as recipeInfoModel;
+            Navigation.PushModalAsync(new RecipeDetails(recipes));
+            ((ListView)sender).SelectedItem = null;
+
+        }
+        private async void txt_searchrecipesSearchButtonPressed(object sender, EventArgs e)
+        {
+            string searchValue = txt_searchrecipes.Text;
+            if (!String.IsNullOrEmpty(searchValue))
+            {
+                var recipes = await repository.GetAllByName(searchValue);
+                RecipeListView.ItemsSource = null;
+                RecipeListView.ItemsSource = recipes;
+            }
+            else 
+            {
+                OnAppearing();
+            }
+        }
+
+
     }
 }

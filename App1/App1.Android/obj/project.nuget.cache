@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "47qSwQvZ3eCwyiVZq/X/2/5FRDSYa2YQFFZ3v0vC8RE6Qc01m9x2WjFvIvtvFq1srx6M/UteLi223AEJ/MlE+A==",
+  "dgSpecHash": "Bzb8c6yweOHH0lGCiZApLku4ZFEKH2a3cCKSoQwIDUROetmg3TIf4xa8378TBWmz9xz712UZp69sqDUZ9dLTBQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Raven Barajas\\source\\repos\\ravenbarajas057\\CapstoneProject\\App1\\App1.Android\\App1.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\firebaseauthentication.net\\3.7.2\\firebaseauthentication.net.3.7.2.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\firebasedatabase.net\\4.1.0\\firebasedatabase.net.4.1.0.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\firebasestorage.net\\1.0.3\\firebasestorage.net.1.0.3.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\litedb\\4.1.4\\litedb.4.1.4.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
@@ -59,6 +60,7 @@
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.1\\xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.androidx.annotation.experimental\\1.1.0.1\\xamarin.androidx.annotation.experimental.1.1.0.1.nupkg.sha512",

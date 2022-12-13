@@ -5,7 +5,7 @@
              x:Class="App1.Views.RecipeGeneration.IngredientSelectionPage"
              NavigationPage.HasNavigationBar="False">
 
-    <StackLayout Background="#d9d9d9">
+    <StackLayout Background="White">
         <Frame BackgroundColor="#3873F6" Padding="5,20,5,20">
             <Label Text="Ingredients Selection" 
                    FontSize="26" 
@@ -105,168 +105,24 @@
 
             </Grid>
         </ScrollView>
-
-        <Frame Padding="0,0,0,0">
-            <SearchBar Placeholder="Search available ingredients" 
+        <StackLayout Padding="5,0,5,0">
+            <Frame Padding="0,0,0,0">
+                <SearchBar Placeholder="Search available ingredients" 
                        x:Name="txt_search"
                    BackgroundColor="White"
-                       SearchButtonPressed="txt_search_SearchButtonPressed"/>
-        </Frame>
+                       TextChanged="srcbr_ingredients_TextChanged"/>
+            </Frame>
 
-        <ScrollView BackgroundColor="White">
-            <StackLayout Margin="0,5,0,5">
-                <Grid Margin="5,0,5,0" RowSpacing="0">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="35"/>
-                        <RowDefinition Height="45"/>
-
-                        <RowDefinition Height="35"/>
-                        <RowDefinition Height="45"/>
-
-                        <RowDefinition Height="35"/>
-                        <RowDefinition Height="45"/>
-
-                        <RowDefinition Height="35"/>
-                        <RowDefinition Height="45"/>
-
-                        <RowDefinition Height="35"/>
-                        <RowDefinition Height="45"/>
-
-                        <RowDefinition Height="35"/>
-                        <RowDefinition Height="45"/>
-
-                        <RowDefinition Height="35"/>
-                        <RowDefinition Height="45"/>
-
-                        <RowDefinition Height="35"/>
-                        <RowDefinition Height="45"/>
-
-                        <RowDefinition Height="35"/>
-                        <RowDefinition Height="45"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                    </Grid.ColumnDefinitions>
-                    
-                    <!--Condiments-->
-                    <Label Grid.Row="0"
-                           x:Name="CN00"
-                            Text="Condiments"
-                            FontSize="24"
-                            TextColor="White"
-                            FontAttributes="Bold" 
-                            BackgroundColor="#1e4072"
-                            HorizontalTextAlignment="Center"/>
-                    <Picker Grid.Row="1"
-                            x:Name="pk_condiments"
-                            Title="Condiments"/>
-
-                    <!--Fruits-->
-                    <Label Grid.Row="2"
-                           x:Name="FR00"
-                            Text="Fruits"
-                            FontSize="24"
-                            TextColor="White"
-                            FontAttributes="Bold" 
-                            BackgroundColor="#1e4072"
-                            HorizontalTextAlignment="Center"/>
-                    <Picker Grid.Row="3"
-                            x:Name="pk_fruits"
-                            Title="Fruits"/>
-
-                    <!--Vegetables-->
-                    <Label Grid.Row="4"
-                           x:Name="VG00"
-                        Text="Vegetables"
-                            FontSize="24"
-                            TextColor="White"
-                            FontAttributes="Bold" 
-                            BackgroundColor="#1e4072"
-                            HorizontalTextAlignment="Center"/>
-                    <Picker Grid.Row="5"
-                            x:Name="pk_vegetables"
-                            Title="Vegetables"/>
-
-                    <!--Dairy-->
-                    <Label Grid.Row="6"
-                           x:Name="DR00"
-                        Text="Dairy"
-                            FontSize="24"
-                            TextColor="White"
-                            FontAttributes="Bold" 
-                            BackgroundColor="#1e4072"
-                            HorizontalTextAlignment="Center"/>
-                    <Picker Grid.Row="7"
-                            x:Name="pk_dairy"
-                            Title="Dairy"/>
-                    
-                    <!--Meat-->
-                    <Label Grid.Row="8"
-                           x:Name="MT00"
-                        Text="Meat"
-                            FontSize="24"
-                            TextColor="White"
-                            FontAttributes="Bold" 
-                            BackgroundColor="#1e4072"
-                            HorizontalTextAlignment="Center"/>
-                    <Picker Grid.Row="9"
-                            x:Name="pk_meat"
-                            Title="Meat"/>
-
-                    <!--Vegetarian-->
-                    <Label Grid.Row="10"
-                           x:Name="VT00"
-                        Text="Vegetarian"
-                            FontSize="24"
-                            TextColor="White"
-                            FontAttributes="Bold" 
-                            BackgroundColor="#1e4072"
-                            HorizontalTextAlignment="Center"/>
-                    <Picker Grid.Row="11"
-                            x:Name="pk_vegetarian"
-                            Title="Vegetarian"/>
-
-                    <!--Soup & Stocks-->
-                    <Label Grid.Row="12"
-                           x:Name="SS00"
-                        Text="Soup &amp; Stocks"
-                            FontSize="24"
-                            TextColor="White"
-                            FontAttributes="Bold" 
-                            BackgroundColor="#1e4072"
-                            HorizontalTextAlignment="Center"/>
-                    <Picker Grid.Row="13"
-                            x:Name="pk_soupstocks"
-                            Title="Soup &amp; Stocks"/>
-
-                    <!--Baking-->
-                    <Label Grid.Row="14"
-                           x:Name="BK00"
-                        Text="Baking"
-                            FontSize="24"
-                            TextColor="White"
-                            FontAttributes="Bold" 
-                            BackgroundColor="#1e4072"
-                            HorizontalTextAlignment="Center"/>
-                    <Picker Grid.Row="15"
-                            x:Name="pk_baking"
-                            Title="Difficulty"/>
-
-                    <!--Sweets-->
-                    <Label Grid.Row="16"
-                           x:Name="SW00"
-                        Text="Sweets"
-                            FontSize="24"
-                            TextColor="White"
-                            FontAttributes="Bold" 
-                            BackgroundColor="#1e4072"
-                            HorizontalTextAlignment="Center"/>
-                    <Picker Grid.Row="17"
-                            x:Name="pk_sweets"
-                            Title="Difficulty"/>
-                </Grid>
-
-            </StackLayout>
-        </ScrollView> 
+            <ListView x:Name="ingredientsList"
+                      SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding IngredientGroup}"
+                                  Detail="{Binding IngredientName}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
         <Button Text="Next"
                     TextColor="White"
                     FontSize="Medium"

@@ -11,9 +11,11 @@
         "dependencies": {
           "FirebaseAuthentication.net": "3.7.2",
           "FirebaseDatabase.net": "4.1.0",
+          "FirebaseStorage.net": "1.0.3",
           "NETStandard.Library": "2.0.3",
           "Plugin.FormsStackPanel": "1.0.3",
           "XCalendar.Core": "4.1.0",
+          "Xam.Plugin.Media": "5.0.1",
           "Xamarin.CommunityToolkit": "2.0.5",
           "Xamarin.Essentials": "1.7.3",
           "Xamarin.Forms": "5.0.0.2515",
@@ -44,6 +46,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Firebase.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -213,6 +227,17 @@
           }
         }
       },
+      "Xam.Plugin.Media/5.0.1": {
+        "dependencies": {
+          "Xamarin.Essentials": "1.7.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Media.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Xamarin.CommunityToolkit/2.0.5": {
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.7.0",
@@ -302,6 +327,13 @@
       "sha512": "sha512-tK+kihepwbd2fY8MZtNjApnUWW1B260E5z3lK9f2BPf1QCP4powhJml+pBhJ91KmtsKDlEoe94j5C5YWlSJISw==",
       "path": "firebasedatabase.net/4.1.0",
       "hashPath": "firebasedatabase.net.4.1.0.nupkg.sha512"
+    },
+    "FirebaseStorage.net/1.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SupDHNUwNqcVwEo/HdFEWAXveQe3fU16q4wrrCxUVwP0a77zaddKp7vo2sHIW56DAsJn/gUfjDK3w0MuBhvzjQ==",
+      "path": "firebasestorage.net/1.0.3",
+      "hashPath": "firebasestorage.net.1.0.3.nupkg.sha512"
     },
     "LiteDB/4.1.4": {
       "type": "package",
@@ -449,6 +481,13 @@
       "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
       "path": "system.threading.tasks.extensions/4.5.4",
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    },
+    "Xam.Plugin.Media/5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UUR31EEnhDVa4IXgVfQIAL3u9v6YAyppsb5UlO9MNJ4quGGkfcWX++JexjB1nMGqvCzsjAT2t32drKDIXoW4SQ==",
+      "path": "xam.plugin.media/5.0.1",
+      "hashPath": "xam.plugin.media.5.0.1.nupkg.sha512"
     },
     "Xamarin.CommunityToolkit/2.0.5": {
       "type": "package",

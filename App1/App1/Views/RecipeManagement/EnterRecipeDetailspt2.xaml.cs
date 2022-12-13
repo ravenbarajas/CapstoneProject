@@ -1,19 +1,26 @@
 ﻿using System;
 using App1.Views.RecipeGeneration;
 using App1.Views.UserManagement;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml; 
+using Xamarin.Forms.Xaml;
+using Xamarin.CommunityToolkit.UI.Views;
+using Xamarin.Essentials;
+using Firebase.Storage;
+using Plugin.Media;
+using Plugin.Media.Abstractions;
+using System.IO;
 
 namespace App1.Views.RecipeManagement
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class EnterRecipeDetailspt2 : ContentPage
     {
+        MediaFile file;
         recipeInfo repository = new recipeInfo();
 
         public static string recipeID;
@@ -39,13 +46,13 @@ namespace App1.Views.RecipeManagement
 
             EntryFields.Children.Add(instruction);
             counter++;
-            string labeltext = "'" + instruction.Text + "'";
+            string labeltext =  instruction.Text;
             string labeltextArray = lbl_EntryFieldsOutput.Text + labeltext;
 
             instructionsList.Add(labeltextArray);
             for (int i = 0; i < instructionsList.Count; i++)
             {
-                lbl_EntryFieldsOutput.Text = instructionsList[i] + ", ";
+                lbl_EntryFieldsOutput.Text = instructionsList[i] + "\n";
             }
             recipeInstructions = lbl_EntryFieldsOutput.Text;
 
@@ -58,17 +65,20 @@ namespace App1.Views.RecipeManagement
                 recipeID = generateRecipeID();
 
                 recipeInfoModel recipe = new recipeInfoModel();
+                recipe.RecipeIMG = CreateRecipePage.image;
                 recipe.RecipeID = recipeID;
+                recipe.AuthorName = CreateRecipePage.recipeAuthorName;
                 recipe.RecipeName = CreateRecipePage.recipeName;
                 recipe.RecipeDesc = CreateRecipePage.recipeDesc;
 
                 recipe.RecipeCookTime = EnterRecipeDetailspt1.recipeCookTime;
                 recipe.RecipePrepTime = EnterRecipeDetailspt1.recipePrepTime;
                 recipe.RecipeTotalTime = EnterRecipeDetailspt1.recipeTotalTime;
+                recipe.RecipeCookingProcess = EnterRecipeDetailspt1.recipePrepProcess;
                 recipe.RecipeCategory = EnterRecipeDetailspt1.recipeCategory;
                 recipe.RecipeKeywords = EnterRecipeDetailspt1.recipeKeywords;
 
-                recipe.RecipeInstructions = '[' + recipeInstructions + ']';
+                recipe.RecipeInstructions = recipeInstructions;
 
                 var response = await DisplayAlert("Confirmation", "Confirm answers?", "Confirm", "Not yet");
                 if (response == true)
@@ -76,7 +86,7 @@ namespace App1.Views.RecipeManagement
                     var isSaved = await repository.Save(recipe);
                     if (isSaved)
                     {
-                        await DisplayAlert("Information", "User recipe saved!", "Ok");
+                        await DisplayAlert("Information", "Recipe info saved!", "Ok");
                         await Navigation.PushAsync(new UserProfilePage());
                     }
                     else
