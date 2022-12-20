@@ -64,11 +64,13 @@
                                x:Name="txt_cooktimehr"
                                Placeholder="Hours"
                                Margin="0,-20,0,0"
-                               MaxLength="2"/>
+                               MaxLength="2"
+                               Keyboard="Numeric"/>
                         <Entry Grid.Row="0" Grid.Column="1"
                                x:Name="txt_cooktimemin"
                                Placeholder="Minutes"
                                Margin="0,-20,0,0"
+                               Keyboard="Numeric"
                                MaxLength="2"/>
 
                         <!--Prep Time-->
@@ -76,13 +78,15 @@
                                x:Name="txt_preptimehr"
                                Placeholder="Hours"
                                Margin="0,-20,0,0"
-                               MaxLength="2"/>
+                               MaxLength="2"
+                               Keyboard="Numeric"/>
                         <Entry Grid.Row="0" Grid.Column="3"
                                x:Name="txt_preptimemin"
                                Unfocused="txt_preptimemin_Unfocused"
                                Placeholder="Minutes"
                                Margin="0,-20,0,0"
-                               MaxLength="2"/>
+                               MaxLength="2"
+                               Keyboard="Numeric"/>
                     </Grid>
                     
                     <Grid RowSpacing="0">
@@ -207,7 +211,7 @@
                         </Grid.ColumnDefinitions>
 
                         <!--Recipe Keywords 1 of 6-->
-                        <Label Grid.Row="0"
+                        <Label Grid.Row="0" Grid.Column="0"
                                x:Name="RK000"
                                Text="Recipe Keywords"
                                TextColor="Black"
@@ -233,7 +237,7 @@
                                 Margin="0,-15,0,0"/>
                         
                         <!--Recipe Keywords 2 of 6-->
-                        <Label Grid.Row="0"
+                        <Label Grid.Row="0" Grid.Column="0"
                                x:Name="RK100"
                            Text="Recipe Keywords"
                            TextColor="Black"
@@ -259,7 +263,7 @@
                                Margin="0,-15,0,0"/>
 
                         <!--Recipe Keywords 3 of 6-->
-                        <Label Grid.Row="0"
+                        <Label Grid.Row="0" Grid.Column="0"
                                x:Name="RK200"
                            Text="Recipe Keywords"
                            TextColor="Black"
@@ -285,7 +289,7 @@
                                Margin="0,-15,0,0"/>
 
                         <!--Recipe Keywords 4 of 6-->
-                        <Label Grid.Row="0"
+                        <Label Grid.Row="0" Grid.Column="0"
                                x:Name="RK300"
                            Text="Recipe Keywords"
                            TextColor="Black"
@@ -311,7 +315,7 @@
                                Margin="0,-15,0,0"/>
 
                         <!--Recipe Keywords 5 of 6-->
-                        <Label Grid.Row="0"
+                        <Label Grid.Row="0" Grid.Column="0"
                                x:Name="RK400"
                            Text="Recipe Keywords"
                            TextColor="Black"
@@ -337,7 +341,7 @@
                                Margin="0,-15,0,0"/>
 
                         <!--Recipe Keywords 6 of 6-->
-                        <Label Grid.Row="0"
+                        <Label Grid.Row="0" Grid.Column="0"
                                x:Name="RK500"
                            Text="Recipe Keywords"
                            TextColor="Black"

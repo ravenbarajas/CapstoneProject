@@ -23,7 +23,7 @@ namespace App1.Views.RecipeGeneration
 
         private async void Button_Clicked_1(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PreferenceSelectionPage());
+            //await Navigation.PushAsync(new PreferenceSelectionPage());
         }
     }
 }

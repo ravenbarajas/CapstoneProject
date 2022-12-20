@@ -9967,7 +9967,7 @@ public final class R {
     public static final int time=0x7f0700c1;
     public static final int tooltip_frame_dark=0x7f0700c2;
     public static final int tooltip_frame_light=0x7f0700c3;
-    public static final int tophealth=0x7f0700c4;
+    public static final int topgeneraterecipe=0x7f0700c4;
     public static final int toplogin=0x7f0700c5;
     public static final int toppersonalnfo=0x7f0700c6;
     public static final int toppreference=0x7f0700c7;

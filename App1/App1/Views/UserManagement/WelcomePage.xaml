@@ -51,14 +51,14 @@
                            FontSize="20"
                            FontAttributes="Bold"/>
             
-            <Grid RowSpacing="1" Padding="10,5,0,0" BackgroundColor="White">
+            <Grid RowSpacing="1" Padding="10,5,10,0" BackgroundColor="White">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="60"/>
                     <RowDefinition Height="60"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="50"/>
-                    <ColumnDefinition Width="320"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Image Grid.Row="0" Grid.Column="0"
                        Source="checkbox.png"/>

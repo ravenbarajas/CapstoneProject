@@ -108,7 +108,7 @@
                        HorizontalTextAlignment="Center" />
                     </Grid>
 
-                    <Grid Padding="25,10,25,0">
+                    <Grid Padding="10,10,10,0" HorizontalOptions="CenterAndExpand" >
                         <Label Text="I Agree With Shrimp's Chef Privacy Policy"
                            FontSize="14"
                            TextColor="Black" 

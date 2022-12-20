@@ -18,7 +18,7 @@ namespace App1.Views.RecipeGeneration
         }
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PreferenceSelectionPage());
+            //await Navigation.PushAsync(new PreferenceSelectionPage());
         }
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {

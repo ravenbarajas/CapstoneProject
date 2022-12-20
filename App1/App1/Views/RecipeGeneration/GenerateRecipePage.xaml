@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.RecipeGeneration.GenerateRecipePage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout BackgroundColor="White">
+        <Image Source="TopGenerateRecipe.png"
+               VerticalOptions="StartAndExpand"/>
+        <!--<StackLayout Padding="5,0,5,0">
+            <Label Text="Preference Selection"
+                            TextColor="Black"
+                            FontSize="20"
+                            FontAttributes="Bold"/>
+            <Label Text="Please select your desired recipe type"
+                            TextColor="Black"
+                            FontSize="16"
+                    Margin="0,-5,0,0"
+                            FontAttributes="None"/>
+            <Picker x:Name="pk_recipetype"
+                HeightRequest="45"/>
+        </StackLayout>-->
+        <StackLayout Padding="5,0,5,0">
+            <Label Text="Ingredient Selection"
+                            TextColor="Black"
+                            FontSize="20"
+                            FontAttributes="Bold"/>
+            <Label Text="Please select ingredients available to you"
+                            TextColor="Black"
+                            FontSize="16"
+                    Margin="0,-5,0,0"
+                            FontAttributes="None"/>
+            <Frame Padding="0,0,0,0">
+                <SearchBar Placeholder="Search available ingredients" 
+                    x:Name="txt_searchingredient"
+                BackgroundColor="White"
+                    TextChanged="txt_searchingredients_TextChange"/>
+            </Frame>
+            <ListView x:Name="IngredientListView" 
+                    ItemsSource="{Binding ingredient}"
+                      ItemTapped="IngredientListView_ItemTapped"
+                    HasUnevenRows="True"                
+                    IsRefreshing="False"
+                    IsPullToRefreshEnabled="False"
+                        HeightRequest="150"
+                        VerticalOptions="StartAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="5">
+
+                                <StackLayout HorizontalOptions="StartAndExpand">
+                                    <Label Text="{Binding IngredientName}" 
+                                           x:Name="lbl_ingredient"
+                                            FontSize="18" 
+                                            FontAttributes="Bold"
+                                            TextColor="Black"/>
+                                </StackLayout>
+                            </StackLayout>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        <StackLayout HeightRequest="200" BackgroundColor="#E6e6e6" Margin="5,0,5,0">
+            <ScrollView BackgroundColor="#E6e6e6" Padding="0,5,0,5" Margin="5,0,5,0">
+                <StackLayout x:Name="SelectedIngredients"/>
+            </ScrollView>
+        </StackLayout>
+        <StackLayout VerticalOptions="EndAndExpand" HeightRequest="-5">
+            <Label x:Name="lbl_EntryFieldsOutput"
+                       FontSize="10"
+                       TextColor="White"
+                       Padding="10,0,10,0"/>
+        </StackLayout>
+        <Button Text="Generate"
+                    TextColor="White"
+                    TextTransform="None"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    BackgroundColor="#3F9D2F"
+                    Margin="35,0,35,5"
+                    VerticalOptions="EndAndExpand"
+                    CornerRadius="30"
+                    Clicked="Generate_Clicked"/>
+    </StackLayout>
+</ContentPage>

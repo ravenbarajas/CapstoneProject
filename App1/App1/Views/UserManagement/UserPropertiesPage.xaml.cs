@@ -42,7 +42,7 @@ namespace App1.Views.UserManagement
             diettype.Add("Low Sugar");
             diettype.Add("Low Sodium");
             diettype.Add("Low Fat");
-            
+
             pk_diettype.ItemsSource = diettype;
             lbl_diettype.SetBinding(Label.TextProperty, new Binding("SeletedItem", source: pk_diettype));
 

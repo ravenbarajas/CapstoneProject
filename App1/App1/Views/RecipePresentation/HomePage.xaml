@@ -125,16 +125,6 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <!--<ViewCell.ContextActions>
-                                <MenuItem Text="Edit"
-                                          x:Name="EditMenuItem"
-                                          CommandParameter="{Binding Id}"
-                                          Clicked="EditMenuItem_Clicked"></MenuItem>
-                                <MenuItem Text="Delete"
-                                          x:Name="DeleteMenuItem"
-                                          CommandParameter="{Binding Id}"
-                                          Clicked="DeleteMenuItem_Clicked"></MenuItem>
-                            </ViewCell.ContextActions>-->
                             <StackLayout Orientation="Horizontal" Padding="5">
                                 <Frame Padding="0"
                                            HeightRequest="60"

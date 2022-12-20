@@ -17,6 +17,8 @@ namespace App1.Views.UserManagement
         public UserProfilePage()
         {
             InitializeComponent();
+
+            //txt_userprofilename.Text = UserInfoPage.username;
         }
         private async void Cookbook_Clicked(object sender, EventArgs e)
         {

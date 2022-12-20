@@ -24,7 +24,7 @@ namespace App1
             try
             {
                 await firebaseClient.Child(nameof(recipeInfoModel))
-                                .Child(EnterRecipeDetailspt2.recipeID)
+                                .Child(EnterRecipeDetailspt3.recipeID)
                                 .PutAsync(JsonConvert.SerializeObject(recipe));
                 return true;
             }
@@ -48,6 +48,7 @@ namespace App1
                 RecipeCategory = item.Object.RecipeCategory,
                 RecipeKeywords = item.Object.RecipeKeywords,
                 RecipeInstructions = item.Object.RecipeInstructions,
+                RecipeIngredientParts = item.Object.RecipeIngredientParts,
                 RecipeIMG = item.Object.RecipeIMG,
                 RecipeID = item.Key
             }).ToList();
@@ -67,6 +68,7 @@ namespace App1
                 RecipeCategory = item.Object.RecipeCategory,
                 RecipeKeywords = item.Object.RecipeKeywords,
                 RecipeInstructions = item.Object.RecipeInstructions,
+                RecipeIngredientParts = item.Object.RecipeIngredientParts,
                 RecipeIMG = item.Object.RecipeIMG,
                 RecipeID = item.Key
             }).Where(c => c.RecipeName.ToLower().Contains(name.ToLower())).ToList();

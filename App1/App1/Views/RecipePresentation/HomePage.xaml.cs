@@ -35,7 +35,7 @@ namespace App1.Views.RecipePresentation
         }
         private async void GenerateRecipe_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PreferenceSelectionPage());
+            await Navigation.PushAsync(new GenerateRecipePage());
         }
         private async void Recipe_Clicked(object sender, EventArgs e)
         {
@@ -107,7 +107,6 @@ namespace App1.Views.RecipePresentation
             var recipes = e.Item as recipeInfoModel;
             Navigation.PushModalAsync(new RecipeDetails(recipes));
             ((ListView)sender).SelectedItem = null;
-
         }
         private async void txt_searchrecipesSearchButtonPressed(object sender, EventArgs e)
         {

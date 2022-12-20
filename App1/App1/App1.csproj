@@ -14,7 +14,9 @@
     <PackageReference Include="FirebaseAuthentication.net" Version="3.7.2" />
     <PackageReference Include="FirebaseDatabase.net" Version="4.1.0" />
     <PackageReference Include="FirebaseStorage.net" Version="1.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
     <PackageReference Include="Plugin.FormsStackPanel" Version="1.0.3" />
+    <PackageReference Include="Refit" Version="6.3.2" />
     <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
     <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.5" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />
@@ -28,16 +30,16 @@
     <EmbeddedResource Update="Views\RecipeGeneration\CreateGroupRoom.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\RecipeGeneration\GroupRecipeTypePage.xaml">
+    <EmbeddedResource Update="Views\RecipeGeneration\GenerateRecipePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\RecipeGeneration\IngredientSelectionPage.xaml">
+    <EmbeddedResource Update="Views\RecipeGeneration\GroupRecipeTypePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\RecipeGeneration\JoinGroupRoom.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\RecipeGeneration\PreferenceSelectionPage.xaml">
+    <EmbeddedResource Update="Views\RecipeGeneration\RecipeOutputPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\RecipeGeneration\RecipeTypePage.xaml">

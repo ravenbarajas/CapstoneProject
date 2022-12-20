@@ -282,15 +282,15 @@
     <AndroidResource Include="Resources\drawable\TopPreference.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\TopHealth.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\TopSignup.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResourceAnalysisConfig Include="Resources\xml\file_paths.xml">
       <SubType>Designer</SubType>
     </AndroidResourceAnalysisConfig>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\TopGenerateRecipe.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

@@ -27862,7 +27862,7 @@ namespace App1.Droid
 			public const int tooltip_frame_light = 2131165379;
 			
 			// aapt resource value: 0x7F0700C4
-			public const int TopHealth = 2131165380;
+			public const int TopGenerateRecipe = 2131165380;
 			
 			// aapt resource value: 0x7F0700C5
 			public const int TopLogin = 2131165381;

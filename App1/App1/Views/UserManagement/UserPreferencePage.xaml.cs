@@ -120,57 +120,57 @@ namespace App1.Views.UserManagement
         }
         private async void Finish_Clicked(object sender, EventArgs e)
         {
-            userID = generateUserID();
+            //userID = generateUserID();
 
-            string activities = pk_activities.SelectedItem.ToString();
-            string foodcategory1 = pk_foodcategory1.SelectedItem.ToString();
-            string foodcategory2 = pk_foodcategory2.SelectedItem.ToString();
-            string foodcategory3 = pk_foodcategory3.SelectedItem.ToString();
-            string foodcategory4 = pk_foodcategory4.SelectedItem.ToString();
-            string foodprep = pk_foodprep.SelectedItem.ToString();
+            //string activities = pk_activities.SelectedItem.ToString();
+            //string foodcategory1 = pk_foodcategory1.SelectedItem.ToString();
+            //string foodcategory2 = pk_foodcategory2.SelectedItem.ToString();
+            //string foodcategory3 = pk_foodcategory3.SelectedItem.ToString();
+            //string foodcategory4 = pk_foodcategory4.SelectedItem.ToString();
+            //string foodprep = pk_foodprep.SelectedItem.ToString();
 
-            userInfoModel user = new userInfoModel();
-            user.UserID = userID;
-            user.Email = UserInfoPage.email;
-            user.Username = UserInfoPage.username;
-            user.Lastname = UserInfoPage.lastname;
-            user.Firstname = UserInfoPage.firstname;
-            user.Birthdate = UserInfoPage.birthdate;
-            user.Age = UserInfoPage.age;
+            //userInfoModel user = new userInfoModel();
+            //user.UserID = userID;
+            //user.Email = UserInfoPage.email;
+            //user.Username = UserInfoPage.username;
+            //user.Lastname = UserInfoPage.lastname;
+            //user.Firstname = UserInfoPage.firstname;
+            //user.Birthdate = UserInfoPage.birthdate;
+            //user.Age = UserInfoPage.age;
 
-            user.Allergies = UserPropertiesPage.allergies;
-            user.DietType = UserPropertiesPage.diettype;
-            user.Lifestyle = UserPropertiesPage.lifestyle;
-            user.HomeCook = UserPropertiesPage.homecook;
-            user.CookingFrequency = UserPropertiesPage.cookingfrequency;
-            user.CookTime = UserPropertiesPage.cooktime;
-            user.CookingSkill = UserPropertiesPage.cookingskill;
+            //user.Allergies = UserPropertiesPage.allergies;
+            //user.DietType = UserPropertiesPage.diettype;
+            //user.Lifestyle = UserPropertiesPage.lifestyle;
+            //user.HomeCook = UserPropertiesPage.homecook;
+            //user.CookingFrequency = UserPropertiesPage.cookingfrequency;
+            //user.CookTime = UserPropertiesPage.cooktime;
+            //user.CookingSkill = UserPropertiesPage.cookingskill;
 
-            user.Activities = activities;
-            user.FoodCategory1 = foodcategory1;
-            user.FoodCategory2 = foodcategory2;
-            user.FoodCategory3 = foodcategory3;
-            user.FoodCategory4 = foodcategory4;
-            user.FoodPrep = foodprep;
+            //user.Activities = activities;
+            //user.FoodCategory1 = foodcategory1;
+            //user.FoodCategory2 = foodcategory2;
+            //user.FoodCategory3 = foodcategory3;
+            //user.FoodCategory4 = foodcategory4;
+            //user.FoodPrep = foodprep;
 
-            var response = await DisplayAlert("Confirmation", "Confirm answers?", "Confirm", "Not yet");
-            if (response == true)
-            {
-                var isSaved = await repository.Save(user);
-                    if (isSaved)
-                    {
-                        await DisplayAlert("Information", "User Info saved!", "Ok");
-                        await Navigation.PushAsync(new WelcomePage());
-                    }
-                    else
-                    {
-                        await DisplayAlert("Error", "Failed to save user info!", "Ok");
-                    }
-            }
-            else
-            {
-                await DisplayAlert("Error", "Failed to save user info!", "Ok");
-            }
+            //var response = await DisplayAlert("Confirmation", "Confirm answers?", "Confirm", "Not yet");
+            //if (response == true)
+            //{
+            //    var isSaved = await repository.Save(user);
+            //        if (isSaved)
+            //        {
+            //            await DisplayAlert("Information", "User Info saved!", "Ok");
+            //            await Navigation.PushAsync(new WelcomePage());
+            //        }
+            //        else
+            //        {
+            //            await DisplayAlert("Error", "Failed to save user info!", "Ok");
+            //        }
+            //}
+            //else
+            //{
+            //    await DisplayAlert("Error", "Failed to save user info!", "Ok");
+            //}
         }
         public string generateUserID()
         {

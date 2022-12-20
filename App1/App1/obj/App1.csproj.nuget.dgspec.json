@@ -64,9 +64,17 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
             "Plugin.FormsStackPanel": {
               "target": "Package",
               "version": "[1.0.3, )"
+            },
+            "Refit": {
+              "target": "Package",
+              "version": "[6.3.2, )"
             },
             "XCalendar.Core": {
               "target": "Package",

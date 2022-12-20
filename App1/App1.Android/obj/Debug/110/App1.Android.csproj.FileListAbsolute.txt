@@ -2175,7 +2175,6 @@ C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.An
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\lp\98\jl\files.cache
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\toppersonalnfo.png
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\toppreference.png
-C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\tophealth.png
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\lp\56\jl\files.cache
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\lp\58\jl\files.cache
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\lp\66\jl\files.cache
@@ -2192,3 +2191,14 @@ C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.An
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\assets\System.IO.dll
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\assets\System.Runtime.Extensions.dll
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\src\crc646957603ea1820544\MediaPickerActivity.java
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\res\drawable\topgeneraterecipe.png
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\App1.Android.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\assets\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\assets\Refit.dll
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\assets\System.Buffers.dll
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\assets\System.Memory.dll
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\assets\System.Net.Http.Json.dll
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\assets\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\assets\System.Text.Encodings.Web.dll
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\assets\System.Text.Json.dll
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\assets\System.Threading.Tasks.Extensions.dll

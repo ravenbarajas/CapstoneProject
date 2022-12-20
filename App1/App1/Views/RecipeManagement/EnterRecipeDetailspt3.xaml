@@ -6,24 +6,134 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="White" Padding="5,10,5,10">
-                <Label Text="Enter recipe details" 
+            <Frame BackgroundColor="#3873F6" Padding="5,10,5,10">
+                <Label Text="Select Ingredients" 
                        FontSize="26" 
                        HorizontalTextAlignment="Center"
                        VerticalTextAlignment="Center"
-                       TextColor="#3873F6"
+                       TextColor="White"
                        FontAttributes="Bold" 
-                       BackgroundColor="White"
+                       BackgroundColor="#3873F6"
                        Padding="5,0,5,0"/>
             </Frame>
             <Image Source="step4x4.png"
                    Margin="10,0,10,5"/>
 
-            <ScrollView>
-                <StackLayout>
+            <StackLayout Padding="5,0,5,0">
+                <Label Text="Ingredient Selection"
+                            TextColor="Black"
+                            FontSize="20"
+                            FontAttributes="Bold"/>
+                <Label Text="Please select ingredients you want to include"
+                            TextColor="Black"
+                            FontSize="16"
+                    Margin="0,-5,0,0"
+                            FontAttributes="None"/>
+                <Frame Padding="0,0,0,0">
+                    <SearchBar Placeholder="Search available ingredients" 
+                    x:Name="txt_searchingredient"
+                BackgroundColor="White"
+                    TextChanged="txt_searchingredients_TextChange"/>
+                </Frame>
+                <ListView x:Name="IngredientListView" 
+                    ItemsSource="{Binding ingredient}"
+                      ItemTapped="IngredientListView_ItemTapped"
+                    HasUnevenRows="True"                
+                    IsRefreshing="False"
+                    IsPullToRefreshEnabled="False"
+                        HeightRequest="150"
+                        VerticalOptions="StartAndExpand">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" Padding="5">
 
-                </StackLayout>
-            </ScrollView>
+                                    <StackLayout HorizontalOptions="StartAndExpand">
+                                        <Label Text="{Binding IngredientName}" 
+                                           x:Name="lbl_ingredient"
+                                            FontSize="18" 
+                                            FontAttributes="Bold"
+                                            TextColor="Black"/>
+                                    </StackLayout>
+                                </StackLayout>
+
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            <Grid ColumnSpacing="0" RowSpacing="0" BackgroundColor="White" Margin="5,0,5,-6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0"
+                    Text="Qty"
+                       HorizontalTextAlignment = "Center"
+                       VerticalTextAlignment = "Center"
+                        FontAttributes = "Bold"
+                        TextColor = "Black"
+                        FontSize = "16"/>
+                <Label Grid.Row="0" Grid.Column="1"
+                    Text="Unit"
+                       HorizontalTextAlignment = "Center"
+                       VerticalTextAlignment = "Center"
+                        FontAttributes = "Bold"
+                        TextColor = "Black"
+                        FontSize = "16"/>
+                <Label Grid.Row="0" Grid.Column="2"
+                    Text="Ingredient"
+                       HorizontalTextAlignment = "Center"
+                       VerticalTextAlignment = "Center"
+                        FontAttributes = "Bold"
+                        TextColor = "Black"
+                        FontSize = "16"/>
+            </Grid>
+            <Grid ColumnSpacing="0" RowSpacing="0" BackgroundColor="#3F9D2F" Margin="5,0,5,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="45"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Entry Grid.Row="0" Grid.Column="0"
+                    x:Name="txt_qty"
+                    HorizontalTextAlignment = "Center"
+                        FontAttributes = "Bold"
+                        TextColor = "White"
+                        FontSize = "16"/>
+                <Picker Grid.Row="0" Grid.Column="1"
+                    x:Name="pk_unit"
+                        HorizontalTextAlignment = "Center"
+                        FontAttributes = "Bold"
+                        TextColor = "White"
+                        FontSize = "16"/>
+                <Label Grid.Row="0" Grid.Column="2"
+                    x:Name="lbl_ingredients"
+                       Text="SelectedItem"
+                       HorizontalTextAlignment = "Center"
+                       VerticalTextAlignment = "Center"
+                        FontAttributes = "Bold"
+                        TextColor = "White"
+                        FontSize = "16"/>
+            </Grid>
+            <Button Text="Accept Ingredient"
+                    x:Name="btn_acceptIngredient"
+                    Clicked="btn_acceptIngredient_Clicked"/>
+            <StackLayout VerticalOptions="EndAndExpand">
+                <Label x:Name="lbl_EntryFieldsOutput"
+                       FontSize="10"
+                       TextColor="Black"
+                       Padding="10,0,10,0"/>
+        </StackLayout>
             <Button Text="Next"
                     TextColor="White"
                     FontSize="Medium"

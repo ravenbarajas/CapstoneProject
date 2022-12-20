@@ -4,7 +4,7 @@
              x:Class="App1.Views.RecipeManagement.RecipeDetails">
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
-            <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="CenterAndExpand">
+            <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
@@ -156,7 +156,8 @@
                 <Grid Padding="10,0,10,0" RowSpacing="0" ColumnSpacing="0">
                     <ScrollView>
                         <Grid x:Name="ingredientsGrid" Padding="10,0,10,0" RowSpacing="0" ColumnSpacing="0">
-                            <Label Text="This is for ingredeints"
+                            <Label x:Name="LabelRecipeIngredients"
+                                Text="This is for ingredeints"
                                     FontSize="17"/>
                         </Grid>
                     </ScrollView>

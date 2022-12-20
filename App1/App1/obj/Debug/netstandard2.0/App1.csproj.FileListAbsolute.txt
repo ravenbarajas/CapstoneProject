@@ -115,9 +115,7 @@ C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\ob
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipeGeneration\CreateGroupRoom.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipeGeneration\GroupRecipeTypePage.xaml.g.cs
-C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipeGeneration\IngredientSelectionPage.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipeGeneration\JoinGroupRoom.xaml.g.cs
-C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipeGeneration\PreferenceSelectionPage.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipeGeneration\RecipeTypePage.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipeManagement\ChoosePhotoPage.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipeManagement\CookbookPage.xaml.g.cs
@@ -151,4 +149,5 @@ C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\ob
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\ref\App1.dll
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App1.pdb
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipeManagement\RecipeDetails.xaml.g.cs
-C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\App1.csproj.AssemblyReference.cache
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipeGeneration\GenerateRecipePage.xaml.g.cs
+C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipeGeneration\RecipeOutputPage.xaml.g.cs

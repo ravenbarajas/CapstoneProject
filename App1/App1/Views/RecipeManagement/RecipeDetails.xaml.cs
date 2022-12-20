@@ -29,7 +29,7 @@ namespace App1.Views.RecipeManagement
             LabelRecipeTotalTime.Text = recipe.RecipeTotalTime;
 
             LabelRecipeInstructions.Text = recipe.RecipeInstructions;
-
+            LabelRecipeIngredients.Text = recipe.RecipeIngredientParts;
             instructionsGrid.IsVisible = false;
         }
 
