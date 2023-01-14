@@ -92,9 +92,9 @@ namespace App1.Views.RecipePresentation
 
         protected override async void OnAppearing()
         {
-            var recipes = await repository.GetAll();
+            var ingredient = await repository.GetAll();
             RecipeListView.ItemsSource = null;
-            RecipeListView.ItemsSource = recipes;
+            RecipeListView.ItemsSource = ingredient;
             RecipeListView.IsRefreshing = false;
 
         }
@@ -117,7 +117,7 @@ namespace App1.Views.RecipePresentation
                 RecipeListView.ItemsSource = null;
                 RecipeListView.ItemsSource = recipes;
             }
-            else 
+            else
             {
                 OnAppearing();
             }

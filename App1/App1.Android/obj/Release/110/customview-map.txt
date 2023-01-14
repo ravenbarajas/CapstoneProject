@@ -26,6 +26,7 @@ external-cache-path;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\Capstone
 external-path;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\56\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 foreground;obj\Release\110\res\mipmap-anydpi-v26\icon.xml
 foreground;obj\Release\110\res\mipmap-anydpi-v26\icon_round.xml
+FrameLayout;C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Release\110\lp\109\jl\res\layout\camerafragment.xml
 FrameLayout;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\58\jl\res\layout\bottomtablayout.xml
 item;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\58\jl\res\values\styles.xml
 LinearLayout;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\58\jl\res\layout\bottomtablayout.xml
@@ -49,5 +50,6 @@ translate;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\Ap
 translate;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\58\jl\res\anim\enterfromright.xml
 translate;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\58\jl\res\anim\exittoleft.xml
 translate;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\58\jl\res\anim\exittoright.xml
+xamarin.communitytoolkit.ui.views.AutoFitTextureView;C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Release\110\lp\109\jl\res\layout\camerafragment.xml
 xamarin.forms.platform.android.appcompat.FormsViewPager;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\58\jl\res\layout\rootlayout.xml
 xamarin.forms.platform.android.ShellFlyoutLayout;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\58\jl\res\layout\flyoutcontent.xml

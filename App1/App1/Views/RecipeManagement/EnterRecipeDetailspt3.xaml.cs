@@ -81,19 +81,15 @@ namespace App1.Views.RecipeManagement
                 recipeInfoModel recipe = new recipeInfoModel();
                 recipe.RecipeIMG = CreateRecipePage.image;
                 recipe.RecipeID = recipeID;
-                recipe.AuthorName = CreateRecipePage.recipeAuthorName;
+                recipe.RecipeAuthor = CreateRecipePage.recipeAuthorName;
                 recipe.RecipeName = CreateRecipePage.recipeName;
-                recipe.RecipeDesc = CreateRecipePage.recipeDesc;
+                recipe.RecipeDescription = CreateRecipePage.recipeDesc;
 
                 recipe.RecipeCookTime = EnterRecipeDetailspt1.recipeCookTime;
                 recipe.RecipePrepTime = EnterRecipeDetailspt1.recipePrepTime;
-                recipe.RecipeTotalTime = EnterRecipeDetailspt1.recipeTotalTime;
-                recipe.RecipeCookingProcess = EnterRecipeDetailspt1.recipePrepProcess;
-                recipe.RecipeCategory = EnterRecipeDetailspt1.recipeCategory;
-                recipe.RecipeKeywords = EnterRecipeDetailspt1.recipeKeywords;
 
                 recipe.RecipeInstructions = EnterRecipeDetailspt2.recipeInstructions;
-                recipe.RecipeIngredientParts = ingredientWhole;
+                recipe.RecipeIngredients = ingredientWhole;
 
                 var response = await DisplayAlert("Confirmation", "Confirm answers?", "Confirm", "Not yet");
                 if (response == true)

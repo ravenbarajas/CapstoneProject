@@ -115,7 +115,7 @@
             </Grid>
         </ScrollView>
         <ScrollView HeightRequest="525">
-            
+
             <ListView x:Name="RecipeListView" 
                   ItemsSource="{Binding recipes}"
                   HasUnevenRows="True"
@@ -143,7 +143,7 @@
                                            FontSize="18" 
                                            FontAttributes="Bold"
                                            TextColor="Black"/>
-                                    <Label Text="{Binding AuthorName}"
+                                    <Label Text="{Binding RecipeAuthor}"
                                            FontSize="16" 
                                            FontAttributes="None"
                                            TextColor="Black"/>

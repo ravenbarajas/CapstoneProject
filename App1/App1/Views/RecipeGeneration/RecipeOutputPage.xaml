@@ -5,22 +5,7 @@
              NavigationPage.HasNavigationBar="False">
 
     <StackLayout>
-        <Entry x:Name="IngredientsEntry" />
-        <Button x:Name="SearchButton" Text="Search" Clicked="SearchButton_Clicked" />
-        <ListView ItemsSource="{Binding Recipes}" IsPullToRefreshEnabled="True">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout>
-                            <Label Text="{Binding Id}" />
-                            <Label Text="{Binding Title}" />
-                            <Label Text="{Binding Ingredients}" />
-                            <Label Text="{Binding Instructions}" />
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        
+        <Label Text="This is the output"/>
+
     </StackLayout>
 </ContentPage>

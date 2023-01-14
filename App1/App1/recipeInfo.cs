@@ -38,17 +38,12 @@ namespace App1
             return (await firebaseClient.Child(nameof(recipeInfoModel)).OnceAsync<recipeInfoModel>()).Select(item => new recipeInfoModel
             {
                 RecipeName = item.Object.RecipeName,
-                AuthorName = item.Object.AuthorName,
-                AuthorID = item.Object.AuthorID,
-                RecipeDesc = item.Object.RecipeDesc,
+                RecipeAuthor = item.Object.RecipeAuthor,
+                RecipeDescription = item.Object.RecipeDescription,
                 RecipeCookTime = item.Object.RecipeCookTime,
                 RecipePrepTime = item.Object.RecipePrepTime,
-                RecipeTotalTime = item.Object.RecipeTotalTime,
-                RecipeCookingProcess = item.Object.RecipeCookingProcess,
-                RecipeCategory = item.Object.RecipeCategory,
-                RecipeKeywords = item.Object.RecipeKeywords,
                 RecipeInstructions = item.Object.RecipeInstructions,
-                RecipeIngredientParts = item.Object.RecipeIngredientParts,
+                RecipeIngredients = item.Object.RecipeIngredients,
                 RecipeIMG = item.Object.RecipeIMG,
                 RecipeID = item.Key
             }).ToList();
@@ -58,17 +53,12 @@ namespace App1
             return (await firebaseClient.Child(nameof(recipeInfoModel)).OnceAsync<recipeInfoModel>()).Select(item => new recipeInfoModel
             {
                 RecipeName = item.Object.RecipeName,
-                AuthorName = item.Object.AuthorName,
-                AuthorID = item.Object.AuthorID,
-                RecipeDesc = item.Object.RecipeDesc,
+                RecipeAuthor = item.Object.RecipeAuthor,
+                RecipeDescription = item.Object.RecipeDescription,
                 RecipeCookTime = item.Object.RecipeCookTime,
                 RecipePrepTime = item.Object.RecipePrepTime,
-                RecipeTotalTime = item.Object.RecipeTotalTime,
-                RecipeCookingProcess = item.Object.RecipeCookingProcess,
-                RecipeCategory = item.Object.RecipeCategory,
-                RecipeKeywords = item.Object.RecipeKeywords,
                 RecipeInstructions = item.Object.RecipeInstructions,
-                RecipeIngredientParts = item.Object.RecipeIngredientParts,
+                RecipeIngredients = item.Object.RecipeIngredients,
                 RecipeIMG = item.Object.RecipeIMG,
                 RecipeID = item.Key
             }).Where(c => c.RecipeName.ToLower().Contains(name.ToLower())).ToList();

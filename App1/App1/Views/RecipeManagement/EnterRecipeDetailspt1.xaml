@@ -82,20 +82,19 @@
                                Keyboard="Numeric"/>
                         <Entry Grid.Row="0" Grid.Column="3"
                                x:Name="txt_preptimemin"
-                               Unfocused="txt_preptimemin_Unfocused"
                                Placeholder="Minutes"
                                Margin="0,-20,0,0"
                                MaxLength="2"
                                Keyboard="Numeric"/>
                     </Grid>
                     
-                    <Grid RowSpacing="0">
+                    <!--<Grid RowSpacing="0">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="40"/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                         </Grid.ColumnDefinitions>
-                        <!--Total Time-->
+                        --><!--Total Time--><!--
                         <Label Grid.Row="0"
                            Text="Total Time"
                            TextColor="Black"
@@ -104,9 +103,9 @@
                            FontAttributes="Bold"
                            VerticalOptions="Center"
                                Margin="0,-15,0,0"/>
-                    </Grid>
+                    </Grid>-->
 
-                    <Grid RowSpacing="0" ColumnSpacing="3" HorizontalOptions="CenterAndExpand" Margin="0,0,0,-10">
+                    <!--<Grid RowSpacing="0" ColumnSpacing="3" HorizontalOptions="CenterAndExpand" Margin="0,0,0,-10">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="25"/>
                         </Grid.RowDefinitions>
@@ -117,7 +116,7 @@
                             <ColumnDefinition Width="55"/>
                         </Grid.ColumnDefinitions>
 
-                        <!--Total Time-->
+                        --><!--Total Time--><!--
                         <Label Grid.Row="0" Grid.Column="0"
                                x:Name="lbl_totaltimehr"
                                FontSize="20"
@@ -151,9 +150,9 @@
                                HorizontalTextAlignment="End"
                                Margin="0,-15,0,0"
                                IsVisible="False"/>
-                    </Grid>
+                    </Grid>-->
                     
-                    <Grid Padding="5,0,5,0" RowSpacing="0">
+                    <!--<Grid Padding="5,0,5,0" RowSpacing="0">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="40"/>
                             <RowDefinition Height="30"/>
@@ -161,7 +160,7 @@
                         <Grid.ColumnDefinitions>
                         </Grid.ColumnDefinitions>
 
-                        <!--Preparation Process-->
+                        --><!--Preparation Process--><!--
                         <Label Grid.Row="0"
                                x:Name="txt_prepprocess"
                            Text="Preparation Process"
@@ -175,8 +174,9 @@
                                 x:Name="pk_prepprocess"
                            Title="How the recipe is prepared?"
                                Margin="0,-15,0,0"/>
-                    </Grid>
-                    <Grid Padding="5,0,5,0" RowSpacing="0" Margin="0,0,0,15">
+                    </Grid>-->
+                    
+                    <!--<Grid Padding="5,0,5,0" RowSpacing="0" Margin="0,0,0,15">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="40"/>
                             <RowDefinition Height="30"/>
@@ -184,7 +184,7 @@
                         <Grid.ColumnDefinitions>
                         </Grid.ColumnDefinitions>
 
-                        <!--Recipe Category-->
+                        --><!--Recipe Category--><!--
                         <Label Grid.Row="0"
                                x:Name="txt_recipecategory"
                            Text="Recipe Category"
@@ -198,9 +198,9 @@
                                 x:Name="pk_recipecategory"
                            Title="What category does the recipe belong?"
                                Margin="0,-15,0,0"/>
-                    </Grid>
+                    </Grid>-->
 
-                    <Grid Padding="5,0,5,0" RowSpacing="0" x:Name="lblkeyword1of8">
+                    <!--<Grid Padding="5,0,5,0" RowSpacing="0" x:Name="lblkeyword1of8">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="40"/>
                             <RowDefinition Height="40"/>
@@ -210,7 +210,7 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
 
-                        <!--Recipe Keywords 1 of 6-->
+                        --><!--Recipe Keywords 1 of 6--><!--
                         <Label Grid.Row="0" Grid.Column="0"
                                x:Name="RK000"
                                Text="Recipe Keywords"
@@ -236,7 +236,7 @@
                                 Unfocused="btnshow1"
                                 Margin="0,-15,0,0"/>
                         
-                        <!--Recipe Keywords 2 of 6-->
+                        --><!--Recipe Keywords 2 of 6--><!--
                         <Label Grid.Row="0" Grid.Column="0"
                                x:Name="RK100"
                            Text="Recipe Keywords"
@@ -262,7 +262,7 @@
                                 Unfocused="btnshow2"
                                Margin="0,-15,0,0"/>
 
-                        <!--Recipe Keywords 3 of 6-->
+                        --><!--Recipe Keywords 3 of 6--><!--
                         <Label Grid.Row="0" Grid.Column="0"
                                x:Name="RK200"
                            Text="Recipe Keywords"
@@ -288,7 +288,7 @@
                                 Unfocused="btnshow3"
                                Margin="0,-15,0,0"/>
 
-                        <!--Recipe Keywords 4 of 6-->
+                        --><!--Recipe Keywords 4 of 6--><!--
                         <Label Grid.Row="0" Grid.Column="0"
                                x:Name="RK300"
                            Text="Recipe Keywords"
@@ -314,7 +314,7 @@
                                 Unfocused="btnshow4"
                                Margin="0,-15,0,0"/>
 
-                        <!--Recipe Keywords 5 of 6-->
+                        --><!--Recipe Keywords 5 of 6--><!--
                         <Label Grid.Row="0" Grid.Column="0"
                                x:Name="RK400"
                            Text="Recipe Keywords"
@@ -340,7 +340,7 @@
                                 Unfocused="btnshow5"
                                Margin="0,-15,0,0"/>
 
-                        <!--Recipe Keywords 6 of 6-->
+                        --><!--Recipe Keywords 6 of 6--><!--
                         <Label Grid.Row="0" Grid.Column="0"
                                x:Name="RK500"
                            Text="Recipe Keywords"
@@ -365,8 +365,9 @@
                            Title="Select Related Keywords"
                                 Unfocused="btnshow6"
                                Margin="0,-15,0,0"/>
-                    </Grid>
-                    <Grid Padding="5,0,5,0" RowSpacing="0" ColumnSpacing="5" HorizontalOptions="Center">
+                    </Grid>-->
+                    
+                    <!--<Grid Padding="5,0,5,0" RowSpacing="0" ColumnSpacing="5" HorizontalOptions="Center">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="35"/>
                         </Grid.RowDefinitions>
@@ -428,6 +429,7 @@
                             Padding="-5,-5,-5,-5"
                             Clicked="pickerhide6_Clicked"/>
                     </Grid>
+                    
                     <Grid Padding="5,5,5,5" ColumnSpacing="3"  Margin="10,0,10,0" BackgroundColor="#e6e6e6">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="35"/>
@@ -525,7 +527,8 @@
                             BackgroundColor="#3F9D2F"
                             VerticalOptions="Center"
                             CornerRadius="30"/>
-                    </Grid>
+                    </Grid>-->
+                    
                 </StackLayout>
             </ScrollView>
 

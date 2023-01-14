@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\App1",
-    "\\App1\\App1"
+    "\\App1\\App1",
+    "\\App1\\App1\\Views",
+    "\\App1\\App1\\Views\\RecipeManagement",
+    "\\App1\\App1\\Views\\RecipePresentation"
   ],
-  "SelectedNode": "\\App1\\App1\\SignUp.xaml",
+  "SelectedNode": "\\App1\\App1\\App.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

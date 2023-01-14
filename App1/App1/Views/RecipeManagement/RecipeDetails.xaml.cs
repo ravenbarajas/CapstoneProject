@@ -17,19 +17,15 @@ namespace App1.Views.RecipeManagement
             InitializeComponent();
             ImageRecipeImage.Source = recipe.RecipeIMG;
             LabelRecipeName.Text = recipe.RecipeName;
-            LabelAuthorName.Text = recipe.AuthorName;
+            LabelAuthorName.Text = recipe.RecipeAuthor;
 
-            LabelRecipeDesc.Text = recipe.RecipeDesc;
-            LabelRecipeCategory.Text = recipe.RecipeCategory;
-
-            LabelRecipeKeywords.Text = recipe.RecipeKeywords;
+            LabelRecipeDesc.Text = recipe.RecipeDescription;
 
             LabelRecipeCookTime.Text = recipe.RecipeCookTime;
             LabelRecipePrepTime.Text = recipe.RecipePrepTime;
-            LabelRecipeTotalTime.Text = recipe.RecipeTotalTime;
 
             LabelRecipeInstructions.Text = recipe.RecipeInstructions;
-            LabelRecipeIngredients.Text = recipe.RecipeIngredientParts;
+            LabelRecipeIngredients.Text = recipe.RecipeIngredients;
             instructionsGrid.IsVisible = false;
         }
 

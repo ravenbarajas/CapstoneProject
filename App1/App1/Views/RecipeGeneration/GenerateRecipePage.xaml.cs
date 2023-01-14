@@ -15,7 +15,7 @@ namespace App1.Views.RecipeGeneration
     public partial class GenerateRecipePage : ContentPage
     {
         ingredientInfo repository = new ingredientInfo();
-        RecipInfo recipeoutput = new RecipInfo();
+        recipeInfo recipeoutput = new recipeInfo();
         //public static string ingredients;
         public GenerateRecipePage()
         {
