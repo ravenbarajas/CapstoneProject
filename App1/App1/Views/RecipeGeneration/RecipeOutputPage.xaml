@@ -5,7 +5,54 @@
              NavigationPage.HasNavigationBar="False">
 
     <StackLayout>
-        <Label Text="This is the output"/>
+        <SearchBar x:Name="txt_searchrecipes"
+                       Placeholder="Search food recipes"
+                               TextColor="#7F8487"
+                               BackgroundColor="#e6e6e6"
+                       TextChanged="txt_searchrecipesSearchButtonPressed"
+                               HeightRequest="-5"/>
 
+        <ScrollView HeightRequest="525">
+
+            <ListView x:Name="RecipeListView" 
+                  ItemsSource="{Binding recipes}"
+                  HasUnevenRows="True"                
+                  IsRefreshing="True"
+                  ItemTapped="RecipeListView_ItemTapped" 
+                  IsPullToRefreshEnabled="False">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="5">
+                                <Frame Padding="0"
+                                           HeightRequest="60"
+                                           WidthRequest="60"
+                                           BackgroundColor="White"
+                                           CornerRadius="100"
+                                           BorderColor="Teal"
+                                           IsClippedToBounds="True">
+                                    <Frame.Content>
+                                        <Image Source="{Binding RecipeIMG}" Aspect="Fill"/>
+                                    </Frame.Content>
+                                </Frame>
+
+                                <StackLayout HorizontalOptions="StartAndExpand">
+                                    <Label Text="{Binding RecipeName}" 
+                                           FontSize="18" 
+                                           FontAttributes="Bold"
+                                           TextColor="Black"/>
+                                    <Label Text="{Binding RecipeAuthor}"
+                                           FontSize="16" 
+                                           FontAttributes="None"
+                                           TextColor="Black"/>
+                                </StackLayout>
+                            </StackLayout>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </ScrollView>
     </StackLayout>
 </ContentPage>

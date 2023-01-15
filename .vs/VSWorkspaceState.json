@@ -4,9 +4,10 @@
     "\\App1",
     "\\App1\\App1",
     "\\App1\\App1\\Views",
+    "\\App1\\App1\\Views\\RecipeGeneration",
     "\\App1\\App1\\Views\\RecipeManagement",
     "\\App1\\App1\\Views\\RecipePresentation"
   ],
-  "SelectedNode": "\\App1\\App1\\App.xaml.cs",
+  "SelectedNode": "\\App1\\App1\\Views\\RecipeGeneration\\GenerateRecipePage.xaml",
   "PreviewInSolutionExplorer": false
 }

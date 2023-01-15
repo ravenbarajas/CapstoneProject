@@ -27,6 +27,9 @@ namespace App1.Views.RecipeManagement
         public static string recipeAuthorName;
         public static string recipeName;
         public static string recipeDesc;
+
+        public static string recipeCookTime;
+        public static string recipePrepTime;
         public CreateRecipePage()
         {
             InitializeComponent();
@@ -42,12 +45,24 @@ namespace App1.Views.RecipeManagement
             await CrossMedia.Current.Initialize();
             try
             {
-                recipeInfoModel recipe = new recipeInfoModel();
-
                 recipeAuthorName = txt_username.Text;
+
                 recipeName = txt_recipename.Text;
                 recipeDesc = txt_recipedesc.Text;
 
+                recipeCookTime = txt_cooktimehr.Text + lbl_cooktimehr.Text + txt_cooktimemin.Text + lbl_cooktimemin.Text;
+                recipePrepTime = txt_preptimehr.Text + lbl_preptimehr.Text + txt_preptimemin.Text + lbl_preptimemin.Text;
+
+                if (String.IsNullOrEmpty(recipeCookTime))
+                {
+                    await DisplayAlert("Warning", "Cook time is required", "Ok");
+                    return;
+                }
+                if (String.IsNullOrEmpty(recipePrepTime))
+                {
+                    await DisplayAlert("Warning", "Prep time is required", "Ok");
+                    return;
+                }
                 if (String.IsNullOrEmpty(recipeName))
                 {
                     await DisplayAlert("Warning", "Recipe Name is required", "Ok");
@@ -93,6 +108,95 @@ namespace App1.Views.RecipeManagement
             catch
             {
 
+            }
+        }
+
+        private void txt_cooktimehr_Completed(object sender, EventArgs e)
+        {
+            string cooktimehr = txt_cooktimehr.Text;
+            int cooktimehrval;
+            if (!string.IsNullOrEmpty(cooktimehr) && int.TryParse(cooktimehr, out cooktimehrval))
+            {
+                
+            }
+            if (cooktimehr == "1")
+            {
+                lbl_cooktimehr.Text = " Hour ";
+            }
+            else if (cooktimehr == "" || cooktimehr =="0")
+            {
+                lbl_cooktimehr.Text ="";
+                txt_cooktimehr.Text ="";
+            }
+            else
+            {
+                lbl_cooktimehr.Text = " Hours ";
+            }
+        }
+        private void txt_cooktimemin_Completed(object sender, EventArgs e)
+        {
+            string cooktimemin = txt_cooktimemin.Text;
+            int cooktimeminval;
+            if (!string.IsNullOrEmpty(cooktimemin) && int.TryParse(cooktimemin, out cooktimeminval))
+            {
+
+            }
+            if (cooktimemin == "1")
+            {
+                lbl_cooktimemin.Text = " Minute";
+            }
+            else if (cooktimemin == "" || cooktimemin == "0")
+            {
+                lbl_cooktimemin.Text = "";
+                txt_cooktimemin.Text = "";
+            }
+            else
+            {
+                lbl_cooktimemin.Text = " Minutes";
+            }
+        }
+        private void txt_preptimehr_Completed(object sender, EventArgs e)
+        {
+            string preptimehr = txt_preptimehr.Text;
+            int preptimehrval;
+            if (!string.IsNullOrEmpty(preptimehr) && int.TryParse(preptimehr, out preptimehrval))
+            {
+
+            }
+            if (preptimehr == "1")
+            {
+                lbl_preptimehr.Text = " Hour ";
+            }
+            else if (preptimehr == "" || preptimehr == "0")
+            {
+                lbl_preptimehr.Text = "";
+                txt_preptimehr.Text = "";
+            }
+            else
+            {
+                lbl_preptimehr.Text = " Hours ";
+            }
+        }
+        private void txt_preptimemin_Completed(object sender, EventArgs e)
+        {
+            string preptimemin = txt_preptimemin.Text;
+            int preptimeminval;
+            if (!string.IsNullOrEmpty(preptimemin) && int.TryParse(preptimemin, out preptimeminval))
+            {
+
+            }
+            if (preptimemin == "1")
+            {
+                lbl_preptimemin.Text = " Minute";
+            }
+            else if (preptimemin == "" || preptimemin == "0")
+            {
+                lbl_preptimemin.Text = "";
+                txt_preptimemin.Text = "";
+            }
+            else
+            {
+                lbl_preptimemin.Text = " Minutes";
             }
         }
     }

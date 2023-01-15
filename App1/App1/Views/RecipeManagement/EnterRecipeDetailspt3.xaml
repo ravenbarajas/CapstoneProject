@@ -29,6 +29,7 @@
                             FontSize="16"
                     Margin="0,-5,0,0"
                             FontAttributes="None"/>
+                
                 <Frame Padding="0,0,0,0">
                     <SearchBar Placeholder="Search available ingredients" 
                     x:Name="txt_searchingredient"
@@ -62,6 +63,7 @@
                     </ListView.ItemTemplate>
                 </ListView>
             </StackLayout>
+            
             <Grid ColumnSpacing="0" RowSpacing="0" BackgroundColor="White" Margin="5,0,5,-6">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
@@ -125,6 +127,7 @@
                         TextColor = "White"
                         FontSize = "16"/>
             </Grid>
+            
             <Button Text="Accept Ingredient"
                     x:Name="btn_acceptIngredient"
                     Clicked="btn_acceptIngredient_Clicked"/>
@@ -134,6 +137,7 @@
                        TextColor="Black"
                        Padding="10,0,10,0"/>
         </StackLayout>
+            
             <Button Text="Next"
                     TextColor="White"
                     FontSize="Medium"

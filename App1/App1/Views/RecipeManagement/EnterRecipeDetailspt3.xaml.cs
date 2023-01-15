@@ -72,48 +72,48 @@ namespace App1.Views.RecipeManagement
 
         private async void Next_Clicked(object sender, EventArgs e)
         {
-            try 
-            { 
-                recipeID = generateRecipeID();
+        //    try 
+        //    { 
+        //        recipeID = generateRecipeID();
 
-                string ingredientWhole = lbl_EntryFieldsOutput.Text;
+        //        string ingredientWhole = lbl_EntryFieldsOutput.Text;
 
-                recipeInfoModel recipe = new recipeInfoModel();
-                recipe.RecipeIMG = CreateRecipePage.image;
-                recipe.RecipeID = recipeID;
-                recipe.RecipeAuthor = CreateRecipePage.recipeAuthorName;
-                recipe.RecipeName = CreateRecipePage.recipeName;
-                recipe.RecipeDescription = CreateRecipePage.recipeDesc;
+        //        recipeInfoModel recipe = new recipeInfoModel();
+        //        recipe.RecipeIMG = CreateRecipePage.image;
+        //        recipe.RecipeID = recipeID;
+        //        recipe.RecipeAuthor = CreateRecipePage.recipeAuthorName;
+        //        recipe.RecipeName = CreateRecipePage.recipeName;
+        //        recipe.RecipeDescription = CreateRecipePage.recipeDesc;
 
-                recipe.RecipeCookTime = EnterRecipeDetailspt1.recipeCookTime;
-                recipe.RecipePrepTime = EnterRecipeDetailspt1.recipePrepTime;
+        //        recipe.RecipeCookTime = CreateRecipePage.recipeCookTime;
+        //        recipe.RecipePrepTime = CreateRecipePage.recipePrepTime;
 
-                recipe.RecipeInstructions = EnterRecipeDetailspt2.recipeInstructions;
-                recipe.RecipeIngredients = ingredientWhole;
+        //        recipe.RecipeInstructions = EnterRecipeDetailspt2.recipeInstructions;
+        //        recipe.RecipeIngredients = ingredientWhole;
 
-                var response = await DisplayAlert("Confirmation", "Confirm answers?", "Confirm", "Not yet");
-                if (response == true)
-                {
-                    var isSaved = await repository.Save(recipe);
-                    if (isSaved)
-                    {
-                        await DisplayAlert("Information", "Recipe info saved!", "Ok");
-                        await Navigation.PushAsync(new UserProfilePage());
-                    }
-                    else
-                    {
-                        await DisplayAlert("Error", "Failed to save recipe info!", "Ok");
-                    }
-                }
-                else
-                {
-                    await DisplayAlert("Error", "Failed to save recipe info!", "Ok");
-                }
-            }
-        catch
-        {
+        //        var response = await DisplayAlert("Confirmation", "Confirm answers?", "Confirm", "Not yet");
+        //        if (response == true)
+        //        {
+        //            var isSaved = await repository.Save(recipe);
+        //            if (isSaved)
+        //            {
+        //                await DisplayAlert("Information", "Recipe info saved!", "Ok");
+        //                await Navigation.PushAsync(new UserProfilePage());
+        //            }
+        //            else
+        //            {
+        //                await DisplayAlert("Error", "Failed to save recipe info!", "Ok");
+        //            }
+        //        }
+        //        else
+        //        {
+        //            await DisplayAlert("Error", "Failed to save recipe info!", "Ok");
+        //        }
+        //    }
+        //catch
+        //{
 
-        }
+        //}
     }
         public string generateRecipeID()
         {

@@ -16,7 +16,7 @@ namespace App1.Views.RecipeGeneration
     {
         ingredientInfo repository = new ingredientInfo();
         recipeInfo recipeoutput = new recipeInfo();
-        //public static string ingredients;
+        public static string ListOfIngredients;
         public GenerateRecipePage()
         {
             InitializeComponent();
@@ -83,15 +83,22 @@ namespace App1.Views.RecipeGeneration
             ingredientList.Add(labeltextArray);
             for (int i = 0; i < ingredientList.Count; i++)
             {
-                lbl_EntryFieldsOutput.Text = ingredientList[i] + "\n";
+                lbl_EntryFieldsOutput.Text = ingredientList[i] /*+ "\n"*/;
             }
-            //ingredients = lbl_EntryFieldsOutput.Text;
         }
 
         private async void Generate_Clicked(object sender, EventArgs e)
         {
-         
-            await Navigation.PushAsync(new RecipeOutputPage());
+            try
+            {
+                ListOfIngredients = lbl_EntryFieldsOutput.Text;
+
+                await Navigation.PushAsync(new RecipeOutputPage());
+            }
+            catch
+            {
+
+            }
         }
     }
 }

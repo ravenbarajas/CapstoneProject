@@ -24,7 +24,7 @@ namespace App1
             try
             {
                 await firebaseClient.Child(nameof(recipeInfoModel))
-                                .Child(EnterRecipeDetailspt3.recipeID)
+                                .Child(EnterRecipeDetailspt2.recipeID)
                                 .PutAsync(JsonConvert.SerializeObject(recipe));
                 return true;
             }
@@ -62,6 +62,21 @@ namespace App1
                 RecipeIMG = item.Object.RecipeIMG,
                 RecipeID = item.Key
             }).Where(c => c.RecipeName.ToLower().Contains(name.ToLower())).ToList();
+        }
+        public async Task<List<recipeInfoModel>> OutputRecipe(string name)
+        {
+            return (await firebaseClient.Child(nameof(recipeInfoModel)).OnceAsync<recipeInfoModel>()).Select(item => new recipeInfoModel
+            {
+                RecipeName = item.Object.RecipeName,
+                RecipeAuthor = item.Object.RecipeAuthor,
+                RecipeDescription = item.Object.RecipeDescription,
+                RecipeCookTime = item.Object.RecipeCookTime,
+                RecipePrepTime = item.Object.RecipePrepTime,
+                RecipeInstructions = item.Object.RecipeInstructions,
+                RecipeIngredients = item.Object.RecipeIngredients,
+                RecipeIMG = item.Object.RecipeIMG,
+                RecipeID = item.Key
+            }).Where(c => c.RecipeIngredients.ToLower().Contains(name.ToLower())).ToList();
         }
         public async Task<string> UploadFile(Stream fileStream, string fileName)
         {

@@ -39,29 +39,46 @@
                             BackgroundColor="#FF804C"
                             HeightRequest="40"
                             Clicked="btn_pickClicked"/>
-
-                    <Grid RowSpacing="0" BackgroundColor="Transparent" Margin="0,50,0,0">
+                    
+                    <Grid RowSpacing="0" BackgroundColor="Transparent" Margin="0,20,0,-10">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="40"/>
-                            <RowDefinition Height="40"/>
-                            <RowDefinition Height="25"/>
-
-                            <RowDefinition Height="40"/>
-                            <RowDefinition Height="80"/>
+                            <RowDefinition Height="0"/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-                        <Label Grid.Row="0"
+                        <Label Grid.Row="0" Grid.Column="0"
+                               x:Name="lbl_username"
+                           Text="Recipe Author: "
+                           TextColor="Black"
+                           Padding="5,0,5,0"
+                           FontSize="1"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center"
+                               Margin="0,-30,0,0"/>
+                        <Label Grid.Row="0" Grid.Column="1"
                                x:Name="txt_username"
                            Text="Raven"
                            TextColor="Black"
                            Padding="5,0,5,0"
-                           FontSize="Large"
+                           FontSize="1"
                            FontAttributes="Bold"
                            VerticalOptions="Center"
                                Margin="0,-30,0,0"/>
+                    </Grid>
+                    <Grid RowSpacing="0" BackgroundColor="Transparent" Margin="0,0,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="25"/>
+
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="65"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                        </Grid.ColumnDefinitions>
                         <!--Recipe Name-->
-                        <Label Grid.Row="1"
+                        <Label Grid.Row="0"
                            Text="Name"
                            TextColor="Black"
                            Padding="5,0,5,0"
@@ -69,12 +86,12 @@
                            FontAttributes="Bold"
                            VerticalOptions="Center"
                                Margin="0,-30,0,0"/>
-                        <Entry Grid.Row="2"
+                        <Entry Grid.Row="1"
                                x:Name="txt_recipename"
                            Placeholder="Name your recipe"
                                Margin="0,-20,0,0"/>
                         <!--Recipe Description-->
-                        <Label Grid.Row="3"
+                        <Label Grid.Row="2"
                            Text="Description"
                            TextColor="Black"
                            Padding="5,0,5,0"
@@ -82,10 +99,114 @@
                            FontAttributes="Bold"
                            VerticalOptions="Center"
                                Margin="0,-10,0,0"/>
-                        <Editor Grid.Row="4"
+                        <Editor Grid.Row="3"
                                 x:Name="txt_recipedesc"
                             Placeholder="Describe your recipe"
                                 Margin="0,-10,0,0"/>
+                    </Grid>
+                    <Grid RowSpacing="0" ColumnSpacing="3" BackgroundColor="Transparent">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="190"/>
+                            <ColumnDefinition Width="190"/>
+                        </Grid.ColumnDefinitions>
+                        <!--Cook Time Label-->
+                        <Label Grid.Row="0" Grid.Column="0"
+                               Text="Cook Time"
+                               TextColor="Black"
+                               Padding="5,0,5,0"
+                               FontSize="Large"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"
+                               Margin="0,-15,0,0"/>
+                        <!--Prep Time Label-->
+                        <Label Grid.Row="0" Grid.Column="1"
+                               Text="Prep Time"
+                               TextColor="Black"
+                               Padding="5,0,5,0"
+                               FontSize="Large"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"
+                               Margin="0,-15,0,0"/>
+                    </Grid>
+                    <Grid RowSpacing="5" ColumnSpacing="0" Padding="5,0,5,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="25"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <!--Cook Time-->
+                        <Entry Grid.Row="0" Grid.Column="0"
+                               x:Name="txt_cooktimehr"
+                               Placeholder="Hours"
+                               Margin="0,-20,0,0"
+                               MaxLength="2"
+                               Unfocused="txt_cooktimehr_Completed"
+                               HorizontalTextAlignment="Center"
+                               Keyboard="Numeric"/>
+                        <Label Grid.Row="0" Grid.Column="1"
+                               x:Name="lbl_cooktimehr"
+                               TextColor="Black"
+                               VerticalOptions="Start"
+                               Margin="0,-5,0,0"
+                               FontSize="18"
+                               FontAttributes="Bold"/>
+                        
+                        <Entry Grid.Row="1" Grid.Column="0"
+                               x:Name="txt_cooktimemin"
+                               Placeholder="Minutes"
+                               Margin="0,-20,0,0"
+                               Unfocused="txt_cooktimemin_Completed"
+                               HorizontalTextAlignment="Center"
+                               Keyboard="Numeric"
+                               MaxLength="2"/>
+                        <Label Grid.Row="1" Grid.Column="1"
+                               x:Name="lbl_cooktimemin"
+                               TextColor="Black"
+                               VerticalOptions="Start"
+                               Margin="0,-5,0,0"
+                               FontSize="18"
+                               FontAttributes="Bold"/>
+
+                        <!--Prep Time-->
+                        <Entry Grid.Row="0" Grid.Column="2"
+                               x:Name="txt_preptimehr"
+                               Placeholder="Hours"
+                               Margin="0,-20,0,0"
+                               MaxLength="2"
+                               Unfocused="txt_preptimehr_Completed"
+                               HorizontalTextAlignment="Center"
+                               Keyboard="Numeric"/>
+                        <Label Grid.Row="0" Grid.Column="3"
+                               x:Name="lbl_preptimehr"
+                               TextColor="Black"
+                               VerticalOptions="Start"
+                               Margin="0,-5,0,0"
+                               FontSize="18"
+                               FontAttributes="Bold"/>
+                        
+                        <Entry Grid.Row="1" Grid.Column="2"
+                               x:Name="txt_preptimemin"
+                               Placeholder="Minutes"
+                               Margin="0,-20,0,0"
+                               MaxLength="2"
+                               Unfocused="txt_preptimemin_Completed"
+                               HorizontalTextAlignment="Center"
+                               Keyboard="Numeric"/>
+                        <Label Grid.Row="1" Grid.Column="3"
+                               x:Name="lbl_preptimemin"
+                               TextColor="Black"
+                               VerticalOptions="Start"
+                               Margin="0,-5,0,0"
+                               FontSize="18"
+                               FontAttributes="Bold"/>
                     </Grid>
                 </StackLayout>
                 
