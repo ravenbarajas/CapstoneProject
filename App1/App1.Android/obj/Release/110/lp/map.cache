@@ -108,3 +108,6 @@ androidx.legacy.legacy-support-v4.aar
 androidx.browser.browser.aar
 Plugin.Media.dll
 Xamarin.CommunityToolkit.dll
+Lottie.Android.dll
+Lottie.Forms.dll
+Square.OkIO.dll

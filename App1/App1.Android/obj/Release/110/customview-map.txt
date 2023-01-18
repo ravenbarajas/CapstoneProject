@@ -9,6 +9,7 @@ androidx.appcompat.widget.Toolbar;C:\Users\Raven Barajas\Source\Repos\ravenbaraj
 androidx.appcompat.widget.Toolbar;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\58\jl\res\layout\toolbar.xml
 androidx.coordinatorlayout.widget.CoordinatorLayout;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\58\jl\res\layout\rootlayout.xml
 androidx.coordinatorlayout.widget.CoordinatorLayout;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\58\jl\res\layout\shellcontent.xml
+attr;C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Release\110\lp\110\jl\res\values\values.xml
 attr;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\58\jl\res\values\attrs.xml
 background;obj\Release\110\res\mipmap-anydpi-v26\icon.xml
 background;obj\Release\110\res\mipmap-anydpi-v26\icon_round.xml
@@ -21,16 +22,20 @@ com.google.android.material.bottomnavigation.BottomNavigationView;C:\Users\Raven
 com.google.android.material.tabs.TabLayout;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\58\jl\res\layout\fallbacktabbardonotuse.xml
 com.google.android.material.tabs.TabLayout;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\58\jl\res\layout\rootlayout.xml
 com.google.android.material.tabs.TabLayout;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\58\jl\res\layout\tabbar.xml
+declare-styleable;C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Release\110\lp\110\jl\res\values\values.xml
 declare-styleable;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\58\jl\res\values\attrs.xml
+enum;C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Release\110\lp\110\jl\res\values\values.xml
 external-cache-path;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\56\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 external-path;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\56\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 foreground;obj\Release\110\res\mipmap-anydpi-v26\icon.xml
 foreground;obj\Release\110\res\mipmap-anydpi-v26\icon_round.xml
 FrameLayout;C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Release\110\lp\109\jl\res\layout\camerafragment.xml
 FrameLayout;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\58\jl\res\layout\bottomtablayout.xml
+item;C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Release\110\lp\110\jl\res\values\values.xml
 item;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\58\jl\res\values\styles.xml
 LinearLayout;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\58\jl\res\layout\bottomtablayout.xml
 paths;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\56\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+resources;C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Release\110\lp\110\jl\res\values\values.xml
 resources;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\1\jl\res\values\input_styles.xml
 resources;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\3\jl\res\values\strings.xml
 resources;C:\Users\Raven Barajas\Source\Repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Release\110\lp\58\jl\res\values\attrs.xml

@@ -151,7 +151,6 @@ C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\ob
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipeManagement\RecipeDetails.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipeGeneration\GenerateRecipePage.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipeGeneration\RecipeOutputPage.xaml.g.cs
-C:\Users\Raven Barajas\source\repos\Capstone\App1\App1\obj\Debug\netstandard2.0\App1.csproj.AssemblyReference.cache
 C:\Users\Raven Barajas\source\repos\Capstone\App1\App1\obj\Debug\netstandard2.0\App1.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Raven Barajas\source\repos\Capstone\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\RecipeGeneration\CreateGroupRoom.xaml.g.cs
@@ -192,3 +191,4 @@ C:\Users\Raven Barajas\source\repos\Capstone\App1\App1\bin\Debug\netstandard2.0\
 C:\Users\Raven Barajas\source\repos\Capstone\App1\App1\bin\Debug\netstandard2.0\ref\App1.dll
 C:\Users\Raven Barajas\source\repos\Capstone\App1\App1\bin\Debug\netstandard2.0\App1.pdb
 C:\Users\Raven Barajas\source\repos\Capstone\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\RecipeGeneration\RecipeLoadingPage.xaml.g.cs

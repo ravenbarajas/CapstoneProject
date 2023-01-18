@@ -30,6 +30,7 @@
                             FontSize="16"
                     Margin="0,-5,0,0"
                             FontAttributes="None"/>
+
             <Frame Padding="0,0,0,0">
                 <SearchBar Placeholder="Search available ingredients" 
                     x:Name="txt_searchingredient"
@@ -38,7 +39,8 @@
             </Frame>
             <ListView x:Name="IngredientListView" 
                     ItemsSource="{Binding ingredient}"
-                      ItemTapped="IngredientListView_ItemTapped"
+
+                      ItemSelected="IngredientListView_ItemSelected"
                     HasUnevenRows="True"                
                     IsRefreshing="False"
                     IsPullToRefreshEnabled="False"

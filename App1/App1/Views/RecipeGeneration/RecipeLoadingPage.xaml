@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="App1.Views.RecipeGeneration.RecipeLoadingPage">
+
+    <StackLayout Padding="70,20,70,0">
+        <forms:AnimationView x:Name="animationView"
+                            Animation="cookinganimation.json"
+                            AnimationSource="AssetOrBundle"
+                                AutoPlay="True"
+                                RepeatMode="Restart"
+                                RepeatCount="3"
+                            Command="{Binding ClickCommand}"
+                            VerticalOptions="FillAndExpand"
+                            HorizontalOptions="FillAndExpand"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0"
+                   x:Name="message1"
+                Text="Just a moment"
+               Margin="0,-200,0,0"
+                TextColor="White"
+                   BackgroundColor="White"
+                FontSize="22"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"/>
+            <Label Grid.Row="0"
+                   x:Name="message2"
+                Text="Shrimp Chef is cooking your meal..."
+               Margin="0,-200,0,0"
+                TextColor="White"
+                   BackgroundColor="White"
+                FontSize="22"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"/>
+            <Label Grid.Row="0"
+                   x:Name="message3"
+                Text="Loading results"
+               Margin="0,-200,0,0"
+                TextColor="White"
+                   BackgroundColor="White"
+                FontSize="22"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"/>
+            </Grid>
+        
+        <Label x:Name="txt_selectedrecipe"
+                               TextColor="black"
+               FontSize="20"
+                               BackgroundColor="#e6e6e6"
+                        Text="{Binding Ingredients[0]}"
+                               HeightRequest="-5"/>
+        <Label x:Name="txt_selectedrecipe1"
+                               TextColor="black"
+               FontSize="20"
+                               BackgroundColor="#e6e6e6"
+                       Text="{Binding Ingredients[1]}"
+                               HeightRequest="-5"/>
+        <Label x:Name="txt_selectedrecipe2"
+                               TextColor="black"
+               FontSize="20"
+                               BackgroundColor="#e6e6e6"
+                       Text="{Binding Ingredients[2]}"
+                               HeightRequest="-5"/>
+    </StackLayout>
+    
+</ContentPage>
