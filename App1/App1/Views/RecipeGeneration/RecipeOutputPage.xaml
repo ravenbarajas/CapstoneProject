@@ -5,7 +5,10 @@
              NavigationPage.HasNavigationBar="False">
 
     <StackLayout>
-        <StackLayout>
+        <Image Source="NameHeader.png"
+               VerticalOptions="StartAndExpand"/>
+        
+        <StackLayout Padding="10,0,10,0" Margin="0,20,0,20">
             <SearchBar x:Name="txt_searchrecipes"
                        Placeholder="Search food recipes"
                                TextColor="#7F8487"
@@ -21,8 +24,79 @@
                                TextColor="#7F8487"
                                BackgroundColor="#e6e6e6"
                                HeightRequest="-5"/>
+            
+            <Label Text="There you go!"
+                   TextColor="Black"
+                   FontSize="24"
+                   FontAttributes="Bold"/>
+            <Label Text="Based on your selected ingredients, we suggest you try these delicious recipes!"
+                   TextColor="Black"
+                   FontSize="18"
+                   FontAttributes="None"/>
+
+            <ScrollView Orientation="Horizontal" Margin="0,20,0,0">
+                <StackLayout Orientation="Horizontal">
+                    <Grid ColumnSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Grid.Row="0"
+                        x:Name="ingredient1"
+                        TextColor="White"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        TextTransform="Lowercase"
+                        BackgroundColor="#3873F6"
+                        HorizontalOptions="StartAndExpand"
+                        Padding="20,0,20,0"
+                    CornerRadius="60"/>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Grid.Row="0"
+                        x:Name="ingredient2"
+                        TextColor="White"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        TextTransform="Lowercase"
+                        BackgroundColor="#3873F6"
+                        HorizontalOptions="StartAndExpand"
+                        Padding="20,0,20,0"
+                    CornerRadius="60"/>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Grid.Row="0"
+                        x:Name="ingredient3"
+                        TextColor="White"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        TextTransform="Lowercase"
+                        BackgroundColor="#3873F6"
+                        HorizontalOptions="StartAndExpand"
+                        Padding="20,0,20,0"
+                    CornerRadius="60"/>
+            </Grid>
+                    </StackLayout>
+            </ScrollView>
         </StackLayout>
-        <ScrollView HeightRequest="525">
+        <StackLayout Padding="10,0,10,0">
 
             <ListView x:Name="RecipeListView" 
                   ItemsSource="{Binding recipes}"
@@ -47,15 +121,12 @@
                                     </Frame.Content>
                                 </Frame>
 
-                                <StackLayout HorizontalOptions="StartAndExpand">
+                                <StackLayout HorizontalOptions="StartAndExpand" Padding="5,0,0,0">
                                     <Label Text="{Binding RecipeName}" 
                                            FontSize="18" 
                                            FontAttributes="Bold"
-                                           TextColor="Black"/>
-                                    <Label Text="{Binding RecipeAuthor}"
-                                           FontSize="16" 
-                                           FontAttributes="None"
-                                           TextColor="Black"/>
+                                           TextColor="Black"
+                                           VerticalOptions="CenterAndExpand"/>
                                 </StackLayout>
                             </StackLayout>
 
@@ -64,6 +135,17 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-        </ScrollView>
+        </StackLayout>
+
+        <Button Text="Try again?"
+                    TextColor="White"
+                    TextTransform="None"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    BackgroundColor="#3F9D2F"
+                    Margin="35,0,35,15"
+                    VerticalOptions="EndAndExpand"
+                    CornerRadius="30"
+                    Clicked="Generate_Clicked"/>
     </StackLayout>
 </ContentPage>

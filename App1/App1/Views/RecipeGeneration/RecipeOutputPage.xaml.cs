@@ -26,6 +26,9 @@ namespace App1.Views.RecipeGeneration
             txt_searchrecipes.Text = $"{Application.Current.Properties["SelectedIngredient1"].ToString()}";
             txt_searchrecipes1.Text = $"{Application.Current.Properties["SelectedIngredient2"].ToString()}";
             txt_searchrecipes2.Text = $"{Application.Current.Properties["SelectedIngredient3"].ToString()}";
+            ingredient1.Text = $"{Application.Current.Properties["SelectedIngredient1"].ToString()}" + "    x";
+            ingredient2.Text = $"{Application.Current.Properties["SelectedIngredient2"].ToString()}" + "    x";
+            ingredient3.Text = $"{Application.Current.Properties["SelectedIngredient3"].ToString()}" + "    x";
             //BindingContext = this;
             RecipeListView.RefreshCommand = new Command(() =>
             {
@@ -36,19 +39,24 @@ namespace App1.Views.RecipeGeneration
         protected override async void OnAppearing()
         {
             string searchValue1 = txt_searchrecipes.Text;
+            string searchValue2 = txt_searchrecipes1.Text;
+            string searchValue3 = txt_searchrecipes2.Text;
+            //var searchValue = new string[] { "SelectedIngredient1", "SelectedIngredient2", "SelectedIngredient3" };
 
             if (!String.IsNullOrEmpty(searchValue1))
             {
-                var recipes = await repository.OutputRecipe(searchValue1);
+                var recipes = await repository.OutputRecipe(searchValue1.ToLower());
                 RecipeListView.ItemsSource = null;
                 RecipeListView.ItemsSource = recipes;
-                RecipeListView.ItemsSource = recipes.Where(x => x.RecipeIngredients.Contains(searchValue1.ToLower()) && x.RecipeIngredients.ToString().Contains(txt_searchrecipes1.Text.ToLower()) && x.RecipeIngredients.Contains(txt_searchrecipes2.Text.ToLower()));
+                RecipeListView.ItemsSource = recipes.Where(x => x.RecipeIngredients.Contains(searchValue2.ToLower()) /*&& x.RecipeIngredients.Contains(txt_searchrecipes.Text.ToLower()) && x.RecipeIngredients.Contains(txt_searchrecipes2.Text.ToLower())*/);
+                RecipeListView.ItemsSource = recipes.Where(x => x.RecipeIngredients.Contains(searchValue3.ToLower()) /*&& x.RecipeIngredients.Contains(txt_searchrecipes1.Text.ToLower()) && x.RecipeIngredients.Contains(txt_searchrecipes.Text.ToLower())*/);
                 RecipeListView.IsRefreshing = false;
+
             }
-            else
-            {
-                OnAppearing();
-            }
+            //else
+            //{
+            //    OnAppearing();
+            //}
         }
         //private async void txt_searchrecipesSearchButtonPressed(object sender, EventArgs e)
         //{
@@ -103,6 +111,10 @@ namespace App1.Views.RecipeGeneration
                 ((ListView)sender).IsVisible = false;
             }
             itemCount++;
+        }
+        private async void Generate_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new GenerateRecipePage());
         }
     }
 }

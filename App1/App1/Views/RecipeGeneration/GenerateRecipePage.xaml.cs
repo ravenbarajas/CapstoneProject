@@ -87,27 +87,33 @@ namespace App1.Views.RecipeGeneration
 
         private void IngredientListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var selectedIngredient = e.SelectedItem as Ingredient;
-
-            // Set the text of the label to the desired property of the selected item
-            var ingredient = new Label();
-
-            ingredient.BackgroundColor = Color.FromRgb(63, 157, 47);
-            ingredient.TextColor = Color.FromRgb(255, 255, 255);
-            ingredient.Text = selectedIngredient.IngredientName;
-            ingredient.FontSize = 16;
-            ingredient.TextTransform = TextTransform.None;
-            ingredient.HorizontalTextAlignment = TextAlignment.Center;
-            ingredient.Padding = 5;
-
-            SelectedIngredients.Children.Add(ingredient);
-            string labeltext = ingredient.Text;
-
             if (selectedCount < 3)
             {
+                var selectedIngredient = e.SelectedItem as Ingredient;
+                var ingredient = new Label();
+
+                ingredient.BackgroundColor = Color.FromRgb(63, 157, 47);
+                ingredient.TextColor = Color.FromRgb(255, 255, 255);
+                ingredient.Text = selectedIngredient.IngredientName;
+                ingredient.FontSize = 16;
+                ingredient.TextTransform = TextTransform.None;
+                ingredient.HorizontalTextAlignment = TextAlignment.Center;
+                ingredient.Padding = 5;
+
+                SelectedIngredients.Children.Add(ingredient);
+                string labeltext = ingredient.Text;
+
                 var selectedIngredientInputs = e.SelectedItem as Ingredient;
                 selectedIngredients[selectedCount] = selectedIngredientInputs.IngredientName;
                 selectedCount++;
+            }
+            else
+            {
+                DisplayAlert("Notice", "Woah! Take it easy. You only need 3 ingredients to start", "Ok");
+                IngredientListView.IsEnabled = false;
+                selectedCount--;
+
+                return;
             }
         }
     }

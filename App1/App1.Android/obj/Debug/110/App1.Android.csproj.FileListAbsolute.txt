@@ -2202,6 +2202,15 @@ C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.An
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\assets\System.Text.Encodings.Web.dll
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\assets\System.Text.Json.dll
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1.Android\obj\Debug\110\android\assets\System.Threading.Tasks.Extensions.dll
+C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\bin\Debug\App1.Android.dll
+C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\bin\Debug\App1.Android.pdb
+C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\bin\Debug\com.shrimp.chef.apk
+C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\bin\Debug\com.shrimp.chef.aab
+C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\bin\Debug\com.shrimp.chef-Signed.aab
+C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\bin\Debug\com.shrimp.chef-Signed.apk
+C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\bin\Debug\com.shrimp.chef-Signed.apk.idsig
+C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\bin\Debug\App1.dll
+C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\bin\Debug\App1.pdb
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Debug\110\MonoAndroid,Version=v11.0.AssemblyAttributes.cs
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Debug\110\build.props
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Debug\110\adb.props
@@ -2237,15 +2246,6 @@ C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Debug\110\lp\
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Debug\110\lp\104\jl\files.cache
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Debug\110\lp\105\jl\files.cache
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Debug\110\lp\110\jl\files.cache
-C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\bin\Debug\App1.Android.dll
-C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\bin\Debug\App1.Android.pdb
-C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\bin\Debug\com.shrimp.chef.apk
-C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\bin\Debug\com.shrimp.chef.aab
-C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\bin\Debug\com.shrimp.chef-Signed.aab
-C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\bin\Debug\com.shrimp.chef-Signed.apk
-C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\bin\Debug\com.shrimp.chef-Signed.apk.idsig
-C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\bin\Debug\App1.dll
-C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\bin\Debug\App1.pdb
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Debug\110\R.txt
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Debug\110\R.cs.flag
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Debug\110\App1.Android.GeneratedMSBuildEditorConfig.editorconfig
@@ -2999,3 +2999,5 @@ C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Debug\110\sta
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Debug\110\res\drawable\logoheader.png
+C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Debug\110\res\drawable\nameheader.png

@@ -23,7 +23,6 @@ namespace App1
         {
             return (await firebaseClient.Child(nameof(Ingredient)).OnceAsync<Ingredient>()).Select(item => new Ingredient
             {
-                IngredientGroup = item.Object.IngredientGroup,
                 IngredientName = item.Object.IngredientName,
                 IngredientID = item.Key
             }).ToList();
@@ -32,7 +31,6 @@ namespace App1
         {
             return (await firebaseClient.Child(nameof(Ingredient)).OnceAsync<Ingredient>()).Select(item => new Ingredient
             {
-                IngredientGroup = item.Object.IngredientGroup,
                 IngredientName = item.Object.IngredientName,
                 IngredientID = item.Key
             }).Where(c => c.IngredientName.ToLower().Contains(name.ToLower())).ToList();

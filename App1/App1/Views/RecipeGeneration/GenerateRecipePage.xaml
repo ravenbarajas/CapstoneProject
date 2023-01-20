@@ -39,11 +39,11 @@
             </Frame>
             <ListView x:Name="IngredientListView" 
                     ItemsSource="{Binding ingredient}"
-
                       ItemSelected="IngredientListView_ItemSelected"
                     HasUnevenRows="True"                
                     IsRefreshing="False"
                     IsPullToRefreshEnabled="False"
+                      IsEnabled="True"
                         HeightRequest="150"
                         VerticalOptions="StartAndExpand">
                 <ListView.ItemTemplate>
@@ -82,7 +82,7 @@
                     FontSize="Medium"
                     FontAttributes="Bold"
                     BackgroundColor="#3F9D2F"
-                    Margin="35,0,35,5"
+                    Margin="35,0,35,15"
                     VerticalOptions="EndAndExpand"
                     CornerRadius="30"
                     Clicked="Generate_Clicked"/>
