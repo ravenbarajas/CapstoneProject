@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "042Hjnw3ul5/IfAzTHZdAOyw1tRMN4+YIOpawf43wNGZJVAkCuDX8ZciBogVrXhsMbg2asHP9IcGST/LLVZlLQ==",
+  "dgSpecHash": "8Yk1XOxpWuanjKfFX/Wq3nnCggVn6eiSuC+SdHgs0vLmRZmwo+Z8KKGoOpci1e9GSijVjnGVXxYD914E5fu0IQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Raven Barajas\\Source\\Repos\\Capstone\\App1\\App1\\App1.csproj",
+  "projectFilePath": "C:\\Users\\Raven Barajas\\source\\repos\\Capstone\\App1\\App1\\App1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\com.airbnb.xamarin.forms.lottie\\4.1.0\\com.airbnb.xamarin.forms.lottie.4.1.0.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\firebaseauthentication.net\\3.7.2\\firebaseauthentication.net.3.7.2.nupkg.sha512",

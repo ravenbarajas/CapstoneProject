@@ -47,7 +47,7 @@ namespace App1
                 RecipeIMG = item.Object.RecipeIMG,
                 RecipeID = item.Key
             }).ToList();
-    }
+        }
         public async Task<List<recipeInfoModel>> GetAllByName(string name)
         {
             return (await firebaseClient.Child(nameof(recipeInfoModel)).OnceAsync<recipeInfoModel>()).Select(item => new recipeInfoModel
@@ -78,6 +78,24 @@ namespace App1
                 RecipeID = item.Key
             }).Where(c => c.RecipeIngredients.ToLower().Contains(name.ToLower())).ToList();
         }
+        //public async Task<List<recipeInfoModel>> RandomRecipes()
+        //{
+        //    var random = new Random();
+        //    int randomIndex = random.Next(1, 170);
+
+        //    return (await firebaseClient.Child(nameof(recipeInfoModel)).Child(randomIndex.ToString()).OnceAsync<recipeInfoModel>()).Select(item => new recipeInfoModel
+        //    {
+        //        RecipeName = item.Object.RecipeName,
+        //        RecipeAuthor = item.Object.RecipeAuthor,
+        //        RecipeDescription = item.Object.RecipeDescription,
+        //        RecipeCookTime = item.Object.RecipeCookTime,
+        //        RecipePrepTime = item.Object.RecipePrepTime,
+        //        RecipeInstructions = item.Object.RecipeInstructions,
+        //        RecipeIngredients = item.Object.RecipeIngredients,
+        //        RecipeIMG = item.Object.RecipeIMG,
+        //        RecipeID = item.Key
+        //    }).ToList();
+        //}
         public async Task<string> UploadFile(Stream fileStream, string fileName)
         {
             var image = await firebaseStorage.Child("RecipeIMG").Child(fileName).PutAsync(fileStream);

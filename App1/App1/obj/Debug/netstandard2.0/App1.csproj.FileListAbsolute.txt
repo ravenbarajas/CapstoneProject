@@ -151,10 +151,6 @@ C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\ob
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipeManagement\RecipeDetails.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipeGeneration\GenerateRecipePage.xaml.g.cs
 C:\Users\Raven Barajas\source\repos\ravenbarajas057\CapstoneProject\App1\App1\obj\Debug\netstandard2.0\Views\RecipeGeneration\RecipeOutputPage.xaml.g.cs
-C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\bin\Debug\netstandard2.0\App1.deps.json
-C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\bin\Debug\netstandard2.0\App1.dll
-C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\bin\Debug\netstandard2.0\ref\App1.dll
-C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\bin\Debug\netstandard2.0\App1.pdb
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\App1.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\RecipeGeneration\CreateGroupRoom.xaml.g.cs
@@ -162,7 +158,6 @@ C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\RecipeGeneration\GroupRecipeTypePage.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\RecipeGeneration\JoinGroupRoom.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\RecipeGeneration\RecipeLoadingPage.xaml.g.cs
-C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\RecipeGeneration\RecipeOutputPage.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\RecipeGeneration\RecipeTypePage.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\RecipeManagement\ChoosePhotoPage.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\RecipeManagement\CookbookPage.xaml.g.cs
@@ -171,12 +166,13 @@ C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\RecipeManagement\EnterRecipeDetailspt2.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\RecipeManagement\EnterRecipeDetailspt3.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\RecipeManagement\MealplannerPage.xaml.g.cs
-C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\RecipeManagement\RecipeDetails.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\RecipePresentation\HomePage.xaml.g.cs
+C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\RecipePresentation\RecipeDetailsPage.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\RecipePresentation\RecipeOutputPage.xaml.g.cs
-C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\RecipePresentation\RecipePage.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\UserManagement\IntroPage.xaml.g.cs
+C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\UserManagement\LoginOrSignupPage.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\UserManagement\LoginPage.xaml.g.cs
+C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\UserManagement\LogoPage.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\UserManagement\PrivacyPolicyPage.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\UserManagement\ResetPassPage.xaml.g.cs
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\Views\UserManagement\SignupPage.xaml.g.cs
@@ -188,7 +184,12 @@ C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.cache
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\App1.csproj.CoreCompileInputs.cache
+C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\bin\Debug\netstandard2.0\App1.deps.json
+C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\bin\Debug\netstandard2.0\App1.dll
+C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\bin\Debug\netstandard2.0\ref\App1.dll
+C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\bin\Debug\netstandard2.0\App1.pdb
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\App1.dll
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\ref\App1.dll
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1\obj\Debug\netstandard2.0\App1.csproj.AssemblyReference.cache

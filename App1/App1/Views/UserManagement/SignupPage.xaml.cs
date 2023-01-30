@@ -64,6 +64,9 @@ namespace App1.Views.UserManagement
                 else
                 {
                     await DisplayAlert("Registration", "Registration Failed", "Ok");
+                    Username.Text = "";
+                    Email.Text = "";
+                    Password.Text = "";
                 }
             }
             catch (Exception exception)
@@ -78,6 +81,9 @@ namespace App1.Views.UserManagement
                 else
                 {
                     await DisplayAlert("Error", "Invalid Email. Please enter a valid email!", "Ok");
+                    Username.Text = "";
+                    Email.Text = "";
+                    Password.Text = "";
                 }
             }
         }

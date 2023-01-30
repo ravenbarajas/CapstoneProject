@@ -40,6 +40,7 @@ namespace App1.Views.UserManagement
             try
             {
                 userID = generateUserID();
+                
 
                 username = txt_username.Text;
                 string image = await repository.UploadFile(file.GetStream(), Path.GetFileName(file.Path));
@@ -125,9 +126,15 @@ namespace App1.Views.UserManagement
                 // Calculate the age based on the selected date and the current date
                 age = DateTime.Today.Year - dp_birthdate.Date.Year;
                 if (dp_birthdate.Date > DateTime.Today.AddYears(-age)) age--;
-            }
 
-            txt_age.Text = age.ToString();
+                txt_age.Text = age.ToString();
+                if (int.TryParse(txt_age.Text, out age) && age < 18)
+                {
+                    DisplayAlert("Warning", "Age must be 18 or older", "Ok");
+                    txt_age.Text = "";
+                    return;
+                }
+            }
         }
         private async void btn_pickClicked(object sender, EventArgs e)
         {

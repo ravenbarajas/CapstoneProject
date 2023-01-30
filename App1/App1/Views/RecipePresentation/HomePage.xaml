@@ -3,25 +3,64 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              x:Class="App1.Views.RecipePresentation.HomePage"
+             BackgroundColor="White"
              NavigationPage.HasNavigationBar="False">
 
     <StackLayout>
-        <StackLayout Padding="15,5,15,10" Margin="0,0,0,0" BackgroundColor="#3873F6" VerticalOptions="Start">
-            <Label Text="What do you want cook for today?"
-                           FontSize="Large"
-                           TextColor="White"
-                           FontAttributes="Bold"
-                           Padding="0,5,0,0"/>
-
-            <SearchBar x:Name="txt_searchrecipes"
+        <StackLayout BackgroundColor="#3873F6">
+            <Image Source="HomeHeader.png" HorizontalOptions="CenterAndExpand"/>
+            <StackLayout Padding="15,5,15,5" BackgroundColor="#3873F6">
+                <SearchBar x:Name="txt_searchrecipes"
                        Placeholder="Search food recipes"
                                TextColor="#7F8487"
-                               BackgroundColor="#e6e6e6"
+                               BackgroundColor="White"
                        SearchButtonPressed="txt_searchrecipesSearchButtonPressed"
                                HeightRequest="40"/>
+            </StackLayout>
+            <Image Source="TodayRecipeHeader.png" HorizontalOptions="CenterAndExpand"/>
         </StackLayout>
-        
-        <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never" Margin="0,-6,0,0" MinimumHeightRequest="55">
+
+        <ListView x:Name="RandomRecipeListView" 
+                  ItemsSource="{Binding recipes}"
+                  HasUnevenRows="True"
+                  ItemTapped="RecipeListView_ItemTapped"                  
+                  IsRefreshing="False"
+                  IsPullToRefreshEnabled="False"
+                      BackgroundColor="White">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="5">
+                            <Frame Padding="0"
+                                           HeightRequest="60"
+                                           WidthRequest="60"
+                                           BackgroundColor="White"
+                                           CornerRadius="100"
+                                           BorderColor="Teal"
+                                           IsClippedToBounds="True">
+                                <Frame.Content>
+                                    <Image Source="{Binding RecipeIMG}" Aspect="Fill"/>
+                                </Frame.Content>
+                            </Frame>
+
+                            <StackLayout HorizontalOptions="StartAndExpand">
+                                <Label Text="{Binding RecipeName}" 
+                                           FontSize="18" 
+                                           FontAttributes="Bold"
+                                           TextColor="Black"/>
+                                <Label Text="{Binding RecipeAuthor}"
+                                           FontSize="16" 
+                                           FontAttributes="None"
+                                           TextColor="Black"/>
+                            </StackLayout>
+                        </StackLayout>
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <!--<ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never" Margin="0,-6,0,0" MinimumHeightRequest="55">
             <Grid BackgroundColor="#E6E6E6" Padding="5,5,15,5">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
@@ -113,15 +152,15 @@
                         Padding="15,0,15,0"
                         Clicked="MT_Clicked"/>
             </Grid>
-        </ScrollView>
-        <ScrollView HeightRequest="525">
-
-            <ListView x:Name="RecipeListView" 
+        </ScrollView>-->
+        
+        <ListView x:Name="RecipeListView" 
                   ItemsSource="{Binding recipes}"
                   HasUnevenRows="True"
                   ItemTapped="RecipeListView_ItemTapped"                  
                   IsRefreshing="True"
-                  IsPullToRefreshEnabled="True">
+                  IsPullToRefreshEnabled="True"
+                      BackgroundColor="White">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -154,8 +193,6 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
-        </ScrollView>
 
         <Grid VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" BackgroundColor="#3873F6">
             <Grid.RowDefinitions>

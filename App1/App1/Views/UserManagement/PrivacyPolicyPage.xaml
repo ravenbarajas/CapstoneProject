@@ -117,7 +117,7 @@
                         <CheckBox x:Name="CheckBoxAgree"                        
                               Margin="25,0,0,0"/>
                     </Grid>
-                    <Button Text="Create Personal Profile" 
+                    <Button Text="Create User Account" 
                             Clicked="Button_Clicked" 
                             IsEnabled="False"
                             BackgroundColor="#467fd7" 

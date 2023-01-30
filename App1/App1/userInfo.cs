@@ -37,5 +37,18 @@ namespace App1
             var image = await firebaseStorage.Child("UserIMG").Child(fileName).PutAsync(fileStream);
             return image;
         }
+        public async Task<List<userInfoModel>> GetUserData()
+        {
+            return (await firebaseClient.Child(nameof(userInfoModel)).OnceAsync<userInfoModel>()).Select(item => new userInfoModel
+            {
+                UserID = item.Object.UserID,
+                UserIMG = item.Object.UserIMG,
+                Username = item.Object.Username,
+                Firstname = item.Object.Firstname,
+                Lastname = item.Object.Lastname,
+                Birthdate = item.Object.Birthdate,
+                Email = item.Key
+            }).ToList();
+        }
     }
 }

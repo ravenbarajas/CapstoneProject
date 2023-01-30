@@ -22,28 +22,28 @@ namespace App1.Views.RecipeGeneration
         }
         protected override async void OnAppearing()
         {
-            await Task.Delay(500);
+            await Task.Delay(250);
             message1.TextColor = Color.FromRgb(56, 115, 246);
             message1.BackgroundColor = Color.Transparent;
             message2.TextColor = Color.Transparent;
             message2.BackgroundColor = Color.Transparent;
             message3.TextColor = Color.Transparent;
             message3.BackgroundColor = Color.Transparent;
-            await Task.Delay(2250);
+            await Task.Delay(2000);
             message1.TextColor = Color.Transparent;
             message1.BackgroundColor = Color.Transparent;
             message2.TextColor = Color.FromRgb(56, 115, 246);
             message2.BackgroundColor = Color.Transparent;
             message3.TextColor = Color.Transparent;
             message3.BackgroundColor = Color.Transparent;
-            await Task.Delay(2750);
+            await Task.Delay(1500);
             message1.TextColor = Color.Transparent;
             message1.BackgroundColor = Color.Transparent;
             message2.TextColor = Color.Transparent;
             message2.BackgroundColor = Color.Transparent;
             message3.TextColor = Color.FromRgb(56, 115, 246);
             message3.BackgroundColor = Color.Transparent;
-            await Task.Delay(500);
+            await Task.Delay(250);
 
             Application.Current.Properties["SelectedIngredient1"] = txt_selectedrecipe.Text;
             Application.Current.Properties["SelectedIngredient2"] = txt_selectedrecipe1.Text;
