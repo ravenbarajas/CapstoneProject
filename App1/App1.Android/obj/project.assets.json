@@ -7513,11 +7513,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Raven Barajas\\source\\repos\\Capstone\\App1\\App1.Android\\App1.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Raven Barajas\\Source\\Repos\\Capstone\\App1\\App1.Android\\App1.Android.csproj",
       "projectName": "App1.Android",
-      "projectPath": "C:\\Users\\Raven Barajas\\source\\repos\\Capstone\\App1\\App1.Android\\App1.Android.csproj",
+      "projectPath": "C:\\Users\\Raven Barajas\\Source\\Repos\\Capstone\\App1\\App1.Android\\App1.Android.csproj",
       "packagesPath": "C:\\Users\\Raven Barajas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Raven Barajas\\source\\repos\\Capstone\\App1\\App1.Android\\obj\\",
+      "outputPath": "C:\\Users\\Raven Barajas\\Source\\Repos\\Capstone\\App1\\App1.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -7540,8 +7540,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\Raven Barajas\\source\\repos\\Capstone\\App1\\App1\\App1.csproj": {
-              "projectPath": "C:\\Users\\Raven Barajas\\source\\repos\\Capstone\\App1\\App1\\App1.csproj"
+            "C:\\Users\\Raven Barajas\\Source\\Repos\\Capstone\\App1\\App1\\App1.csproj": {
+              "projectPath": "C:\\Users\\Raven Barajas\\Source\\Repos\\Capstone\\App1\\App1\\App1.csproj"
             }
           }
         }

@@ -11,8 +11,7 @@ namespace App1
         public string UserIMG { get; set; }
         public string Email { get; set; }
         public string Username { get; set; }
-        public string Lastname { get; set; }
-        public string Firstname { get; set; }
+        public string Fullname { get; set; }
         public string Birthdate { get; set; }
         public string Age { get; set; }
 

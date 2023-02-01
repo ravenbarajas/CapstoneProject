@@ -2983,3 +2983,6 @@ C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Debug\110\sta
 C:\Users\Raven Barajas\Source\Repos\Capstone\App1\App1.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\Raven Barajas\source\repos\Capstone\App1\App1.Android\obj\Debug\110\res\drawable\homeheader.png
 C:\Users\Raven Barajas\source\repos\Capstone\App1\App1.Android\obj\Debug\110\res\drawable\todayrecipeheader.png
+C:\Users\Raven Barajas\source\repos\Capstone\App1\App1.Android\obj\Debug\110\res\drawable\discovernewheader.png
+C:\Users\Raven Barajas\source\repos\Capstone\App1\App1.Android\obj\Debug\110\res\drawable\profileheader.png
+C:\Users\Raven Barajas\source\repos\Capstone\App1\App1.Android\obj\Debug\110\res\drawable\updatedlogover2.png

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aHVp4hpnkK7lUBVJJTQLnoFWfDz/v9uctZqRWtmsFhDMiJzJ/qnABdE052sAdNfxwuSkNCmsSQJAYhcVNi+oWg==",
+  "dgSpecHash": "tMzVT/KfvmUQJ6mVViNPuD+S28NrQh+8YnPWKjzZ3HxMIxop5VabMnIQdQLH9OBhLXIclBt3nl/39v/imNjP3g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Raven Barajas\\source\\repos\\Capstone\\App1\\App1.Android\\App1.Android.csproj",
+  "projectFilePath": "C:\\Users\\Raven Barajas\\Source\\Repos\\Capstone\\App1\\App1.Android\\App1.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\com.airbnb.android.lottie\\4.2.2\\com.airbnb.android.lottie.4.2.2.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\com.airbnb.xamarin.forms.lottie\\4.1.0\\com.airbnb.xamarin.forms.lottie.4.1.0.nupkg.sha512",

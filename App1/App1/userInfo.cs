@@ -44,11 +44,23 @@ namespace App1
                 UserID = item.Object.UserID,
                 UserIMG = item.Object.UserIMG,
                 Username = item.Object.Username,
-                Firstname = item.Object.Firstname,
-                Lastname = item.Object.Lastname,
+                Fullname = item.Object.Fullname,
                 Birthdate = item.Object.Birthdate,
                 Email = item.Key
             }).ToList();
+        }
+        public async Task<List<userInfoModel>> UserProfileData(string name)
+        {
+            return (await firebaseClient.Child(nameof(userInfoModel)).OnceAsync<userInfoModel>()).Select(item => new userInfoModel
+            {
+                UserIMG = item.Object.UserIMG,
+                Email = item.Object.Email,
+                Username = item.Object.Username,
+                Fullname = item.Object.Fullname,
+                Birthdate = item.Object.Birthdate,
+                Age = item.Object.Age,
+                UserID = item.Key
+            }).Where(c => c.Email.ToLower().Contains(name.ToLower())).ToList();
         }
     }
 }

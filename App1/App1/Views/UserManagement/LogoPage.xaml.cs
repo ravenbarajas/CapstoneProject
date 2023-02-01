@@ -19,7 +19,7 @@ namespace App1.Views.UserManagement
         }
         protected override async void OnAppearing()
         {
-            await Task.Delay(2000);
+            await Task.Delay(3000);
 
             await Navigation.PushAsync(new IntroPage());
         }

@@ -14,11 +14,15 @@ namespace App1.Views.UserManagement
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UserProfilePage : ContentPage
     {
+        userInfo userRepo = new userInfo();
         public UserProfilePage()
         {
             InitializeComponent();
-
-            //txt_userprofilename.Text = UserInfoPage.username;
+            txt_useremail.Text = $"{Application.Current.Properties["userEmail"].ToString()}";
+            UserInfoListView.RefreshCommand = new Command(() =>
+            {
+                base.OnAppearing();
+            });
         }
         private async void Cookbook_Clicked(object sender, EventArgs e)
         {
@@ -31,6 +35,14 @@ namespace App1.Views.UserManagement
         private async void CreateRecipe_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new CreateRecipePage());
+        }
+        protected override async void OnAppearing()
+        {
+            var userdata = await userRepo.UserProfileData(txt_useremail.Text);
+            UserInfoListView.ItemsSource = null;
+            UserInfoListView.ItemsSource = userdata;
+            UserInfoListView.ItemsSource = userdata.Where(x => x.Email.Contains(txt_useremail.Text));
+            UserInfoListView.IsRefreshing = false;
         }
     }
 }

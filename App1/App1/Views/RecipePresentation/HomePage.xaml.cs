@@ -24,13 +24,14 @@ namespace App1.Views.RecipePresentation
         ObservableCollection<recipeInfoModel> recipes = new ObservableCollection<recipeInfoModel>();
 
         recipeInfo repository = new recipeInfo();
+        userInfo userRepo = new userInfo();
         public HomePage()
         {
             InitializeComponent();
             LoadRecipes();
             RandomRecipeListView.RefreshCommand = new Command(() =>
             {
-                OnAppearing();
+                base.OnAppearing();
             });
         }
         private async void Home_Clicked(object sender, EventArgs e)
@@ -111,6 +112,15 @@ namespace App1.Views.RecipePresentation
             recipes.Add(recipe);
             RandomRecipeListView.ItemsSource = recipes;
         }
+        //private async void LoadUserProfile()
+        //{
+        //    var userdata = await firebaseClient
+        //      .Child(nameof(userInfoModel))
+        //      .OnceSingleAsync<userInfoModel>();
+
+        //    user.Add(userdata);
+        //    UserInfoListView.ItemsSource = user;
+        //}
         protected override async void OnAppearing()
         {
             var ingredient = await repository.GetAll();
@@ -118,6 +128,7 @@ namespace App1.Views.RecipePresentation
             RecipeListView.ItemsSource = ingredient;
             RecipeListView.IsRefreshing = false;
         }
+
         private void RecipeListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             if (e.Item == null)

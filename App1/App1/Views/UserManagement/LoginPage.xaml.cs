@@ -15,20 +15,20 @@ namespace App1.Views.UserManagement
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
-
+        public static string UserEmail;
         userAuth _userAuth = new userAuth();
         public LoginPage()
         {
             InitializeComponent();
-            bool hasKey = Preferences.ContainsKey("token");
-            if (hasKey)
-            {
-                string token = Preferences.Get("token", "");
-                if (!string.IsNullOrEmpty(token))
-                {
-                    Navigation.PushAsync(new HomePage());
-                }
-            }
+            //bool hasKey = Preferences.ContainsKey("token");
+            //if (hasKey)
+            //{
+            //    string token = Preferences.Get("token", "");
+            //    if (!string.IsNullOrEmpty(token))
+            //    {
+            //        Navigation.PushAsync(new HomePage());
+            //    }
+            //}
         }
         private async void Button_Clicked(object sender, EventArgs e)
         {
@@ -37,6 +37,8 @@ namespace App1.Views.UserManagement
                 string email = Email.Text;
                 string pass = Password.Text;
                 string token = await _userAuth.SignIn(email, pass);
+                //UserData = email;
+                //Application.Current.Properties["userEmail"] = Email.Text;
 
                 if (String.IsNullOrEmpty(email))
                 {
@@ -97,7 +99,6 @@ namespace App1.Views.UserManagement
         {
             Navigation.PushAsync(new Views.UserManagement.SignupPage());
         }
-
         private async void ForgotPassword(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new ResetPassPage());

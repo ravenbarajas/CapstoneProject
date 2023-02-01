@@ -45,18 +45,16 @@ namespace App1.Views.UserManagement
                 username = txt_username.Text;
                 string image = await repository.UploadFile(file.GetStream(), Path.GetFileName(file.Path));
                 string email = txt_userEmail.Text;
-                string lastname = txt_lastname.Text;
-                string firstname = txt_firstname.Text;
                 string birthdate = dp_birthdate.Date.ToString("MM/dd/yyyy");
                 string age = txt_age.Text;
+                string fullname = txt_lastname.Text +", "+ txt_firstname.Text;
 
                 userInfoModel user = new userInfoModel();
                 user.UserIMG = image;
                 user.UserID = userID;
                 user.Email = email;
                 user.Username = username;
-                user.Lastname = lastname;
-                user.Firstname = firstname;
+                user.Fullname = fullname;
                 user.Birthdate = birthdate;
                 user.Age = age;
 
@@ -65,14 +63,9 @@ namespace App1.Views.UserManagement
                     await DisplayAlert("Warning", "Username is required", "Ok");
                     return;
                 }
-                if (String.IsNullOrEmpty(lastname))
+                if (String.IsNullOrEmpty(fullname))
                 {
-                    await DisplayAlert("Warning", "Last Name is required", "Ok");
-                    return;
-                }
-                if (String.IsNullOrEmpty(firstname))
-                {
-                    await DisplayAlert("Warning", "First Name is required", "Ok");
+                    await DisplayAlert("Warning", "Full name must be complete!", "Ok");
                     return;
                 }
                 if (String.IsNullOrEmpty(age))
