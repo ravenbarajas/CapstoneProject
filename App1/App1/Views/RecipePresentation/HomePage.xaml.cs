@@ -22,6 +22,10 @@ namespace App1.Views.RecipePresentation
         FirebaseClient firebaseClient = new FirebaseClient("https://capstoneproject-b8d68-default-rtdb.asia-southeast1.firebasedatabase.app/");
         FirebaseStorage firebaseStorage = new FirebaseStorage("capstoneproject-b8d68.appspot.com");
         ObservableCollection<recipeInfoModel> recipes = new ObservableCollection<recipeInfoModel>();
+        ObservableCollection<recipeInfoModel> recipes1 = new ObservableCollection<recipeInfoModel>();
+        ObservableCollection<recipeInfoModel> recipes2 = new ObservableCollection<recipeInfoModel>();
+        ObservableCollection<recipeInfoModel> recipes3 = new ObservableCollection<recipeInfoModel>();
+        ObservableCollection<recipeInfoModel> recipes4 = new ObservableCollection<recipeInfoModel>();
 
         recipeInfo repository = new recipeInfo();
         userInfo userRepo = new userInfo();
@@ -102,15 +106,39 @@ namespace App1.Views.RecipePresentation
         {
             var random = new Random();
             int numberOfRecipes = 170; // Assuming there are 10 recipes in the database
-            int randomIndex = random.Next(1, numberOfRecipes);
 
-            var recipe = await firebaseClient
-              .Child(nameof(recipeInfoModel))
-              .Child(randomIndex.ToString())
-              .OnceSingleAsync<recipeInfoModel>();
+            for (int i = 0; i < 5; i++)
+            {
+                int randomIndex = random.Next(1, numberOfRecipes + 1);
+                var recipe = await firebaseClient
+                      .Child(nameof(recipeInfoModel))
+                      .Child(randomIndex.ToString())
+                      .OnceSingleAsync<recipeInfoModel>();
 
-            recipes.Add(recipe);
-            RandomRecipeListView.ItemsSource = recipes;
+                switch (i)
+                {
+                    case 0:
+                        recipes.Add(recipe);
+                        RandomRecipeListView.ItemsSource = recipes;
+                        break;
+                    case 1:
+                        recipes1.Add(recipe);
+                        RandomRecipeListView1.ItemsSource = recipes1;
+                        break;
+                    case 2:
+                        recipes2.Add(recipe);
+                        RandomRecipeListView2.ItemsSource = recipes2;
+                        break;
+                    case 3:
+                        recipes3.Add(recipe);
+                        RandomRecipeListView3.ItemsSource = recipes3;
+                        break;
+                    case 4:
+                        recipes4.Add(recipe);
+                        RandomRecipeListView4.ItemsSource = recipes4;
+                        break;
+                }
+            }
         }
         //private async void LoadUserProfile()
         //{
@@ -128,7 +156,6 @@ namespace App1.Views.RecipePresentation
             RecipeListView.ItemsSource = ingredient;
             RecipeListView.IsRefreshing = false;
         }
-
         private void RecipeListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             if (e.Item == null)

@@ -118,7 +118,7 @@
                                            BorderColor="Teal"
                                            IsClippedToBounds="True">
                                         <Frame.Content>
-                                            <Image Source="{Binding RecipeIMG}" Aspect="Fill"/>
+                                            <Image Source="{Binding RecipeIMG}" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
                                         </Frame.Content>
                                     </Frame>
 

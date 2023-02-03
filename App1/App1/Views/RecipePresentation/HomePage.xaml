@@ -5,88 +5,368 @@
              x:Class="App1.Views.RecipePresentation.HomePage"
              BackgroundColor="#F2F2F2"
              NavigationPage.HasNavigationBar="False">
-
+    
     <StackLayout>
         <StackLayout BackgroundColor="#3873F6">
-            <Image Source="HomeHeader.png" HorizontalOptions="CenterAndExpand"/>
+            <Image Source="HomeHeader.png" 
+                       HorizontalOptions="CenterAndExpand"/>
             <StackLayout Padding="15,5,15,5" BackgroundColor="#3873F6">
                 <SearchBar x:Name="txt_searchrecipes"
-                       Placeholder="Search food recipes"
-                               TextColor="#7F8487"
-                               BackgroundColor="White"
-                       SearchButtonPressed="txt_searchrecipesSearchButtonPressed"
-                               HeightRequest="40"/>
+                           Placeholder="Search food recipes"
+                                   TextColor="#7F8487"
+                                   BackgroundColor="White"
+                           SearchButtonPressed="txt_searchrecipesSearchButtonPressed"
+                                   HeightRequest="40"/>
             </StackLayout>
-            <Image Source
-                   ="DiscoverNewHeader.png" HorizontalOptions="CenterAndExpand"/>
         </StackLayout>
-        <StackLayout>
-            <Grid HeightRequest="500">
-            <ListView x:Name="RandomRecipeListView" 
-                  ItemsSource="{Binding recipes}"
-                  HasUnevenRows="True"
-                  ItemTapped="RecipeListView_ItemTapped"                  
-                  IsRefreshing="False"
-                  IsPullToRefreshEnabled="False"
-                      BackgroundColor="White">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Orientation="Horizontal" BackgroundColor="White" Padding="5,0,5,0">
-                            <StackLayout HorizontalOptions="StartAndExpand" BackgroundColor="Transparent">
-                                <Grid HorizontalOptions="Start">
-                                    <Grid WidthRequest="200">
-                                                <Frame Padding="0" CornerRadius="20" WidthRequest="200" BackgroundColor="White">
-                                                    <Frame Padding="0"
-                                        HeightRequest="200"
-                                        WidthRequest="200"
-                                        BackgroundColor="White"
-                                        IsClippedToBounds="True">
-                                                        <Frame.Content>
-                                                            <Image Source="{Binding RecipeIMG}"
+        
+    <ScrollView VerticalScrollBarVisibility="Never">
+            <StackLayout BackgroundColor="#f2f2f2">
+                <Image Source ="DiscoverNewHeader.png" 
+                       HorizontalOptions="Start"/>
+            <ScrollView Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="Start" BackgroundColor="Transparent" HorizontalScrollBarVisibility="Never">
+                <Grid ColumnSpacing="0" HeightRequest="160">
+
+                    <Grid HeightRequest="200" BackgroundColor="aqua" Grid.Column="0">
+                        <ListView x:Name="RandomRecipeListView" 
+                          ItemsSource="{Binding recipes}"
+                          HasUnevenRows="True"
+                          ItemTapped="RecipeListView_ItemTapped"                  
+                          IsRefreshing="False"
+                          IsPullToRefreshEnabled="False"
+                          WidthRequest="230"
+                          HorizontalOptions="StartAndExpand"
+                              BackgroundColor="Red">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                                <ViewCell>
+                                    
+                                    <StackLayout HorizontalOptions="StartAndExpand" BackgroundColor="White" Padding="5,5,5,5" Orientation="Horizontal">
+                                            <Grid HorizontalOptions="Start" WidthRequest="250">
+                                                <Grid WidthRequest="150">
+                                                    <Frame Padding="0" CornerRadius="20" WidthRequest="150" BackgroundColor="White">
+                                                        <Frame Padding="0"
+                                                                HeightRequest="150"
+                                                                WidthRequest="150"
+                                                                BackgroundColor="White"
+                                                                IsClippedToBounds="True">
+                                                            <Frame.Content>
+                                                                <Image Source="{Binding RecipeIMG}"
                                                     HorizontalOptions="FillAndExpand"
                                                     VerticalOptions="FillAndExpand"
                                                     Aspect="AspectFill"/>
-                                                        </Frame.Content>
+                                                            </Frame.Content>
+                                                        </Frame>
                                                     </Frame>
-                                                </Frame>
-                                            </Grid>
-                                    
-                                    <Grid ColumnSpacing="0" Padding="0,0,0,0" VerticalOptions="End" HorizontalOptions="FillAndExpand">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="300"/>
-                                        </Grid.ColumnDefinitions>
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="0"/>
-                                            <RowDefinition Height="65"/>
-                                        </Grid.RowDefinitions>
-                                        <!--Put a 10 char limit-->
-                                                <yummy:PancakeView BackgroundColor="Black" 
-                                                                   Grid.Column="0" Grid.Row="1"
-                                                                   Opacity=".5"
-                                                                   CornerRadius="0,0,20,20">
-                                                </yummy:PancakeView>
-                                                <Label Grid.Column="0" Grid.Row="1"
-                                        Text="{Binding RecipeName}"
-                                                FontSize="24" 
-                                                FontAttributes="Bold"
-                                                TextColor="White"
-                                                HorizontalOptions="CenterAndExpand"
-                                               VerticalOptions="CenterAndExpand"
-                                           Padding="0,0,0,5"/>
-                                            </Grid>
-                                </Grid>
-                            </StackLayout>
-                        </StackLayout>
-                            
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-            </Grid>
-        </StackLayout>
+                                                </Grid>
 
-        <!--<ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never" Margin="0,-6,0,0" MinimumHeightRequest="55">
+                                                <Grid ColumnSpacing="0" Padding="0,0,0,0" VerticalOptions="End" HorizontalOptions="FillAndExpand">
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="220"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="0"/>
+                                                        <RowDefinition Height="65"/>
+                                                    </Grid.RowDefinitions>
+                                                    <!--Put a 10 char limit-->
+                                                    <yummy:PancakeView  Grid.Column="0" Grid.Row="1"
+                                                                        Opacity="1"
+                                                                        CornerRadius="0,0,20,20">
+                                                            <Image Grid.Column="0" Grid.Row="1"
+                                                                   Source="blackbg.png"
+                                                                   Aspect="Fill"/>
+                                                        </yummy:PancakeView>
+                                                    <Label Grid.Column="0" Grid.Row="1"
+                                                            Text="{Binding RecipeName}"
+                                                            FontSize="18" 
+                                                            FontAttributes="Bold"
+                                                            TextColor="White"
+                                                            HorizontalOptions="CenterAndExpand"
+                                                           HorizontalTextAlignment="Center"
+                                                            VerticalOptions="CenterAndExpand"
+                                                            Padding="0,0,0,5"/>
+                                                </Grid>
+                                            </Grid>
+                                    </StackLayout>
+                                        
+                                </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                    </Grid>
+                    <Grid HeightRequest="200" BackgroundColor="aqua" Grid.Column="1">
+                        <ListView x:Name="RandomRecipeListView1" 
+                        ItemsSource="{Binding recipes}"
+                        HasUnevenRows="True"
+                        ItemTapped="RecipeListView_ItemTapped"                  
+                        IsRefreshing="False"
+                        IsPullToRefreshEnabled="False"
+                        WidthRequest="230"
+                        HorizontalOptions="StartAndExpand"
+                            BackgroundColor="Red">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+
+                                            <StackLayout HorizontalOptions="StartAndExpand" BackgroundColor="White" Padding="5,5,5,5" Orientation="Horizontal">
+                                            <Grid HorizontalOptions="Start" WidthRequest="250">
+                                                <Grid WidthRequest="150">
+                                                    <Frame Padding="0" CornerRadius="20" WidthRequest="150" BackgroundColor="White">
+                                                        <Frame Padding="0"
+                                                            HeightRequest="150"
+                                                            WidthRequest="150"
+                                                            BackgroundColor="White"
+                                                            IsClippedToBounds="True">
+                                                            <Frame.Content>
+                                                                <Image Source="{Binding RecipeIMG}"
+                                                HorizontalOptions="FillAndExpand"
+                                                VerticalOptions="FillAndExpand"
+                                                Aspect="AspectFill"/>
+                                                            </Frame.Content>
+                                                        </Frame>
+                                                    </Frame>
+                                                </Grid>
+
+                                                <Grid ColumnSpacing="0" Padding="0,0,0,0" VerticalOptions="End" HorizontalOptions="FillAndExpand">
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="220"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="0"/>
+                                                        <RowDefinition Height="65"/>
+                                                    </Grid.RowDefinitions>
+                                                    <!--Put a 10 char limit-->
+                                                    <yummy:PancakeView  Grid.Column="0" Grid.Row="1"
+                                                                    Opacity="1"
+                                                                    CornerRadius="0,0,20,20">
+                                                        <Image Grid.Column="0" Grid.Row="1"
+                                                                Source="blackbg.png"
+                                                                Aspect="Fill"/>
+                                                    </yummy:PancakeView>
+                                                    <Label Grid.Column="0" Grid.Row="1"
+                                                        Text="{Binding RecipeName}"
+                                                        FontSize="18" 
+                                                        FontAttributes="Bold"
+                                                        TextColor="White"
+                                                        HorizontalOptions="CenterAndExpand"
+                                                        HorizontalTextAlignment="Center"
+                                                        VerticalOptions="CenterAndExpand"
+                                                        Padding="0,0,0,5"/>
+                                                </Grid>
+                                            </Grid>
+                                        </StackLayout>
+
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                    <Grid HeightRequest="200" BackgroundColor="aqua" Grid.Column="2">
+                        <ListView x:Name="RandomRecipeListView2" 
+                        ItemsSource="{Binding recipes}"
+                        HasUnevenRows="True"
+                        ItemTapped="RecipeListView_ItemTapped"                  
+                        IsRefreshing="False"
+                        IsPullToRefreshEnabled="False"
+                        WidthRequest="230"
+                        HorizontalOptions="StartAndExpand"
+                            BackgroundColor="Red">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+
+                                            <StackLayout HorizontalOptions="StartAndExpand" BackgroundColor="White" Padding="5,5,5,5" Orientation="Horizontal">
+                                            <Grid HorizontalOptions="Start" WidthRequest="250">
+                                                <Grid WidthRequest="150">
+                                                    <Frame Padding="0" CornerRadius="20" WidthRequest="150" BackgroundColor="White">
+                                                        <Frame Padding="0"
+                                                            HeightRequest="150"
+                                                            WidthRequest="150"
+                                                            BackgroundColor="White"
+                                                            IsClippedToBounds="True">
+                                                            <Frame.Content>
+                                                                <Image Source="{Binding RecipeIMG}"
+                                                HorizontalOptions="FillAndExpand"
+                                                VerticalOptions="FillAndExpand"
+                                                Aspect="AspectFill"/>
+                                                            </Frame.Content>
+                                                        </Frame>
+                                                    </Frame>
+                                                </Grid>
+
+                                                <Grid ColumnSpacing="0" Padding="0,0,0,0" VerticalOptions="End" HorizontalOptions="FillAndExpand">
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="220"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="0"/>
+                                                        <RowDefinition Height="65"/>
+                                                    </Grid.RowDefinitions>
+                                                    <!--Put a 10 char limit-->
+                                                    <yummy:PancakeView  Grid.Column="0" Grid.Row="1"
+                                                                    Opacity="1"
+                                                                    CornerRadius="0,0,20,20">
+                                                        <Image Grid.Column="0" Grid.Row="1"
+                                                                Source="blackbg.png"
+                                                                Aspect="Fill"/>
+                                                    </yummy:PancakeView>
+                                                    <Label Grid.Column="0" Grid.Row="1"
+                                                        Text="{Binding RecipeName}"
+                                                        FontSize="18" 
+                                                        FontAttributes="Bold"
+                                                        TextColor="White"
+                                                        HorizontalOptions="CenterAndExpand"
+                                                        HorizontalTextAlignment="Center"
+                                                        VerticalOptions="CenterAndExpand"
+                                                        Padding="0,0,0,5"/>
+                                                </Grid>
+                                            </Grid>
+                                        </StackLayout>
+
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                    <Grid HeightRequest="200" BackgroundColor="aqua" Grid.Column="3">
+                        <ListView x:Name="RandomRecipeListView3" 
+                        ItemsSource="{Binding recipes}"
+                        HasUnevenRows="True"
+                        ItemTapped="RecipeListView_ItemTapped"                  
+                        IsRefreshing="False"
+                        IsPullToRefreshEnabled="False"
+                        WidthRequest="230"
+                        HorizontalOptions="StartAndExpand"
+                            BackgroundColor="Red">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+
+                                            <StackLayout HorizontalOptions="StartAndExpand" BackgroundColor="White" Padding="5,5,5,5" Orientation="Horizontal">
+                                            <Grid HorizontalOptions="Start" WidthRequest="250">
+                                                <Grid WidthRequest="150">
+                                                    <Frame Padding="0" CornerRadius="20" WidthRequest="150" BackgroundColor="White">
+                                                        <Frame Padding="0"
+                                                            HeightRequest="150"
+                                                            WidthRequest="150"
+                                                            BackgroundColor="White"
+                                                            IsClippedToBounds="True">
+                                                            <Frame.Content>
+                                                                <Image Source="{Binding RecipeIMG}"
+                                                HorizontalOptions="FillAndExpand"
+                                                VerticalOptions="FillAndExpand"
+                                                Aspect="AspectFill"/>
+                                                            </Frame.Content>
+                                                        </Frame>
+                                                    </Frame>
+                                                </Grid>
+
+                                                <Grid ColumnSpacing="0" Padding="0,0,0,0" VerticalOptions="End" HorizontalOptions="FillAndExpand">
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="220"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="0"/>
+                                                        <RowDefinition Height="65"/>
+                                                    </Grid.RowDefinitions>
+                                                    <!--Put a 10 char limit-->
+                                                    <yummy:PancakeView  Grid.Column="0" Grid.Row="1"
+                                                                    Opacity="1"
+                                                                    CornerRadius="0,0,20,20">
+                                                        <Image Grid.Column="0" Grid.Row="1"
+                                                                Source="blackbg.png"
+                                                                Aspect="Fill"/>
+                                                    </yummy:PancakeView>
+                                                    <Label Grid.Column="0" Grid.Row="1"
+                                                        Text="{Binding RecipeName}"
+                                                        FontSize="18" 
+                                                        FontAttributes="Bold"
+                                                        TextColor="White"
+                                                        HorizontalOptions="CenterAndExpand"
+                                                        HorizontalTextAlignment="Center"
+                                                        VerticalOptions="CenterAndExpand"
+                                                        Padding="0,0,0,5"/>
+                                                </Grid>
+                                            </Grid>
+                                        </StackLayout>
+
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                    <Grid HeightRequest="200" BackgroundColor="aqua" Grid.Column="4">
+                        <ListView x:Name="RandomRecipeListView4" 
+                        ItemsSource="{Binding recipes}"
+                        HasUnevenRows="True"
+                        ItemTapped="RecipeListView_ItemTapped"                  
+                        IsRefreshing="False"
+                        IsPullToRefreshEnabled="False"
+                        WidthRequest="230"
+                        HorizontalOptions="StartAndExpand"
+                            BackgroundColor="Red">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+
+                                            <StackLayout HorizontalOptions="StartAndExpand" BackgroundColor="White" Padding="5,5,5,5" Orientation="Horizontal">
+                                            <Grid HorizontalOptions="Start" WidthRequest="250">
+                                                <Grid WidthRequest="150">
+                                                    <Frame Padding="0" CornerRadius="20" WidthRequest="150" BackgroundColor="White">
+                                                        <Frame Padding="0"
+                                                            HeightRequest="150"
+                                                            WidthRequest="150"
+                                                            BackgroundColor="White"
+                                                            IsClippedToBounds="True">
+                                                            <Frame.Content>
+                                                                <Image Source="{Binding RecipeIMG}"
+                                                HorizontalOptions="FillAndExpand"
+                                                VerticalOptions="FillAndExpand"
+                                                Aspect="AspectFill"/>
+                                                            </Frame.Content>
+                                                        </Frame>
+                                                    </Frame>
+                                                </Grid>
+
+                                                <Grid ColumnSpacing="0" Padding="0,0,0,0" VerticalOptions="End" HorizontalOptions="FillAndExpand">
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="220"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="0"/>
+                                                        <RowDefinition Height="65"/>
+                                                    </Grid.RowDefinitions>
+                                                    <!--Put a 10 char limit-->
+                                                    <yummy:PancakeView  Grid.Column="0" Grid.Row="1"
+                                                                    Opacity="1"
+                                                                    CornerRadius="0,0,20,20">
+                                                        <Image Grid.Column="0" Grid.Row="1"
+                                                                Source="blackbg.png"
+                                                                Aspect="Fill"/>
+                                                    </yummy:PancakeView>
+                                                    <Label Grid.Column="0" Grid.Row="1"
+                                                        Text="{Binding RecipeName}"
+                                                        FontSize="18" 
+                                                        FontAttributes="Bold"
+                                                        TextColor="White"
+                                                        HorizontalOptions="CenterAndExpand"
+                                                        HorizontalTextAlignment="Center"
+                                                        VerticalOptions="CenterAndExpand"
+                                                        Padding="0,0,0,5"/>
+                                                </Grid>
+                                            </Grid>
+                                        </StackLayout>
+
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+
+                    </Grid>
+            </ScrollView>
+                        
+            <!--<ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never" Margin="0,-6,0,0" MinimumHeightRequest="55">
             <Grid BackgroundColor="#E6E6E6" Padding="5,5,15,5">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
@@ -179,78 +459,180 @@
                         Clicked="MT_Clicked"/>
             </Grid>
         </ScrollView>-->
-        <StackLayout>
-            <!--<ListView x:Name="RecipeListView" 
-                  ItemsSource="{Binding recipes}"
-                  HasUnevenRows="True"
-                  ItemTapped="RecipeListView_ItemTapped"                  
-                  IsRefreshing="True"
-                  IsPullToRefreshEnabled="True"
-                      BackgroundColor="White">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Orientation="Horizontal" Padding="5">
-                                <Frame Padding="0"
+                
+            <Grid HeightRequest="400" BackgroundColor="aqua" Grid.Column="0">
+                <Grid Padding="0,0,0,0">
+                    <ListView x:Name="RecipeListView" 
+                          ItemsSource="{Binding recipes}"
+                          HasUnevenRows="True"
+                          ItemTapped="RecipeListView_ItemTapped"                  
+                          IsRefreshing="False"
+                          IsPullToRefreshEnabled="False"
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="FillAndExpand"
+                              BackgroundColor="#d9d9d9">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    
+                                    <StackLayout HorizontalOptions="FillAndExpand" BackgroundColor="white" Padding="5,5,5,5" Orientation="Horizontal" Margin="0,0,0,5">
+                                        <Grid HorizontalOptions="FillAndExpand">
+                                            
+                                            <Grid Padding="0,0,0,15" Grid.Column="0">
+                                                <Label Text="{Binding RecipeName}"
+                                                FontSize="22" 
+                                                FontAttributes="Bold"
+                                                TextColor="Black"
+                                                HorizontalOptions="StartAndExpand"
+                                                HorizontalTextAlignment="Start"
+                                                VerticalOptions="StartAndExpand"
+                                                Padding="0,0,0,5"/>
+                                            </Grid>
+
+                                            <Grid HorizontalOptions="FillAndExpand" Padding="0,35,0,50" Grid.Column="0">
+                                                <Grid>
+                                                        <yummy:PancakeView CornerRadius="20,20,0,0" HeightRequest="230"
+                                                                BackgroundColor="White"
+                                                                IsClippedToBounds="True">
+                                                            <Image Source="{Binding RecipeIMG}"
+                                                                    HorizontalOptions="FillAndExpand"
+                                                                    VerticalOptions="FillAndExpand"
+                                                                    Aspect="AspectFill"/>
+                                                        </yummy:PancakeView>
+                                                </Grid>
+                                            </Grid>
+
+                                            <Grid VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0" BackgroundColor="Transparent" Padding="-5,0,-5,0" Margin="0,20,0,-5">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="15"/>
+                                                        <RowDefinition Height="40"/>
+                                                    </Grid.RowDefinitions>
+                                                    <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                
+                                                    <Label Grid.Row="0" Grid.ColumnSpan="3"
+                                                           Padding="-5,0,-5,0"
+                                                            BackgroundColor="White"
+                                                           HorizontalOptions="FillAndExpand"
+                                                           VerticalOptions="CenterAndExpand"/>
+                                                    <Label Grid.Row="0" Grid.ColumnSpan="3"
+                                                           Margin="30,0,30,0"
+                                                           HeightRequest="3"
+                                                            BackgroundColor="#292929"
+                                                           HorizontalOptions="FillAndExpand"
+                                                           VerticalOptions="CenterAndExpand"/>
+                                                
+                                                    <ImageButton Grid.Row="1" Grid.Column="0"
+                                                            Source="viewgraysolid.png"
+                                                            HorizontalOptions="FillAndExpand"
+                                                            VerticalOptions="End"
+                                                            BackgroundColor="White"
+                                                            Padding="5,5,5,5"
+                                                            Clicked="Home_Clicked"/>
+                                                    <ImageButton Grid.Row="1" Grid.Column="1"
+                                                            Source="heartgraysolid.png"
+                                                            HorizontalOptions="FillAndExpand"
+                                                            VerticalOptions="End"
+                                                            BackgroundColor="White"
+                                                            Padding="5,8,5,8"
+                                                            Clicked="UserProfile_Clicked"/>
+                                                    <ImageButton Grid.Row="1" Grid.Column="2"
+                                                            Source="addgraysolid.png"
+                                                            HorizontalOptions="FillAndExpand"
+                                                            VerticalOptions="End"
+                                                            BackgroundColor="White"
+                                                            Padding="5,8,5,8"
+                                                            Clicked="GenerateRecipe_Clicked"/>
+                                                </Grid>
+
+                                            </Grid>
+                                    </StackLayout>
+
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </Grid>
+
+            <!--<Grid HeightRequest="210">
+                <ListView x:Name="RecipeListView" 
+                            ItemsSource="{Binding recipes}"
+                            HasUnevenRows="True"
+                            ItemTapped="RecipeListView_ItemTapped"                  
+                            IsRefreshing="True"
+                            IsPullToRefreshEnabled="False"
+                            BackgroundColor="White">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" Padding="5">
+                                    <Frame Padding="0"
                                            HeightRequest="60"
                                            WidthRequest="60"
                                            BackgroundColor="White"
                                            CornerRadius="100"
                                            BorderColor="Teal"
                                            IsClippedToBounds="True">
-                                    <Frame.Content>
-                                        <Image Source="{Binding RecipeIMG}" Aspect="Fill"/>
-                                    </Frame.Content>
-                                </Frame>
+                                        <Frame.Content>
+                                            <Image Source="{Binding RecipeIMG}" Aspect="Fill"/>
+                                        </Frame.Content>
+                                    </Frame>
 
-                                <StackLayout HorizontalOptions="StartAndExpand">
-                                    <Label Text="{Binding RecipeName}" 
+                                    <StackLayout HorizontalOptions="StartAndExpand">
+                                        <Label Text="{Binding RecipeName}" 
                                            FontSize="18" 
                                            FontAttributes="Bold"
                                            TextColor="Black"/>
-                                    <Label Text="{Binding RecipeAuthor}"
+                                        <Label Text="{Binding RecipeAuthor}"
                                            FontSize="16" 
                                            FontAttributes="None"
                                            TextColor="Black"/>
+                                    </StackLayout>
                                 </StackLayout>
-                            </StackLayout>
 
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>-->
-        </StackLayout>
-        
-        <Grid VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" BackgroundColor="#3873F6">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="55"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <ImageButton Grid.Row="0" Grid.Column="0"
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>-->
+                
+            </StackLayout>
+        </ScrollView>
+                <Grid VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" BackgroundColor="#3873F6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <ImageButton Grid.Row="0" Grid.Column="0"
                         Source="Home.jpg"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="End"
                         BackgroundColor="#3873F6"
                          Padding="10"
                         Clicked="Home_Clicked"/>
-            <ImageButton Grid.Row="0" Grid.Column="1"
+                <ImageButton Grid.Row="0" Grid.Column="1"
                         Source="User.jpg"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="End"
                         BackgroundColor="#3873F6"
                          Padding="10"
                         Clicked="UserProfile_Clicked"/>
-            <ImageButton Grid.Row="0" Grid.Column="2"
-                        Source="Search.jpg"
+                <ImageButton Grid.Row="0" Grid.Column="2"
+                        Source="Cook.png"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="End"
                         BackgroundColor="#3873F6"
                         Padding="10"
                         Clicked="GenerateRecipe_Clicked"/>
-        </Grid>
+            </Grid>
+        
     </StackLayout>
 </ContentPage>

@@ -4,22 +4,21 @@
              x:Class="App1.Views.UserManagement.UserProfilePage"
              BackgroundColor="White"
              NavigationPage.HasNavigationBar="False">
-
     <StackLayout BackgroundColor="White" HorizontalOptions="CenterAndExpand">
         <Image Source="ProfileHeader.png" HorizontalOptions="CenterAndExpand"/>
         <Label x:Name="txt_useremail"
-                FontSize="16" 
-                FontAttributes="None"
-                TextColor="Black"
-                HeightRequest="-5"/>
+                    FontSize="16" 
+                    FontAttributes="None"
+                    TextColor="Black"
+                    HeightRequest="-5"/>
         <Grid HeightRequest="150" BackgroundColor="White">
             <ListView x:Name="UserInfoListView" 
-                  ItemsSource="{Binding user}"
-                  HasUnevenRows="True"               
-                  IsRefreshing="False"
-                      IsEnabled="False"
-                  IsPullToRefreshEnabled="False"
-                      BackgroundColor="White">
+                      ItemsSource="{Binding user}"
+                      HasUnevenRows="True"               
+                      IsRefreshing="False"
+                          IsEnabled="False"
+                      IsPullToRefreshEnabled="False"
+                          BackgroundColor="White">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -28,15 +27,15 @@
                                     <Grid HorizontalOptions="Start" BackgroundColor="Transparent">
                                         <Grid Padding="10" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
                                             <Frame x:Name="outerFrame" HasShadow="False" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="100" 
-                                                   OutlineColor="Black" BackgroundColor="{Binding Source={RelativeSource Self}, Path=OutlineColor}">
+                                                       OutlineColor="Black" BackgroundColor="{Binding Source={RelativeSource Self}, Path=OutlineColor}">
                                                 <Frame x:Name="innerFrame" Margin="2" Padding="0" HasShadow="False" HorizontalOptions="FillAndExpand" CornerRadius="100"    
-                                                       OutlineColor="{Binding Source={x:Reference outerFrame}, Path=OutlineColor}" BackgroundColor="Black" IsClippedToBounds="True">
+                                                           OutlineColor="{Binding Source={x:Reference outerFrame}, Path=OutlineColor}" BackgroundColor="Black" IsClippedToBounds="True">
                                                     <Image Source="{Binding UserIMG}" 
-                                                               HeightRequest="120"
-                                                       WidthRequest="120"
-                                                               Aspect="Fill"
-                                                               HorizontalOptions="Start"
-                                                               VerticalOptions="CenterAndExpand"/>
+                                                                   HeightRequest="120"
+                                                           WidthRequest="120"
+                                                                   Aspect="Fill"
+                                                                   HorizontalOptions="Start"
+                                                                   VerticalOptions="CenterAndExpand"/>
                                                 </Frame>
                                             </Frame>
                                         </Grid>
@@ -52,11 +51,11 @@
                                             </Grid.RowDefinitions>
                                             <!--Put a 10 char limit-->
                                             <Label Grid.Column="1" Grid.Row="1"
-                                                Text="{Binding Username}"
-                                                       FontSize="26" 
-                                                       FontAttributes="Bold"
-                                                       TextColor="Black"
-                                                       HorizontalOptions="Start"/>
+                                                    Text="{Binding Username}"
+                                                           FontSize="26" 
+                                                           FontAttributes="Bold"
+                                                           TextColor="Black"
+                                                           HorizontalOptions="Start"/>
                                         </Grid>
 
                                         <Grid ColumnSpacing="0" Padding="10,0,0,0">
@@ -69,11 +68,11 @@
                                             </Grid.RowDefinitions>
 
                                             <Label Grid.Column="1" Grid.Row="1"
-                                                Text="{Binding UserID}"
-                                                       FontSize="14" 
-                                                       FontAttributes="Bold"
-                                                       TextColor="Black"
-                                                       HorizontalOptions="Start">
+                                                    Text="{Binding UserID}"
+                                                           FontSize="14" 
+                                                           FontAttributes="Bold"
+                                                           TextColor="Black"
+                                                           HorizontalOptions="Start">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="#" />
@@ -95,14 +94,14 @@
                                             </Grid.RowDefinitions>
 
                                             <Label Grid.Column="1" Grid.Row="1"
-                                                   Text="{Binding Fullname}"
-                                               FontSize="20" 
-                                               FontAttributes="Bold"
-                                               TextColor="Black"
-                                               HorizontalOptions="StartAndExpand"/>
+                                                       Text="{Binding Fullname}"
+                                                   FontSize="20" 
+                                                   FontAttributes="Bold"
+                                                   TextColor="Black"
+                                                   HorizontalOptions="StartAndExpand"/>
                                         </Grid>
                                     </Grid>
-                                    
+
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>
@@ -110,11 +109,11 @@
                 </ListView.ItemTemplate>
             </ListView>
         </Grid>
-            
+
         <Grid HeightRequest="100" BackgroundColor="white">
-            
+
         </Grid>
-            
+
         <Grid Padding="10,0,10,0" BackgroundColor="White">
             <Grid Padding="10,0,10,0" BackgroundColor="White" HeightRequest="250" VerticalOptions="StartAndExpand">
                 <Grid.RowDefinitions>
@@ -128,56 +127,56 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Label />
+
                 <ImageButton Grid.Row="1" Grid.Column="0"
-                             Source="cookbook.png"
-                        BackgroundColor="#FF804C"
-                        CornerRadius="15"
-                             Padding="20"
-                            Clicked="Cookbook_Clicked"/>
+                                 Source="cookbook.png"
+                            BackgroundColor="#FF804C"
+                            CornerRadius="15"
+                                 Padding="20"
+                                Clicked="Cookbook_Clicked"/>
                 <Label Grid.Row="2" Grid.Column="0"
-                       Text="Cookbook"
-                       HorizontalTextAlignment="Center"
-                       VerticalTextAlignment="Center"
-                       VerticalOptions="Center"
-                       TextColor="#0E293C"
-                       FontAttributes="Bold"
-                       FontSize="16"
-                       Padding="0,0,0,5"/>
+                           Text="Cookbook"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           VerticalOptions="Center"
+                           TextColor="#0E293C"
+                           FontAttributes="Bold"
+                           FontSize="16"
+                           Padding="0,0,0,5"/>
 
                 <ImageButton Grid.Row="1" Grid.Column="1"
-                             Source="mealplanner.png"
-                        BackgroundColor="#467fd7"
-                        CornerRadius="15"
-                             Padding="20"
-                            Clicked="Mealplanner_Clicked"/>
+                                 Source="mealplanner.png"
+                            BackgroundColor="#467fd7"
+                            CornerRadius="15"
+                                 Padding="20"
+                                Clicked="Mealplanner_Clicked"/>
                 <Label Grid.Row="2" Grid.Column="1"
-                       Text="Meal Planner"
-                       HorizontalTextAlignment="Center"
-                       VerticalTextAlignment="Center"
-                       VerticalOptions="Center"
-                       TextColor="#0E293C"
-                       FontAttributes="Bold"
-                       FontSize="16"
-                       Margin="0,0,0,5"/>
+                           Text="Meal Planner"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           VerticalOptions="Center"
+                           TextColor="#0E293C"
+                           FontAttributes="Bold"
+                           FontSize="16"
+                           Margin="0,0,0,5"/>
 
                 <ImageButton Grid.Row="1" Grid.Column="2"
-                        Source="createrecipe.png"
-                        BackgroundColor="#ce93d8"
-                        CornerRadius="15"
-                             Padding="20"
-                            Clicked="CreateRecipe_Clicked"/>
+                            Source="createrecipe.png"
+                            BackgroundColor="#ce93d8"
+                            CornerRadius="15"
+                                 Padding="20"
+                                Clicked="CreateRecipe_Clicked"/>
                 <Label Grid.Row="2" Grid.Column="2"
-                       Text="Create your own recipe"
-                       HorizontalTextAlignment="Center"
-                       VerticalTextAlignment="Center"
-                       VerticalOptions="Center"
-                       TextColor="#0E293C"
-                       FontAttributes="Bold"
-                       FontSize="16"
-                       Margin="0,0,0,5"/>
+                           Text="Create your own recipe"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           VerticalOptions="Center"
+                           TextColor="#0E293C"
+                           FontAttributes="Bold"
+                           FontSize="16"
+                           Margin="0,0,0,5"/>
             </Grid>
         </Grid>
-            
+
     </StackLayout>
 </ContentPage>
