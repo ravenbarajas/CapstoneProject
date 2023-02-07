@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App1.Views.RecipePresentation.RecipeDetailsPage.xaml", "Views/RecipePresentation/RecipeDetailsPage.xaml", typeof(global::App1.Views.RecipeManagement.RecipeDetailsPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App1.Views.RecipePresentation.RecipeDetailsPage.xaml", "Views/RecipePresentation/RecipeDetailsPage.xaml", typeof(global::App1.Views.RecipePresentation.RecipeDetailsPage))]
 
-namespace App1.Views.RecipeManagement {
+namespace App1.Views.RecipePresentation {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\RecipePresentation\\RecipeDetailsPage.xaml")]
@@ -32,16 +32,10 @@ namespace App1.Views.RecipeManagement {
         private global::Xamarin.Forms.Label LabelRecipeCategory;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Label LabelRecipeKeywords;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Label LabelRecipeCookTime;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Label LabelRecipePrepTime;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Label LabelRecipeTotalTime;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Button btn_ingredients;
@@ -69,10 +63,8 @@ namespace App1.Views.RecipeManagement {
             LabelAuthorName = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "LabelAuthorName");
             LabelRecipeDesc = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "LabelRecipeDesc");
             LabelRecipeCategory = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "LabelRecipeCategory");
-            LabelRecipeKeywords = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "LabelRecipeKeywords");
             LabelRecipeCookTime = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "LabelRecipeCookTime");
             LabelRecipePrepTime = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "LabelRecipePrepTime");
-            LabelRecipeTotalTime = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "LabelRecipeTotalTime");
             btn_ingredients = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btn_ingredients");
             btn_instructions = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btn_instructions");
             ingredientsGrid = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Grid>(this, "ingredientsGrid");

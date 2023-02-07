@@ -15,7 +15,7 @@ namespace App1.Views.UserManagement
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
-        public static string UserEmail;
+        public static string userEmail;
         userAuth _userAuth = new userAuth();
         public LoginPage()
         {
@@ -38,7 +38,7 @@ namespace App1.Views.UserManagement
                 string pass = Password.Text;
                 string token = await _userAuth.SignIn(email, pass);
                 //UserData = email;
-                //Application.Current.Properties["userEmail"] = Email.Text;
+                Application.Current.Properties["userEmail"] = Email.Text;
 
                 if (String.IsNullOrEmpty(email))
                 {

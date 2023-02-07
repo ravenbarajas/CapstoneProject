@@ -4,9 +4,11 @@
              x:Class="App1.Views.RecipeGeneration.GenerateRecipePage"
              NavigationPage.HasNavigationBar="False">
 
-    <StackLayout BackgroundColor="White">
-        <Image Source="TopGenerateRecipe.png"
-               VerticalOptions="StartAndExpand"/>
+    <StackLayout BackgroundColor="White" >
+        <Image Source="GetRecipe.png"
+               VerticalOptions="Start"/>
+        <Image Source="IngredientsHeader.png"
+               VerticalOptions="Start"/>
         <!--<StackLayout Padding="5,0,5,0">
             <Label Text="Preference Selection"
                             TextColor="Black"
@@ -21,7 +23,7 @@
                 HeightRequest="45"/>
         </StackLayout>-->
         <StackLayout Padding="5,0,5,0">
-            <Label Text="Ingredient Selection"
+            <!--<Label Text="Ingredient Selection"
                             TextColor="Black"
                             FontSize="20"
                             FontAttributes="Bold"/>
@@ -29,12 +31,13 @@
                             TextColor="Black"
                             FontSize="16"
                     Margin="0,-5,0,0"
-                            FontAttributes="None"/>
+                            FontAttributes="None"/>-->
 
-            <Frame Padding="0,0,0,0">
+            <Frame Padding="0,0,0,0" CornerRadius="30">
                 <SearchBar Placeholder="Search available ingredients" 
                     x:Name="txt_searchingredient"
-                BackgroundColor="White"
+                    BackgroundColor="#F2F2F2"
+                           TextColor="Black"
                     TextChanged="txt_searchingredients_TextChange"/>
             </Frame>
             <ListView x:Name="IngredientListView" 
@@ -65,17 +68,21 @@
                 </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
+        
+        
         <StackLayout HeightRequest="200" BackgroundColor="#E6e6e6" Margin="5,0,5,0">
-            <ScrollView BackgroundColor="#E6e6e6" Padding="0,5,0,5" Margin="5,0,5,0">
+            <ScrollView BackgroundColor="#E6e6e6" Padding="0,5,0,5" Margin="5,0,5,0" HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
                 <StackLayout x:Name="SelectedIngredients"/>
             </ScrollView>
         </StackLayout>
+        
         <StackLayout VerticalOptions="EndAndExpand" HeightRequest="-5">
             <Label x:Name="lbl_EntryFieldsOutput"
                        FontSize="10"
                        TextColor="White"
                        Padding="10,0,10,0"/>
         </StackLayout>
+        
         <Button Text="Generate"
                     TextColor="White"
                     TextTransform="None"

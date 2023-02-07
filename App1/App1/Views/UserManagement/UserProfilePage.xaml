@@ -2,107 +2,256 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Views.UserManagement.UserProfilePage"
-             BackgroundColor="White"
+             BackgroundColor="white"
              NavigationPage.HasNavigationBar="False">
-    <StackLayout BackgroundColor="White" HorizontalOptions="CenterAndExpand">
+    <StackLayout BackgroundColor="#d9d9d9" HorizontalOptions="CenterAndExpand">
         <Image Source="ProfileHeader.png" HorizontalOptions="CenterAndExpand"/>
         <Label x:Name="txt_useremail"
                     FontSize="16" 
                     FontAttributes="None"
                     TextColor="Black"
                     HeightRequest="-5"/>
-        <Grid HeightRequest="150" BackgroundColor="White">
+        <Grid HeightRequest="400" BackgroundColor="White" RowSpacing="0" Padding="0,-7,0,0" VerticalOptions="Start">
             <ListView x:Name="UserInfoListView" 
                       ItemsSource="{Binding user}"
                       HasUnevenRows="True"               
                       IsRefreshing="False"
                           IsEnabled="False"
                       IsPullToRefreshEnabled="False"
-                          BackgroundColor="White">
+                          BackgroundColor="White"
+                      VerticalOptions="Start">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
-                                <StackLayout HorizontalOptions="StartAndExpand" BackgroundColor="Transparent">
-                                    <Grid HorizontalOptions="Start" BackgroundColor="Transparent">
-                                        <Grid Padding="10" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
-                                            <Frame x:Name="outerFrame" HasShadow="False" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="100" 
-                                                       OutlineColor="Black" BackgroundColor="{Binding Source={RelativeSource Self}, Path=OutlineColor}">
-                                                <Frame x:Name="innerFrame" Margin="2" Padding="0" HasShadow="False" HorizontalOptions="FillAndExpand" CornerRadius="100"    
-                                                           OutlineColor="{Binding Source={x:Reference outerFrame}, Path=OutlineColor}" BackgroundColor="Black" IsClippedToBounds="True">
-                                                    <Image Source="{Binding UserIMG}" 
-                                                                   HeightRequest="120"
-                                                           WidthRequest="120"
-                                                                   Aspect="Fill"
-                                                                   HorizontalOptions="Start"
-                                                                   VerticalOptions="CenterAndExpand"/>
-                                                </Frame>
+                            <StackLayout HorizontalOptions="StartAndExpand" BackgroundColor="White" VerticalOptions="StartAndExpand" Padding="0,0,0,0">
+                                <Grid HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" RowSpacing="0" VerticalOptions="StartAndExpand">
+                                    <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+
+                                        </Grid.RowDefinitions>
+
+                                    <Grid Padding="15,10,10,10" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="0" BackgroundColor="White">
+                                        <Frame x:Name="outerFrame" HasShadow="False" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="100" 
+                                                    OutlineColor="Black" BackgroundColor="{Binding Source={RelativeSource Self}, Path=OutlineColor}">
+                                            <Frame x:Name="innerFrame" Margin="2" Padding="0" HasShadow="False" HorizontalOptions="FillAndExpand" CornerRadius="100"    
+                                                        OutlineColor="{Binding Source={x:Reference outerFrame}, Path=OutlineColor}" BackgroundColor="Black" IsClippedToBounds="True">
+                                                <Image Source="{Binding UserIMG}" 
+                                                                HeightRequest="120"
+                                                        WidthRequest="120"
+                                                                Aspect="Fill"
+                                                                HorizontalOptions="Start"
+                                                                VerticalOptions="CenterAndExpand"/>
                                             </Frame>
-                                        </Grid>
+                                        </Frame>
+                                    </Grid>
+                                    <Grid ColumnSpacing="0" Padding="20,0,0,0" Grid.Row="0" RowSpacing="0" BackgroundColor="Transparent" VerticalOptions="CenterAndExpand">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="130"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="40"/>
+                                        </Grid.RowDefinitions>
+                                        <!--Put a 10 char limit-->
+                                        <Label Grid.Column="1" Grid.Row="0"
+                                                Text="{Binding Username}"
+                                                        FontSize="26" 
+                                                        FontAttributes="Bold"
+                                                        TextColor="Black"
+                                                        HorizontalOptions="StartAndExpand"
+                                                VerticalOptions="CenterAndExpand"
+                                                BackgroundColor="Transparent"/>
+                                    </Grid>
+                                    <Grid ColumnSpacing="0" Padding="20,0,0,0" Grid.Row="1" RowSpacing="0" BackgroundColor="White">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="25"/>
+                                            <RowDefinition Height="25"/>
 
-                                        <Grid ColumnSpacing="0" Padding="10,0,0,0">
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="130"/>
-                                                <ColumnDefinition Width="*"/>
-                                            </Grid.ColumnDefinitions>
-                                            <Grid.RowDefinitions>
-                                                <RowDefinition Height="0"/>
-                                                <RowDefinition Height="40"/>
-                                            </Grid.RowDefinitions>
-                                            <!--Put a 10 char limit-->
-                                            <Label Grid.Column="1" Grid.Row="1"
-                                                    Text="{Binding Username}"
-                                                           FontSize="26" 
-                                                           FontAttributes="Bold"
-                                                           TextColor="Black"
-                                                           HorizontalOptions="Start"/>
-                                        </Grid>
+                                            <RowDefinition Height="25"/>
+                                            <RowDefinition Height="25"/>
 
-                                        <Grid ColumnSpacing="0" Padding="10,0,0,0">
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="130"/>
-                                                <ColumnDefinition Width="*"/>
-                                            </Grid.ColumnDefinitions>
-                                            <Grid.RowDefinitions>
-                                                <RowDefinition Height="30"/>
-                                            </Grid.RowDefinitions>
+                                            <RowDefinition Height="25"/>
+                                            <RowDefinition Height="25"/>
+                                        </Grid.RowDefinitions>
+                                        <!--Put a char limit for username-->
+                                        <Label Grid.Column="0" Grid.Row="0"
+                                                Text="Username"
+                                                        FontSize="18" 
+                                                        FontAttributes="Bold"
+                                                TextTransform="Uppercase"
+                                                        TextColor="Black"
+                                                        HorizontalOptions="StartAndExpand"
+                                                VerticalOptions="CenterAndExpand"
+                                                BackgroundColor="White"/>
+                                        <Label Grid.Column="0" Grid.Row="1"
+                                                Text="{Binding Username}"
+                                                        FontSize="16" 
+                                                        FontAttributes="None"
+                                                        TextColor="Black"
+                                                        HorizontalOptions="StartAndExpand"
+                                                VerticalOptions="CenterAndExpand"
+                                                BackgroundColor="White"/>
 
-                                            <Label Grid.Column="1" Grid.Row="1"
-                                                    Text="{Binding UserID}"
-                                                           FontSize="14" 
-                                                           FontAttributes="Bold"
-                                                           TextColor="Black"
-                                                           HorizontalOptions="Start">
-                                                <Label.FormattedText>
-                                                    <FormattedString>
-                                                        <Span Text="#" />
-                                                        <Span Text="{Binding UserID}" />
-                                                    </FormattedString>
-                                                </Label.FormattedText>
-                                            </Label>
-                                        </Grid>
+                                        <Label Grid.Column="1" Grid.Row="0"
+                                                Text="User ID"
+                                                        FontSize="18" 
+                                                        FontAttributes="Bold"
+                                                TextTransform="Uppercase"
+                                                        TextColor="Black"
+                                                        HorizontalOptions="StartAndExpand"
+                                                VerticalOptions="CenterAndExpand"
+                                                BackgroundColor="white"/>
+                                        <Label Grid.Column="1" Grid.Row="1"
+                                                Text="{Binding UserID}"
+                                                        FontSize="16" 
+                                                        FontAttributes="None"
+                                                        TextColor="Black"
+                                                        HorizontalOptions="Start"
+                                                VerticalOptions="CenterAndExpand"
+                                                BackgroundColor="white">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="#" />
+                                                    <Span Text="{Binding UserID}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
 
-                                        <Grid ColumnSpacing="0" Padding="10,0,0,0">
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="130"/>
-                                                <ColumnDefinition Width="*"/>
-                                            </Grid.ColumnDefinitions>
-                                            <Grid.RowDefinitions>
-                                                <RowDefinition Height="50"/>
-                                                <RowDefinition Height="40"/>
+                                        <Label Grid.Column="0" Grid.Row="2"
+                                                Text="Email"
+                                                        FontSize="18" 
+                                                        FontAttributes="Bold"
+                                                TextTransform="Uppercase"
+                                                        TextColor="Black"
+                                                        HorizontalOptions="StartAndExpand"
+                                                VerticalOptions="CenterAndExpand"
+                                                BackgroundColor="white"/>
+                                        <Label Grid.ColumnSpan="2" Grid.Row="3"
+                                                    Text="{Binding Email}"
+                                                FontSize="16" 
+                                                FontAttributes="None"
+                                                TextColor="Black"
+                                                HorizontalOptions="StartAndExpand"
+                                                VerticalOptions="CenterAndExpand"
+                                                BackgroundColor="white"/>
 
-                                            </Grid.RowDefinitions>
-
-                                            <Label Grid.Column="1" Grid.Row="1"
-                                                       Text="{Binding Fullname}"
-                                                   FontSize="20" 
-                                                   FontAttributes="Bold"
-                                                   TextColor="Black"
-                                                   HorizontalOptions="StartAndExpand"/>
-                                        </Grid>
+                                        <Label Grid.Column="0" Grid.Row="4"
+                                                Text="Full name"
+                                                        FontSize="18" 
+                                                        FontAttributes="Bold"
+                                                TextTransform="Uppercase"
+                                                        TextColor="Black"
+                                                        HorizontalOptions="StartAndExpand"
+                                                VerticalOptions="CenterAndExpand"
+                                                BackgroundColor="white"/>
+                                        <Label Grid.ColumnSpan="2" Grid.Row="5"
+                                                    Text="{Binding Fullname}"
+                                                FontSize="16" 
+                                                FontAttributes="None"
+                                                TextColor="Black"
+                                                HorizontalOptions="StartAndExpand"
+                                                VerticalOptions="CenterAndExpand"
+                                                BackgroundColor="white"/>
                                     </Grid>
 
-                                </StackLayout>
+                                    <Grid ColumnSpacing="0" Padding="0,0,0,0" Grid.Row="2" RowSpacing="0" BackgroundColor="White" HorizontalOptions="FillAndExpand">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="10"/>
+
+                                            <RowDefinition Height="25"/>
+                                            <RowDefinition Height="25"/>
+
+                                            <RowDefinition Height="25"/>
+                                            <RowDefinition Height="25"/>
+
+                                            <RowDefinition Height="25"/>
+                                            <RowDefinition Height="25"/>
+                                        </Grid.RowDefinitions>
+
+                                        <Label Grid.Row="0" Grid.ColumnSpan="3"
+                                                        Padding="-5,0,-5,0"
+                                                        BackgroundColor="White"
+                                                        HorizontalOptions="FillAndExpand"
+                                                        VerticalOptions="CenterAndExpand"/>
+                                        <Label Grid.Row="0" Grid.ColumnSpan="3"
+                                                        Margin="30,0,30,0"
+                                                        HeightRequest="3"
+                                                        BackgroundColor="#666666"
+                                                        HorizontalOptions="FillAndExpand"
+                                                        VerticalOptions="CenterAndExpand"/>
+                                        <!--Put a char limit for username-->
+                                        <Label Grid.Column="0" Grid.Row="1"
+                                                Text="Viewed"
+                                                        FontSize="18" 
+                                                        FontAttributes="Bold"
+                                                TextTransform="Uppercase"
+                                                        TextColor="Black"
+                                                        HorizontalOptions="CenterAndExpand"
+                                                VerticalOptions="CenterAndExpand"
+                                               HorizontalTextAlignment="Center"
+                                                BackgroundColor="White"/>
+                                        <Label Grid.Column="0" Grid.Row="2"
+                                                Text="12"
+                                                        FontSize="16" 
+                                                        FontAttributes="None"
+                                                        TextColor="Black"
+                                                        HorizontalOptions="CenterAndExpand"
+                                                VerticalOptions="CenterAndExpand"
+                                               HorizontalTextAlignment="Center"
+                                                BackgroundColor="White"/>
+
+                                        <Label Grid.Column="1" Grid.Row="1"
+                                                Text="Liked"
+                                                        FontSize="18" 
+                                                        FontAttributes="Bold"
+                                                TextTransform="Uppercase"
+                                                        TextColor="Black"
+                                                        HorizontalOptions="CenterAndExpand"
+                                                VerticalOptions="CenterAndExpand"
+                                               HorizontalTextAlignment="Center"
+                                                BackgroundColor="white"/>
+                                        <Label Grid.Column="1" Grid.Row="2"
+                                                    Text="5"
+                                                FontSize="16" 
+                                                FontAttributes="None"
+                                                TextColor="Black"
+                                                HorizontalOptions="CenterAndExpand"
+                                                VerticalOptions="CenterAndExpand"
+                                               HorizontalTextAlignment="Center"
+                                                BackgroundColor="white"/>
+
+                                        <Label Grid.Column="2" Grid.Row="1"
+                                                Text="Saved"
+                                                        FontSize="18" 
+                                                        FontAttributes="Bold"
+                                                TextTransform="Uppercase"
+                                                        TextColor="Black"
+                                                        HorizontalOptions="CenterAndExpand"
+                                                VerticalOptions="CenterAndExpand"
+                                               HorizontalTextAlignment="Center"
+                                                BackgroundColor="white"/>
+                                        <Label Grid.Column="2" Grid.Row="2"
+                                                    Text="3"
+                                                FontSize="16" 
+                                                FontAttributes="None"
+                                                TextColor="Black"
+                                                HorizontalOptions="CenterAndExpand"
+                                                VerticalOptions="CenterAndExpand"
+                                               HorizontalTextAlignment="Center"
+                                                BackgroundColor="white"/>
+                                    </Grid>
+                                </Grid>
+
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
@@ -110,15 +259,11 @@
             </ListView>
         </Grid>
 
-        <Grid HeightRequest="100" BackgroundColor="white">
-
-        </Grid>
-
         <Grid Padding="10,0,10,0" BackgroundColor="White">
             <Grid Padding="10,0,10,0" BackgroundColor="White" HeightRequest="250" VerticalOptions="StartAndExpand">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50"/>
-                    <RowDefinition Height="130"/>
+                    <RowDefinition Height="110"/>
 
                     <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>
@@ -131,8 +276,8 @@
                 <ImageButton Grid.Row="1" Grid.Column="0"
                                  Source="cookbook.png"
                             BackgroundColor="#FF804C"
-                            CornerRadius="15"
-                                 Padding="20"
+                            CornerRadius="100"
+                                 Padding="25"
                                 Clicked="Cookbook_Clicked"/>
                 <Label Grid.Row="2" Grid.Column="0"
                            Text="Cookbook"
@@ -147,8 +292,8 @@
                 <ImageButton Grid.Row="1" Grid.Column="1"
                                  Source="mealplanner.png"
                             BackgroundColor="#467fd7"
-                            CornerRadius="15"
-                                 Padding="20"
+                            CornerRadius="100"
+                                 Padding="25"
                                 Clicked="Mealplanner_Clicked"/>
                 <Label Grid.Row="2" Grid.Column="1"
                            Text="Meal Planner"
@@ -161,10 +306,10 @@
                            Margin="0,0,0,5"/>
 
                 <ImageButton Grid.Row="1" Grid.Column="2"
-                            Source="createrecipe.png"
+                            Source="mealplanner.png"
                             BackgroundColor="#ce93d8"
-                            CornerRadius="15"
-                                 Padding="20"
+                            CornerRadius="100"
+                                 Padding="25"
                                 Clicked="CreateRecipe_Clicked"/>
                 <Label Grid.Row="2" Grid.Column="2"
                            Text="Create your own recipe"

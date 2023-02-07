@@ -20,8 +20,9 @@ public class CustomFilter
 	public CustomFilter ()
 	{
 		super ();
-		if (getClass () == CustomFilter.class)
+		if (getClass () == CustomFilter.class) {
 			mono.android.TypeManager.Activate ("Plugin.InputKit.Platforms.Droid.CustomFilter, Plugin.InputKit", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

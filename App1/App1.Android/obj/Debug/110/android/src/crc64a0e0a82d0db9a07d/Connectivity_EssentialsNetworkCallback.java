@@ -24,8 +24,9 @@ public class Connectivity_EssentialsNetworkCallback
 	public Connectivity_EssentialsNetworkCallback ()
 	{
 		super ();
-		if (getClass () == Connectivity_EssentialsNetworkCallback.class)
+		if (getClass () == Connectivity_EssentialsNetworkCallback.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Essentials.Connectivity+EssentialsNetworkCallback, Xamarin.Essentials", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

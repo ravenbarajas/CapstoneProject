@@ -144,7 +144,7 @@ namespace App1.Views.RecipeManagement
                     if (isSaved)
                     {
                         await DisplayAlert("Information", "Recipe info saved!", "Ok");
-                        await Navigation.PushAsync(new UserProfilePage());
+                        await Navigation.PushAsync(new RecipePresentation.HomePage());
                     }
                     else
                     {

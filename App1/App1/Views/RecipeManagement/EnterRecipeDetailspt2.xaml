@@ -111,6 +111,7 @@
                     HorizontalTextAlignment = "Center"
                         FontAttributes = "Bold"
                         TextColor = "White"
+                       Keyboard="Numeric"
                         FontSize = "16"/>
                 <Picker Grid.Row="0" Grid.Column="1"
                     x:Name="pk_unit"

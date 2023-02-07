@@ -8,5 +8,6 @@ namespace App1
     {
         public string IngredientID { get; set; }
         public string IngredientName { get; set; }
+        public bool Selected { get; set; }
     }
 }

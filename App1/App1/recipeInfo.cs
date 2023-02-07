@@ -76,7 +76,7 @@ namespace App1
                 RecipeIngredients = item.Object.RecipeIngredients,
                 RecipeIMG = item.Object.RecipeIMG,
                 RecipeID = item.Key
-            }).Where(c => c.RecipeIngredients.ToLower().Contains(name.ToLower())).ToList();
+            }).Where(c => c.RecipeDescription.ToLower().Contains(name.ToLower())).ToList();
         }
         //public async Task<List<recipeInfoModel>> RandomRecipes()
         //{

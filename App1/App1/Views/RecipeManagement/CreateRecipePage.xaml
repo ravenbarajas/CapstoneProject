@@ -23,11 +23,14 @@
             
             <Grid RowDefinitions="*" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="5">
                 <StackLayout x:Name="sl" Grid.Row="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    <Image x:Name="img" 
+                    <Image Grid.Row="0"
+                    x:Name="img" 
                            Source="splashscreen.png" 
-                           WidthRequest="200" 
-                           HeightRequest="200"
-                           Margin="0,-10,0,0"/>
+                       WidthRequest="150"
+                       HeightRequest="150"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Aspect="Fill"/>
                     <Button x:Name="btn" 
                             Text="Upload Image" 
                             TextColor="White"

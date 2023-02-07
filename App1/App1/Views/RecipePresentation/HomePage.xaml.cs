@@ -21,6 +21,7 @@ namespace App1.Views.RecipePresentation
     {
         FirebaseClient firebaseClient = new FirebaseClient("https://capstoneproject-b8d68-default-rtdb.asia-southeast1.firebasedatabase.app/");
         FirebaseStorage firebaseStorage = new FirebaseStorage("capstoneproject-b8d68.appspot.com");
+
         ObservableCollection<recipeInfoModel> recipes = new ObservableCollection<recipeInfoModel>();
         ObservableCollection<recipeInfoModel> recipes1 = new ObservableCollection<recipeInfoModel>();
         ObservableCollection<recipeInfoModel> recipes2 = new ObservableCollection<recipeInfoModel>();
@@ -100,7 +101,7 @@ namespace App1.Views.RecipePresentation
         //}
         private async void RecipeImg_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new RecipeOutputPage());
+            //await Navigation.PushAsync(new RecipeOutputPage());
         }
         private async void LoadRecipes()
         {

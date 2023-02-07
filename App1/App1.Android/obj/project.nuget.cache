@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tMzVT/KfvmUQJ6mVViNPuD+S28NrQh+8YnPWKjzZ3HxMIxop5VabMnIQdQLH9OBhLXIclBt3nl/39v/imNjP3g==",
+  "dgSpecHash": "Cw9SKOwF/McfLxWzBl38ozjD8lNmM9rTdOp1iGfoe6q87vH+O1jHMkv9zEDe+KNBU8ANC/+WNPCE4KUCUVV2HA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Raven Barajas\\Source\\Repos\\Capstone\\App1\\App1.Android\\App1.Android.csproj",
+  "projectFilePath": "C:\\Users\\Raven Barajas\\source\\repos\\Capstone\\App1\\App1.Android\\App1.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\com.airbnb.android.lottie\\4.2.2\\com.airbnb.android.lottie.4.2.2.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\com.airbnb.xamarin.forms.lottie\\4.1.0\\com.airbnb.xamarin.forms.lottie.4.1.0.nupkg.sha512",
@@ -108,8 +108,8 @@
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.androidx.loader\\1.1.0.10\\xamarin.androidx.loader.1.1.0.10.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.androidx.localbroadcastmanager\\1.0.0.8\\xamarin.androidx.localbroadcastmanager.1.0.0.8.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.androidx.media\\1.4.0.1\\xamarin.androidx.media.1.4.0.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.migration\\1.0.8\\xamarin.androidx.migration.1.0.8.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.multidex\\2.0.1.5\\xamarin.androidx.multidex.2.0.1.5.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.androidx.migration\\1.0.8\\xamarin.androidx.migration.1.0.8.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.androidx.multidex\\2.0.1.5\\xamarin.androidx.multidex.2.0.1.5.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.androidx.navigation.common\\2.3.5.1\\xamarin.androidx.navigation.common.2.3.5.1.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.androidx.navigation.runtime\\2.3.5.1\\xamarin.androidx.navigation.runtime.2.3.5.1.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.androidx.navigation.ui\\2.3.5.1\\xamarin.androidx.navigation.ui.2.3.5.1.nupkg.sha512",
@@ -129,11 +129,32 @@
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.communitytoolkit\\2.0.5\\xamarin.communitytoolkit.2.0.5.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.essentials\\1.7.3\\xamarin.essentials.1.7.3.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms\\5.0.0.2515\\xamarin.forms.5.0.0.2515.nupkg.sha512",
-    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms.inputkit\\4.1.5\\xamarin.forms.inputkit.4.1.5.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms.inputkit\\4.1.6\\xamarin.forms.inputkit.4.1.6.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.2\\xamarin.google.android.material.1.4.0.2.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xcalendar.core\\4.1.0\\xcalendar.core.4.1.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.7.4 to 1.7.3. Reference the package directly from the project to select a different version. \r\n App1.Android -> App1 -> Xamarin.Essentials (>= 1.7.4) \r\n App1.Android -> Xamarin.Essentials (>= 1.7.3)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "MonoAndroid,Version=v11.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.2545 to 5.0.0.2515. Reference the package directly from the project to select a different version. \r\n App1.Android -> App1 -> Xamarin.Forms (>= 5.0.0.2545) \r\n App1.Android -> Xamarin.Forms (>= 5.0.0.2515)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "MonoAndroid,Version=v11.0"
+      ]
+    }
+  ]
 }

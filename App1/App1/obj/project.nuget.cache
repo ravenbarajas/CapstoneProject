@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "042Hjnw3ul5/IfAzTHZdAOyw1tRMN4+YIOpawf43wNGZJVAkCuDX8ZciBogVrXhsMbg2asHP9IcGST/LLVZlLQ==",
+  "dgSpecHash": "OZ03k3oxTfVx5n5foAdSPBt51qDQ3wNz6OHhxff1LsLThQYgGfMPPlZJM25FqL94pgLpfE9RP5Lu1zDQPSyDgg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Raven Barajas\\Source\\Repos\\Capstone\\App1\\App1\\App1.csproj",
+  "projectFilePath": "C:\\Users\\Raven Barajas\\source\\repos\\Capstone\\App1\\App1\\App1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\com.airbnb.xamarin.forms.lottie\\4.1.0\\com.airbnb.xamarin.forms.lottie.4.1.0.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\firebaseauthentication.net\\3.7.2\\firebaseauthentication.net.3.7.2.nupkg.sha512",
@@ -38,9 +38,9 @@
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.communitytoolkit\\2.0.5\\xamarin.communitytoolkit.2.0.5.nupkg.sha512",
-    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.essentials\\1.7.3\\xamarin.essentials.1.7.3.nupkg.sha512",
-    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms\\5.0.0.2515\\xamarin.forms.5.0.0.2515.nupkg.sha512",
-    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms.inputkit\\4.1.5\\xamarin.forms.inputkit.4.1.5.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.essentials\\1.7.4\\xamarin.essentials.1.7.4.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms\\5.0.0.2545\\xamarin.forms.5.0.0.2545.nupkg.sha512",
+    "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms.inputkit\\4.1.6\\xamarin.forms.inputkit.4.1.6.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512",
     "C:\\Users\\Raven Barajas\\.nuget\\packages\\xcalendar.core\\4.1.0\\xcalendar.core.4.1.0.nupkg.sha512"
   ],

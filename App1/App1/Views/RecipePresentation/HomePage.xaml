@@ -11,12 +11,14 @@
             <Image Source="HomeHeader.png" 
                        HorizontalOptions="CenterAndExpand"/>
             <StackLayout Padding="15,5,15,5" BackgroundColor="#3873F6">
-                <SearchBar x:Name="txt_searchrecipes"
+                <Frame Padding="0" CornerRadius="30">
+                    <SearchBar x:Name="txt_searchrecipes"
                            Placeholder="Search food recipes"
-                                   TextColor="#7F8487"
-                                   BackgroundColor="White"
+                                   TextColor="black"
+                                   BackgroundColor="#F2F2F2"
                            SearchButtonPressed="txt_searchrecipesSearchButtonPressed"
                                    HeightRequest="40"/>
+                </Frame>
             </StackLayout>
         </StackLayout>
         
@@ -24,10 +26,15 @@
             <StackLayout BackgroundColor="#f2f2f2">
                 <Image Source ="DiscoverNewHeader.png" 
                        HorizontalOptions="Start"/>
-            <ScrollView Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="Start" BackgroundColor="Transparent" HorizontalScrollBarVisibility="Never">
+            <ScrollView Orientation="Horizontal" 
+                        VerticalOptions="CenterAndExpand" 
+                        HorizontalOptions="Start" 
+                        BackgroundColor="Transparent" 
+                        HorizontalScrollBarVisibility="Never" 
+                        VerticalScrollBarVisibility="Never">
                 <Grid ColumnSpacing="0" HeightRequest="160">
 
-                    <Grid HeightRequest="200" BackgroundColor="aqua" Grid.Column="0">
+                    <Grid HeightRequest="200" BackgroundColor="white" Grid.Column="0">
                         <ListView x:Name="RandomRecipeListView" 
                           ItemsSource="{Binding recipes}"
                           HasUnevenRows="True"
@@ -36,7 +43,7 @@
                           IsPullToRefreshEnabled="False"
                           WidthRequest="230"
                           HorizontalOptions="StartAndExpand"
-                              BackgroundColor="Red">
+                              BackgroundColor="White">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                                 <ViewCell>
@@ -94,7 +101,7 @@
                     </ListView.ItemTemplate>
                 </ListView>
                     </Grid>
-                    <Grid HeightRequest="200" BackgroundColor="aqua" Grid.Column="1">
+                        <Grid HeightRequest="200" BackgroundColor="white" Grid.Column="1">
                         <ListView x:Name="RandomRecipeListView1" 
                         ItemsSource="{Binding recipes}"
                         HasUnevenRows="True"
@@ -103,7 +110,7 @@
                         IsPullToRefreshEnabled="False"
                         WidthRequest="230"
                         HorizontalOptions="StartAndExpand"
-                            BackgroundColor="Red">
+                            BackgroundColor="white">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <ViewCell>
@@ -161,7 +168,7 @@
                             </ListView.ItemTemplate>
                         </ListView>
                     </Grid>
-                    <Grid HeightRequest="200" BackgroundColor="aqua" Grid.Column="2">
+                        <Grid HeightRequest="200" BackgroundColor="white" Grid.Column="2">
                         <ListView x:Name="RandomRecipeListView2" 
                         ItemsSource="{Binding recipes}"
                         HasUnevenRows="True"
@@ -170,7 +177,7 @@
                         IsPullToRefreshEnabled="False"
                         WidthRequest="230"
                         HorizontalOptions="StartAndExpand"
-                            BackgroundColor="Red">
+                            BackgroundColor="white">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <ViewCell>
@@ -228,7 +235,7 @@
                             </ListView.ItemTemplate>
                         </ListView>
                     </Grid>
-                    <Grid HeightRequest="200" BackgroundColor="aqua" Grid.Column="3">
+                        <Grid HeightRequest="200" BackgroundColor="white" Grid.Column="3">
                         <ListView x:Name="RandomRecipeListView3" 
                         ItemsSource="{Binding recipes}"
                         HasUnevenRows="True"
@@ -237,7 +244,7 @@
                         IsPullToRefreshEnabled="False"
                         WidthRequest="230"
                         HorizontalOptions="StartAndExpand"
-                            BackgroundColor="Red">
+                            BackgroundColor="white">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <ViewCell>
@@ -295,7 +302,7 @@
                             </ListView.ItemTemplate>
                         </ListView>
                     </Grid>
-                    <Grid HeightRequest="200" BackgroundColor="aqua" Grid.Column="4">
+                        <Grid HeightRequest="200" BackgroundColor="white" Grid.Column="4">
                         <ListView x:Name="RandomRecipeListView4" 
                         ItemsSource="{Binding recipes}"
                         HasUnevenRows="True"
@@ -304,7 +311,7 @@
                         IsPullToRefreshEnabled="False"
                         WidthRequest="230"
                         HorizontalOptions="StartAndExpand"
-                            BackgroundColor="Red">
+                            BackgroundColor="white">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <ViewCell>
@@ -502,53 +509,124 @@
                                                 </Grid>
                                             </Grid>
 
-                                            <Grid VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0" BackgroundColor="Transparent" Padding="-5,0,-5,0" Margin="0,20,0,-5">
+                                            <Grid VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0" BackgroundColor="Transparent">
                                                 <Grid.RowDefinitions>
                                                     <RowDefinition Height="15"/>
-                                                        <RowDefinition Height="40"/>
-                                                    </Grid.RowDefinitions>
-                                                    <Grid.ColumnDefinitions>
+                                                    <RowDefinition Height="40"/>
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
                                                     <ColumnDefinition Width="*"/>
                                                     <ColumnDefinition Width="*"/>
                                                     <ColumnDefinition Width="*"/>
                                                 </Grid.ColumnDefinitions>
-                                                
-                                                    <Label Grid.Row="0" Grid.ColumnSpan="3"
+                                                    <Grid Grid.Row="0" Grid.ColumnSpan="3">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="15"/>
+                                                        </Grid.RowDefinitions>
+                                                        <Label Grid.Row="0" Grid.ColumnSpan="3"
                                                            Padding="-5,0,-5,0"
                                                             BackgroundColor="White"
                                                            HorizontalOptions="FillAndExpand"
                                                            VerticalOptions="CenterAndExpand"/>
-                                                    <Label Grid.Row="0" Grid.ColumnSpan="3"
+                                                        <Label Grid.Row="0" Grid.ColumnSpan="3"
                                                            Margin="30,0,30,0"
                                                            HeightRequest="3"
-                                                            BackgroundColor="#292929"
+                                                            BackgroundColor="#666666"
                                                            HorizontalOptions="FillAndExpand"
                                                            VerticalOptions="CenterAndExpand"/>
-                                                
-                                                    <ImageButton Grid.Row="1" Grid.Column="0"
-                                                            Source="viewgraysolid.png"
-                                                            HorizontalOptions="FillAndExpand"
+                                                    </Grid>
+                                                    <Grid Grid.Row="0" Grid.Column="0" 
+                                                          VerticalOptions="EndAndExpand" 
+                                                          HorizontalOptions="FillAndExpand" 
+                                                          ColumnSpacing="0" 
+                                                          RowSpacing="0" 
+                                                          BackgroundColor="Transparent" 
+                                                          Padding="20,0,-5,0" 
+                                                          Margin="0,15,0,-5">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="40"/>
+                                                        </Grid.RowDefinitions>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <Label Grid.Row="0" Grid.Column="1"
+                                                               x:Name="viewcount"
+                                                               Text="555"
+                                                               TextColor="#666666"
+                                                            BackgroundColor="Transparent"
+                                                           HorizontalOptions="Start"
+                                                           VerticalOptions="CenterAndExpand"/>
+                                                        <ImageButton Grid.Row="0" Grid.Column="0"
+                                                            Source="viewgray.png"
+                                                            HorizontalOptions="End"
                                                             VerticalOptions="End"
-                                                            BackgroundColor="White"
-                                                            Padding="5,5,5,5"
+                                                            BackgroundColor="Transparent"
+                                                            Padding="-15,5,5,5"
                                                             Clicked="Home_Clicked"/>
-                                                    <ImageButton Grid.Row="1" Grid.Column="1"
-                                                            Source="heartgraysolid.png"
-                                                            HorizontalOptions="FillAndExpand"
+                                                    </Grid>
+                                                    <Grid Grid.Row="0" Grid.Column="1" 
+                                                          VerticalOptions="EndAndExpand" 
+                                                          HorizontalOptions="FillAndExpand" 
+                                                          ColumnSpacing="0" 
+                                                          RowSpacing="0" 
+                                                          BackgroundColor="Transparent" 
+                                                          Padding="20,0,-5,0" 
+                                                          Margin="0,15,0,-5">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="40"/>
+                                                        </Grid.RowDefinitions>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <Label Grid.Row="0" Grid.Column="1"
+                                                               x:Name="heartcount"
+                                                               Text="555"
+                                                               TextColor="#666666"
+                                                            BackgroundColor="Transparent"
+                                                           HorizontalOptions="Start"
+                                                           VerticalOptions="CenterAndExpand"/>
+                                                        <ImageButton Grid.Row="0" Grid.Column="0"
+                                                            Source="heartgray.png"
+                                                            HorizontalOptions="End"
                                                             VerticalOptions="End"
-                                                            BackgroundColor="White"
-                                                            Padding="5,8,5,8"
+                                                            BackgroundColor="Transparent"
+                                                            Padding="-15,8,5,8"
                                                             Clicked="UserProfile_Clicked"/>
-                                                    <ImageButton Grid.Row="1" Grid.Column="2"
-                                                            Source="addgraysolid.png"
-                                                            HorizontalOptions="FillAndExpand"
+                                                    </Grid>
+                                                    <Grid Grid.Row="0" Grid.Column="2" 
+                                                          VerticalOptions="EndAndExpand" 
+                                                          HorizontalOptions="FillAndExpand" 
+                                                          ColumnSpacing="0" 
+                                                          RowSpacing="0" 
+                                                          BackgroundColor="Transparent" 
+                                                          Padding="20,0,-5,0" Margin="0,15,0,-5">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="40"/>
+                                                        </Grid.RowDefinitions>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <Label Grid.Row="0" Grid.Column="1"
+                                                               x:Name="addcount"
+                                                               Text="555"
+                                                               TextColor="#666666"
+                                                            BackgroundColor="Transparent"
+                                                           HorizontalOptions="Start"
+                                                           VerticalOptions="CenterAndExpand"/>
+                                                        <ImageButton Grid.Row="0" Grid.Column="0"
+                                                            Source="addgray.png"
+                                                            HorizontalOptions="End"
                                                             VerticalOptions="End"
                                                             BackgroundColor="White"
-                                                            Padding="5,8,5,8"
+                                                            Padding="-15,8,5,8"
                                                             Clicked="GenerateRecipe_Clicked"/>
+                                                    </Grid>
                                                 </Grid>
-
-                                            </Grid>
+                                            
+                                        </Grid>
                                     </StackLayout>
 
                                 </ViewCell>

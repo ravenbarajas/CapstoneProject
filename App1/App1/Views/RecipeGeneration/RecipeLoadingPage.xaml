@@ -48,8 +48,8 @@
                 FontSize="22"
                 FontAttributes="Bold"
                 HorizontalTextAlignment="Center"/>
-            </Grid>
-        
+        </Grid>
+
         <Label x:Name="txt_selectedrecipe"
                                TextColor="black"
                FontSize="20"
@@ -69,5 +69,5 @@
                        Text="{Binding Ingredients[2]}"
                                HeightRequest="-5"/>
     </StackLayout>
-    
+
 </ContentPage>

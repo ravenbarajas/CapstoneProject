@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App1.Views.RecipeGeneration.RecipeOutputPage"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="App1.Views.RecipePresentation.RecipeOutputPage"
              NavigationPage.HasNavigationBar="false">
 
     <StackLayout>
-        <Image Source="NameHeader.png"
-               VerticalOptions="StartAndExpand"/>
+        <Image Source="Results.png"
+               VerticalOptions="Start"/>
 
         <StackLayout Padding="10,0,10,0" Margin="0,20,0,20">
-            <SearchBar x:Name="txt_searchrecipes"
+            <!--<SearchBar x:Name="txt_searchrecipes"
                        Placeholder="Search food recipes"
                                TextColor="#7F8487"
                                BackgroundColor="#e6e6e6"
@@ -23,7 +24,7 @@
                        Placeholder="Search food recipes"
                                TextColor="#7F8487"
                                BackgroundColor="#e6e6e6"
-                               HeightRequest="-5"/>
+                               HeightRequest="-5"/>-->
 
             <Label Text="There you go!"
                    TextColor="Black"
@@ -34,7 +35,7 @@
                    FontSize="18"
                    FontAttributes="None"/>
 
-            <ScrollView Orientation="Horizontal" Margin="0,20,0,0">
+            <ScrollView Orientation="Horizontal" HorizontalOptions="Center" HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" Margin="0,20,0,0">
                 <StackLayout Orientation="Horizontal">
                     <Grid ColumnSpacing="0">
                         <Grid.RowDefinitions>
@@ -45,15 +46,15 @@
                         </Grid.ColumnDefinitions>
 
                         <Button Grid.Column="0" Grid.Row="0"
-                        x:Name="ingredient1"
-                        TextColor="White"
-                        FontSize="16"
-                        FontAttributes="Bold"
-                        TextTransform="Lowercase"
-                        BackgroundColor="#3873F6"
-                        HorizontalOptions="StartAndExpand"
-                        Padding="20,0,20,0"
-                    CornerRadius="60"/>
+                                x:Name="ingredient1"
+                                TextColor="White"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                TextTransform="Lowercase"
+                                BackgroundColor="#3873F6"
+                                HorizontalOptions="StartAndExpand"
+                                Padding="20,0,20,0"
+                                CornerRadius="60"/>
                     </Grid>
                     <Grid>
                         <Grid.RowDefinitions>
@@ -97,46 +98,100 @@
             </ScrollView>
         </StackLayout>
 
-        <StackLayout Padding="10,0,10,0">
-            <ScrollView>
+        <Grid HeightRequest="400" BackgroundColor="aqua" Grid.Column="0">
+            <Grid Padding="0,0,0,0">
                 <ListView x:Name="RecipeListView" 
-                  ItemsSource="{Binding recipes}"
-                  HasUnevenRows="True"              
-                  IsRefreshing="True"
-                      ItemAppearing="RecipeListView_ItemAppearing"
-                  ItemTapped="RecipeListView_ItemTapped" 
-                  IsPullToRefreshEnabled="True">
+                          ItemsSource="{Binding recipes}"
+                          HasUnevenRows="True"
+                          ItemTapped="RecipeListView_ItemTapped"                  
+                          IsRefreshing="False"
+                          IsPullToRefreshEnabled="False"
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="FillAndExpand"
+                              BackgroundColor="#d9d9d9">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <StackLayout Orientation="Horizontal" Padding="5">
-                                    <Frame Padding="0"
-                                           HeightRequest="60"
-                                           WidthRequest="60"
-                                           BackgroundColor="White"
-                                           CornerRadius="100"
-                                           BorderColor="Teal"
-                                           IsClippedToBounds="True">
-                                        <Frame.Content>
-                                            <Image Source="{Binding RecipeIMG}" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-                                        </Frame.Content>
-                                    </Frame>
 
-                                    <StackLayout HorizontalOptions="StartAndExpand" Padding="5,0,0,0">
-                                        <Label Text="{Binding RecipeName}" 
-                                           FontSize="18" 
-                                           FontAttributes="Bold"
-                                           TextColor="Black"
-                                           VerticalOptions="CenterAndExpand"/>
-                                    </StackLayout>
+                                <StackLayout HorizontalOptions="FillAndExpand" BackgroundColor="white" Padding="5,5,5,5" Orientation="Horizontal" Margin="0,0,0,5">
+                                    <Grid HorizontalOptions="FillAndExpand">
+
+                                        <Grid Padding="0,0,0,15" Grid.Column="0">
+                                            <Label Text="{Binding RecipeName}"
+                                                FontSize="22" 
+                                                FontAttributes="Bold"
+                                                TextColor="Black"
+                                                HorizontalOptions="StartAndExpand"
+                                                HorizontalTextAlignment="Start"
+                                                VerticalOptions="StartAndExpand"
+                                                Padding="0,0,0,5"/>
+                                        </Grid>
+
+                                        <Grid HorizontalOptions="FillAndExpand" Padding="0,35,0,50" Grid.Column="0">
+                                            <Grid>
+                                                <yummy:PancakeView CornerRadius="20,20,0,0" HeightRequest="230"
+                                                                BackgroundColor="White"
+                                                                IsClippedToBounds="True">
+                                                    <Image Source="{Binding RecipeIMG}"
+                                                                    HorizontalOptions="FillAndExpand"
+                                                                    VerticalOptions="FillAndExpand"
+                                                                    Aspect="AspectFill"/>
+                                                </yummy:PancakeView>
+                                            </Grid>
+                                        </Grid>
+
+                                        <Grid VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0" BackgroundColor="Transparent" Padding="-5,0,-5,0" Margin="0,20,0,-5">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="15"/>
+                                                <RowDefinition Height="40"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Label Grid.Row="0" Grid.ColumnSpan="3"
+                                                           Padding="-5,0,-5,0"
+                                                            BackgroundColor="White"
+                                                           HorizontalOptions="FillAndExpand"
+                                                           VerticalOptions="CenterAndExpand"/>
+                                            <Label Grid.Row="0" Grid.ColumnSpan="3"
+                                                           Margin="30,0,30,0"
+                                                           HeightRequest="3"
+                                                            BackgroundColor="#666666"
+                                                           HorizontalOptions="FillAndExpand"
+                                                           VerticalOptions="CenterAndExpand"/>
+
+                                            <ImageButton Grid.Row="1" Grid.Column="0"
+                                                            Source="viewgray.png"
+                                                            HorizontalOptions="FillAndExpand"
+                                                            VerticalOptions="End"
+                                                            BackgroundColor="White"
+                                                            Padding="5,5,5,5"/>
+                                            <ImageButton Grid.Row="1" Grid.Column="1"
+                                                            Source="heartgray.png"
+                                                            HorizontalOptions="FillAndExpand"
+                                                            VerticalOptions="End"
+                                                            BackgroundColor="White"
+                                                            Padding="5,8,5,8"/>
+                                            <ImageButton Grid.Row="1" Grid.Column="2"
+                                                            Source="addgray.png"
+                                                            HorizontalOptions="FillAndExpand"
+                                                            VerticalOptions="End"
+                                                            BackgroundColor="White"
+                                                            Padding="5,8,5,8"/>
+                                        </Grid>
+
+                                    </Grid>
                                 </StackLayout>
 
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-            </ScrollView>
-        </StackLayout>
+            </Grid>
+        </Grid>
 
         <Button Text="Try again?"
                     TextColor="White"

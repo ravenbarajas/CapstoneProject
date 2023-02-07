@@ -5,22 +5,19 @@
              x:Class="App1.Views.RecipeManagement.MealplannerPage"
              NavigationPage.HasNavigationBar="False">
     
-    <ContentPage.Content>
-        <StackLayout>
-            <Frame BackgroundColor="#3873F6" Padding="5,20,5,20">
-                <Label Text="Meal Planner" 
-                   FontSize="26" 
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
-                   TextColor="White"
-                   FontAttributes="Bold" 
-                   Padding="5,0,5,0"/>
-                </Frame>
+    <StackLayout>
+        <Frame BackgroundColor="#3873F6" Padding="5,20,5,20">
+            <Label Text="Meal Planner" 
+                FontSize="26" 
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                TextColor="White"
+                FontAttributes="Bold" 
+                Padding="5,0,5,0"/>
+        </Frame>
 
-                <ScrollView>
-
-            </ScrollView>
-
+        <StackLayout Padding="100" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+            <Image Source="workinprogress.png"/>
         </StackLayout>
-    </ContentPage.Content>
+    </StackLayout>
 </ContentPage>
