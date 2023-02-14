@@ -15,5 +15,9 @@ namespace App1
         public string RecipePrepTime { get; set; }
         public string RecipeInstructions { get; set; }
         public string RecipeIngredients { get; set; }
+
+        public int ViewCount { get; set; }
+        public int HeartCount { get; set; }
+        public int AddCount { get; set; }
     }
 }

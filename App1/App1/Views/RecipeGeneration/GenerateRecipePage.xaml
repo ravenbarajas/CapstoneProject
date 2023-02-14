@@ -5,10 +5,27 @@
              NavigationPage.HasNavigationBar="False">
 
     <StackLayout BackgroundColor="White" >
-        <Image Source="GetRecipe.png"
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0"
+                   Source="GetRecipe.png"
                VerticalOptions="Start"/>
-        <Image Source="IngredientsHeader.png"
+            <Image Grid.Row="1"
+                   Source="IngredientsHeader.png"
                VerticalOptions="Start"/>
+            <ImageButton Grid.Row="0"
+                         x:Name="backbutton"
+                        Source="backbutton.png"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="Start"
+                         HeightRequest="40"
+                         Margin="10,-10,0,0"
+                         Padding="3"
+                         BackgroundColor="Transparent"
+                         Clicked="backbutton_Clicked"/>
+        </Grid>
         <!--<StackLayout Padding="5,0,5,0">
             <Label Text="Preference Selection"
                             TextColor="Black"

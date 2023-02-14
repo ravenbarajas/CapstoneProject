@@ -98,12 +98,12 @@
             </ScrollView>
         </StackLayout>
 
-        <Grid HeightRequest="400" BackgroundColor="aqua" Grid.Column="0">
+        <Grid HeightRequest="400" BackgroundColor="white" Grid.Column="0">
             <Grid Padding="0,0,0,0">
                 <ListView x:Name="RecipeListView" 
                           ItemsSource="{Binding recipes}"
                           HasUnevenRows="True"
-                          ItemTapped="RecipeListView_ItemTapped"                  
+                          ItemTapped="RecipeListView_ItemTapped"  
                           IsRefreshing="False"
                           IsPullToRefreshEnabled="False"
                           HorizontalOptions="FillAndExpand"

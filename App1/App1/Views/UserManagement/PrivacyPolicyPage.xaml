@@ -9,7 +9,7 @@
         <ScrollView>
             <Grid>
                 <StackLayout Background="white">
-                    <Image Source="TopPrivacyPolicy.Jpg"/>
+                    <Image Source="TopPrivacyPolicy.png"/>
                     <xct:Expander>
                         <xct:Expander.Header>
                             <Grid Padding="5,-5,5,0">
@@ -124,7 +124,7 @@
                             TextColor="White"
                             FontAttributes="Bold"
                             HeightRequest="45"
-                            Margin="25,5,25,0"
+                            Margin="25,35,25,0"
                             CornerRadius="25">
                         <Button.Triggers>
                             <DataTrigger TargetType="Button"
@@ -136,7 +136,8 @@
                         </Button.Triggers>
                     </Button>
                     <Image Source="Bottom.Jpg"
-                           Margin="0,13,0,0"/>
+                           Margin="0,13,0,0"
+                           VerticalOptions="EndAndExpand"/>
                 </StackLayout>
             </Grid>
         </ScrollView>

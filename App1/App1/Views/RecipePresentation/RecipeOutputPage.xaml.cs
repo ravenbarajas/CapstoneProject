@@ -31,6 +31,7 @@ namespace App1.Views.RecipePresentation
             ////txt_searchrecipes.Text = $"{Application.Current.Properties["SelectedIngredient1"].ToString()}";
             ////txt_searchrecipes1.Text = $"{Application.Current.Properties["SelectedIngredient2"].ToString()}";
             ////txt_searchrecipes2.Text = $"{Application.Current.Properties["SelectedIngredient3"].ToString()}";
+            ObservableCollection<recipeInfoModel> recipes = new ObservableCollection<recipeInfoModel>();
             ingredient1.Text = $"{Application.Current.Properties["SelectedIngredient1"].ToString()}";
             ingredient2.Text = $"{Application.Current.Properties["SelectedIngredient2"].ToString()}";
             ingredient3.Text = $"{Application.Current.Properties["SelectedIngredient3"].ToString()}";
@@ -75,11 +76,18 @@ namespace App1.Views.RecipePresentation
             //RecipeListView.ItemsSource = recipes;
             try
             {
-                string searchValue = ingredient1.Text;
-                var recipes = await repository.OutputRecipe(searchValue);
+                string ingredientValue1 = ingredient1.Text;
+                string ingredientValue2 = ingredient2.Text;
+                string ingredientValue3 = ingredient3.Text;
+
+                var recipes = await repository.OutputRecipe(ingredientValue1);
                 RecipeListView.ItemsSource = null;
                 RecipeListView.ItemsSource = recipes;
+                RecipeListView.ItemsSource = recipes.Where(c => c.RecipeInstructions.ToLower().Contains(ingredientValue1.ToLower()) 
+                                                             || c.RecipeInstructions.ToLower().Contains(ingredientValue2.ToLower()) 
+                                                             || c.RecipeInstructions.ToLower().Contains(ingredientValue3.ToLower())).ToList();
                 RecipeListView.IsRefreshing = false;
+
             }
             catch (Exception exception)
             {

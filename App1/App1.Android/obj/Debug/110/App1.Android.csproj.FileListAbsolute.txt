@@ -2275,7 +2275,6 @@ C:\Users\Raven Barajas\source\repos\Capstone\App1\App1.Android\obj\Debug\110\res
 C:\Users\Raven Barajas\source\repos\Capstone\App1\App1.Android\obj\Debug\110\res\drawable\universalbg.jpg
 C:\Users\Raven Barajas\source\repos\Capstone\App1\App1.Android\obj\Debug\110\res\drawable\login.jpg
 C:\Users\Raven Barajas\source\repos\Capstone\App1\App1.Android\obj\Debug\110\res\drawable\bottom.jpg
-C:\Users\Raven Barajas\source\repos\Capstone\App1\App1.Android\obj\Debug\110\res\drawable\topprivacypolicy.jpg
 C:\Users\Raven Barajas\source\repos\Capstone\App1\App1.Android\obj\Debug\110\res\drawable\next.png
 C:\Users\Raven Barajas\source\repos\Capstone\App1\App1.Android\obj\Debug\110\res\drawable\choice.png
 C:\Users\Raven Barajas\source\repos\Capstone\App1\App1.Android\obj\Debug\110\res\drawable\search.png
@@ -2999,3 +2998,6 @@ C:\Users\Raven Barajas\source\repos\Capstone\App1\App1.Android\obj\Debug\110\and
 C:\Users\Raven Barajas\source\repos\Capstone\App1\App1.Android\obj\Debug\110\android\jni_remap.x86_64.o
 C:\Users\Raven Barajas\source\repos\Capstone\App1\App1.Android\obj\Debug\110\stamp\_CompileJava.stamp
 C:\Users\Raven Barajas\source\repos\Capstone\App1\App1.Android\obj\Debug\110\res\drawable\results.png
+C:\Users\Raven Barajas\source\repos\Capstone\App1\App1.Android\obj\Debug\110\res\drawable\backbutton.png
+C:\Users\Raven Barajas\source\repos\Capstone\App1\App1.Android\obj\Debug\110\res\drawable\trendingnowheader.png
+C:\Users\Raven Barajas\source\repos\Capstone\App1\App1.Android\obj\Debug\110\res\drawable\topprivacypolicy.png

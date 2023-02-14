@@ -83,38 +83,47 @@ namespace App1.Views.RecipeManagement
         List<String> ingredientList = new List<string>();
         private async void btn_acceptIngredient_Clicked(object sender, EventArgs e)
         {
-            recipeQty = txt_qty.Text;
-            recipeUnit = pk_unit.SelectedItem.ToString();
-            recipeIngredient = lbl_ingredients.Text;
-
-            if (String.IsNullOrEmpty(recipeQty))
+            try
             {
-                await DisplayAlert("Warning", "Quantity is required", "Ok");
-                return;
-            }
-            if (String.IsNullOrEmpty(recipeUnit))
-            {
-                await DisplayAlert("Warning", "Unit of Measurement is required", "Ok");
-                return;
-            }
-            if (String.IsNullOrEmpty(recipeIngredient))
-            {
-                await DisplayAlert("Warning", "Ingredient is required", "Ok");
-                return;
-            }
+                recipeQty = txt_qty.Text;
+                recipeUnit = pk_unit.SelectedItem.ToString();
+                recipeIngredient = lbl_ingredients.Text;
 
-            string labeltext = recipeQty + " " + recipeUnit + " " + recipeIngredient;
-            string labeltextArray = lbl_EntryFieldsOutput.Text + labeltext;
-            ingredientList.Add(labeltextArray);
-            for (int i = 0; i < ingredientList.Count; i++)
-            {
-                lbl_EntryFieldsOutput.Text = ingredientList[i] + "\n";
+                if (String.IsNullOrEmpty(recipeQty))
+                {
+                    await DisplayAlert("Warning", "Quantity is required", "Ok");
+                    return;
+                }
+                if (String.IsNullOrEmpty(recipeUnit))
+                {
+                    await DisplayAlert("Warning", "Unit of Measurement is required", "Ok");
+                    return;
+                }
+                if (String.IsNullOrEmpty(recipeIngredient))
+                {
+                    await DisplayAlert("Warning", "Ingredient is required", "Ok");
+                    return;
+                }
+
+                string labeltext = recipeQty + " " + recipeUnit + " " + recipeIngredient;
+                string labeltextArray = lbl_EntryFieldsOutput.Text + labeltext;
+                ingredientList.Add(labeltextArray);
+                for (int i = 0; i < ingredientList.Count; i++)
+                {
+                    lbl_EntryFieldsOutput.Text = ingredientList[i] + "\n";
+                }
+
+                ingredientWhole = lbl_EntryFieldsOutput.Text;
+                lbl_EntryFieldsOutput.VerticalTextAlignment = TextAlignment.Center;
+                lbl_EntryFieldsOutput.VerticalOptions = LayoutOptions.Center;
+
+                txt_qty.Text = "";
+                lbl_ingredients.Text = "";
             }
-
-            ingredientWhole = lbl_EntryFieldsOutput.Text;
-
-            txt_qty.Text = "";
-            lbl_ingredients.Text = "";
+            catch (Exception exception)
+            {
+                DisplayAlert("Error", exception.Message, "Ok");
+            }
         }
         private async void Next_Clicked(object sender, EventArgs e)
         {

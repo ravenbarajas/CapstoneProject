@@ -23,7 +23,7 @@
             </Grid.ColumnDefinitions>
             <Label Grid.Row="0"
                    x:Name="message1"
-                Text="Just a moment"
+                Text="Just a moment..."
                Margin="0,-200,0,0"
                 TextColor="White"
                    BackgroundColor="White"
@@ -41,7 +41,7 @@
                 HorizontalTextAlignment="Center"/>
             <Label Grid.Row="0"
                    x:Name="message3"
-                Text="Loading results"
+                Text="Loading results..."
                Margin="0,-200,0,0"
                 TextColor="White"
                    BackgroundColor="White"

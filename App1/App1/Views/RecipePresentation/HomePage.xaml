@@ -8,22 +8,55 @@
     
     <StackLayout>
         <StackLayout BackgroundColor="#3873F6">
-            <Image Source="HomeHeader.png" 
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0"
+                       Source="HomeHeader.png" 
                        HorizontalOptions="CenterAndExpand"/>
-            <StackLayout Padding="15,5,15,5" BackgroundColor="#3873F6">
-                <Frame Padding="0" CornerRadius="30">
-                    <SearchBar x:Name="txt_searchrecipes"
+                
+                <Grid x:Name="recipesearchbar" Padding="10,5,10,5" BackgroundColor="#3873F6" IsVisible="false" Grid.Row="0" ColumnSpacing="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="70"/>
+                    </Grid.ColumnDefinitions>
+                    <Frame Padding="0" CornerRadius="30" VerticalOptions="CenterAndExpand" Grid.Column="0"> 
+                        <SearchBar x:Name="txt_searchrecipes"
                            Placeholder="Search food recipes"
                                    TextColor="black"
                                    BackgroundColor="#F2F2F2"
                            SearchButtonPressed="txt_searchrecipesSearchButtonPressed"
-                                   HeightRequest="40"/>
-                </Frame>
-            </StackLayout>
+                                   HeightRequest="40"
+                                   Unfocused="txt_searchrecipes_Unfocused"
+                                   VerticalOptions="CenterAndExpand"/>
+                    </Frame>
+                    <Button Grid.Column="1"
+                            x:Name="cancelbutton"
+                            Text="cancel"
+                            TextColor="White"
+                            TextTransform="None"
+                            FontSize="15"
+                            FontAttributes="Bold"
+                            BackgroundColor="Transparent"
+                            Clicked="cancelbutton_Clicked"/>
+                </Grid>
+                
+                <ImageButton Grid.Row="0"
+                         x:Name="searchbutton"
+                        Source="search.png"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="End"
+                         HeightRequest="40"
+                         Margin="0,0,20,0"
+                         Padding="3"
+                         BackgroundColor="Transparent"
+                         Clicked="searchbutton_Clicked"/>
+            </Grid>
         </StackLayout>
-        
+                
     <ScrollView VerticalScrollBarVisibility="Never">
-            <StackLayout BackgroundColor="#f2f2f2">
+            <StackLayout BackgroundColor="#f2f2f2" Spacing="0">
                 <Image Source ="DiscoverNewHeader.png" 
                        HorizontalOptions="Start"/>
             <ScrollView Orientation="Horizontal" 
@@ -85,7 +118,7 @@
                                                         </yummy:PancakeView>
                                                     <Label Grid.Column="0" Grid.Row="1"
                                                             Text="{Binding RecipeName}"
-                                                            FontSize="18" 
+                                                            FontSize="16" 
                                                             FontAttributes="Bold"
                                                             TextColor="White"
                                                             HorizontalOptions="CenterAndExpand"
@@ -152,7 +185,7 @@
                                                     </yummy:PancakeView>
                                                     <Label Grid.Column="0" Grid.Row="1"
                                                         Text="{Binding RecipeName}"
-                                                        FontSize="18" 
+                                                        FontSize="16"
                                                         FontAttributes="Bold"
                                                         TextColor="White"
                                                         HorizontalOptions="CenterAndExpand"
@@ -219,7 +252,7 @@
                                                     </yummy:PancakeView>
                                                     <Label Grid.Column="0" Grid.Row="1"
                                                         Text="{Binding RecipeName}"
-                                                        FontSize="18" 
+                                                        FontSize="16"
                                                         FontAttributes="Bold"
                                                         TextColor="White"
                                                         HorizontalOptions="CenterAndExpand"
@@ -286,7 +319,7 @@
                                                     </yummy:PancakeView>
                                                     <Label Grid.Column="0" Grid.Row="1"
                                                         Text="{Binding RecipeName}"
-                                                        FontSize="18" 
+                                                        FontSize="16"
                                                         FontAttributes="Bold"
                                                         TextColor="White"
                                                         HorizontalOptions="CenterAndExpand"
@@ -353,7 +386,7 @@
                                                     </yummy:PancakeView>
                                                     <Label Grid.Column="0" Grid.Row="1"
                                                         Text="{Binding RecipeName}"
-                                                        FontSize="18" 
+                                                        FontSize="16"
                                                         FontAttributes="Bold"
                                                         TextColor="White"
                                                         HorizontalOptions="CenterAndExpand"
@@ -370,7 +403,7 @@
                         </ListView>
                     </Grid>
 
-                    </Grid>
+                </Grid>
             </ScrollView>
                         
             <!--<ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never" Margin="0,-6,0,0" MinimumHeightRequest="55">
@@ -466,8 +499,10 @@
                         Clicked="MT_Clicked"/>
             </Grid>
         </ScrollView>-->
-                
-            <Grid HeightRequest="400" BackgroundColor="aqua" Grid.Column="0">
+                <Image Source ="TrendingNowHeader.png" 
+                       HorizontalOptions="Center"
+                       Margin="0,5,0,0"/>
+                <Grid HeightRequest="400" BackgroundColor="aqua" Grid.Column="0" Margin="0,0,0,0">
                 <Grid Padding="0,0,0,0">
                     <ListView x:Name="RecipeListView" 
                           ItemsSource="{Binding recipes}"
@@ -552,7 +587,6 @@
                                                         </Grid.ColumnDefinitions>
                                                         <Label Grid.Row="0" Grid.Column="1"
                                                                x:Name="viewcount"
-                                                               Text="555"
                                                                TextColor="#666666"
                                                             BackgroundColor="Transparent"
                                                            HorizontalOptions="Start"
@@ -582,7 +616,6 @@
                                                         </Grid.ColumnDefinitions>
                                                         <Label Grid.Row="0" Grid.Column="1"
                                                                x:Name="heartcount"
-                                                               Text="555"
                                                                TextColor="#666666"
                                                             BackgroundColor="Transparent"
                                                            HorizontalOptions="Start"
@@ -611,7 +644,6 @@
                                                         </Grid.ColumnDefinitions>
                                                         <Label Grid.Row="0" Grid.Column="1"
                                                                x:Name="addcount"
-                                                               Text="555"
                                                                TextColor="#666666"
                                                             BackgroundColor="Transparent"
                                                            HorizontalOptions="Start"

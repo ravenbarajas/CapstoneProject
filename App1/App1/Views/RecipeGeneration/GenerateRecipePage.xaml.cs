@@ -40,6 +40,7 @@ namespace App1.Views.RecipeGeneration
         }
         private async void txt_searchingredients_TextChange(object sender, EventArgs e)
         {
+
             string searchValue = txt_searchingredient.Text;
             if (!String.IsNullOrEmpty(searchValue))
             {
@@ -158,6 +159,11 @@ namespace App1.Views.RecipeGeneration
             //    selectedItem.Selected = !selectedItem.Selected;
             //}
 
+        }
+
+        private async void backbutton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HomePage());
         }
         //private void UpdateSelectedIngredients()
         //{

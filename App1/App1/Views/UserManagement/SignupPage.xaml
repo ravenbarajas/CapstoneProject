@@ -82,7 +82,8 @@
                 </Label>
 
             </StackLayout>
-            <Image Source="Bottom.Jpg" Margin="0,593,0,0"/>
+            <Image Source="Bottom.Jpg" Margin="0,593,0,0"
+                   VerticalOptions="EndAndExpand"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

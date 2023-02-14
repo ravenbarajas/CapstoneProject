@@ -28,6 +28,8 @@ namespace App1.Views.RecipePresentation
         ObservableCollection<recipeInfoModel> recipes3 = new ObservableCollection<recipeInfoModel>();
         ObservableCollection<recipeInfoModel> recipes4 = new ObservableCollection<recipeInfoModel>();
 
+        public int randomNumber { get; set; }
+
         recipeInfo repository = new recipeInfo();
         userInfo userRepo = new userInfo();
         public HomePage()
@@ -182,6 +184,22 @@ namespace App1.Views.RecipePresentation
             }
         }
 
+        private void searchbutton_Clicked(object sender, EventArgs e)
+        {
+            recipesearchbar.IsVisible = true;
+            searchbutton.IsVisible = false;
+        }
 
+        private void txt_searchrecipes_Unfocused(object sender, FocusEventArgs e)
+        {
+            recipesearchbar.IsVisible = false;
+            searchbutton.IsVisible = true;
+        }
+
+        private void cancelbutton_Clicked(object sender, EventArgs e)
+        {
+            recipesearchbar.IsVisible = false;
+            searchbutton.IsVisible = true;
+        }
     }
 }
